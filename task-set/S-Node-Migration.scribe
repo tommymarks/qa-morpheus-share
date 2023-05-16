@@ -1,0 +1,12 @@
+resource "task-set" "S-Node-Migration" {
+  name = "S-Node-Migration"
+  uuid = "3d88dd56-043c-4756-923a-e4d71978f899"
+  allowCustomConfig = false
+  dateCreated = "2019-09-26T00:14:40.000Z"
+  lastUpdated = "2019-09-26T00:14:40.000Z"
+  optionTypes = [ { code = "riHospitals" } ]
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "1d3887b8-b8ed-431b-b8c3-ddada3cd92ab" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}

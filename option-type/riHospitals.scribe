@@ -1,0 +1,29 @@
+resource "option-type" "riHospitals" {
+  code = "riHospitals"
+  name = "RIHospitals"
+  uuid = "bb1ece95-3b3a-4593-9ad8-19d539905943"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "List of RI Hospitals"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "riHospitals"
+  fieldLabel = "RIHospitals"
+  fieldName = "riHospitals"
+  fieldSetName = "riHospitals"
+  global = true
+  noBlank = false
+  optionList = { name = "Hospital Groups" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}
