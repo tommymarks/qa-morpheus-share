@@ -1,0 +1,10 @@
+resource "task-set" "Retry Test" {
+  name = "Retry Test"
+  uuid = "4ae60596-6880-4b79-9ed3-b4a9a3fbe9b1"
+  dateCreated = "2018-10-04T16:46:54.000Z"
+  lastUpdated = "2018-10-04T21:09:52.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "aed2f5b2-57a9-41f5-8180-b091698455eb" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}

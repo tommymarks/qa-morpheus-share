@@ -1,0 +1,7 @@
+resource "task-set-task" "aed2f5b2-57a9-41f5-8180-b091698455eb" {
+  uuid = "aed2f5b2-57a9-41f5-8180-b091698455eb"
+  entryTask = false
+  task = { name = "Retry Test" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
