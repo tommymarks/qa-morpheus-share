@@ -1,0 +1,7 @@
+resource "task-set-task" "6d7aa938-eefb-44c8-abd7-9aca3a9a75b3" {
+  uuid = "6d7aa938-eefb-44c8-abd7-9aca3a9a75b3"
+  entryTask = false
+  task = { name = "whoami - sudo" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
