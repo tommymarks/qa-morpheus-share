@@ -1,0 +1,10 @@
+resource "app-template" "87aa7756-a988-4200-9524-17f79c018b5b" {
+  name = "Test Images"
+  uuid = "87aa7756-a988-4200-9524-17f79c018b5b"
+  active = true
+  custom = false
+  dateCreated = "2019-01-23T04:42:25.000Z"
+  lastUpdated = "2019-01-23T04:45:34.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
