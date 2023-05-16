@@ -1,0 +1,7 @@
+resource "task-set-task" "2ad2ec88-383f-41a6-9455-8c9818896370" {
+  uuid = "2ad2ec88-383f-41a6-9455-8c9818896370"
+  entryTask = false
+  task = { name = "createF5Pool" }
+  taskOrder = 0
+  taskPhase = "provision"
+}

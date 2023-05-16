@@ -1,0 +1,5 @@
+resource "task-option" "b11fbf58-8f58-4a10-bdb6-b19908862c09" {
+  uuid = "b11fbf58-8f58-4a10-bdb6-b19908862c09"
+  optionType = { code = "ansibleTowerInventoryId" }
+  value = "3220"
+}
