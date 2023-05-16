@@ -1,0 +1,5 @@
+resource "task-option" "5a30e2b8-0cbc-48e9-91d8-58d65bd2b93a" {
+  uuid = "5a30e2b8-0cbc-48e9-91d8-58d65bd2b93a"
+  optionType = { code = "script" }
+  value = "echo "results.vro: <%=results.vro.find{it.name == 'outputText'}?.value?.string?.value%>""
+}
