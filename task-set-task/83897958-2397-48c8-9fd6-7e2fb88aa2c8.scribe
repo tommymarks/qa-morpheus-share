@@ -1,0 +1,7 @@
+resource "task-set-task" "83897958-2397-48c8-9fd6-7e2fb88aa2c8" {
+  uuid = "83897958-2397-48c8-9fd6-7e2fb88aa2c8"
+  entryTask = false
+  task = { name = "bobarchivetask" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
