@@ -1,0 +1,26 @@
+resource "option-type" "ansibleSkipTags" {
+  code = "ansibleSkipTags"
+  name = "SkipTags"
+  uuid = "c80f276c-4d07-41c8-b7f1-3d0f9eb21aa3"
+  category = "ansible"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 5
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.label.option.skiptags"
+  fieldContext = "taskOptions"
+  fieldLabel = "Skip Tags"
+  fieldName = "ansibleSkipTags"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}

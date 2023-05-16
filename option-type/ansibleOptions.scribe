@@ -1,0 +1,26 @@
+resource "option-type" "ansibleOptions" {
+  code = "ansibleOptions"
+  name = "Command Options"
+  uuid = "1173c649-1a46-426e-bcca-0aeead83a697"
+  category = "ansible"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 6
+  editable = true
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.optiontype.CommandOptions"
+  fieldContext = "taskOptions"
+  fieldLabel = "Command Options"
+  fieldName = "ansibleOptions"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
