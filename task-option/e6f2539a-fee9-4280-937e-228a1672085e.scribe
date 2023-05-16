@@ -1,0 +1,8 @@
+resource "task-option" "e6f2539a-fee9-4280-937e-228a1672085e" {
+  uuid = "e6f2539a-fee9-4280-937e-228a1672085e"
+  optionType = { code = "script" }
+  value = <<EOF
+echo "TASK EXECUTION"
+echo ERROR: Did I do that? 1>&2
+EOF
+}
