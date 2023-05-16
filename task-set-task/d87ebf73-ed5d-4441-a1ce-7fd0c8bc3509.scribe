@@ -1,0 +1,7 @@
+resource "task-set-task" "d87ebf73-ed5d-4441-a1ce-7fd0c8bc3509" {
+  uuid = "d87ebf73-ed5d-4441-a1ce-7fd0c8bc3509"
+  entryTask = false
+  task = { name = "XaaS: Post Provision" }
+  taskOrder = 2
+  taskPhase = "postProvision"
+}
