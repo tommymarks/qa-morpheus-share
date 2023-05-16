@@ -1,0 +1,10 @@
+resource "app-template" "f9d0d506-951c-4b3e-9a0f-4090cf3a27df" {
+  name = "tm-scvmm-test"
+  uuid = "f9d0d506-951c-4b3e-9a0f-4090cf3a27df"
+  active = true
+  custom = false
+  dateCreated = "2020-09-15T04:00:53.000Z"
+  lastUpdated = "2020-10-07T16:53:39.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
