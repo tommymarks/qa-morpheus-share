@@ -1,0 +1,23 @@
+resource "task" "XaaS: Teardown" {
+  name = "XaaS: Teardown"
+  uuid = "a6668515-a6bc-4e61-81c7-63db45f6c4c6"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:07:27.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:07:27.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0079caac-f688-4f1a-9e0c-31c99a248c22" },
+    { uuid = "170f22d9-4f88-4aa1-be88-e3d1e635e1c6" },
+    { uuid = "2aaa6d14-fc1f-429b-8553-62c374a8db61" },
+    { uuid = "611c836b-0e70-484b-bba6-a635ce2ba0cc" },
+    { uuid = "691bf25b-cf7e-4604-81a8-744536339dbe" },
+    { uuid = "a2c426ea-1ae9-492e-aaf6-2ee19072a983" },
+    { uuid = "c2a6c050-a158-4613-a2b7-6ba53fa6312d" },
+    { uuid = "df111546-a24c-4965-b68a-38e0ca1d7a7c" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

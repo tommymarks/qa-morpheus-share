@@ -1,0 +1,13 @@
+resource "file-content" "55f6127a-5b3d-44dc-97b3-b8fcf6040687" {
+  uuid = "55f6127a-5b3d-44dc-97b3-b8fcf6040687"
+  content = <<EOF
+echo "$(date) - teardown" | tee -a /var/tmp/xaas.txt
+echo whaddup
+EOF
+  dateCreated = "2022-01-06T05:07:27.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-01-06T05:07:27.000Z"
+  sourceType = "local"
+}
