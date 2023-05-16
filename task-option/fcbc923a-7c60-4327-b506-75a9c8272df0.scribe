@@ -1,0 +1,4 @@
+resource "task-option" "fcbc923a-7c60-4327-b506-75a9c8272df0" {
+  uuid = "fcbc923a-7c60-4327-b506-75a9c8272df0"
+  optionType = { code = "puppetNodeName" }
+}

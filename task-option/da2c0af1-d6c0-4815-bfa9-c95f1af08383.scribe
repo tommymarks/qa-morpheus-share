@@ -1,0 +1,4 @@
+resource "task-option" "da2c0af1-d6c0-4815-bfa9-c95f1af08383" {
+  uuid = "da2c0af1-d6c0-4815-bfa9-c95f1af08383"
+  optionType = { code = "puppetEnvironment" }
+}
