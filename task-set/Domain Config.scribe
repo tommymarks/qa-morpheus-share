@@ -1,0 +1,10 @@
+resource "task-set" "Domain Config" {
+  name = "Domain Config"
+  uuid = "9db0504b-bac9-49f0-a254-cfc9c8206aac"
+  dateCreated = "2018-02-13T18:20:09.000Z"
+  lastUpdated = "2018-02-13T18:20:09.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "b2803e50-2689-4f61-9d2c-5a56ddc9f310" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}

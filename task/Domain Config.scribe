@@ -1,0 +1,11 @@
+resource "task" "Domain Config" {
+  name = "Domain Config"
+  uuid = "a9d19b4f-ede1-4a4c-a75c-242ebe6ce159"
+  executeTarget = "resource"
+  taskOptions = [
+    { uuid = "db8797f7-075b-402e-afae-2c8673e85236" },
+    { uuid = "fa229a5d-06f6-4f8f-a723-f845cc3f242c" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
