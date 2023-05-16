@@ -1,0 +1,24 @@
+resource "task" "XaaS: Pre Provision" {
+  name = "XaaS: Pre Provision"
+  uuid = "5ab60204-24d4-4ea9-8ea3-e532fa031ac8"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:05:42.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:06:39.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "03008eb7-ad86-4ef0-8a6a-1e44c5a83792" },
+    { uuid = "37763b9f-c757-460d-9150-4e56e2b16fcc" },
+    { uuid = "37885ea2-7c9e-4e83-b77c-708eebaf8f97" },
+    { uuid = "660aa161-50ba-41fc-8974-2c8d16852a3e" },
+    { uuid = "6db2dfc4-8a46-4cad-ba77-04e03583ffb0" },
+    { uuid = "83a26c18-c958-4fde-9014-476e106345b7" },
+    { uuid = "bda24b10-5c6f-42da-9ccb-aafc1731bc0a" },
+    { uuid = "ce1b0ca0-6aa4-43d8-a7c9-6472dae771a4" },
+    { uuid = "dc4218ee-e136-4fe0-a46f-b6b01206171c" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

@@ -1,0 +1,10 @@
+resource "file-content" "955f28e6-2e99-4955-a084-ad689e41fd2d" {
+  uuid = "955f28e6-2e99-4955-a084-ad689e41fd2d"
+  content = "echo "$(date) - pre provision" | tee -a /var/tmp/xaas.txt"
+  dateCreated = "2022-01-06T05:05:42.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-01-06T05:06:39.000Z"
+  sourceType = "local"
+}
