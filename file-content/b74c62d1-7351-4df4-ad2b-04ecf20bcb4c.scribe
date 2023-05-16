@@ -1,0 +1,17 @@
+resource "file-content" "b74c62d1-7351-4df4-ad2b-04ecf20bcb4c" {
+  uuid = "b74c62d1-7351-4df4-ad2b-04ecf20bcb4c"
+  content = <<EOF
+com.bertramlabs.plugins.User.withNewSession { 
+
+println grails.util.Holders.applicationContext['permissionService'].getListOfAppTemplatesUserCanView(com.bertramlabs.plugins.User.get(25186L))
+
+
+}
+EOF
+  dateCreated = "2021-11-18T21:04:23.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-18T21:04:51.000Z"
+  sourceType = "local"
+}
