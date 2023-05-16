@@ -1,0 +1,5 @@
+resource "task-option" "5b1d94a8-7011-450f-9c0b-e85af41f80db" {
+  uuid = "5b1d94a8-7011-450f-9c0b-e85af41f80db"
+  optionType = { code = "username" }
+  value = "cbunge@bungebash.com"
+}
