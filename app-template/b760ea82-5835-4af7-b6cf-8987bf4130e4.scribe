@@ -1,0 +1,10 @@
+resource "app-template" "b760ea82-5835-4af7-b6cf-8987bf4130e4" {
+  name = "bob-test-cf-lambda"
+  uuid = "b760ea82-5835-4af7-b6cf-8987bf4130e4"
+  active = true
+  custom = false
+  dateCreated = "2020-10-16T19:36:47.000Z"
+  lastUpdated = "2020-12-08T09:20:51.000Z"
+  templateType = { code = "cloudFormation" }
+  visibility = "private"
+}
