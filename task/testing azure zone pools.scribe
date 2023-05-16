@@ -1,0 +1,22 @@
+resource "task" "testing azure zone pools" {
+  name = "testing azure zone pools"
+  uuid = "20294b53-593e-4667-8b71-6aabf35fefe6"
+  allowCustomConfig = false
+  dateCreated = "2019-10-10T22:50:07.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-10-10T22:50:07.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0ba90b67-245e-4148-8ea5-95253218290b" },
+    { uuid = "0f0f5a8c-7f26-48de-ab79-66423f37ce37" },
+    { uuid = "10e66991-2517-49be-b491-88dbca4e915d" },
+    { uuid = "40743ec3-5da0-4900-ba0e-c5fd0f188dbf" },
+    { uuid = "53ca3e2d-55d2-4c79-a531-858fc2745ec3" },
+    { uuid = "7a77be69-9354-4da3-bd23-7fd149bfd253" },
+    { uuid = "f0fc74f9-a435-4fb4-a6b7-16553bdc8db4" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}

@@ -1,0 +1,9 @@
+resource "task-option" "0ba90b67-245e-4148-8ea5-95253218290b" {
+  uuid = "0ba90b67-245e-4148-8ea5-95253218290b"
+  optionType = { code = "groovyScript" }
+  value = <<EOF
+def account = com.bertramlabs.plugins.Account.get(1)
+def user = com.bertramlabs.plugins.User.get(1)
+println grails.util.Holders.applicationContext['optionSourceService'].azureZonePools([accountId:account.id, currentUser: user])
+EOF
+}
