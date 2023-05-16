@@ -1,0 +1,5 @@
+resource "task-option" "89e43c9a-dd14-44a1-b421-0d48d231355e" {
+  uuid = "89e43c9a-dd14-44a1-b421-0d48d231355e"
+  optionType = { code = "ansibleGitRef" }
+  value = "master"
+}

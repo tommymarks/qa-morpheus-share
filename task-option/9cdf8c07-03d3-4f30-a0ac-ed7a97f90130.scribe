@@ -1,0 +1,5 @@
+resource "task-option" "9cdf8c07-03d3-4f30-a0ac-ed7a97f90130" {
+  uuid = "9cdf8c07-03d3-4f30-a0ac-ed7a97f90130"
+  optionType = { code = "ansiblePlaybook" }
+  value = "tags-test.yml"
+}
