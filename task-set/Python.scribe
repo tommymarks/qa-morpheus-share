@@ -1,0 +1,10 @@
+resource "task-set" "Python" {
+  name = "Python"
+  uuid = "8ecb43d4-6dab-4c80-8ba6-863581c26b1c"
+  dateCreated = "2018-12-05T16:31:37.000Z"
+  lastUpdated = "2018-12-05T16:31:37.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "e0e699b4-2b91-47e7-9d0f-6b4d0c05a54e" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}

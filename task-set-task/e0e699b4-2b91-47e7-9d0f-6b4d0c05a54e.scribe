@@ -1,0 +1,7 @@
+resource "task-set-task" "e0e699b4-2b91-47e7-9d0f-6b4d0c05a54e" {
+  uuid = "e0e699b4-2b91-47e7-9d0f-6b4d0c05a54e"
+  entryTask = false
+  task = { name = "File: Python" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
