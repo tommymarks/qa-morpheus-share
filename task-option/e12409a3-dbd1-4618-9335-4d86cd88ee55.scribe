@@ -1,0 +1,5 @@
+resource "task-option" "e12409a3-dbd1-4618-9335-4d86cd88ee55" {
+  uuid = "e12409a3-dbd1-4618-9335-4d86cd88ee55"
+  optionType = { code = "pythonScript" }
+  value = "print(json.dumps(morpheus))"
+}
