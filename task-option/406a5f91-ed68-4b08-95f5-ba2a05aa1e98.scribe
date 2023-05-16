@@ -1,0 +1,8 @@
+resource "task-option" "406a5f91-ed68-4b08-95f5-ba2a05aa1e98" {
+  uuid = "406a5f91-ed68-4b08-95f5-ba2a05aa1e98"
+  optionType = { code = "jsScript" }
+  value = <<EOF
+output = "HELLO JAVASCRIPT"
+output
+EOF
+}

@@ -1,13 +1,25 @@
 resource "task" "js" {
   code = "js"
-  name = "_Javascript"
-  uuid = "e8a9a067-aa95-4d79-9ad5-0d0418a98252"
+  name = "auto javascript 0511110853709"
+  uuid = "0001e9e4-5a68-4528-b4bb-0c741ed53142"
   allowCustomConfig = false
+  dateCreated = "2023-05-11T18:13:30.000Z"
   executeTarget = "local"
-  lastUpdated = "2022-06-21T19:34:02.000Z"
-  resultType = "json"
+  lastUpdated = "2023-05-11T18:13:30.000Z"
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
   retryable = false
-  taskOptions = [ { uuid = "ed94b1a1-ba21-4203-b66a-cbc037afdf5d" } ]
+  taskOptions = [
+    { uuid = "1aed7069-12f2-483b-8747-295451eadca1" },
+    { uuid = "3ac1f5b8-f490-466f-bb4e-71cd2495f6cf" },
+    { uuid = "406a5f91-ed68-4b08-95f5-ba2a05aa1e98" },
+    { uuid = "4ae1f786-d338-45fb-beb6-5777c945d753" },
+    { uuid = "4bcda02b-0f9a-4097-a2a2-c31a39e5a222" },
+    { uuid = "5d05cc54-d2e5-482c-aa4d-0391441256a3" },
+    { uuid = "6d447f70-5305-4d36-942a-aa572ed36467" },
+    { uuid = "b42c9902-a417-4c55-aaef-79b342f12caa" }
+  ]
   taskType = { code = "javascriptTask" }
   visibility = "private"
 }
