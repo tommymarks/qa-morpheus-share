@@ -1,0 +1,5 @@
+resource "task-option" "9012107d-cc66-4bde-87e7-ec9a78ea74ed" {
+  uuid = "9012107d-cc66-4bde-87e7-ec9a78ea74ed"
+  optionType = { code = "script" }
+  value = "./test.sh"
+}
