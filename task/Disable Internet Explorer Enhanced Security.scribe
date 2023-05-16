@@ -1,0 +1,23 @@
+resource "task" "Disable Internet Explorer Enhanced Security" {
+  name = "Disable Internet Explorer Enhanced Security"
+  uuid = "d503315e-5490-4893-9061-5c27b8eb6f52"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T21:51:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:51:52.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0de0c1cf-fcd5-4739-bf78-90644fb77f06" },
+    { uuid = "5684dfd3-8da7-4a70-8564-2db42b5a8af3" },
+    { uuid = "71218c6d-7f58-4bef-a466-12be09858d41" },
+    { uuid = "81dd4de8-bbf6-45ab-87dc-5ea186cdb285" },
+    { uuid = "abad2dd3-d613-4473-af9b-a2faa8ce12a7" },
+    { uuid = "ce4a6068-81c6-43cd-aefb-61ddf1e2165b" },
+    { uuid = "eba229f8-6a18-4738-9388-43b7e4c8e660" },
+    { uuid = "fe26f480-c00c-42fa-b506-429b6c97db3f" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
