@@ -1,0 +1,5 @@
+resource "task-option" "62903ced-a44b-43c9-b0ca-0155d38d92ca" {
+  uuid = "62903ced-a44b-43c9-b0ca-0155d38d92ca"
+  optionType = { code = "script" }
+  value = "echo "cypher: <%=cypher.read('secret/timetest')%>" | tee -a /tmp/variables.txt"
+}

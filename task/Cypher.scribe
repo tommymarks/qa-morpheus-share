@@ -1,0 +1,11 @@
+resource "task" "Cypher" {
+  name = "Cypher"
+  uuid = "1657b42e-5222-4436-b663-ebefb56944ec"
+  executeTarget = "resource"
+  taskOptions = [
+    { uuid = "62903ced-a44b-43c9-b0ca-0155d38d92ca" },
+    { uuid = "c3a6f022-6515-476f-89e9-cb5cf93371d4" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
