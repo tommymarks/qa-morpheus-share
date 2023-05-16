@@ -1,0 +1,5 @@
+resource "task-option" "44f06b3d-b9aa-4859-a765-ee5a269d4547" {
+  uuid = "44f06b3d-b9aa-4859-a765-ee5a269d4547"
+  optionType = { code = "ansiblePlaybook" }
+  value = "playbook.yml"
+}

@@ -1,0 +1,28 @@
+resource "task" "ansible-nexus-demo" {
+  name = "ansible-nexus-demo"
+  uuid = "072fcc27-823d-4193-976c-db5792b4bc9f"
+  allowCustomConfig = true
+  dateCreated = "2022-02-11T18:50:15.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-11T19:14:03.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = true
+  taskOptions = [
+    { uuid = "05424ed1-43f4-4f27-bf67-2f6f4b662c13" },
+    { uuid = "43ae97ad-e4dc-45a0-b891-286690435d9b" },
+    { uuid = "44f06b3d-b9aa-4859-a765-ee5a269d4547" },
+    { uuid = "56d67b9c-dd2d-4aea-8f9a-d1632708a17b" },
+    { uuid = "6c429b89-b316-4f83-8f71-898db58bfc25" },
+    { uuid = "6ec5d9d4-0e39-4f34-a6ce-d02d586e43c1" },
+    { uuid = "a2e7ce46-339e-4b78-b82e-bece35740304" },
+    { uuid = "c3983864-3ab8-4636-85f0-523a46c50c55" },
+    { uuid = "c7a6f164-1786-4493-94c1-cf8c0a502357" },
+    { uuid = "ccdc8ae9-815d-4212-9194-74ffcbc30717" },
+    { uuid = "dbff00af-09d3-4513-8f27-217fe2982352" },
+    { uuid = "e964c0c6-2b29-4213-a39f-4e59d28ac739" },
+    { uuid = "fd0fdf96-ee1f-42e4-aeb8-0e53a5c2697a" }
+  ]
+  taskType = { code = "ansibleTask" }
+  visibility = "private"
+}
