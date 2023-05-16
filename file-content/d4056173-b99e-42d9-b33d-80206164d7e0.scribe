@@ -1,0 +1,10 @@
+resource "file-content" "d4056173-b99e-42d9-b33d-80206164d7e0" {
+  uuid = "d4056173-b99e-42d9-b33d-80206164d7e0"
+  content = "morpheus.provisionService.morpheusComputeService.grailsApplication.mainContext.getBean('accountUsageService').checkUsages()"
+  dateCreated = "2021-11-18T11:22:06.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-18T11:22:06.000Z"
+  sourceType = "local"
+}
