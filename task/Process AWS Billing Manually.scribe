@@ -1,0 +1,23 @@
+resource "task" "Process AWS Billing Manually" {
+  name = "Process AWS Billing Manually"
+  uuid = "c2827ff6-f27c-44fb-b1d3-dcc726d0b5f0"
+  allowCustomConfig = false
+  dateCreated = "2020-06-16T11:33:37.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-06-16T11:33:37.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "07ba69f2-6343-4444-b088-671cd50af159" },
+    { uuid = "35f76e6d-ecc3-47ef-a970-6699cad1dd81" },
+    { uuid = "3e121931-39fd-450f-a8fd-61435110d3de" },
+    { uuid = "753ff436-1227-49db-9e7b-666647879a04" },
+    { uuid = "be6f78b3-94d8-4c3a-940b-3b5bcd84719c" },
+    { uuid = "dc223422-4242-4cc5-9dc1-24a931d7c9a7" },
+    { uuid = "e4893731-fd25-40cb-befd-3def2f01ca3f" },
+    { uuid = "ee85cb8e-7eff-492d-9a33-7dc0694cccac" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
