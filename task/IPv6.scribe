@@ -1,0 +1,24 @@
+resource "task" "IPv6" {
+  name = "IPv6"
+  uuid = "22579b7f-7f24-4e74-a5c1-1c1fa3dae497"
+  allowCustomConfig = false
+  dateCreated = "2022-11-15T20:23:08.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-11-15T20:26:40.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0c8b739b-4f8b-4a90-ab97-f0d5702ecf5f" },
+    { uuid = "1a40bce4-5a1b-4a4b-bfe2-ed1d7d1facae" },
+    { uuid = "222ba871-4fb2-4d52-8f38-9557bc6cc7b5" },
+    { uuid = "27551284-4549-4fe2-a1db-63fd5a5827b6" },
+    { uuid = "352fa47b-7691-4b1a-b5e4-d5e7e8243fef" },
+    { uuid = "4a0c23f7-4de7-43b0-abef-cac440584762" },
+    { uuid = "943ede5b-a704-4e01-9533-20c93caaf364" },
+    { uuid = "cfa08685-c9aa-432e-89a3-4cc3a7d4c4f9" },
+    { uuid = "ffa4e2cd-5fa9-4b4e-a650-9a08f16d4f90" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
