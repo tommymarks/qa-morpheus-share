@@ -1,0 +1,23 @@
+resource "task" "Cluster Host Statuses" {
+  name = "Cluster Host Statuses"
+  uuid = "5f3768c6-5c8d-4f12-b43a-9227e162a8c7"
+  allowCustomConfig = false
+  dateCreated = "2021-04-28T19:39:13.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-04-28T19:39:13.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "560667bb-a3eb-4436-8c1f-36a983b3dcf4" },
+    { uuid = "6109cf24-146b-4705-82e6-8caf2ab561d9" },
+    { uuid = "78ad3d8c-db43-402b-9812-0d696b56f201" },
+    { uuid = "9989aed9-9ed3-407f-8355-df905afe8c70" },
+    { uuid = "a0714969-09e0-4bcf-872c-a0d5038f5e17" },
+    { uuid = "a833e9b8-9802-403d-a18e-0a297c13272b" },
+    { uuid = "c11b1c85-6972-4db9-b677-e2dea36000db" },
+    { uuid = "c9e1f3bb-73b6-4b9d-8aaa-16366fb25e58" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
