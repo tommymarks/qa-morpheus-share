@@ -1,0 +1,25 @@
+resource "task" "WinRM Test" {
+  name = "WinRM Test"
+  uuid = "3ffe6d84-d21d-4965-87f0-ce86dc0f8f52"
+  allowCustomConfig = false
+  dateCreated = "2023-01-06T10:32:28.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2023-01-06T10:39:48.000Z"
+  resultType = "json"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "069eaa5a-2da5-4b9f-9efe-ed9f1c67ece1" },
+    { uuid = "1225f947-9b1d-4931-8f31-65050c366baf" },
+    { uuid = "5965e4e4-8762-424a-aa49-4d23a1751211" },
+    { uuid = "5fbb3f7b-0bf0-41be-91cc-74a346ab1b0d" },
+    { uuid = "97dfeeb3-1d54-441e-b269-5c1dfe92ce76" },
+    { uuid = "98c7a12f-e147-476f-b5e7-3c969e9e2e17" },
+    { uuid = "b08ea77e-3c33-4e93-9fb8-6ec847f4b586" },
+    { uuid = "d34e6207-a60f-4c71-ab91-b08ac319df5a" },
+    { uuid = "dfdfedcb-3c1a-4653-8983-286d6008cc1c" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}

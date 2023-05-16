@@ -1,0 +1,5 @@
+resource "task-option" "5fbb3f7b-0bf0-41be-91cc-74a346ab1b0d" {
+  uuid = "5fbb3f7b-0bf0-41be-91cc-74a346ab1b0d"
+  optionType = { code = "password" }
+  value = "St1ngray"
+}
