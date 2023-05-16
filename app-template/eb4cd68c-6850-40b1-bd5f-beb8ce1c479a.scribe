@@ -1,0 +1,10 @@
+resource "app-template" "eb4cd68c-6850-40b1-bd5f-beb8ce1c479a" {
+  name = "aws-test"
+  uuid = "eb4cd68c-6850-40b1-bd5f-beb8ce1c479a"
+  active = true
+  custom = false
+  dateCreated = "2021-09-01T20:59:21.000Z"
+  lastUpdated = "2021-09-01T20:59:21.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
