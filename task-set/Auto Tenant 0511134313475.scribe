@@ -1,0 +1,10 @@
+resource "task-set" "Auto Tenant 0511134313475" {
+  name = "Auto Tenant 0511134313475"
+  uuid = "4438a41c-926f-46de-aba4-e5c8d68ed250"
+  allowCustomConfig = false
+  dateCreated = "2023-05-11T20:43:37.000Z"
+  lastUpdated = "2023-05-11T20:46:59.000Z"
+  phase = "postProvision"
+  taskSetType = "provision"
+  visibility = "public"
+}
