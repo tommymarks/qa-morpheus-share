@@ -1,0 +1,11 @@
+resource "app-template" "ce099168-0eb3-4b5b-a1c0-dfd477bcb82a" {
+  name = "db-kubernetes-blueprint-invalidsyntax"
+  uuid = "ce099168-0eb3-4b5b-a1c0-dfd477bcb82a"
+  active = true
+  custom = false
+  dateCreated = "2019-12-04T20:26:20.000Z"
+  lastUpdated = "2019-12-10T19:53:03.000Z"
+  specTemplates = [ { uuid = "93332a6b-6a85-44ae-b513-762989242870" } ]
+  templateType = { code = "kubernetes" }
+  visibility = "private"
+}
