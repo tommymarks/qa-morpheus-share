@@ -1,0 +1,10 @@
+resource "file-content" "5010258f-b958-4a3e-9b81-6db9c1bfaf2b" {
+  uuid = "5010258f-b958-4a3e-9b81-6db9c1bfaf2b"
+  content = "echo "It's the result!""
+  dateCreated = "2022-12-07T00:10:12.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-12-07T00:10:12.000Z"
+  sourceType = "local"
+}
