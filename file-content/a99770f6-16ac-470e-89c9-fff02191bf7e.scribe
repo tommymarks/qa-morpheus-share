@@ -1,0 +1,10 @@
+resource "file-content" "a99770f6-16ac-470e-89c9-fff02191bf7e" {
+  uuid = "a99770f6-16ac-470e-89c9-fff02191bf7e"
+  content = "Install-WindowsFeature Remote-Desktop-Services, RDS-RD-Server, RDS-Licensing –IncludeManagementTools"
+  dateCreated = "2021-11-16T21:50:21.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-16T21:50:21.000Z"
+  sourceType = "local"
+}
