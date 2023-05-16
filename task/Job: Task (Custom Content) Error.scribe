@@ -1,0 +1,24 @@
+resource "task" "Job: Task (Custom Content) Error" {
+  name = "Job: Task (Custom Content) Error"
+  uuid = "2f52b4fe-b559-4ae1-8c65-806633cf0738"
+  allowCustomConfig = false
+  dateCreated = "2022-01-28T15:58:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-01-13T17:22:38.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "541f4b6a-342b-419f-9f4a-7d51f4739221" },
+    { uuid = "6f9f9999-d75c-4da5-8f52-b8a334633371" },
+    { uuid = "70ba7373-6918-490d-89b0-ecaf643b2b52" },
+    { uuid = "79386e0a-2174-4f54-b4d7-93f02bae4dcb" },
+    { uuid = "851e26a7-a51a-4407-ac0a-89e85db03b18" },
+    { uuid = "d8780b1a-3d0f-472b-a9e0-a96b5a9c295f" },
+    { uuid = "d93583f7-1484-405a-bac0-321612809ca1" },
+    { uuid = "ed544f0f-90a8-4120-975c-38e9fd657497" },
+    { uuid = "efc06745-f694-42a9-a3bb-125256a21de3" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
