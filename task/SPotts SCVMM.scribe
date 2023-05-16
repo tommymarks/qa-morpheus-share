@@ -1,0 +1,25 @@
+resource "task" "SPotts SCVMM" {
+  name = "SPotts SCVMM"
+  uuid = "b14cb65a-a0bc-49d6-af22-f0f1b32b245f"
+  allowCustomConfig = false
+  dateCreated = "2022-03-16T13:36:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-03-16T13:47:11.000Z"
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "44eb46bd-5ca2-428e-9f1e-d9f699d2170a" },
+    { uuid = "45839c16-6876-4d74-9938-bd579a786715" },
+    { uuid = "497edcb3-6e81-41d1-801c-c5f706cbaaa3" },
+    { uuid = "600e19f9-43ad-4ecc-9a35-36ac9ef9e314" },
+    { uuid = "8695608f-217f-4130-b456-dfe7f5c4a5da" },
+    { uuid = "b16d1f16-49a2-4e74-a417-841ae88c2e20" },
+    { uuid = "ce618303-9650-429c-9382-42d5e29c781e" },
+    { uuid = "e4f7a8a5-1556-497a-83bb-9d3da11fe3c2" },
+    { uuid = "e7ddf195-39a4-47b0-974b-ccfd8ce56972" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}

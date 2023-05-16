@@ -1,0 +1,10 @@
+resource "file-content" "4e5f8e57-1626-4340-9fb9-92d1d58962ab" {
+  uuid = "4e5f8e57-1626-4340-9fb9-92d1d58962ab"
+  content = "Get-SCVirtualHardDisk | Where-Object {$_.SharePath -like "\\labs-scvmm1.ad.bertramlabs.com\MSSCVMMLibrary\images\morpheus_windows_2012_r2\*"} | Select ID | ConvertTo-Json -Depth 3 "
+  dateCreated = "2022-03-16T13:36:52.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-03-16T13:50:47.000Z"
+  sourceType = "local"
+}
