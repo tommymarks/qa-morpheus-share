@@ -1,0 +1,23 @@
+resource "file-content" "05c64f63-358a-4284-a1a3-f892623d6e0a" {
+  uuid = "05c64f63-358a-4284-a1a3-f892623d6e0a"
+  content = <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nginx-234
+  labels:
+    run: my-nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: myapp-234
+EOF
+  dateCreated = "2020-12-09T21:27:50.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-12-09T21:27:50.000Z"
+  sourceType = "local"
+}
