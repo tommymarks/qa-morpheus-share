@@ -1,0 +1,24 @@
+resource "task" "Check Chef Configuration" {
+  name = "Check Chef Configuration"
+  uuid = "3cf0b748-32b4-46fc-87c2-2877f7a1d322"
+  allowCustomConfig = false
+  dateCreated = "2023-02-28T00:59:53.000Z"
+  executeTarget = "local"
+  labels = [ { name = "utility" } ]
+  lastUpdated = "2023-03-09T23:27:11.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "331c2118-4f94-432f-9972-75c4c204e43b" },
+    { uuid = "67c5bf19-34b4-49ff-a906-96fad1c1e0b6" },
+    { uuid = "6b8c30dd-b5f4-444a-a83d-6685d4942073" },
+    { uuid = "89a5b687-c684-4e5d-a38a-171738a904ff" },
+    { uuid = "99a62200-1b42-4ed4-a369-6e568c218ec0" },
+    { uuid = "bac46ed6-c75b-4fec-a06a-18185936a1c7" },
+    { uuid = "dfcfb298-6735-4998-8537-4314f0486ff0" },
+    { uuid = "fcd13b1e-ad5c-427e-8409-d6905180b33a" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
