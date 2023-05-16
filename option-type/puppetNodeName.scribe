@@ -1,0 +1,23 @@
+resource "option-type" "puppetNodeName" {
+  code = "puppetNodeName"
+  name = "Puppet Node Name"
+  uuid = "6d26d882-41df-410a-b534-04b92701ec32"
+  category = "puppet"
+  advanced = false
+  creatable = true
+  custom = false
+  displayOrder = 3
+  editable = true
+  enabled = true
+  exportEvar = false
+  fieldCode = "gomorpheus.optiontype.PuppetNodeName"
+  fieldContext = "taskOptions"
+  fieldLabel = "Puppet Node Name"
+  fieldName = "puppetNodeName"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}

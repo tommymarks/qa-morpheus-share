@@ -1,0 +1,23 @@
+resource "option-type" "puppetEnvironment" {
+  code = "puppetEnvironment"
+  name = "Agent Environment"
+  uuid = "b6523e9b-24da-4f7f-a205-6413939a067b"
+  category = "puppet"
+  advanced = false
+  creatable = true
+  custom = false
+  displayOrder = 4
+  editable = true
+  enabled = true
+  exportEvar = false
+  fieldCode = "gomorpheus.optiontype.PuppetEnvironment"
+  fieldContext = "taskOptions"
+  fieldLabel = "Puppet Environment"
+  fieldName = "puppetEnvironment"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
