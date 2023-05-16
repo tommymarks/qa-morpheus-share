@@ -1,0 +1,10 @@
+resource "app-template" "977d8fb5-3034-4e07-9562-69bbdd5ae38a" {
+  name = "SNOW: Apache Docker"
+  uuid = "977d8fb5-3034-4e07-9562-69bbdd5ae38a"
+  active = true
+  custom = false
+  dateCreated = "2020-09-16T18:40:33.000Z"
+  lastUpdated = "2021-04-30T15:22:59.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
