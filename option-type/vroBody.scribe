@@ -1,0 +1,26 @@
+resource "option-type" "vroBody" {
+  code = "vroBody"
+  name = "Parameter Body"
+  uuid = "9030c031-cba5-47c3-9857-2af153eefd5e"
+  category = "vro"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 5
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.optiontype.ParameterBody_(json)"
+  fieldContext = "taskOptions"
+  fieldLabel = "Parameter Body (JSON)"
+  fieldName = "vroBody"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "code-editor"
+}

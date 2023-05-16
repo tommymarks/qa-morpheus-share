@@ -1,0 +1,27 @@
+resource "option-type" "vroIntegrationId" {
+  code = "vroIntegrationId"
+  name = "vRO Integration"
+  uuid = "402a5c7e-51b2-4cbd-a308-7bca6d6f3d2a"
+  category = "vro"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 1
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.optiontype.vroIntegration"
+  fieldContext = "taskOptions"
+  fieldLabel = "vRO Integration"
+  fieldName = "vroIntegrationId"
+  global = true
+  noBlank = false
+  optionSource = "vroIntegration"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}
