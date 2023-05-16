@@ -1,0 +1,17 @@
+resource "file-content" "2acce19e-f485-4ad2-881d-ff3e22519fe4" {
+  uuid = "2acce19e-f485-4ad2-881d-ff3e22519fe4"
+  content = <<EOF
+def pattern = ~/([\>\=\<]+)[\ ]?([0-9\.]+)/
+
+def versionString = ">= 6.1.2"
+pattern.matcher(versionString)?.each { match ->
+println match
+}
+EOF
+  dateCreated = "2023-04-20T15:21:38.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-04-20T15:22:58.000Z"
+  sourceType = "local"
+}
