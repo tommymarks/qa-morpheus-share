@@ -1,0 +1,32 @@
+resource "file-content" "6dba5b80-2114-4b4d-af56-abf5ee0dd900" {
+  uuid = "6dba5b80-2114-4b4d-af56-abf5ee0dd900"
+  content = <<EOF
+com.morpheus.ComputeServer.withNewSession { session ->
+def results = com.morpheus.ComputeServer.withCriteria(cache:false) {
+					createAlias('resourcePool', 'resourcePool', org.hibernate.criterion.CriteriaSpecification.LEFT_JOIN)
+                    createAlias('zone','zone')
+					eq('zone.id', 18487L)
+					computeServerType {
+						ne('code', 'vmwareHypervisor')
+						provisionType {
+							eq('code', 'vmware')
+						}
+					}
+					projections {
+						property('uniqueId')
+						property('externalId')
+						property('name')
+						property('status')
+					}
+				}
+ def blNames = results?.findAll { it[3] == 'provisioning' }?.collect { it[2] }
+ println "Results: ${results} -- blackListedNames: ${blNames}"
+}
+EOF
+  dateCreated = "2020-12-14T18:54:04.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-12-14T19:00:41.000Z"
+  sourceType = "local"
+}

@@ -1,0 +1,23 @@
+resource "task" "Testing Vmware Sync TF" {
+  name = "Testing Vmware Sync TF"
+  uuid = "c73bd825-1c6b-409e-b8ff-1d87b48484dd"
+  allowCustomConfig = false
+  dateCreated = "2020-12-14T18:54:04.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-12-14T18:54:04.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "39e14528-9ea9-4776-bca7-3a324eafcf53" },
+    { uuid = "3f1cc82e-13af-4a9d-84fd-c420ef287478" },
+    { uuid = "4bdee486-01d3-4bd2-9bfe-8a809b9aac2c" },
+    { uuid = "7051a653-3478-43b3-8634-632211df3027" },
+    { uuid = "7c3bf914-2838-43c9-9a50-2d8f99ebb2b2" },
+    { uuid = "8fa40b8e-f560-443c-8a61-177a64dcdcfc" },
+    { uuid = "a25f245c-0f46-40f3-ac2f-8f3b7163b817" },
+    { uuid = "ac802567-a245-4da7-bc19-a2f7a4906080" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
