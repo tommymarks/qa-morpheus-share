@@ -1,0 +1,8 @@
+resource "app-template" "46f40d29-4ae7-4a42-87b0-150aaecf463f" {
+  name = "CloudFormation: Ubuntu: 2 Instances"
+  uuid = "46f40d29-4ae7-4a42-87b0-150aaecf463f"
+  active = true
+  custom = false
+  lastUpdated = "2020-08-22T16:17:18.000Z"
+  templateType = { code = "cloudFormation" }
+}
