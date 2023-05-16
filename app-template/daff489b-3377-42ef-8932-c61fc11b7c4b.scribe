@@ -1,0 +1,10 @@
+resource "app-template" "daff489b-3377-42ef-8932-c61fc11b7c4b" {
+  name = "ld-terr-aws-db-instance"
+  uuid = "daff489b-3377-42ef-8932-c61fc11b7c4b"
+  active = true
+  custom = false
+  dateCreated = "2021-08-10T22:33:32.000Z"
+  lastUpdated = "2022-01-04T17:42:38.000Z"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
