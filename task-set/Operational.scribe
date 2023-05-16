@@ -1,0 +1,14 @@
+resource "task-set" "Operational" {
+  name = "Operational"
+  uuid = "8b4da19c-72d7-4fc0-b707-84bcffca6a73"
+  allowCustomConfig = false
+  dateCreated = "2021-06-09T02:30:02.000Z"
+  lastUpdated = "2021-06-09T02:30:02.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "b84c142e-ef69-4772-a03d-f20d47b6e769" },
+    { uuid = "ba6a4902-3782-4d17-825e-5482edc5d9ea" }
+  ]
+  taskSetType = "operation"
+  visibility = "private"
+}
