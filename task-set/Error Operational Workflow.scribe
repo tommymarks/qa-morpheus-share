@@ -1,0 +1,11 @@
+resource "task-set" "Error Operational Workflow" {
+  name = "Error Operational Workflow"
+  uuid = "79cdd9ae-8795-4a72-aca9-434df7897e78"
+  allowCustomConfig = false
+  dateCreated = "2022-01-10T17:50:10.000Z"
+  lastUpdated = "2022-01-10T17:50:10.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "f5831a00-6243-40c5-9daa-663e94f51dc8" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}
