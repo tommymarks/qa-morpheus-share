@@ -1,0 +1,36 @@
+resource "option-type" "parsedNetwork" {
+  code = "parsedNetwork"
+  name = "Parsed Network"
+  uuid = "637be305-d65a-47dc-ad57-ba304584e922"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "parsedCloud"
+  displayOrder = 2
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "parsedNetwork"
+  fieldLabel = "Network"
+  fieldName = "parsedNetwork"
+  fieldSetName = "parsedNetwork"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Parsed Networks" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
