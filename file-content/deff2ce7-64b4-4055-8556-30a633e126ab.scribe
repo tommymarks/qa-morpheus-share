@@ -1,0 +1,14 @@
+resource "file-content" "deff2ce7-64b4-4055-8556-30a633e126ab" {
+  uuid = "deff2ce7-64b4-4055-8556-30a633e126ab"
+  content = <<EOF
+com.morpheus.ComputeServer.withNewSession {
+grails.util.Holders.applicationContext['metadataTagService'].consolidateDuplicateTags()
+}
+EOF
+  dateCreated = "2022-04-06T14:02:38.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-04-06T14:02:38.000Z"
+  sourceType = "local"
+}
