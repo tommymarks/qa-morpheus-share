@@ -1,0 +1,24 @@
+resource "task" "pyprint" {
+  code = "pyprint"
+  name = "PyPrint"
+  uuid = "c991742b-6ca2-4ad0-b77e-caeaa0baf8c5"
+  allowCustomConfig = false
+  dateCreated = "2019-09-19T20:51:00.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T20:51:00.000Z"
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0aafab73-1b59-42e3-b041-a3c4387ded0f" },
+    { uuid = "73009c54-e68e-4f84-b892-0caae40a49f5" },
+    { uuid = "8a52df49-fb55-47a7-aece-126dc8e7a661" },
+    { uuid = "8c7b0d66-749e-407e-bf7d-caf69ebfa9c8" },
+    { uuid = "9b0f1b1e-60cb-46db-b0ff-56b3ca1968a6" },
+    { uuid = "b1c352b8-4261-48ed-9e3f-1877ae10c8f0" },
+    { uuid = "c31afdb1-03c9-4369-8632-dcc3b32aa679" }
+  ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
