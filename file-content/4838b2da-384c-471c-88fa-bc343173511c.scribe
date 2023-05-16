@@ -1,0 +1,10 @@
+resource "file-content" "4838b2da-384c-471c-88fa-bc343173511c" {
+  uuid = "4838b2da-384c-471c-88fa-bc343173511c"
+  content = "echo version 1.0 > /version.txt"
+  dateCreated = "2021-03-24T22:55:09.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-03-24T22:55:09.000Z"
+  sourceType = "local"
+}
