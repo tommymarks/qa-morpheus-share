@@ -1,0 +1,10 @@
+resource "app-template" "0778a4c1-3433-47ac-8e7e-cc2e2a4180f5" {
+  name = "ld-helm"
+  uuid = "0778a4c1-3433-47ac-8e7e-cc2e2a4180f5"
+  active = true
+  custom = false
+  dateCreated = "2021-07-16T19:10:47.000Z"
+  lastUpdated = "2022-04-28T22:22:10.000Z"
+  templateType = { code = "helm" }
+  visibility = "public"
+}
