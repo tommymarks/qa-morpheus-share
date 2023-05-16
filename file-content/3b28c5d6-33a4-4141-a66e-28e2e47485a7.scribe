@@ -1,0 +1,23 @@
+resource "file-content" "3b28c5d6-33a4-4141-a66e-28e2e47485a7" {
+  uuid = "3b28c5d6-33a4-4141-a66e-28e2e47485a7"
+  content = <<EOF
+com.morpheus.ComputeZone.withNewSession {
+String period = '202112'
+com.morpheus.ComputeZone currentZone = com.morpheus.ComputeZone.get(21917L)
+def usageZones = null
+				def zones = usageZones ? com.morpheus.ComputeZone.where{ owner.id == currentZone.owner.id && externalId in usageZones }.list() : [currentZone]
+				Collection invoiceIds = com.morpheus.AccountInvoice.where{zoneId in zones.collect{it.id} && period == period && refType != 'ComputeZone' }.property('id').list()
+                println("Invoice Ids: ${invoiceIds.size()}")
+//grails.util.Holders.applicationContext['amazonCostingService'].asyncSummarizeCloudInvoice(com.morpheus.ComputeZone.get(21917L),'202112', new Date(),null)
+println grails.util.Holders.applicationContext['accountInvoiceService'].recalculateCloudInvoiceLineItemTotals(com.morpheus.AccountInvoice.where{id == 1738405L}.join('lineItems').list().first())
+
+}
+return null
+EOF
+  dateCreated = "2021-12-07T23:57:38.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-12-08T00:34:24.000Z"
+  sourceType = "local"
+}
