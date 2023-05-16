@@ -1,0 +1,10 @@
+resource "app-template" "1f2c6eaa-3856-475e-971c-cf2675ff98b6" {
+  name = "ARM: Resource Group with Tags (2019-04-01 Schema)"
+  uuid = "1f2c6eaa-3856-475e-971c-cf2675ff98b6"
+  active = true
+  custom = false
+  dateCreated = "2020-04-17T16:07:38.000Z"
+  lastUpdated = "2020-04-17T16:07:38.000Z"
+  templateType = { code = "arm" }
+  visibility = "private"
+}
