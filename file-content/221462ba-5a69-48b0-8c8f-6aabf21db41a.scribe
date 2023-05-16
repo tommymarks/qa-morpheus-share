@@ -1,0 +1,15 @@
+resource "file-content" "221462ba-5a69-48b0-8c8f-6aabf21db41a" {
+  uuid = "221462ba-5a69-48b0-8c8f-6aabf21db41a"
+  content = <<EOF
+com.morpheus.ComputeServer.withNewSession {
+def server = com.morpheus.ComputeServer.get(708558L)
+  grails.util.Holders.applicationContext['statsService'].sendStatJobsToServer(server.id,server.apiKey,true,null,true)
+}
+EOF
+  dateCreated = "2022-04-12T22:18:12.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-04-12T22:18:12.000Z"
+  sourceType = "local"
+}
