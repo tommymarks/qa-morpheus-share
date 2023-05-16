@@ -1,0 +1,24 @@
+resource "task" "Cost Center Variable" {
+  name = "Cost Center Variable"
+  uuid = "d5a89080-9b29-498b-86ba-b09ceb2881a6"
+  allowCustomConfig = false
+  dateCreated = "2021-08-06T22:50:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-08-06T22:50:55.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "46acf035-59aa-4447-93f3-011866b57e1b" },
+    { uuid = "496e900b-981b-4c3d-a3d0-91a1314f94f8" },
+    { uuid = "53c72b3e-9293-4972-a9be-bb708a91b052" },
+    { uuid = "656964d3-6c6b-4ac0-8ab7-21b3e6c0dcc7" },
+    { uuid = "893e7b56-342d-4a2d-a44a-76f1582fea1f" },
+    { uuid = "9af6569c-acf2-4550-9c4e-49c60c014da1" },
+    { uuid = "ad3721a3-e922-4840-ab12-87b416609dc4" },
+    { uuid = "bc45255c-13ae-451f-83dd-df441b9dc31b" },
+    { uuid = "eee64814-de0c-4d34-966f-ae81867ba29f" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

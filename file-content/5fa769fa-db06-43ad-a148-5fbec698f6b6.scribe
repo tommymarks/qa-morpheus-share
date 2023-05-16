@@ -1,0 +1,15 @@
+resource "file-content" "5fa769fa-db06-43ad-a148-5fbec698f6b6" {
+  uuid = "5fa769fa-db06-43ad-a148-5fbec698f6b6"
+  content = <<EOF
+echo "hello world!" | tee -a /var/tmp/variables.txt
+echo "customOptions.costCenter: <%=customOptions.costCenter%>" | tee -a /var/tmp/variables.txt
+
+
+EOF
+  dateCreated = "2021-08-06T22:50:18.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-08-06T22:57:18.000Z"
+  sourceType = "local"
+}
