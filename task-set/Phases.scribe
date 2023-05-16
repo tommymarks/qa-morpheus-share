@@ -1,0 +1,31 @@
+resource "task-set" "Phases" {
+  name = "Phases"
+  uuid = "ca39223a-58cf-4ce3-b230-37c8b1022ff3"
+  dateCreated = "2017-05-05T05:18:11.000Z"
+  description = "phase file test"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-03-16T00:00:18.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "28cef0e1-273b-4fe1-a1b5-ab7e7092bec5" },
+    { uuid = "300ad327-8402-4ef4-9e6c-525b22404d58" },
+    { uuid = "328dc74f-42e4-4a4b-9f63-443d29dae985" },
+    { uuid = "37a751fd-bbd1-442f-bd2e-0bc89a0cfd26" },
+    { uuid = "483bc1c0-52da-407b-8a92-8b48c286cbd1" },
+    { uuid = "4a5338fb-604c-4df5-a19c-bd58003319f5" },
+    { uuid = "4e7d3c05-025d-4b1f-8977-30c8a7208f5b" },
+    { uuid = "561a499f-eee4-490d-a9c6-9e55079c9af8" },
+    { uuid = "67d4edee-b7e4-46da-a590-0ef8f3e9884f" },
+    { uuid = "688f407f-edc5-4130-b373-11eea0690821" },
+    { uuid = "68aca3b0-7742-4fab-8c5c-1fa21d55a45d" },
+    { uuid = "6ca6b731-8c36-4ce8-afa7-6c0baf7035f0" },
+    { uuid = "8640319f-7aac-4aee-b6fa-95e2c790efc6" },
+    { uuid = "aa1de7cf-49e3-4858-9c08-d3ffa3a35c24" },
+    { uuid = "b8316978-cbe7-4eeb-ae5b-8cfe1f466bc2" },
+    { uuid = "c4c6062c-6854-4518-b914-56be31cdc980" },
+    { uuid = "dffc2205-faf9-4cc3-b17b-d5afb2d3a25d" },
+    { uuid = "ee3162a5-320a-4033-a714-898273929747" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
