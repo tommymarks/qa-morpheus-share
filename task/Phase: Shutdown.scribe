@@ -1,0 +1,24 @@
+resource "task" "Phase: Shutdown" {
+  name = "Phase: Shutdown"
+  uuid = "ac2bf8e3-e809-427f-913f-f9c869cf1758"
+  allowCustomConfig = false
+  dateCreated = "2021-02-18T16:18:41.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-18T18:17:09.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "078a1c26-fb38-4a59-8769-ea17f125f834" },
+    { uuid = "17b2d2c2-a216-4211-8537-16b26bedb45e" },
+    { uuid = "18e2f9c6-9aa8-4050-9f0a-c2acdec7dfcf" },
+    { uuid = "29302b10-e9e2-47d1-9760-f3e92b678cd8" },
+    { uuid = "6203a32c-5902-4242-bca3-1d729ff14df8" },
+    { uuid = "7a64c1e2-410e-4ad1-a07b-0f0db31ffd7e" },
+    { uuid = "872dfa64-8a8b-414b-b143-453af414fbff" },
+    { uuid = "b6d2d36b-ac84-4716-a650-62468f454c44" },
+    { uuid = "ce80d23a-b8c2-4320-8cde-b468aae5bdb2" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
