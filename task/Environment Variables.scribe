@@ -1,0 +1,11 @@
+resource "task" "Environment Variables" {
+  name = "Environment Variables"
+  uuid = "0a0b3929-53ae-4563-a34c-a800855eb4da"
+  executeTarget = "resource"
+  taskOptions = [
+    { uuid = "5e8fa310-01f2-4c9f-81f7-9c1d90965cb7" },
+    { uuid = "e114bb9e-dd17-4090-b314-30dc059a78cf" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

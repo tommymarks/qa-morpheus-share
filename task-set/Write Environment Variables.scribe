@@ -1,0 +1,10 @@
+resource "task-set" "Write Environment Variables" {
+  name = "Write Environment Variables"
+  uuid = "4349b139-36da-428e-bb94-86f5e475f074"
+  dateCreated = "2017-05-25T18:21:44.000Z"
+  lastUpdated = "2017-05-25T18:21:44.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "648d9d6d-1d46-4256-9636-6f89065bc93b" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
