@@ -1,0 +1,21 @@
+resource "task" "Phase: Provision Three" {
+  name = "Phase: Provision Three"
+  uuid = "de92a29b-05e5-4a45-96aa-7a0897bb9835"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:17:27.000Z"
+  retryable = false
+  taskOptions = [
+    { uuid = "0bf2adca-7df2-420b-80c8-b7bc958b1dc5" },
+    { uuid = "17a581a6-872d-4e7f-9dc5-3c0ec04d23cc" },
+    { uuid = "38d57182-fe0b-4b14-8d0f-553055c9887d" },
+    { uuid = "48e7f9f2-6550-49ab-ae72-19e3b9523dfa" },
+    { uuid = "adbf1759-b973-4167-8737-7de9e29581ba" },
+    { uuid = "bb06570f-1005-4a61-80b8-2bb5b37a1386" },
+    { uuid = "bb4e3386-af42-4c2f-b5a2-556e7a77ac2f" },
+    { uuid = "d5255f0d-9b4b-42e2-b855-d63399920ee6" },
+    { uuid = "e7e3a96e-675a-4dbe-a13b-f14c4910d9ed" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

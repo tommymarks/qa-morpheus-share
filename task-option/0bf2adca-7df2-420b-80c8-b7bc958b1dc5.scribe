@@ -1,0 +1,6 @@
+resource "task-option" "0bf2adca-7df2-420b-80c8-b7bc958b1dc5" {
+  uuid = "0bf2adca-7df2-420b-80c8-b7bc958b1dc5"
+  optionType = { code = "script" }
+  template = { uuid = "c47b14a1-4ea4-4524-970c-4e424c9df4ac" }
+  value = "echo "$(date) - provision3" | tee -a /tmp/phase_task.txt"
+}
