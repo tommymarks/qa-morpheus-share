@@ -1,0 +1,13 @@
+resource "file-content" "efdd7cd2-874a-443f-887c-a1bc78956308" {
+  uuid = "efdd7cd2-874a-443f-887c-a1bc78956308"
+  content = <<EOF
+echo "$(date) - provision" | tee -a /var/tmp/xaas.txt
+echo whaddup
+EOF
+  dateCreated = "2022-01-06T05:06:32.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-01-06T05:06:32.000Z"
+  sourceType = "local"
+}
