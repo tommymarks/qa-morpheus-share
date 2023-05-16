@@ -1,0 +1,21 @@
+resource "task" "z REMOTE - LOCAL" {
+  name = "z REMOTE - LOCAL"
+  uuid = "8e077af8-422f-46d0-b7fd-58fab13fbff7"
+  dateCreated = "2019-06-25T17:24:19.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-06-27T00:17:15.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0f00f85e-c7ce-49c7-ba30-c2eef968ec12" },
+    { uuid = "2f103c20-12ee-465b-bdbe-fcd1db3f7bf7" },
+    { uuid = "9337477b-8c8d-4831-bfcf-75e088ce599d" },
+    { uuid = "948d0d06-a4f7-483e-b38b-64f699c191bb" },
+    { uuid = "bb518c46-9d3b-4b20-9927-3a78b2c4673f" },
+    { uuid = "bcb8c2cf-a755-46cd-a627-b7026ebf2c5a" },
+    { uuid = "edfb6180-7577-4913-83e9-503450d9862c" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
