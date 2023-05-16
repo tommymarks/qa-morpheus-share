@@ -1,0 +1,20 @@
+resource "task-set" "TM Op Workflow" {
+  name = "TM Op Workflow"
+  uuid = "af2819cd-c7b7-4fb7-805c-b5ceb1d489cb"
+  allowCustomConfig = false
+  dateCreated = "2019-10-04T18:31:23.000Z"
+  lastUpdated = "2020-02-06T22:28:53.000Z"
+  optionTypes = [
+    { code = "text1" },
+    { code = "password1" },
+    { code = "checkbox1" },
+    { uuid = "3ebf8c9c-1915-4cb7-aa01-a0131ba2e70f" },
+    { code = "number1" },
+    { code = "select1" },
+    { code = "typeahead1" }
+  ]
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "e3de536c-fce9-49d2-ac35-c387b9578e33" } ]
+  taskSetType = "operation"
+  visibility = "public"
+}

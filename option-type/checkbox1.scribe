@@ -1,0 +1,29 @@
+resource "option-type" "checkbox1" {
+  code = "checkbox1"
+  name = "config.customOptions.checkbox1"
+  uuid = "363e5dde-e4db-4960-a852-19727aa176f1"
+  advanced = false
+  creatable = true
+  custom = false
+  defaultValue = "on"
+  description = "sample checkbox field"
+  displayOrder = 1
+  displayValueOnDetails = false
+  editable = true
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "checkbox1"
+  fieldLabel = "Checkbox 1"
+  fieldName = "checkbox1"
+  fieldSetName = "checkbox1"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnEdit = false
+  tenantEditable = false
+  type = "checkbox"
+}
