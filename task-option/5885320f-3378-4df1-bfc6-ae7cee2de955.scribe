@@ -1,0 +1,5 @@
+resource "task-option" "5885320f-3378-4df1-bfc6-ae7cee2de955" {
+  uuid = "5885320f-3378-4df1-bfc6-ae7cee2de955"
+  optionType = { code = "script" }
+  value = "sudo sync; echo 3 > /proc/sys/vm/drop_caches"
+}
