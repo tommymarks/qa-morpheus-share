@@ -1,0 +1,14 @@
+resource "file-content" "55113840-d443-4455-9759-b124798a69a5" {
+  uuid = "55113840-d443-4455-9759-b124798a69a5"
+  content = <<EOF
+//write(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Long)
+     
+cypher.write("secret/testTokenLastCallTime", "hello", useOwner=true, leaseTimeOut=null)
+EOF
+  dateCreated = "2023-03-08T21:15:43.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-08T21:15:43.000Z"
+  sourceType = "local"
+}
