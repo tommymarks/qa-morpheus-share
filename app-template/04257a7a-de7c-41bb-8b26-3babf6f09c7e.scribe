@@ -1,0 +1,8 @@
+resource "app-template" "04257a7a-de7c-41bb-8b26-3babf6f09c7e" {
+  name = "Terraform: AWS"
+  uuid = "04257a7a-de7c-41bb-8b26-3babf6f09c7e"
+  active = true
+  custom = false
+  lastUpdated = "2021-12-21T17:45:52.000Z"
+  templateType = { code = "terraform" }
+}
