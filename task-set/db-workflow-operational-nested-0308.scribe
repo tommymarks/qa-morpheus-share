@@ -1,0 +1,11 @@
+resource "task-set" "db-workflow-operational-nested-0308" {
+  name = "db-workflow-operational-nested-0308"
+  uuid = "8f6da41d-0774-4b92-8339-4b7802326716"
+  allowCustomConfig = false
+  dateCreated = "2023-02-28T19:36:07.000Z"
+  lastUpdated = "2023-03-09T19:30:45.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "66865a83-0e40-4853-8d37-ad026149e49c" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}

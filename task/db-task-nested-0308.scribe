@@ -1,0 +1,25 @@
+resource "task" "db-task-nested-0308" {
+  code = "db-task-nested-0308"
+  name = "db-task-nested-0308"
+  uuid = "cc02803f-4666-4bb5-98ea-722ae1e4e84b"
+  allowCustomConfig = false
+  dateCreated = "2023-03-09T05:28:49.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-09T19:33:58.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "23f2ee5f-1011-416b-b3a7-b8edeb087ddf" },
+    { uuid = "4cb1e4cf-68fd-4727-bc7a-39757979c21c" },
+    { uuid = "85d2cb59-1875-4dea-b6a5-ed2405c61055" },
+    { uuid = "8e89cd44-d1d3-4f15-b372-64cf18963e52" },
+    { uuid = "9353d56b-b11c-44cd-956f-63d3dd789fa6" },
+    { uuid = "ae2b8992-1f10-4a9b-bedc-b64475955f47" },
+    { uuid = "b37e6c36-0242-4b5a-9f03-68e9c2ca71d3" },
+    { uuid = "d5c24fc0-9327-4014-a491-d13d01bac0be" },
+    { uuid = "df49bdfd-86d8-4776-a52d-8c78042f9b1e" }
+  ]
+  taskType = { code = "nestedWorkflow" }
+  visibility = "private"
+}
