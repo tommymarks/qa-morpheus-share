@@ -1,0 +1,19 @@
+resource "file-content" "ab667653-6219-4e02-8976-995d52457db6" {
+  uuid = "ab667653-6219-4e02-8976-995d52457db6"
+  content = <<EOF
+com.morpheus.ComputeServer.withNewSession {
+
+def ips = grails.util.Holders.applicationContext['settingsService'].getSetting('applianceAddresses', 'appliance')?.value
+def ipParsed = grails.converters.JSON.parse(ips)
+println ipParsed.collect { return "'${it}'" }
+println com.morpheus.MorpheusUtils.getIpv4Addresses()
+println grails.util.Holders.applicationContext['morpheusComputeService'].getSourceIpList()
+}
+EOF
+  dateCreated = "2022-02-09T01:37:32.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-02-09T01:42:05.000Z"
+  sourceType = "local"
+}
