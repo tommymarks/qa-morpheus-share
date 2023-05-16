@@ -1,0 +1,27 @@
+resource "option-type" "emailSkipTemplate" {
+  code = "emailSkipTemplate"
+  name = "Skip wrapped email template"
+  uuid = "d522f499-569b-494f-9144-a9ada009c6e2"
+  category = "email"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 6
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.optiontype.emailSkipTemplate"
+  fieldContext = "taskOptions"
+  fieldLabel = "Skip wrapped email template"
+  fieldName = "emailSkipTemplate"
+  global = true
+  groupExpand = false
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "checkbox"
+}

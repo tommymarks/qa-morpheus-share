@@ -1,0 +1,19 @@
+resource "file-content" "e29497c5-2f60-4782-a6d5-3d6b49435876" {
+  uuid = "e29497c5-2f60-4782-a6d5-3d6b49435876"
+  content = <<EOF
+#echo '{"instance":{"name":"tm-instance","hostName":"tm-hostname"}}'
+#echo '{"spec":{"instance":{"name":"tm-instance","hostName":"tm-hostname"}}}'
+
+#SPEC='{"spec":<%=spec.encodeAsJson().toString().replaceAll("tmtest","tmtesting")%>}'
+#echo $SPEC
+
+echo "hello shell"
+echo '<%=spec.encodeAsJson().toString()%>'
+EOF
+  dateCreated = "2020-11-04T16:10:20.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-11-04T23:10:04.000Z"
+  sourceType = "local"
+}

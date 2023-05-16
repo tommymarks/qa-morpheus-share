@@ -1,0 +1,23 @@
+resource "task" "! Shell" {
+  name = "! Shell"
+  uuid = "8bd117ec-298d-44b3-9c7d-f8cf538809a1"
+  allowCustomConfig = false
+  dateCreated = "2020-11-04T16:10:19.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-11-04T23:00:53.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "04707f33-8399-47ff-baaa-0d81a0aa1b8c" },
+    { uuid = "0c153657-01f1-41c0-86be-e476f4634cfd" },
+    { uuid = "3cff38f8-3081-4dfe-8dee-0e18babf1023" },
+    { uuid = "5972bde4-5ddf-4717-ac13-6bb0c2faf193" },
+    { uuid = "787f0920-487f-44fe-b08b-9600f5b399d5" },
+    { uuid = "7cfc7f23-b024-4df5-8580-1dc69c5732e7" },
+    { uuid = "9a358fae-327e-4ee6-bddc-524e3c4efe9d" },
+    { uuid = "c65e75ab-abb2-4999-80fc-1b12c5de8bda" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

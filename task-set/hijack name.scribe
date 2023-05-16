@@ -1,0 +1,17 @@
+resource "task-set" "hijack name" {
+  name = "hijack name"
+  uuid = "b48c3bfa-8ced-4127-9297-3088d577719c"
+  allowCustomConfig = false
+  dateCreated = "2020-10-29T20:37:30.000Z"
+  lastUpdated = "2020-11-04T23:01:57.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "1b0f3c8b-058f-4c1f-9b19-16f3e97cf97d" },
+    { uuid = "341a995a-7092-4ac5-84dc-263d0d1bcec8" },
+    { uuid = "5adfcdc9-5b01-40ad-9f15-654f3e5739e7" },
+    { uuid = "c39da9cb-672a-4191-a6ca-a552fc72ac91" },
+    { uuid = "d51b2ae4-5adc-4e09-b4ad-b6e42b6c0dd8" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}

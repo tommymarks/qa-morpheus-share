@@ -1,0 +1,26 @@
+resource "task" "! Python" {
+  name = "! Python"
+  uuid = "b9373de3-26ab-4260-9c5f-470f7553fcc2"
+  allowCustomConfig = false
+  dateCreated = "2020-11-03T03:23:28.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-11-03T03:23:28.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "2e61bee5-6c63-47cc-8858-2e7e3178303c" },
+    { uuid = "5aedae80-ed4e-4d3a-a2e6-9d528a99fa0a" },
+    { uuid = "5f4f9c99-eb27-4e0e-acc4-e59a5d5ff607" },
+    { uuid = "67e5f1d4-667f-4f95-affa-dcc9cc4855c8" },
+    { uuid = "71eced9a-37ae-4f47-9ad7-c8b3b1ce075b" },
+    { uuid = "7d4f1e0c-dfd0-4773-9c0b-03de13f4b072" },
+    { uuid = "a418b990-bd57-4dc0-a9ab-9ef140f438a7" },
+    { uuid = "c2f25939-4e69-46a7-b023-2adc225a4018" },
+    { uuid = "c919654e-8970-4df4-8d88-2444e58a77b2" },
+    { uuid = "daf1f134-c54d-42b7-b07a-ffddf6868b39" },
+    { uuid = "f50162c9-afcb-4a39-ba71-3a6b7bcd651e" }
+  ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
