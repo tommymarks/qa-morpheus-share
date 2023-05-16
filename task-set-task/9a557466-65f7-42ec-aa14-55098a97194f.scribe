@@ -1,0 +1,7 @@
+resource "task-set-task" "9a557466-65f7-42ec-aa14-55098a97194f" {
+  uuid = "9a557466-65f7-42ec-aa14-55098a97194f"
+  entryTask = false
+  task = { name = "a Sudo Test 1" }
+  taskOrder = 0
+  taskPhase = "operation"
+}
