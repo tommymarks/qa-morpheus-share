@@ -1,0 +1,23 @@
+resource "task" "XaaS: Reconfigure" {
+  name = "XaaS: Reconfigure"
+  uuid = "98276a91-4037-4206-9545-2371225f0ed8"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:07:52.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:07:52.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0717c67f-4508-4143-9807-e27252137d55" },
+    { uuid = "0edfe30a-cbfa-44bb-9ad2-ba216589a808" },
+    { uuid = "1ce3bdb9-4ce1-4210-97bb-adbefadbd2d1" },
+    { uuid = "21272872-5039-42ef-86d4-ae972aced4aa" },
+    { uuid = "22126eb8-be21-4996-85c8-f35d57a54689" },
+    { uuid = "6e6ad55c-1e12-4a7f-abd2-d4d5b5364b6d" },
+    { uuid = "830b6c1b-5f28-4c62-bb3f-7ebfc0409591" },
+    { uuid = "de3361ae-7abd-4ed6-b28c-45fab52a5be2" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
