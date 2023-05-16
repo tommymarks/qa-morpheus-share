@@ -1,0 +1,5 @@
+resource "task-option" "dbf6a9a0-20d5-4744-92ef-85a8697fb514" {
+  uuid = "dbf6a9a0-20d5-4744-92ef-85a8697fb514"
+  optionType = { code = "emailSubject" }
+  value = "DB Email"
+}

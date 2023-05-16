@@ -1,0 +1,26 @@
+resource "task" "db email" {
+  name = "db email"
+  uuid = "1f58e0f8-5065-4754-bf40-ac69ce719c9b"
+  allowCustomConfig = false
+  dateCreated = "2022-01-25T20:50:27.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-25T20:50:27.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "4659a06a-79ce-4f59-ac54-f8ba98c1de51" },
+    { uuid = "65c3f969-aeab-4bfc-980c-f5190533de0b" },
+    { uuid = "6f72d263-09a0-44c0-87f1-d581d7b9f16b" },
+    { uuid = "9688019d-c035-4f6c-be37-43bf4407b5ad" },
+    { uuid = "96d19ca3-4d16-4dd9-8ba4-16fda1157243" },
+    { uuid = "af37b890-82a5-45a7-9959-88677b465eb0" },
+    { uuid = "b9807a9e-0cee-4ce9-a459-0ad2f0487a6d" },
+    { uuid = "d9865d7a-13e5-4338-85f7-c29b5b37d33c" },
+    { uuid = "dbf6a9a0-20d5-4744-92ef-85a8697fb514" },
+    { uuid = "e6d6d545-8393-4c56-802f-b05311954a0b" },
+    { uuid = "e82da12c-531d-4648-94e3-b7cdb3c411a8" }
+  ]
+  taskType = { code = "email" }
+  visibility = "private"
+}

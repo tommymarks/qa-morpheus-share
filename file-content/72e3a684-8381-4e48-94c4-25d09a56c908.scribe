@@ -1,0 +1,12 @@
+resource "file-content" "72e3a684-8381-4e48-94c4-25d09a56c908" {
+  uuid = "72e3a684-8381-4e48-94c4-25d09a56c908"
+  contentPath = "./scripts/email.html"
+  contentRef = "auto"
+  dateCreated = "2022-01-25T20:50:27.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-01-25T21:04:12.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}
