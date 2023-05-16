@@ -1,0 +1,25 @@
+resource "task" "db-powershell" {
+  code = "db-powershell"
+  name = "db-powershell"
+  uuid = "447e9ebe-217a-4d3b-954b-ae8fd87b6c3b"
+  allowCustomConfig = false
+  dateCreated = "2020-11-10T21:16:08.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2021-09-24T23:00:23.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "22c3e4fe-5686-48f9-9239-b00e214c85a7" },
+    { uuid = "3bbc8bf4-8e50-4156-816f-0e281250a886" },
+    { uuid = "68a54aa6-2ac6-488b-b37a-fe6e16f6f915" },
+    { uuid = "7a504630-930c-4b7f-88e3-862c06a7a342" },
+    { uuid = "7d1a9949-f725-4efa-9dcc-c791ca4716a1" },
+    { uuid = "7ef037c5-83c2-47db-8726-7436848101fe" },
+    { uuid = "cf841eea-26aa-4290-9647-45e22d341c2b" },
+    { uuid = "dffbbf5e-1ac7-4b88-983c-4b0797acb96f" },
+    { uuid = "e1b088f6-7bf0-464f-8488-cf9db6de237e" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
