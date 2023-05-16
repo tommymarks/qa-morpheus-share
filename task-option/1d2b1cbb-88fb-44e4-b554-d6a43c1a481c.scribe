@@ -1,0 +1,5 @@
+resource "task-option" "1d2b1cbb-88fb-44e4-b554-d6a43c1a481c" {
+  uuid = "1d2b1cbb-88fb-44e4-b554-d6a43c1a481c"
+  optionType = { code = "ansiblePlaybook" }
+  value = "phil.yml"
+}
