@@ -1,0 +1,5 @@
+resource "task-option" "7515bb35-dbd9-4406-bf79-b21a0c6dc9f1" {
+  uuid = "7515bb35-dbd9-4406-bf79-b21a0c6dc9f1"
+  optionType = { code = "username" }
+  value = "tmarks"
+}

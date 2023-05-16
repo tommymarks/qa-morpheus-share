@@ -1,0 +1,24 @@
+resource "task" "List Windows Users" {
+  name = "List Windows Users"
+  uuid = "e3e3971d-d865-42fd-8a0b-f0ee14a7c571"
+  allowCustomConfig = false
+  dateCreated = "2021-10-18T17:32:50.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2021-10-18T18:49:25.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "7515bb35-dbd9-4406-bf79-b21a0c6dc9f1" },
+    { uuid = "86ce274a-df47-4e91-86c5-1be84291ac09" },
+    { uuid = "8b8ab2a1-e5ca-4f82-b9c2-1794e19ad29d" },
+    { uuid = "8fb1f345-aed0-46fc-9bd7-ccb2080c87ef" },
+    { uuid = "b42df456-4c75-4cf0-8b99-d54b2d0c3560" },
+    { uuid = "d72be798-d4e4-45ce-9d87-93708f27c8f8" },
+    { uuid = "d9785244-4c04-410b-a9c4-32741a1dcde0" },
+    { uuid = "e9bcc42b-f486-4593-88c3-b92ca7574c36" },
+    { uuid = "ffa85bcd-e9b7-4aad-a828-436e22cdcd0c" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
