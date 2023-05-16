@@ -1,0 +1,21 @@
+resource "option-type-list" "Target Security Groups" {
+  name = "Target Security Groups"
+  uuid = "38e69f12-75ee-4cac-adca-af4e177fce5f"
+  apiType = "securityGroups"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = <<EOF
+if (input.targetCloud && input.targetPool) {
+  results.poolId = input.targetPool
+  results.zoneId = input.targetCloud
+}
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+results.push({name:data[x].name, value:data[x].id});
+    }
+EOF
+  type = "api"
+  visibility = "public"
+}
