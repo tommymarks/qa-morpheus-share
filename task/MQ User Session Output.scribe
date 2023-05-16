@@ -1,0 +1,22 @@
+resource "task" "MQ User Session Output" {
+  name = "MQ User Session Output"
+  uuid = "990b14f9-b6a5-4e81-b887-f5388d568c23"
+  allowCustomConfig = false
+  dateCreated = "2020-02-21T22:45:12.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-07-12T05:51:55.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "07e6ceb3-1f9d-42da-a116-e669e97ca985" },
+    { uuid = "08027695-7669-4891-a9f8-e68b7328d9d8" },
+    { uuid = "22c6698a-1de9-41f2-91f2-22c892df43b0" },
+    { uuid = "b531a0b6-4c09-4223-b232-e501b48770bf" },
+    { uuid = "b7d9693a-5600-4733-b05e-d0036eec5404" },
+    { uuid = "d5eab26a-41b4-43e3-9f29-b47ce5cd553e" },
+    { uuid = "f1eeeccb-8172-4684-a441-454c41f9295c" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}

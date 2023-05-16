@@ -1,0 +1,19 @@
+resource "file-content" "2d6008e4-8138-4c1c-9c82-746574746f20" {
+  uuid = "2d6008e4-8138-4c1c-9c82-746574746f20"
+  content = <<EOF
+import java.net.InetAddress;
+def ip = InetAddress.getLocalHost();
+def hostname = ip.getHostName();
+println("Host: ${hostname}")
+grails.util.Holders.applicationContext.getBean('userRegistry').users?.each { user ->
+    println "${user.name},${user.sessions?.collect{it.id}?.join(',')}"
+}
+return null
+EOF
+  dateCreated = "2020-02-21T22:45:12.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-02-21T22:45:12.000Z"
+  sourceType = "local"
+}
