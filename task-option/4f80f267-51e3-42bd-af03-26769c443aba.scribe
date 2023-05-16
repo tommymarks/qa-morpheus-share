@@ -1,0 +1,4 @@
+resource "task-option" "4f80f267-51e3-42bd-af03-26769c443aba" {
+  uuid = "4f80f267-51e3-42bd-af03-26769c443aba"
+  optionType = { code = "localScriptGitRef" }
+}

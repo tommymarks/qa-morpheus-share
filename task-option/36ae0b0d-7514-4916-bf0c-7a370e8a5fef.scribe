@@ -1,0 +1,5 @@
+resource "task-option" "36ae0b0d-7514-4916-bf0c-7a370e8a5fef" {
+  uuid = "36ae0b0d-7514-4916-bf0c-7a370e8a5fef"
+  optionType = { code = "script" }
+  value = "Stop-Service -Name "Morpheus Windows Agent""
+}
