@@ -1,0 +1,27 @@
+resource "option-type" "bd_name" {
+  code = "bd_name"
+  name = "RG-SC-Without-Default"
+  uuid = "02791a3b-4e15-4aa0-acf2-e325ebde3934"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "bd_name"
+  fieldLabel = "BD name"
+  fieldName = "bd_name"
+  fieldSetName = "bd_name"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  placeHolder = "BD name"
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
