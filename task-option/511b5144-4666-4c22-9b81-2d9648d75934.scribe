@@ -1,0 +1,4 @@
+resource "task-option" "511b5144-4666-4c22-9b81-2d9648d75934" {
+  uuid = "511b5144-4666-4c22-9b81-2d9648d75934"
+  optionType = { code = "winrm.elevated" }
+}

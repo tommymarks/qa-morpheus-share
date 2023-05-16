@@ -1,0 +1,5 @@
+resource "task-option" "401e6a9d-77fb-4a1d-843e-409346765819" {
+  uuid = "401e6a9d-77fb-4a1d-843e-409346765819"
+  optionType = { code = "username" }
+  value = "djblankinship"
+}

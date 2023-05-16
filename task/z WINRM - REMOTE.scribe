@@ -1,0 +1,23 @@
+resource "task" "z WINRM - REMOTE" {
+  code = "z WINRM - REMOTE"
+  name = "z WINRM - REMOTE"
+  uuid = "bc7580b1-f1c1-48de-955a-42dcecdf3ba0"
+  dateCreated = "2019-06-27T00:17:51.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2019-06-27T15:12:41.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "401e6a9d-77fb-4a1d-843e-409346765819" },
+    { uuid = "511b5144-4666-4c22-9b81-2d9648d75934" },
+    { uuid = "7213e53b-dd1a-46d8-94be-00705662c4db" },
+    { uuid = "7ab2a26d-3078-41d3-8800-a5e1e93f6e90" },
+    { uuid = "89c860d1-0747-4a6a-b1a8-2cc3a8053e38" },
+    { uuid = "9b09ce20-58ba-4ee3-a50b-2b8048378deb" },
+    { uuid = "bb3b604b-3fee-412b-8604-9566e0af1797" },
+    { uuid = "d25e7593-b58b-4d2d-9f8c-fd07cba20204" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
