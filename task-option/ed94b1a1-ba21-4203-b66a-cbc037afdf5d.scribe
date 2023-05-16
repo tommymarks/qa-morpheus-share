@@ -1,0 +1,9 @@
+resource "task-option" "ed94b1a1-ba21-4203-b66a-cbc037afdf5d" {
+  uuid = "ed94b1a1-ba21-4203-b66a-cbc037afdf5d"
+  optionType = { code = "jsScript" }
+  value = <<EOF
+output = "\"{\"ping\":\"pong\",\"flash\":\"bang\"}\""
+output
+
+EOF
+}
