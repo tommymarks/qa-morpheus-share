@@ -1,0 +1,10 @@
+resource "account-integration" "morpheus automation examples" {
+  name = "morpheus automation examples"
+  uuid = "449cb06a-9574-4268-8ac9-853daed7d66f"
+  category = "cm-server"
+  integrationType = { code = "git" }
+  serviceFlag = true
+  serviceThrottleRate = 0
+  serviceUrl = "https://github.com/gomorpheus/morpheus-automation-examples.git"
+  type = "git"
+}

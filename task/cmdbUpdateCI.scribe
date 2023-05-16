@@ -1,0 +1,27 @@
+resource "task" "cmdbUpdateCI" {
+  name = "cmdbUpdateCI"
+  uuid = "067a35c6-28cc-4def-9fb1-0116cce6fab9"
+  allowCustomConfig = false
+  dateCreated = "2022-09-14T18:06:01.000Z"
+  executeTarget = "local"
+  labels = [ { name = "cmdb" } ]
+  lastUpdated = "2022-09-14T18:07:18.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "016300f2-7795-4448-a78e-48efd8a11f52" },
+    { uuid = "2cf4608b-c2b8-4911-9215-5029e6578dca" },
+    { uuid = "59300b3b-a2f2-4dd3-8106-a4511d72dc03" },
+    { uuid = "5d2ae6fa-a1d5-41a7-ad81-73e3004e7995" },
+    { uuid = "7995f1fd-053a-4cc6-a475-68dc58d7149f" },
+    { uuid = "7b715ff0-97b4-4098-91bd-4310e4839653" },
+    { uuid = "9718cc59-e391-49e1-8e71-71c12adc5bd3" },
+    { uuid = "c12b6939-21c5-41db-b00e-1863cf0184d7" },
+    { uuid = "d5d925ec-db33-40a7-8fcf-4c6e1ea94afe" },
+    { uuid = "decd5cf0-23f6-4568-ae2d-937240172aa3" },
+    { uuid = "f242b26d-2451-484a-afc3-ffe754fc0101" }
+  ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}

@@ -1,0 +1,7 @@
+resource "task-set-task" "61b14afe-a0a1-4cde-8c2f-6dad48384b30" {
+  uuid = "61b14afe-a0a1-4cde-8c2f-6dad48384b30"
+  entryTask = false
+  task = { name = "cmdbUpdateCI" }
+  taskOrder = 0
+  taskPhase = "postProvision"
+}

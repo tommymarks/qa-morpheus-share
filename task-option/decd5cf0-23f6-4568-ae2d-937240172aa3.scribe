@@ -1,0 +1,5 @@
+resource "task-option" "decd5cf0-23f6-4568-ae2d-937240172aa3" {
+  uuid = "decd5cf0-23f6-4568-ae2d-937240172aa3"
+  optionType = { code = "pythonArgs" }
+  value = "<%= cypher.read('secret/dxcsnowpass')%>"
+}

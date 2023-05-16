@@ -1,0 +1,3 @@
+resource "label" "cmdb" {
+  name = "cmdb"
+}
