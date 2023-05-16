@@ -1,0 +1,24 @@
+resource "task" "createNamespace" {
+  code = "createNamespace"
+  name = "Create Namespace (kubectl)"
+  uuid = "36d38be8-b8b6-4ee0-a5ef-5b714a9ee913"
+  allowCustomConfig = false
+  dateCreated = "2023-01-17T13:23:13.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-01-17T13:23:13.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0df889fc-4105-4221-9517-6cdf255450bf" },
+    { uuid = "1e873f13-76bf-460b-a4e3-0c512ae86c10" },
+    { uuid = "457173da-2d22-4a5e-916b-54d33835b718" },
+    { uuid = "51301924-01b1-455c-b89d-de6d4a410fa5" },
+    { uuid = "51e5ae2a-d389-4144-a6e3-5032005e13a8" },
+    { uuid = "6436af8d-2762-4fc3-ac06-e6347e99a182" },
+    { uuid = "8f4f3565-72b8-496c-b368-6b841d3c3155" },
+    { uuid = "9a8a085e-9943-4d6c-b1c6-282d825413e3" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
