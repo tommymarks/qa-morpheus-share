@@ -1,0 +1,7 @@
+resource "task-set-task" "467f938b-773e-4b3c-8bab-219b3d96eb70" {
+  uuid = "467f938b-773e-4b3c-8bab-219b3d96eb70"
+  entryTask = false
+  task = { name = "Hello World Local Linux" }
+  taskOrder = 0
+  taskPhase = "postProvision"
+}
