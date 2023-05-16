@@ -1,0 +1,21 @@
+resource "task" "Archive Link" {
+  name = "Archive Link"
+  uuid = "b4bbac0b-0369-4cdf-a92b-10e501ad74c0"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2020-08-26T23:03:30.000Z"
+  retryable = false
+  taskOptions = [
+    { uuid = "40489823-5066-4838-9447-3242d8c57399" },
+    { uuid = "4d51d8c1-3646-4c75-ad2a-5e9124b03a83" },
+    { uuid = "7b657812-6ce2-404c-9621-e424a79a23d4" },
+    { uuid = "8b4e8962-088e-4094-b389-5c7b9307b4e8" },
+    { uuid = "a34b99c0-88fb-4338-93e4-0001883d4b14" },
+    { uuid = "bdd425ec-39b4-4ed6-aba6-67696337d4c6" },
+    { uuid = "e5baea5b-61ea-495f-a1b8-e9866479839b" },
+    { uuid = "e88070cd-b340-42f2-8472-a27ee29401f7" },
+    { uuid = "edfb2840-79e6-40dc-a6a8-d7ee4eddb18a" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

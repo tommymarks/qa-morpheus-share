@@ -1,0 +1,16 @@
+resource "file-content" "9ee86c4d-fcf2-45b3-8876-2064aba0736b" {
+  uuid = "9ee86c4d-fcf2-45b3-8876-2064aba0736b"
+  content = <<EOF
+wget "<%= archives.link('_Master - Private', 'archive/file1.txt') %>" -O "/tmp/file1.txt"
+
+curl -s "<%= archives.link('_Master - Private', 'archive/file2.txt', 600) %>" > "/tmp/file2.txt"
+
+#wget "<%= archives.link('Morpheus Installers', 'morpheus-appliance-2.11.2-2.el7.x86_64.rpm', 1200) %>" -O "/tmp/morpheus-appliance-2.11.2-2.el7.x86_64.rpm"
+EOF
+  dateCreated = "2020-08-26T23:03:30.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-08-26T23:04:07.000Z"
+  sourceType = "local"
+}

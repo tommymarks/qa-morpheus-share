@@ -1,0 +1,12 @@
+resource "task-option" "7b657812-6ce2-404c-9621-e424a79a23d4" {
+  uuid = "7b657812-6ce2-404c-9621-e424a79a23d4"
+  optionType = { code = "script" }
+  template = { uuid = "9ee86c4d-fcf2-45b3-8876-2064aba0736b" }
+  value = <<EOF
+wget "<%= archives.link('_Master - Private', 'archive/file1.txt') %>" -O "/tmp/file1.txt"
+
+curl -s "<%= archives.link('_Master - Private', 'archive/file2.txt', 600) %>" > "/tmp/file2.txt"
+
+#wget "<%= archives.link('Morpheus Installers', 'morpheus-appliance-2.11.2-2.el7.x86_64.rpm', 1200) %>" -O "/tmp/morpheus-appliance-2.11.2-2.el7.x86_64.rpm"
+EOF
+}
