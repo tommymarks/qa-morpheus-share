@@ -1,0 +1,24 @@
+resource "task" "ps - Add Domain Users TEST Domain" {
+  name = "ps - Add Domain Users TEST Domain"
+  uuid = "706d2dc3-c1ce-4810-8405-75874e7d0ce6"
+  allowCustomConfig = false
+  dateCreated = "2022-03-30T19:55:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-03-30T19:55:19.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "49d072b7-13b5-4dbe-9e1b-d34ee048356f" },
+    { uuid = "661a7bbb-d0b4-42cf-98b0-9db2598b794e" },
+    { uuid = "84a04850-e8e1-4221-8965-aef04c005ced" },
+    { uuid = "86de0045-cb1b-4a81-bcd4-9b267c25590d" },
+    { uuid = "962a97dc-a759-45ac-b161-8602cdb90c5a" },
+    { uuid = "96806ce0-0b65-4e53-9db3-11897ee74b05" },
+    { uuid = "9e1721d3-3958-4af6-b608-e474178d52e3" },
+    { uuid = "d27118ba-e778-4d07-9536-bff619715146" },
+    { uuid = "ecd76628-f129-407b-b0cb-307fdc04a17c" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
