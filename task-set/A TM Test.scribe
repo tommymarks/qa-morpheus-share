@@ -1,0 +1,15 @@
+resource "task-set" "A TM Test" {
+  name = "A TM Test"
+  uuid = "b92d6efb-e32a-4811-b82d-3610853e4b9d"
+  allowCustomConfig = false
+  dateCreated = "2021-06-09T22:08:04.000Z"
+  lastUpdated = "2022-11-17T23:12:59.000Z"
+  optionTypes = [ { code = "field.name" } ]
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "adda359d-0ea3-4c10-91f3-65a6dec40627" },
+    { uuid = "d9f61861-ae20-45f2-8190-7c9e5a747b8f" }
+  ]
+  taskSetType = "operation"
+  visibility = "private"
+}
