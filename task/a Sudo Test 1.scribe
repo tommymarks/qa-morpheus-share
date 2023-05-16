@@ -1,0 +1,24 @@
+resource "task" "a Sudo Test 1" {
+  name = "a Sudo Test 1"
+  uuid = "67308cc5-612f-4027-9545-c6df5cdef420"
+  allowCustomConfig = false
+  dateCreated = "2021-02-12T04:05:39.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T23:11:17.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "090c4a6c-cf07-4428-bdd6-125c2b8984d8" },
+    { uuid = "1580f5e4-0a8c-4b8d-8fe3-c53e26e461ee" },
+    { uuid = "20dfa24c-5935-4502-a071-2a26eec13d00" },
+    { uuid = "3dcf7298-7424-4e17-875c-a21fd0fde4f1" },
+    { uuid = "3f73d706-19d2-4203-8efd-e7fb96a5c290" },
+    { uuid = "516d58db-5022-415c-8cd3-040b06523953" },
+    { uuid = "b392980e-f617-404b-83e9-b51e1210218b" },
+    { uuid = "b4093159-88f6-4417-9f37-bdb9872d1145" },
+    { uuid = "f70b23ab-f541-45ae-9e43-b7be3f9b82b5" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

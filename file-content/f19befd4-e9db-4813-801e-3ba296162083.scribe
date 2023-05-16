@@ -1,0 +1,10 @@
+resource "file-content" "f19befd4-e9db-4813-801e-3ba296162083" {
+  uuid = "f19befd4-e9db-4813-801e-3ba296162083"
+  content = "touch /test2.txt"
+  dateCreated = "2021-02-12T04:13:47.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-02-12T04:13:47.000Z"
+  sourceType = "local"
+}
