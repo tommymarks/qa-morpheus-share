@@ -1,0 +1,14 @@
+resource "task-set" "db-workflow-provisioning-0304" {
+  name = "db-workflow-provisioning-0304"
+  uuid = "8aa49ede-7047-4d01-9ed4-fde84448ed05"
+  allowCustomConfig = false
+  dateCreated = "2023-03-04T18:46:24.000Z"
+  lastUpdated = "2023-03-04T18:46:43.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "2b49405e-5125-4d01-9ecb-44ebb273ac54" },
+    { uuid = "47038ef7-38d0-4a18-b7a3-54a5d5f4ccf8" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
