@@ -1,0 +1,17 @@
+resource "file-content" "9975ea39-7744-46c4-8861-e71e82f02174" {
+  uuid = "9975ea39-7744-46c4-8861-e71e82f02174"
+  content = <<EOF
+com.morpheus.Instance.withNewSession { 
+def instanceRecord = com.morpheus.Instance.get(instance.id)
+instanceRecord.setConfigProperty('brownfield','on')
+instanceRecord.save(flush:true)
+return
+}
+EOF
+  dateCreated = "2022-03-31T20:43:15.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-04-28T00:08:29.000Z"
+  sourceType = "local"
+}

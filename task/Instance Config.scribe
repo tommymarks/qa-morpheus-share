@@ -1,0 +1,24 @@
+resource "task" "Instance Config" {
+  name = "Instance Config"
+  uuid = "3102ce55-b6cc-4716-922f-eac159d8eedc"
+  allowCustomConfig = false
+  dateCreated = "2022-03-31T20:43:15.000Z"
+  executeTarget = "local"
+  labels = [ { name = "keep" }, { name = "utility" } ]
+  lastUpdated = "2023-03-10T22:06:04.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0b2128be-178d-4d5b-9305-48b499fe99f1" },
+    { uuid = "0fba2df1-a902-4239-8485-97d3370dc4e3" },
+    { uuid = "12c8b820-fa6a-417f-825a-3cdc322a7b77" },
+    { uuid = "31633ea8-cc2c-47d6-8b7b-0be5f3c40407" },
+    { uuid = "60429b14-3db6-4615-88e1-739c94db9237" },
+    { uuid = "aeb8b442-1f64-4611-b184-bfbcb475b14a" },
+    { uuid = "e6a5ec94-fa93-4a2d-959a-7b07b0add7cf" },
+    { uuid = "f5f85df7-6139-4251-a8f0-9c6c321d9dd9" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
