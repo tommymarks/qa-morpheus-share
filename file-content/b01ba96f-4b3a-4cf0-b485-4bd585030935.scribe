@@ -1,0 +1,23 @@
+resource "file-content" "b01ba96f-4b3a-4cf0-b485-4bd585030935" {
+  uuid = "b01ba96f-4b3a-4cf0-b485-4bd585030935"
+  content = <<EOF
+com.morpheus.AppTemplate.withNewSession {
+def user = com.bertramlabs.plugins.User.get(17524l)
+
+
+def roleIds = grails.util.Holders.applicationContext['permissionService'].getRoleIds(user)
+
+def userAppTemplateIdsDenied = com.morpheus.ResourcePermission.executeQuery( "SELECT resource_permission.morpheusResourceId FROM ResourcePermission resource_permission INNER JOIN resource_permission.rolePermissions role_permission INNER JOIN role_permission.role role WHERE resource_permission.morpheusResourceType = 'Persona' AND role.id IN (:roleIds) AND role_permission.access = 'none'", [roleIds: roleIds ] )
+def userAppTemplateIdsAllowed = com.morpheus.ResourcePermission.executeQuery( "SELECT resource_permission.morpheusResourceId FROM ResourcePermission resource_permission INNER JOIN resource_permission.rolePermissions role_permission INNER JOIN role_permission.role role WHERE resource_permission.morpheusResourceType = 'Persona' AND role.id IN (:roleIds) AND role_permission.access = 'full'", [roleIds: roleIds ] )
+            
+            println userAppTemplateIdsDenied
+            println userAppTemplateIdsAllowed
+}
+EOF
+  dateCreated = "2022-09-22T00:49:43.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-09-22T00:53:31.000Z"
+  sourceType = "local"
+}
