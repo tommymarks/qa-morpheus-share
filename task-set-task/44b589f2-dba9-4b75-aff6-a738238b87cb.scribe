@@ -1,0 +1,7 @@
+resource "task-set-task" "44b589f2-dba9-4b75-aff6-a738238b87cb" {
+  uuid = "44b589f2-dba9-4b75-aff6-a738238b87cb"
+  entryTask = false
+  task = { name = "Get Grails Local Repo Location" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
