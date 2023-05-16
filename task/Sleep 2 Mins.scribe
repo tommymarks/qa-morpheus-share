@@ -1,0 +1,23 @@
+resource "task" "Sleep 2 Mins" {
+  name = "Sleep 2 Mins"
+  uuid = "417c74e0-3dc9-4cee-90c1-cd5d84611fc8"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T21:50:38.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:50:38.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "03768ca9-618b-486c-85c3-329d1af5627c" },
+    { uuid = "396ae402-b334-4372-94f7-e9e51a8f6923" },
+    { uuid = "4809055c-b9b4-411c-b189-72ae286f1879" },
+    { uuid = "4b599b1d-e1f2-4330-b0cf-b315fd8c1b1c" },
+    { uuid = "53ff587a-cba6-4079-8d1f-9cbdfa85b8fb" },
+    { uuid = "5d3ceee3-0f4c-4ab1-8d46-dd26333aabcb" },
+    { uuid = "83c35ffd-a0a4-4337-901e-33c305edbbad" },
+    { uuid = "e60f8b80-00c6-4450-971d-27c6501c05d7" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
