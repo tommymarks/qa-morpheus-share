@@ -1,0 +1,5 @@
+resource "task-option" "95dde003-42d7-47f6-bc23-2c5dfd42b48d" {
+  uuid = "95dde003-42d7-47f6-bc23-2c5dfd42b48d"
+  optionType = { code = "script" }
+  value = "echo "shell script" >> /tmp/task.txt"
+}

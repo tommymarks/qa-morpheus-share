@@ -1,0 +1,9 @@
+resource "task-option" "c067ad56-f68f-42c8-bc7b-ec629518c8c0" {
+  uuid = "c067ad56-f68f-42c8-bc7b-ec629518c8c0"
+  optionType = { code = "rubyScript" }
+  value = <<EOF
+open('/tmp/task.txt', 'a') { |f|
+  f.puts "ruby script"
+}
+EOF
+}

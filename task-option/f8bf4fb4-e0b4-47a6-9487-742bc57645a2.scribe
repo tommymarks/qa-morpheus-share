@@ -1,0 +1,5 @@
+resource "task-option" "f8bf4fb4-e0b4-47a6-9487-742bc57645a2" {
+  uuid = "f8bf4fb4-e0b4-47a6-9487-742bc57645a2"
+  optionType = { code = "containerScriptId" }
+  value = "187"
+}

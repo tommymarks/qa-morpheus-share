@@ -1,0 +1,8 @@
+resource "task-option" "cd336f5d-8747-41c8-b38f-0bd81fb96dbb" {
+  uuid = "cd336f5d-8747-41c8-b38f-0bd81fb96dbb"
+  optionType = { code = "groovyScript" }
+  value = <<EOF
+f = new File("/tmp/task.txt")
+f.append("groovy script\n")
+EOF
+}

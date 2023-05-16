@@ -1,0 +1,8 @@
+resource "task" "File: Python" {
+  name = "File: Python"
+  uuid = "6c2e9c4d-fce6-4b35-828b-6583e94082f0"
+  executeTarget = "local"
+  taskOptions = [ { uuid = "64e5b4ef-25f4-4120-8eeb-0f0fdb797ace" } ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
