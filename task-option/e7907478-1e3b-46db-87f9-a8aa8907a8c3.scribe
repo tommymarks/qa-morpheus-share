@@ -1,0 +1,4 @@
+resource "task-option" "e7907478-1e3b-46db-87f9-a8aa8907a8c3" {
+  uuid = "e7907478-1e3b-46db-87f9-a8aa8907a8c3"
+  optionType = { code = "sshKey" }
+}
