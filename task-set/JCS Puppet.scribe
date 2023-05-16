@@ -1,0 +1,11 @@
+resource "task-set" "JCS Puppet" {
+  name = "JCS Puppet"
+  uuid = "30097e6d-b38c-4acd-8729-d67a6706b753"
+  allowCustomConfig = false
+  dateCreated = "2020-04-13T23:24:43.000Z"
+  lastUpdated = "2020-04-13T23:24:43.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "6712134e-4a41-48af-a470-5c0417a37725" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
