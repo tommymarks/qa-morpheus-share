@@ -1,0 +1,4 @@
+resource "task-option" "215a379c-c9ff-4f3a-b478-d9f0d249581d" {
+  uuid = "215a379c-c9ff-4f3a-b478-d9f0d249581d"
+  optionType = { code = "chefRunList" }
+}

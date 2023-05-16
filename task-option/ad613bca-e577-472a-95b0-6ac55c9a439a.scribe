@@ -1,0 +1,4 @@
+resource "task-option" "ad613bca-e577-472a-95b0-6ac55c9a439a" {
+  uuid = "ad613bca-e577-472a-95b0-6ac55c9a439a"
+  optionType = { code = "chefNodeName" }
+}

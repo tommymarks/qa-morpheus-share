@@ -1,0 +1,4 @@
+resource "task-option" "f97aafa8-3073-4c2b-a07f-13b5b31d4d03" {
+  uuid = "f97aafa8-3073-4c2b-a07f-13b5b31d4d03"
+  optionType = { code = "chefDataKey" }
+}
