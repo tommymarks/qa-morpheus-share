@@ -1,0 +1,5 @@
+resource "task-option" "01175379-e7df-4122-8bfc-a04906371888" {
+  uuid = "01175379-e7df-4122-8bfc-a04906371888"
+  optionType = { code = "groovyScript" }
+  template = { uuid = "afae17e4-9f97-4a8f-af34-f82f9a1ecc2a" }
+}
