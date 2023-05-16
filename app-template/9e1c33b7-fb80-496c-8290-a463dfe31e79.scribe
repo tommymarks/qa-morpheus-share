@@ -1,0 +1,10 @@
+resource "app-template" "9e1c33b7-fb80-496c-8290-a463dfe31e79" {
+  name = "hp-oneview"
+  uuid = "9e1c33b7-fb80-496c-8290-a463dfe31e79"
+  active = true
+  custom = false
+  dateCreated = "2019-01-24T14:55:35.000Z"
+  lastUpdated = "2019-01-24T14:55:35.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
