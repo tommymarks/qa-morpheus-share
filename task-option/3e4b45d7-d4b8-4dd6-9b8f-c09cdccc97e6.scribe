@@ -1,0 +1,9 @@
+resource "task-option" "3e4b45d7-d4b8-4dd6-9b8f-c09cdccc97e6" {
+  uuid = "3e4b45d7-d4b8-4dd6-9b8f-c09cdccc97e6"
+  optionType = { code = "script" }
+  template = { uuid = "c8986e24-5c20-4c3a-804d-d5b3687a7e66" }
+  value = <<EOF
+echo "$(date) - teardown" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+}

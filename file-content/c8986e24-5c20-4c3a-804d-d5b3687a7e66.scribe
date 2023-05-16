@@ -1,0 +1,13 @@
+resource "file-content" "c8986e24-5c20-4c3a-804d-d5b3687a7e66" {
+  uuid = "c8986e24-5c20-4c3a-804d-d5b3687a7e66"
+  content = <<EOF
+echo "$(date) - teardown" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOF
+  dateCreated = "2021-02-19T04:16:51.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-02-19T04:16:51.000Z"
+  sourceType = "local"
+}
