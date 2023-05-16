@@ -1,0 +1,29 @@
+resource "file-content" "5b076104-33e2-4b71-a7ba-ae41704d6cda" {
+  uuid = "5b076104-33e2-4b71-a7ba-ae41704d6cda"
+  content = <<EOF
+disks=(sdb xvdd xvdb vdb xvdc nvme1n1)
+setup=false
+for disk in ${disks[@]}; do
+  if !($setup) && (lsblk | grep -q "${disk}") && !(lsblk | grep -q "${disk}1"); then
+    setup=true
+    sudo parted /dev/${disk} mklabel gpt
+	sleep 2
+    sudo parted -a opt /dev/${disk} mkpart primary ext4 0% 100%
+	sleep 2
+    sudo mkfs.ext4 -L datapartition /dev/${disk}1
+    sudo mkdir -p /mnt/data
+    #echo "LABEL=datapartition /mnt/data ext4 defaults,nofail 0 2" | sudo tee -a /etc/fstab
+	sleep 2
+    sudo mount -a
+	sleep 2
+    echo "success!" | sudo tee /mnt/data/setup.txt
+  fi
+done
+EOF
+  dateCreated = "2023-03-21T20:24:41.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-21T20:24:41.000Z"
+  sourceType = "local"
+}
