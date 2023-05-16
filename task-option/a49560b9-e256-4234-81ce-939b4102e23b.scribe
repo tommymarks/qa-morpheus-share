@@ -1,0 +1,12 @@
+resource "task-option" "a49560b9-e256-4234-81ce-939b4102e23b" {
+  uuid = "a49560b9-e256-4234-81ce-939b4102e23b"
+  optionType = { code = "script" }
+  template = { uuid = "fafd230b-4295-4801-9d90-1e7557f881f0" }
+  value = <<EOF
+wget --quiet http://pkgrepo.morpheusdata.com/files/morpheus-appliance_4.1.2~rc6-1_amd64.deb
+
+sudo dpkg -i morpheus-appliance_4.1.2~rc6-1_amd64.deb
+
+sudo morpheus-ctl reconfigure
+EOF
+}
