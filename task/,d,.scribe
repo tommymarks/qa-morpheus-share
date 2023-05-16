@@ -1,0 +1,18 @@
+resource "task" ",d," {
+  code = ",d,"
+  name = "_WinRM"
+  uuid = "f992c767-09e7-49c5-81b5-506be8aa4f6f"
+  executeTarget = "resource"
+  lastUpdated = "2019-04-26T22:55:14.000Z"
+  retryable = false
+  taskOptions = [
+    { uuid = "08f45989-c619-4659-a9aa-0d7b7ac06707" },
+    { uuid = "ae35f272-2e39-4a3e-a8a9-d98207006c22" },
+    { uuid = "c0cad9de-b739-44c3-9e26-ea5b87e1ffed" },
+    { uuid = "c52f8a22-31cc-414e-994e-f22f45cf7a92" },
+    { uuid = "ce495670-fd82-4b7c-8deb-11adc93a4e36" },
+    { uuid = "e18b6af7-e6ad-49d9-baa1-24e9282cca46" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
