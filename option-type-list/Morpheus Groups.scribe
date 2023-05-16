@@ -1,0 +1,16 @@
+resource "option-type-list" "Morpheus Groups" {
+  name = "Morpheus Groups"
+  uuid = "76920222-0763-47d7-9a0b-efc1619a4d0d"
+  description = "groups in qa environment"
+  ignoreSSLErrors = false
+  realTime = false
+  sourceMethod = "GET"
+  sourceUrl = "https://qa.morpheusdata.com/api/options/groups"
+  translationScript = <<EOF
+for(var x=0;x < data.data.length; x++) {
+	results.push(data.data[x]);
+}
+EOF
+  type = "rest"
+  visibility = "private"
+}

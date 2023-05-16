@@ -1,0 +1,11 @@
+resource "task-set" "OW Test" {
+  name = "OW Test"
+  uuid = "0db086f7-c7bf-47af-8d86-1d4b0066a2c6"
+  allowCustomConfig = false
+  dateCreated = "2019-09-23T23:54:22.000Z"
+  lastUpdated = "2019-09-23T23:54:22.000Z"
+  optionTypes = [ { uuid = "520a17eb-a2fc-402d-aa4e-6c8d099041f2" } ]
+  phase = "postProvision"
+  taskSetType = "operation"
+  visibility = "private"
+}
