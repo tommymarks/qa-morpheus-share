@@ -1,0 +1,5 @@
+resource "task-option" "55cf7921-18d3-4b74-b1cf-474aafc6dfb1" {
+  uuid = "55cf7921-18d3-4b74-b1cf-474aafc6dfb1"
+  optionType = { code = "operationalWorkflowName" }
+  value = "Hello World Operational"
+}
