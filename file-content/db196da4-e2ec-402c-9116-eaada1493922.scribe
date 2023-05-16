@@ -1,0 +1,15 @@
+resource "file-content" "db196da4-e2ec-402c-9116-eaada1493922" {
+  uuid = "db196da4-e2ec-402c-9116-eaada1493922"
+  content = <<EOF
+New-RDSessionCollection -CollectionName "Windows" -SessionHost "<%=server.fqdn%>"
+New-RDRemoteApp -CollectionName "Windows" -DisplayName "Notepad" -FilePath "C:\Windows\System32\Notepad.exe"
+New-RDRemoteApp -CollectionName "Windows" -DisplayName "PowerShell" -FilePath "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+New-RDRemoteApp -CollectionName "Windows" -DisplayName "Internet Explorer" -FilePath "C:\Program Files\internet explorer\iexplore.exe"
+EOF
+  dateCreated = "2021-11-16T21:51:31.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-16T21:51:31.000Z"
+  sourceType = "local"
+}
