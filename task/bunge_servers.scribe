@@ -1,0 +1,22 @@
+resource "task" "bunge_servers" {
+  name = "bunge_servers"
+  uuid = "15965dfd-204a-444f-9989-01bbdb0795ce"
+  allowCustomConfig = false
+  dateCreated = "2020-02-07T00:17:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-02-07T00:17:05.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0b3dd93c-4ef7-44c6-be5b-302f91c6cc1e" },
+    { uuid = "1ea483b0-ee07-45e8-aa5e-c2cc79e3d2cb" },
+    { uuid = "5aea778e-654e-443b-84ab-f66c8d336e9a" },
+    { uuid = "c0b64bbc-7531-47db-a98f-341a2492a0eb" },
+    { uuid = "c1422378-00f7-4159-9281-d5d8228e06a5" },
+    { uuid = "c40be41f-44ff-4d7a-b5d1-74b4a87e4349" },
+    { uuid = "d6c8a268-b1ba-4d31-92de-0f7347826a08" }
+  ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}

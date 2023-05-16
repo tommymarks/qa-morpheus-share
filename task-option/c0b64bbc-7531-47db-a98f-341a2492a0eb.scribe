@@ -1,0 +1,15 @@
+resource "task-option" "c0b64bbc-7531-47db-a98f-341a2492a0eb" {
+  uuid = "c0b64bbc-7531-47db-a98f-341a2492a0eb"
+  optionType = { code = "pythonScript" }
+  value = <<EOF
+#import json
+
+print("I am here")
+#print(morpheus['results']['instances'])
+exit()
+#instances = morpheus['results']['instances']
+#instances = json.loads(<%=results.instances%>)
+#for instance in instances:
+#	print(instance['name'] + "\n")
+EOF
+}
