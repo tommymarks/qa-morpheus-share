@@ -1,0 +1,9 @@
+resource "task-option" "b6dd8c3b-3c3c-4d98-9e10-1c5988668f94" {
+  uuid = "b6dd8c3b-3c3c-4d98-9e10-1c5988668f94"
+  optionType = { code = "emailBody" }
+  value = <<EOF
+Dr Nick says: <%=results.tmshell%>
+<br/>
+<b>HI DR NICK!</b>
+EOF
+}

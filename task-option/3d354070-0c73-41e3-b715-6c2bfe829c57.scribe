@@ -1,0 +1,4 @@
+resource "task-option" "3d354070-0c73-41e3-b715-6c2bfe829c57" {
+  uuid = "3d354070-0c73-41e3-b715-6c2bfe829c57"
+  optionType = { code = "port" }
+}

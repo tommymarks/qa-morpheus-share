@@ -1,0 +1,5 @@
+resource "task-option" "636d2316-7072-41d2-a960-5c99f7404d1a" {
+  uuid = "636d2316-7072-41d2-a960-5c99f7404d1a"
+  optionType = { code = "emailAddress" }
+  value = "tommymarks+1@gmail.com,<%=instance.createdByEmail%>"
+}
