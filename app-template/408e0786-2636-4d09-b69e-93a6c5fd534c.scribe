@@ -1,0 +1,11 @@
+resource "app-template" "408e0786-2636-4d09-b69e-93a6c5fd534c" {
+  name = "db-kubernetes-blueprint-blank"
+  uuid = "408e0786-2636-4d09-b69e-93a6c5fd534c"
+  active = true
+  custom = false
+  dateCreated = "2019-12-10T19:55:07.000Z"
+  lastUpdated = "2019-12-10T19:55:07.000Z"
+  specTemplates = [ { uuid = "9a956f87-394c-4d51-ba20-350824ed280a" } ]
+  templateType = { code = "kubernetes" }
+  visibility = "private"
+}
