@@ -1,0 +1,13 @@
+resource "file-content" "fe58e07e-2c28-4ce5-80fa-8bf9cb76426f" {
+  uuid = "fe58e07e-2c28-4ce5-80fa-8bf9cb76426f"
+  content = <<EOF
+$back1 = "<%= customOptions.fn68960 %>"
+write-host $back1
+EOF
+  dateCreated = "2023-01-18T10:55:45.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-01-18T10:56:15.000Z"
+  sourceType = "local"
+}

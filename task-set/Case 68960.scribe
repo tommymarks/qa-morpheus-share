@@ -1,0 +1,11 @@
+resource "task-set" "Case 68960" {
+  name = "Case 68960"
+  uuid = "8a383675-2486-4ae4-8b4e-1b0dcb1ebb5d"
+  allowCustomConfig = false
+  dateCreated = "2023-01-10T08:21:16.000Z"
+  lastUpdated = "2023-02-06T18:12:32.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "a3e4c9b1-bcc1-43e6-b041-482d16f452ab" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
