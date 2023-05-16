@@ -1,0 +1,5 @@
+resource "task-option" "248fb55c-91bb-4a3d-9c39-e649d4909d2d" {
+  uuid = "248fb55c-91bb-4a3d-9c39-e649d4909d2d"
+  optionType = { code = "password" }
+  value = "Deepti@123"
+}

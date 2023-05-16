@@ -1,0 +1,10 @@
+resource "file-content" "94f2d2aa-8bdf-4780-8eb2-388920f0a293" {
+  uuid = "94f2d2aa-8bdf-4780-8eb2-388920f0a293"
+  content = "write-output "This is a test""
+  dateCreated = "2021-11-26T13:10:20.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-26T13:10:20.000Z"
+  sourceType = "local"
+}

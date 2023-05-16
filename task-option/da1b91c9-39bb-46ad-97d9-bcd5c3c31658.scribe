@@ -1,0 +1,5 @@
+resource "task-option" "da1b91c9-39bb-46ad-97d9-bcd5c3c31658" {
+  uuid = "da1b91c9-39bb-46ad-97d9-bcd5c3c31658"
+  optionType = { code = "username" }
+  value = "deepti"
+}
