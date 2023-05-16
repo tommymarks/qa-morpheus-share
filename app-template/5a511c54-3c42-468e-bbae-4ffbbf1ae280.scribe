@@ -1,0 +1,10 @@
+resource "app-template" "5a511c54-3c42-468e-bbae-4ffbbf1ae280" {
+  name = "SNOW: Apache Azure - Not Locked"
+  uuid = "5a511c54-3c42-468e-bbae-4ffbbf1ae280"
+  active = true
+  custom = false
+  dateCreated = "2020-05-28T00:13:43.000Z"
+  lastUpdated = "2021-06-24T19:19:43.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
