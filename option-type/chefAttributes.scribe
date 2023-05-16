@@ -1,0 +1,25 @@
+resource "option-type" "chefAttributes" {
+  code = "chefAttributes"
+  name = "Node Attributes"
+  uuid = "f64b05a7-06ff-41f8-8aae-0268951990cb"
+  category = "chef"
+  advanced = false
+  creatable = true
+  custom = false
+  defaultValue = "{}"
+  displayOrder = 7
+  editable = true
+  enabled = true
+  exportEvar = false
+  fieldCode = "gomorpheus.label.option.nodeattributes"
+  fieldContext = "taskOptions"
+  fieldLabel = "Node Attributes"
+  fieldName = "chefAttributes"
+  format = "json"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "code-editor"
+}

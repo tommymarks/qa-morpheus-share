@@ -1,0 +1,5 @@
+resource "task-option" "5fc1c00c-2e4e-4189-9c9d-fe3657dbfefe" {
+  uuid = "5fc1c00c-2e4e-4189-9c9d-fe3657dbfefe"
+  optionType = { code = "chefRunList" }
+  value = "role[morph-qa-role]"
+}

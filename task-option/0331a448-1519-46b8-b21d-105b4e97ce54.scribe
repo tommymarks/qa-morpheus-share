@@ -1,0 +1,5 @@
+resource "task-option" "0331a448-1519-46b8-b21d-105b4e97ce54" {
+  uuid = "0331a448-1519-46b8-b21d-105b4e97ce54"
+  optionType = { code = "chefDataKeyPath" }
+  value = "/etc/chef/databag_secret"
+}

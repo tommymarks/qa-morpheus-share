@@ -1,0 +1,23 @@
+resource "option-type" "chefDataKey" {
+  code = "chefDataKey"
+  name = "Data bag Key"
+  uuid = "9a0175a3-a844-4305-a97c-f9515a35421e"
+  category = "chef"
+  advanced = false
+  creatable = true
+  custom = false
+  displayOrder = 4
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldCode = "gomorpheus.label.option.databagkey"
+  fieldContext = "taskOptions"
+  fieldLabel = "Data bag Key"
+  fieldName = "chefDataKey"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "password"
+}
