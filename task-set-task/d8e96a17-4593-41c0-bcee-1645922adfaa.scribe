@@ -1,0 +1,7 @@
+resource "task-set-task" "d8e96a17-4593-41c0-bcee-1645922adfaa" {
+  uuid = "d8e96a17-4593-41c0-bcee-1645922adfaa"
+  entryTask = false
+  task = { name = "Hello World Local Sleep" }
+  taskOrder = 0
+  taskPhase = "operation"
+}

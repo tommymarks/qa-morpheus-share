@@ -1,0 +1,24 @@
+resource "task" "Hello World Local Sleep" {
+  name = "Hello World Local Sleep"
+  uuid = "0be31bc6-04ad-454e-9889-854550354b11"
+  allowCustomConfig = false
+  dateCreated = "2023-03-07T19:34:13.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-08T19:25:03.000Z"
+  retryCount = 2
+  retryDelaySeconds = 1
+  retryable = true
+  taskOptions = [
+    { uuid = "4f05d04d-a628-4f63-bd3b-113e1334e43c" },
+    { uuid = "5b6f95a1-2bfa-40a2-b07f-dca0ad4d432f" },
+    { uuid = "7c63b96b-ecac-43dc-8afb-f73dc3d55b06" },
+    { uuid = "7c925517-4863-439f-aedf-599dc8901729" },
+    { uuid = "94617ee5-0b0d-4115-880b-4ce5e5225c1c" },
+    { uuid = "a484c0b9-aff6-45f7-92b0-a08dfb082d5c" },
+    { uuid = "b994e23b-c25f-46f9-93fd-f8dac2ec0bf3" },
+    { uuid = "d82b08a2-0e9d-44b6-b86a-ee6f711b79b8" },
+    { uuid = "ff030fd0-112b-4375-8048-76d23dc01db7" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
