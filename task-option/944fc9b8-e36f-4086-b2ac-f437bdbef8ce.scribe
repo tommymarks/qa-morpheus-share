@@ -1,0 +1,5 @@
+resource "task-option" "944fc9b8-e36f-4086-b2ac-f437bdbef8ce" {
+  uuid = "944fc9b8-e36f-4086-b2ac-f437bdbef8ce"
+  optionType = { code = "webUrl" }
+  value = "https://jigsaw.w3.org/HTTP/Basic/"
+}

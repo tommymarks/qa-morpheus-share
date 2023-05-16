@@ -1,0 +1,31 @@
+resource "task" "http" {
+  code = "http"
+  name = "auto http 0511110934787"
+  uuid = "4440e522-1c53-4e56-87b9-146d4f847f27"
+  allowCustomConfig = false
+  dateCreated = "2023-05-11T18:15:52.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-05-11T18:15:52.000Z"
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0dae29ee-286c-4d78-84dc-6c466c77a8ee" },
+    { uuid = "338e3e06-215e-45d4-b16a-c84667870b74" },
+    { uuid = "382a9ffc-6622-43b4-bce8-366165216656" },
+    { uuid = "5b1b9ca4-cfbc-41b4-83f4-dfd5e2bfe73a" },
+    { uuid = "6d0494c7-e035-4049-aa03-c97c149c0fbd" },
+    { uuid = "74d17149-9937-4787-849c-0c496c0617f1" },
+    { uuid = "7710208d-d029-4ca9-9b58-2233184e551a" },
+    { uuid = "7a842d46-ce6e-4693-89e1-3fafba380277" },
+    { uuid = "8fbdba88-4c0e-411c-bcf7-a74533819048" },
+    { uuid = "944fc9b8-e36f-4086-b2ac-f437bdbef8ce" },
+    { uuid = "b05dcd94-4a79-4feb-a3f2-6e2e9115e8d1" },
+    { uuid = "c4ce9d40-b5bc-4727-a992-5078f29495e3" },
+    { uuid = "d6b8c157-6a11-432f-83fb-a4f234a3937b" },
+    { uuid = "eb7e5ef0-b92d-40f7-8a95-ed541a06a963" }
+  ]
+  taskType = { code = "httpTask" }
+  visibility = "private"
+}

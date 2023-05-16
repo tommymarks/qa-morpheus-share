@@ -1,0 +1,4 @@
+resource "task-option" "5b1b9ca4-cfbc-41b4-83f4-dfd5e2bfe73a" {
+  uuid = "5b1b9ca4-cfbc-41b4-83f4-dfd5e2bfe73a"
+  optionType = { code = "webBody" }
+}
