@@ -1,0 +1,23 @@
+resource "task" "Vault KV2 Example" {
+  name = "Vault KV2 Example"
+  uuid = "46edb83a-f425-4488-ad23-5f5c512df660"
+  allowCustomConfig = false
+  dateCreated = "2022-07-01T10:15:46.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-07-01T10:15:46.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "23b36b4a-f034-4f6e-9971-c1d14425fe7f" },
+    { uuid = "4cdbdbd9-f0f7-4955-b6cf-280b43675bfc" },
+    { uuid = "581cef64-8f20-4c7b-9d06-9cf02dafb763" },
+    { uuid = "58773304-fa8b-493a-9f5f-5344915fbe12" },
+    { uuid = "8590e179-94df-4dad-a92e-b0ebc8b78c8a" },
+    { uuid = "921cb329-04d5-4e39-9216-66d46d6c4975" },
+    { uuid = "9f30fff0-bf84-4938-9e45-c757358caa0f" },
+    { uuid = "e12d0696-eeb2-4b24-875e-37c4f97175dd" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
