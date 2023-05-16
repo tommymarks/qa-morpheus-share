@@ -1,0 +1,10 @@
+resource "app-template" "5584c76c-1793-4e62-bc1c-7e01ab7b3bb3" {
+  name = "open2"
+  uuid = "5584c76c-1793-4e62-bc1c-7e01ab7b3bb3"
+  active = true
+  custom = false
+  dateCreated = "2023-04-27T15:23:14.000Z"
+  lastUpdated = "2023-04-27T15:23:14.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
