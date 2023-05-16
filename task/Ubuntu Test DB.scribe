@@ -1,0 +1,23 @@
+resource "task" "Ubuntu Test DB" {
+  name = "Ubuntu Test DB"
+  uuid = "425107f2-49e5-4b9d-b020-b44b263316ce"
+  allowCustomConfig = false
+  dateCreated = "2022-02-28T19:58:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-28T19:58:22.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "012fe676-abbd-4ad9-9087-bf635dbbb0be" },
+    { uuid = "1cc79e92-68a1-46e7-b25a-ae37b81f8b60" },
+    { uuid = "5adc39b7-a4f3-40c6-b147-a5af3867653d" },
+    { uuid = "829d1250-a15f-4463-ba0d-d0b6be9f48d0" },
+    { uuid = "8618445b-43c6-4eba-ab9f-563d5230fc67" },
+    { uuid = "ab0c91c5-bcef-4bbc-bbb1-3cd804cd5784" },
+    { uuid = "bcf69424-2778-428d-8dc3-9ff76c34f948" },
+    { uuid = "c990451f-56b5-4c3e-9e63-bb0e3bf451a1" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
