@@ -1,0 +1,4 @@
+resource "task-option" "61e7c497-6158-4fdd-b8ee-d01a6c64cec2" {
+  uuid = "61e7c497-6158-4fdd-b8ee-d01a6c64cec2"
+  optionType = { code = "ansibleTags" }
+}

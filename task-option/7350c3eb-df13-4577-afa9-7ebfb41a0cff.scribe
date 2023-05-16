@@ -1,0 +1,5 @@
+resource "task-option" "7350c3eb-df13-4577-afa9-7ebfb41a0cff" {
+  uuid = "7350c3eb-df13-4577-afa9-7ebfb41a0cff"
+  optionType = { code = "ansiblePlaybook" }
+  value = "nginx-1_9"
+}
