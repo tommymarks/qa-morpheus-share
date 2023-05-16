@@ -1,0 +1,17 @@
+resource "file-content" "4760ce53-c527-42f3-9be8-b14b13593d13" {
+  uuid = "4760ce53-c527-42f3-9be8-b14b13593d13"
+  content = <<EOF
+echo <%=morpheus.apiAccessToken%>
+echo <%=morpheus.applianceUrl%>
+echo <%=morpheus.applianceSsl%>
+echo <%=morpheus.applianceScheme%>
+echo <%=morpheus.applianceHost%>
+echo <%=morpheus.appliancePort%>
+EOF
+  dateCreated = "2023-03-06T23:05:14.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-06T23:28:12.000Z"
+  sourceType = "local"
+}
