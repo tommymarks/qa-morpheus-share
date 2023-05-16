@@ -1,0 +1,11 @@
+resource "app-template" "ad7b9682-66c0-4d98-9eea-18c73f33fc85" {
+  name = "Terraform VMW"
+  uuid = "ad7b9682-66c0-4d98-9eea-18c73f33fc85"
+  active = true
+  custom = false
+  dateCreated = "2022-10-10T16:05:36.000Z"
+  lastUpdated = "2022-10-10T16:05:36.000Z"
+  specTemplates = [ { uuid = "708f95b6-c059-4aad-a060-498e9e3556e7" } ]
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
