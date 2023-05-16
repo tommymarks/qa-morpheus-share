@@ -1,0 +1,5 @@
+resource "task-option" "ee4e0128-47a4-4647-8ca3-3cfd1056024d" {
+  uuid = "ee4e0128-47a4-4647-8ca3-3cfd1056024d"
+  optionType = { code = "emailSubject" }
+  value = "email 3"
+}

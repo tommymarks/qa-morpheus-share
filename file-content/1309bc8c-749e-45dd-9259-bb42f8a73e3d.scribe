@@ -1,0 +1,16 @@
+resource "file-content" "1309bc8c-749e-45dd-9259-bb42f8a73e3d" {
+  uuid = "1309bc8c-749e-45dd-9259-bb42f8a73e3d"
+  content = <<EOF
+<p><span style="background-color: #99ccff;">hello there.</span></p>
+<p><br /><span style="background-color: #99ccff;">the content of this <strong>email</strong> was <em>setup</em>&nbsp;in morpheus</span></p>
+<p><br /><span style="background-color: #3366ff; color: #ffffff;">pretty neat, eh?</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+EOF
+  dateCreated = "2020-04-07T02:51:21.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-04-07T02:51:21.000Z"
+  sourceType = "local"
+}
