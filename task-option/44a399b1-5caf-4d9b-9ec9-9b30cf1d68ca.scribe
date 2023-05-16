@@ -1,0 +1,5 @@
+resource "task-option" "44a399b1-5caf-4d9b-9ec9-9b30cf1d68ca" {
+  uuid = "44a399b1-5caf-4d9b-9ec9-9b30cf1d68ca"
+  optionType = { code = "emailSkipTemplate" }
+  value = "on"
+}

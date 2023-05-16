@@ -1,0 +1,5 @@
+resource "task-option" "acd83783-479b-462e-9d53-306aad470d61" {
+  uuid = "acd83783-479b-462e-9d53-306aad470d61"
+  optionType = { code = "emailBody" }
+  template = { uuid = "789a0664-a02f-4958-acdc-3bfa68db5ce7" }
+}
