@@ -1,0 +1,21 @@
+resource "task" "z LOCAL - LOCAL" {
+  name = "z LOCAL - LOCAL"
+  uuid = "1b902a96-9fbd-4115-aa92-e3fed9245527"
+  dateCreated = "2019-06-27T00:18:01.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "24489ca6-ac63-4e90-8f65-be243b2f868b" },
+    { uuid = "3dcdbc08-a677-41db-9164-e4ef4b91acdd" },
+    { uuid = "90c39d97-1991-4d83-84ca-a86027b85cca" },
+    { uuid = "95751fdb-dc6b-4a04-bb06-444698f39f8a" },
+    { uuid = "b19d10d3-2aa9-424c-9c76-299272f54b1a" },
+    { uuid = "b41c22d1-1409-4d87-9e7b-0e49ec7878d9" },
+    { uuid = "d8cc4b50-9549-41da-8699-aef4a83dc839" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
