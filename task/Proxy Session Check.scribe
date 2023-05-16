@@ -1,0 +1,24 @@
+resource "task" "Proxy Session Check" {
+  name = "Proxy Session Check"
+  uuid = "8b7dde66-22ac-404a-b485-3cdeb8f7933e"
+  allowCustomConfig = false
+  dateCreated = "2022-11-10T20:57:23.000Z"
+  executeTarget = "local"
+  labels = [ { name = "david" } ]
+  lastUpdated = "2022-11-10T20:57:23.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "02647550-326c-46e7-a1e9-389746b089e6" },
+    { uuid = "474c7098-4434-49a3-a140-b64075f9b8d3" },
+    { uuid = "5dd80ddd-adbd-4081-9269-fc605cd313bc" },
+    { uuid = "6ad6f2b6-42e3-4521-8ac6-a73f1a0015a2" },
+    { uuid = "82e74c10-8bfd-4a35-b616-1d9ab8a49d0a" },
+    { uuid = "8a477fdd-b7c6-4d99-bbe4-f9070b0f2b89" },
+    { uuid = "93e8df1a-4c89-4994-b966-75d84d7371c2" },
+    { uuid = "f5769f90-210e-4f65-9193-6fd9b3d421d9" }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
