@@ -1,0 +1,12 @@
+resource "task-set" "Suse Resize" {
+  name = "Suse Resize"
+  uuid = "d4150920-0c36-4929-b5d9-5ba53e4394dd"
+  allowCustomConfig = false
+  dateCreated = "2021-11-18T12:18:10.000Z"
+  lastUpdated = "2021-11-18T12:18:10.000Z"
+  phase = "postProvision"
+  platform = "linux"
+  taskSetTasks = [ { uuid = "23f61820-16c4-417e-95bc-82491ed00397" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
