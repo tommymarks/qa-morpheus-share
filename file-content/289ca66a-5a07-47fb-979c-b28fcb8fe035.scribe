@@ -1,0 +1,10 @@
+resource "file-content" "289ca66a-5a07-47fb-979c-b28fcb8fe035" {
+  uuid = "289ca66a-5a07-47fb-979c-b28fcb8fe035"
+  content = "Write-Host 'Hello, World AGAIN!'"
+  dateCreated = "2020-05-05T18:37:41.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-05-05T18:37:41.000Z"
+  sourceType = "local"
+}
