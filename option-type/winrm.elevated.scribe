@@ -1,0 +1,26 @@
+resource "option-type" "winrm.elevated" {
+  code = "winrm.elevated"
+  name = "Elevated"
+  uuid = "36308bcf-d6d6-4df6-8ac7-1ea9214f1195"
+  category = "winrm"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 5
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.optiontype.ElevatedShell"
+  fieldContext = "taskOptions"
+  fieldLabel = "Elevated Shell"
+  fieldName = "winrm.elevated"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "checkbox"
+}

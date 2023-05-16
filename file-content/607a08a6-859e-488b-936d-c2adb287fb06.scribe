@@ -1,0 +1,16 @@
+resource "file-content" "607a08a6-859e-488b-936d-c2adb287fb06" {
+  uuid = "607a08a6-859e-488b-936d-c2adb287fb06"
+  content = <<EOF
+$redistfolder = "C:\windows\temp"
+$redist = $redistfolder + "\VC_redist.x86.exe"
+Invoke-WebRequest -Uri "https://aka.ms/vs/17/release/vc_redist.x86.exe" -OutFile $redist
+$redistout = Invoke-Command -ScriptBlock {Start-Process $redist -ArgumentList "/quiet","/passive" -WorkingDirectory $redistfolder -Wait}
+
+EOF
+  dateCreated = "2021-11-16T19:08:52.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-16T19:25:53.000Z"
+  sourceType = "local"
+}

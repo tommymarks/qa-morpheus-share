@@ -1,0 +1,24 @@
+resource "task" "PreReq SCAP Windows" {
+  name = "PreReq SCAP Windows"
+  uuid = "c0b1422e-16bf-4029-a00f-b53826d32424"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T19:08:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T19:08:52.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "123bd6ea-ee6d-4f95-9356-193985995e61" },
+    { uuid = "2644d539-db18-44dc-afc2-f945201dc20c" },
+    { uuid = "33370570-ce92-4168-b0ee-e0283fc2e0a3" },
+    { uuid = "41386984-8444-485c-9fcb-830957898575" },
+    { uuid = "6eedfcc2-6eff-43cd-88e3-1fdbbf7da3c7" },
+    { uuid = "96b58d0c-4ebd-4f69-afd4-341f92d045d0" },
+    { uuid = "991cc2af-c7ac-43ae-a1ff-eb96f3dec87a" },
+    { uuid = "e04ceca8-e03d-464d-901a-35b604b16a39" },
+    { uuid = "e24d75a3-13b7-4343-87a0-c0fa70382806" }
+  ]
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
