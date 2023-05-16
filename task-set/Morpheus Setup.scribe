@@ -1,0 +1,14 @@
+resource "task-set" "Morpheus Setup" {
+  name = "Morpheus Setup"
+  uuid = "441c61fe-e649-4122-bd9e-0b1ab37c42d5"
+  allowCustomConfig = false
+  dateCreated = "2019-10-31T02:07:18.000Z"
+  lastUpdated = "2019-10-31T02:52:40.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "163ada30-e788-44b7-8407-cab53c1cd939" },
+    { uuid = "d339b911-1fc1-4e6c-8797-c981fda8e3f2" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
