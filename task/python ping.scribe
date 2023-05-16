@@ -1,0 +1,26 @@
+resource "task" "python ping" {
+  name = "python ping"
+  uuid = "d51c4418-91b7-4eea-be37-acb28ee10fc1"
+  allowCustomConfig = false
+  dateCreated = "2022-08-29T07:13:26.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-29T07:14:19.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0f9a538e-9739-453f-a13c-a516d28f197c" },
+    { uuid = "242b4d4c-4681-451c-bcab-7d1a3810c762" },
+    { uuid = "2436866a-6f42-4e65-b400-657a3f96ae8d" },
+    { uuid = "30fcdf59-84a9-4a2c-afcb-86ce1c7ffd56" },
+    { uuid = "823abff5-672e-4e6a-94fa-f764c7396a8b" },
+    { uuid = "a4ffab89-e129-4757-89e0-d89df783c771" },
+    { uuid = "cad2d28a-fac2-43c5-8662-b3185200a92a" },
+    { uuid = "cadfb530-e8cb-4888-bcbf-34dd4a9767be" },
+    { uuid = "ce188cc2-51ab-4592-a055-7cd74b1b12b0" },
+    { uuid = "da089f68-9f5b-4a33-8c97-abe65cbd659c" },
+    { uuid = "f039e656-9a45-4ee2-bf47-7dd9e77e7600" }
+  ]
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
