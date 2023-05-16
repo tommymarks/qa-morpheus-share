@@ -1,0 +1,7 @@
+resource "task-set-task" "3d1e2ff5-e64f-41b3-a4a0-014332e70ca0" {
+  uuid = "3d1e2ff5-e64f-41b3-a4a0-014332e70ca0"
+  entryTask = false
+  task = { name = "NC Ansible Install Jenkins" }
+  taskOrder = 0
+  taskPhase = "operation"
+}
