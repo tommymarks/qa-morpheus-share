@@ -1,0 +1,8 @@
+resource "app-template" "c404b4fd-d940-423e-a7e8-8e785fdbe5f8" {
+  name = "ARM: Quick Start"
+  uuid = "c404b4fd-d940-423e-a7e8-8e785fdbe5f8"
+  active = true
+  custom = false
+  lastUpdated = "2020-08-22T16:17:18.000Z"
+  templateType = { code = "arm" }
+}
