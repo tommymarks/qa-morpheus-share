@@ -1,0 +1,39 @@
+resource "file-content" "bf20c7ad-dc12-4f78-be07-90cd2206d5f4" {
+  uuid = "bf20c7ad-dc12-4f78-be07-90cd2206d5f4"
+  content = <<EOF
+cat <<QAEOF | tee -a /var/tmp/variables_instance.txt
+<%=instance%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_evars.txt
+<%=evars%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_container.txt
+<%=container%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_server.txt
+<%=server%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_cloud.txt
+<%=zone%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_group.txt
+<%=group%>
+QAEOF
+
+cat <<QAEOF | tee -a /var/tmp/variables_morpheus.txt
+<%=morpheus.toMap()%>
+QAEOF
+
+EOF
+  dateCreated = "2021-07-29T14:32:49.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-07T00:32:36.000Z"
+  sourceType = "local"
+}
