@@ -1,0 +1,11 @@
+resource "app-template" "4e455187-f6d2-4109-b79f-a3724920f626" {
+  name = "Helm: Placeholder"
+  uuid = "4e455187-f6d2-4109-b79f-a3724920f626"
+  active = true
+  custom = false
+  dateCreated = "2019-10-10T14:13:17.000Z"
+  description = "do not delete"
+  lastUpdated = "2022-04-28T22:22:03.000Z"
+  templateType = { code = "helm" }
+  visibility = "public"
+}
