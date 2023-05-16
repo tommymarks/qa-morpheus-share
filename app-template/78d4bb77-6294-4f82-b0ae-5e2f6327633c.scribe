@@ -1,0 +1,8 @@
+resource "app-template" "78d4bb77-6294-4f82-b0ae-5e2f6327633c" {
+  name = "Concat/Copy Test"
+  uuid = "78d4bb77-6294-4f82-b0ae-5e2f6327633c"
+  active = true
+  custom = false
+  lastUpdated = "2020-08-22T16:17:18.000Z"
+  templateType = { code = "arm" }
+}
