@@ -1,0 +1,23 @@
+resource "file-content" "6c721cac-d139-46fd-adf1-996b40fc5f71" {
+  uuid = "6c721cac-d139-46fd-adf1-996b40fc5f71"
+  content = <<EOF
+import requests
+ 
+morpheus_url = morpheus.get("morpheus").get('applianceUrl').strip("/")
+api_token = morpheus.get("morpheus").get("apiAccessToken")
+ 
+url = "{}/api/cypher/secret/testoscreds".format(morpheus_url)
+headers = {"Content-Type":"application/json","X-Cypher-Token":api_token}
+ 
+requests.post(url=url, verify=False, headers=headers, json={
+    "os_password": "password",
+    "os_username": "user_name"
+})
+EOF
+  dateCreated = "2022-05-30T15:56:42.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-05-30T15:56:42.000Z"
+  sourceType = "local"
+}

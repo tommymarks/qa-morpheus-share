@@ -1,0 +1,5 @@
+resource "task-option" "0e2c03bd-7603-4a9b-a474-e2f17d18fc86" {
+  uuid = "0e2c03bd-7603-4a9b-a474-e2f17d18fc86"
+  optionType = { code = "pythonAdditionalPackages" }
+  value = "requests"
+}
