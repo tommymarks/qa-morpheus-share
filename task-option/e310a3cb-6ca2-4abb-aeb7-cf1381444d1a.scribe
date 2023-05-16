@@ -1,0 +1,5 @@
+resource "task-option" "e310a3cb-6ca2-4abb-aeb7-cf1381444d1a" {
+  uuid = "e310a3cb-6ca2-4abb-aeb7-cf1381444d1a"
+  optionType = { code = "script" }
+  template = { uuid = "397dcb04-b63c-4931-bf93-62c7739720e1" }
+}

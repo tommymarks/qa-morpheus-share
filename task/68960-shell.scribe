@@ -1,0 +1,24 @@
+resource "task" "68960-shell" {
+  name = "68960-shell"
+  uuid = "727167e4-d80b-46e8-a5f8-122cfab5ec3e"
+  allowCustomConfig = false
+  dateCreated = "2023-01-10T08:20:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-01-18T10:53:52.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "159636fc-6196-42a8-8579-e5c7a4d5d9e8" },
+    { uuid = "4ff7c47c-d375-4cfd-9d6a-412cc3c34d3c" },
+    { uuid = "6498cd32-b5e2-4e71-bc0c-bae89e88fb46" },
+    { uuid = "9cde707c-7e12-43e6-b70a-0bc56c995a4b" },
+    { uuid = "b5b9ae46-c106-48c2-b508-a3693ec788b5" },
+    { uuid = "c6a66d74-d82d-4cbc-8b9a-6e6af8455775" },
+    { uuid = "cff1ee0c-db91-4f1e-8b2e-90c68972336d" },
+    { uuid = "e310a3cb-6ca2-4abb-aeb7-cf1381444d1a" },
+    { uuid = "fceb39a3-f0b7-4838-bfbc-4d2873f5ef6d" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
