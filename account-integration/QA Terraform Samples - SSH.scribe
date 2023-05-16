@@ -1,0 +1,9 @@
+resource "account-integration" "QA Terraform Samples - SSH" {
+  name = "QA Terraform Samples - SSH"
+  uuid = "f5d14823-cacd-415b-b8f5-b3cfe7655bea"
+  category = "cm-server"
+  integrationType = { code = "git" }
+  serviceFlag = true
+  serviceUrl = "git@github.com:tommymarks/terraform-samples.git"
+  type = "git"
+}

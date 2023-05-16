@@ -1,0 +1,24 @@
+resource "task" "spotts test" {
+  name = "spotts test"
+  uuid = "21547851-e25d-43c1-a415-244ec0e8d37e"
+  allowCustomConfig = false
+  dateCreated = "2023-05-04T15:05:20.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-05-04T15:07:40.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "0136d2ab-9fb4-4995-b131-b6654f3f0fd9" },
+    { uuid = "354e26bd-90af-4661-9756-13cbdf997fab" },
+    { uuid = "93bafda2-36f8-45b4-a3ea-2486aa83b1a5" },
+    { uuid = "aee54535-e43b-4049-843c-1485bde55fe3" },
+    { uuid = "b1d86077-ba36-4809-a2b2-069e21ebfdcd" },
+    { uuid = "cc42cd67-82c6-44d6-82e1-642fae5a041a" },
+    { uuid = "d402019b-bef7-4cf2-95e6-9fa1513f7227" },
+    { uuid = "d6ba89ff-c8f9-4f53-a885-a75e885adb76" },
+    { uuid = "f90a0e01-0ee9-4ff2-8d63-66880d7e93f8" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
