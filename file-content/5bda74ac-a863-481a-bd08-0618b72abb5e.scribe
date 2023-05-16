@@ -1,0 +1,10 @@
+resource "file-content" "5bda74ac-a863-481a-bd08-0618b72abb5e" {
+  uuid = "5bda74ac-a863-481a-bd08-0618b72abb5e"
+  content = "grails.util.Holders.applicationContext['accountInvoiceService'].refreshAccountInvoices(new Date())"
+  dateCreated = "2023-02-10T19:50:50.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-02-10T19:50:50.000Z"
+  sourceType = "local"
+}
