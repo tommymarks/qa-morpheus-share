@@ -1,0 +1,10 @@
+resource "app-template" "f54f99d3-4c1c-45ff-8c92-f36afd7bb9e7" {
+  name = "db-cloudformation-scalegroups"
+  uuid = "f54f99d3-4c1c-45ff-8c92-f36afd7bb9e7"
+  active = true
+  custom = false
+  dateCreated = "2019-12-04T22:18:36.000Z"
+  lastUpdated = "2019-12-04T22:18:36.000Z"
+  templateType = { code = "cloudFormation" }
+  visibility = "private"
+}
