@@ -1,0 +1,28 @@
+resource "option-type" "ansibleTowerJobTemplateId" {
+  code = "ansibleTowerJobTemplateId"
+  name = "Job Template"
+  uuid = "5a0a6fd1-acb3-4217-b4fa-530a5e88b2ba"
+  category = "ansible"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "ansibleTowerIntegrationId"
+  displayOrder = 4
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldCode = "gomorpheus.label.jobTemplate"
+  fieldContext = "taskOptions"
+  fieldLabel = "Job Template"
+  fieldName = "ansibleTowerJobTemplateId"
+  global = true
+  noBlank = false
+  optionSource = "ansibleTowerJobTemplate"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}
