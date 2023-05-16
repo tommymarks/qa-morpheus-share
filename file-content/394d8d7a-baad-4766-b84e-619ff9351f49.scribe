@@ -1,0 +1,16 @@
+resource "file-content" "394d8d7a-baad-4766-b84e-619ff9351f49" {
+  uuid = "394d8d7a-baad-4766-b84e-619ff9351f49"
+  content = <<EOF
+def userOwner=true
+
+cypher.write('secret/phTokenLastCallTime', "SomeString", true, 0)
+
+
+EOF
+  dateCreated = "2023-03-17T15:28:48.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-17T15:51:44.000Z"
+  sourceType = "local"
+}
