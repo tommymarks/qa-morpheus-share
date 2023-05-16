@@ -1,0 +1,9 @@
+resource "task-option" "68249995-cd18-4da6-ad0f-cba779e00507" {
+  uuid = "68249995-cd18-4da6-ad0f-cba779e00507"
+  optionType = { code = "script" }
+  template = { uuid = "8af87141-d396-457d-8ed3-b5f605f32590" }
+  value = <<EOF
+echo "$(date) - reconfigure" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+}
