@@ -1,0 +1,7 @@
+resource "task-set-task" "0931b563-b8c9-4a94-a391-1aebe9835f48" {
+  uuid = "0931b563-b8c9-4a94-a391-1aebe9835f48"
+  entryTask = false
+  task = { name = "winping" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
