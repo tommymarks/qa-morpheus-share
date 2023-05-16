@@ -1,0 +1,13 @@
+resource "file-content" "48213249-3756-43e9-9a06-e26103e48943" {
+  uuid = "48213249-3756-43e9-9a06-e26103e48943"
+  content = <<EOF
+grails.util.Holders.applicationContext['amazonComputeService'].refreshDailyZoneType()
+
+EOF
+  dateCreated = "2023-03-09T20:33:07.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2023-03-09T20:34:27.000Z"
+  sourceType = "local"
+}
