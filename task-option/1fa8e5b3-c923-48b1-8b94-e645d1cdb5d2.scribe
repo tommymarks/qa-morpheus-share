@@ -1,0 +1,8 @@
+resource "task-option" "1fa8e5b3-c923-48b1-8b94-e645d1cdb5d2" {
+  uuid = "1fa8e5b3-c923-48b1-8b94-e645d1cdb5d2"
+  optionType = { code = "pythonScript" }
+  value = <<EOF
+lololol = morpheus['results']['pyprint']
+print str(lololol)
+EOF
+}
