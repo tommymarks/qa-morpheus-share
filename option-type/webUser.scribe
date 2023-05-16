@@ -1,0 +1,25 @@
+resource "option-type" "webUser" {
+  code = "webUser"
+  name = "User"
+  uuid = "b74d4054-ec65-4b9e-a48d-58ee5ed2a321"
+  category = "code"
+  advanced = false
+  blockClass = "local-credentials"
+  creatable = true
+  custom = false
+  displayOrder = 3
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldCode = "gomorpheus.label.option.authuser"
+  fieldContext = "taskOptions"
+  fieldLabel = "Auth User"
+  fieldName = "webUser"
+  global = true
+  localCredential = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
