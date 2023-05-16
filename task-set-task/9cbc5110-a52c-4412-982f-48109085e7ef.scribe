@@ -1,0 +1,7 @@
+resource "task-set-task" "9cbc5110-a52c-4412-982f-48109085e7ef" {
+  uuid = "9cbc5110-a52c-4412-982f-48109085e7ef"
+  entryTask = false
+  task = { name = "testField1" }
+  taskOrder = 0
+  taskPhase = "configure"
+}

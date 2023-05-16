@@ -1,0 +1,16 @@
+resource "task-set" "testField" {
+  name = "testField"
+  uuid = "042f9fc6-81bc-4ee6-b16b-cbbace183844"
+  allowCustomConfig = false
+  dateCreated = "2021-11-29T12:34:56.000Z"
+  lastUpdated = "2021-11-29T13:45:46.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "13cc1261-43a8-44c6-b309-6b0426afbb1d" },
+    { uuid = "9cbc5110-a52c-4412-982f-48109085e7ef" },
+    { uuid = "ce5b558f-78ce-481a-8589-a71b30670af5" },
+    { uuid = "f69a32e4-fa85-480f-9e67-43a08b0b068c" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
