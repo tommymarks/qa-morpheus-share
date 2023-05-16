@@ -1,0 +1,6 @@
+resource "task-option" "d7d4cf19-cb5c-4994-8c6c-901e172c85af" {
+  uuid = "d7d4cf19-cb5c-4994-8c6c-901e172c85af"
+  optionType = { code = "script" }
+  template = { uuid = "5966479c-593c-49c0-a4f8-7de2202ad356" }
+  value = "echo "$(date) - appliance" | tee -a /opt/morpheus/.local/job_appliance.txt"
+}
