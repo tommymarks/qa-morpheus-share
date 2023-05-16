@@ -1,0 +1,11 @@
+resource "task-set" "execute-workflow" {
+  name = "execute-workflow"
+  uuid = "0ade415b-7136-4f5e-88d3-2fd6cab87c18"
+  allowCustomConfig = false
+  dateCreated = "2019-09-19T18:34:37.000Z"
+  lastUpdated = "2019-09-19T18:34:37.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "24ea529d-494c-4271-bd23-bf3b20243bfa" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}

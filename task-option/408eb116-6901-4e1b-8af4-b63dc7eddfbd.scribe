@@ -1,0 +1,8 @@
+resource "task-option" "408eb116-6901-4e1b-8af4-b63dc7eddfbd" {
+  uuid = "408eb116-6901-4e1b-8af4-b63dc7eddfbd"
+  optionType = { code = "script" }
+  value = <<EOF
+echo "EXECUTE WORKFLOW"
+echo ERROR: Did I do that? 1>&2
+EOF
+}
