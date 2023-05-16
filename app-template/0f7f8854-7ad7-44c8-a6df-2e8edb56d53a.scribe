@@ -1,0 +1,11 @@
+resource "app-template" "0f7f8854-7ad7-44c8-a6df-2e8edb56d53a" {
+  name = "case 67371"
+  uuid = "0f7f8854-7ad7-44c8-a6df-2e8edb56d53a"
+  active = true
+  custom = false
+  dateCreated = "2022-08-05T07:19:28.000Z"
+  lastUpdated = "2022-09-17T18:57:30.000Z"
+  specTemplates = [ { uuid = "e63a77df-c172-4706-8e50-1c4f6f377e19" } ]
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
