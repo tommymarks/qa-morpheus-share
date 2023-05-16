@@ -1,0 +1,5 @@
+resource "task-option" "a09e9950-42f9-4832-b284-7f7cc3d2293d" {
+  uuid = "a09e9950-42f9-4832-b284-7f7cc3d2293d"
+  optionType = { code = "containerScript" }
+  value = "bash echo"
+}
