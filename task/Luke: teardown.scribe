@@ -1,0 +1,24 @@
+resource "task" "Luke: teardown" {
+  name = "Luke: teardown"
+  uuid = "b1fb3935-d803-48fd-8a1a-ca1fb1e5abac"
+  allowCustomConfig = false
+  dateCreated = "2021-11-15T21:05:46.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-15T21:05:46.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "1ebd2d01-7234-4dc4-af83-74a73819feb9" },
+    { uuid = "4cea398b-978d-4561-814c-fc1f7bb71880" },
+    { uuid = "54918d27-2901-4635-a7ce-f1e61da268e7" },
+    { uuid = "69b27f19-8306-4142-95cd-4d1947ed20ce" },
+    { uuid = "8d36d76d-3890-4cae-be67-8f9d0037c614" },
+    { uuid = "934ee886-237e-4ca9-9906-f0f6aa183873" },
+    { uuid = "bf073bb1-0da3-493b-88a4-acd3cd72947d" },
+    { uuid = "d6eac233-3b2d-418c-afcb-04c63d5283e2" },
+    { uuid = "e14f0c84-141b-444d-a482-4b3d22ccd4ae" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
