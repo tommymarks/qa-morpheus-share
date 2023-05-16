@@ -1,0 +1,14 @@
+resource "task" "Wait for 2 Hours" {
+  name = "Wait for 2 Hours"
+  uuid = "70196e3c-22d2-433f-9059-b93114271b71"
+  executeTarget = "resource"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "781f63c3-5293-47b5-a856-ebd229f81e74" },
+    { uuid = "a9ed4de2-e75c-47aa-88b6-fce7e45a35a6" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
