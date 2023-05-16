@@ -1,0 +1,24 @@
+resource "task" "Job: Task (No Custom Content)" {
+  name = "Job: Task (No Custom Content)"
+  uuid = "0cc40f4b-73b9-43f9-8d29-67d5ba7315c3"
+  allowCustomConfig = false
+  dateCreated = "2023-01-13T16:34:42.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-01-13T17:22:45.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "05a4de89-90db-4ee9-8915-f8a3bfc63c4a" },
+    { uuid = "0fcfac66-4bf4-448b-b41a-d1dc373e1718" },
+    { uuid = "2d97d381-936d-440c-bc73-74a13e252314" },
+    { uuid = "be00f754-5e16-4a6b-b4c9-2b7330fb572c" },
+    { uuid = "cd1bd6d1-07bc-42f5-a97b-4cd1d6f03765" },
+    { uuid = "d1382e07-d625-4308-9e16-1adc36e698b4" },
+    { uuid = "da934bf8-946c-4c24-8cd5-cd21be4738e6" },
+    { uuid = "dfa260e5-61e4-42b8-a699-7af2cdbca96e" },
+    { uuid = "f3b4c8f2-c7ff-4f8f-8eb4-14c2d025f042" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
