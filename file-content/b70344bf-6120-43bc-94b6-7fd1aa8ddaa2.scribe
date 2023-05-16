@@ -1,0 +1,10 @@
+resource "file-content" "b70344bf-6120-43bc-94b6-7fd1aa8ddaa2" {
+  uuid = "b70344bf-6120-43bc-94b6-7fd1aa8ddaa2"
+  content = "sleep 3600"
+  dateCreated = "2021-06-01T19:40:48.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-06-02T02:32:30.000Z"
+  sourceType = "local"
+}
