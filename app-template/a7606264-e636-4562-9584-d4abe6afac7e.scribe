@@ -1,0 +1,10 @@
+resource "app-template" "a7606264-e636-4562-9584-d4abe6afac7e" {
+  name = "qa-blueprint"
+  uuid = "a7606264-e636-4562-9584-d4abe6afac7e"
+  active = true
+  custom = false
+  dateCreated = "2020-05-23T16:28:48.000Z"
+  lastUpdated = "2020-07-07T23:32:38.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
