@@ -1,0 +1,5 @@
+resource "task-option" "bc885c57-90a4-45cf-bc59-ec703c04d12f" {
+  uuid = "bc885c57-90a4-45cf-bc59-ec703c04d12f"
+  optionType = { code = "script" }
+  value = "echo "$(date) - workflow" | tee -a /tmp/tm_workflow.txt"
+}
