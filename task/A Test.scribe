@@ -1,0 +1,24 @@
+resource "task" "A Test" {
+  name = "A Test"
+  uuid = "d0876440-8777-490e-8c08-f3cbdcf7b4b3"
+  allowCustomConfig = false
+  dateCreated = "2020-10-29T16:01:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-10-29T16:01:52.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "05eadb10-7796-47f6-966a-9f730afe670f" },
+    { uuid = "0a633d62-706d-430d-88a2-1fc3ae104fef" },
+    { uuid = "56b624ab-f51b-47c7-bfa1-29556f0c757c" },
+    { uuid = "6bce79c6-fed8-403a-8c26-befb08e12a6c" },
+    { uuid = "7951eaec-4dbb-49fa-bb54-ca976ad2153c" },
+    { uuid = "a6190f77-c416-4264-864d-72231ccccc85" },
+    { uuid = "b118aff8-9e18-4456-9cb7-3487fd43c79f" },
+    { uuid = "f97713a5-9f5f-42bb-817b-2b61c78a29d1" },
+    { uuid = "fd46271b-316f-4b32-b750-e894ebea3f58" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

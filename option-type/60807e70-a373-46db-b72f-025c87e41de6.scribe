@@ -1,0 +1,24 @@
+resource "option-type" "60807e70-a373-46db-b72f-025c87e41de6" {
+  name = "config.customOptions.checkbox2"
+  uuid = "60807e70-a373-46db-b72f-025c87e41de6"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample checkbox field"
+  displayOrder = 1
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "checkbox2"
+  fieldLabel = "Checkbox 2"
+  fieldName = "checkbox2"
+  fieldSetName = "checkbox2"
+  global = true
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "checkbox"
+}
