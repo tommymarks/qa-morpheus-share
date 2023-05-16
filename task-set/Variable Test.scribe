@@ -1,0 +1,11 @@
+resource "task-set" "Variable Test" {
+  name = "Variable Test"
+  uuid = "d87ea422-0a16-43be-a8fc-e623114c87be"
+  dateCreated = "2017-03-20T16:13:59.000Z"
+  labels = [ { name = "keep" }, { name = "production" } ]
+  lastUpdated = "2022-10-17T15:24:56.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "827e9e41-81f7-4342-822e-9863d85100b4" } ]
+  taskSetType = "provision"
+  visibility = "public"
+}
