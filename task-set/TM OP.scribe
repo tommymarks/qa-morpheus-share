@@ -1,0 +1,15 @@
+resource "task-set" "TM OP" {
+  name = "TM OP"
+  uuid = "1c7f1068-fc42-458d-8734-073ebc4819fb"
+  allowCustomConfig = false
+  dateCreated = "2019-10-09T23:10:53.000Z"
+  lastUpdated = "2020-02-06T22:28:44.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "83eb4501-c00d-4630-8e95-d6f906f79a6d" },
+    { uuid = "8a552801-c5c9-431e-8dc0-07e9bc1cf5f7" },
+    { uuid = "9f1226e1-2b60-4ca2-b5c8-45a56091cea4" }
+  ]
+  taskSetType = "operation"
+  visibility = "public"
+}
