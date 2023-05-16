@@ -1,0 +1,15 @@
+resource "file-content" "20f56f45-8a9a-4bed-854b-2c8934d37e0d" {
+  uuid = "20f56f45-8a9a-4bed-854b-2c8934d37e0d"
+  content = <<EOF
+def settingsService = grails.util.Holders.applicationContext['settingsService']
+def applianceSettings = settingsService.newSessionGetApplianceSettings()
+def cloudSyncIntervalSeconds = applianceSettings.applianceSettings['cloudSyncIntervalSeconds']?.value
+println("CLoud Sync: ${cloudSyncIntervalSeconds}")
+EOF
+  dateCreated = "2020-10-15T00:16:29.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-10-15T00:16:29.000Z"
+  sourceType = "local"
+}
