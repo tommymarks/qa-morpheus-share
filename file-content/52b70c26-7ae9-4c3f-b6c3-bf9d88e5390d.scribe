@@ -1,0 +1,13 @@
+resource "file-content" "52b70c26-7ae9-4c3f-b6c3-bf9d88e5390d" {
+  uuid = "52b70c26-7ae9-4c3f-b6c3-bf9d88e5390d"
+  content = <<EOF
+echo "$(date) - job task" | tee -a /tmp/job_task.txt
+echo "here is some output"
+EOF
+  dateCreated = "2020-10-27T14:26:17.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-10-27T14:26:17.000Z"
+  sourceType = "local"
+}

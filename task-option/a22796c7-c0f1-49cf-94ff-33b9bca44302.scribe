@@ -1,0 +1,5 @@
+resource "task-option" "a22796c7-c0f1-49cf-94ff-33b9bca44302" {
+  uuid = "a22796c7-c0f1-49cf-94ff-33b9bca44302"
+  optionType = { code = "host" }
+  value = "ec2-13-57-25-57.us-west-1.compute.amazonaws.com"
+}
