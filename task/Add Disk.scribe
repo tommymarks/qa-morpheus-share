@@ -1,0 +1,8 @@
+resource "task" "Add Disk" {
+  name = "Add Disk"
+  uuid = "fbc9b83e-f467-4cbf-8348-c3954ade3778"
+  executeTarget = "local"
+  taskOptions = [ { uuid = "32c8c44a-4eb1-46f1-9ba5-722bc30034a6" } ]
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}

@@ -1,0 +1,13 @@
+resource "task-option" "32c8c44a-4eb1-46f1-9ba5-722bc30034a6" {
+  uuid = "32c8c44a-4eb1-46f1-9ba5-722bc30034a6"
+  optionType = { code = "groovyScript" }
+  value = <<EOF
+def instanceObj = com.morpheus.Instance.get(instance.id)
+
+def applicationContext = grails.util.Holders.getApplicationContext()
+
+def instanceService = applicationContext['instanceService']
+
+instanceService.resizeInstance(instanceObj,instanceObj.plan,null,[servicePlanOptions: [maxMemory: instanceObj.maxMemory, maxCores: instanceObj.maxCores], networkInterfacess: instanceObj.getInterfacesMap(), storageController: instanceObj.getControllersMap(), volumes: instanceObj.getVolumesMap() + [[name: 'Hard Disk 5', size: 20, rootVolume: false, datastoreId: 'autoCluster']]])
+EOF
+}

@@ -1,0 +1,13 @@
+resource "task-set" "Add Disk" {
+  name = "Add Disk"
+  uuid = "18d1a179-7494-4e92-bfbb-3eade95b3edc"
+  dateCreated = "2018-03-07T21:01:19.000Z"
+  lastUpdated = "2018-03-07T21:01:19.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "3c8ba5c5-00bb-45e4-997c-da2643468593" },
+    { uuid = "9937f140-9fe3-4436-ab2a-6e136ab183dd" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
