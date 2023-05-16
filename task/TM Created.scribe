@@ -1,0 +1,23 @@
+resource "task" "TM Created" {
+  name = "TM Created"
+  uuid = "6c7c34e1-2520-4847-9d1c-31537cd5c8d2"
+  allowCustomConfig = false
+  dateCreated = "2022-10-17T21:19:06.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-10-17T21:19:06.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "20d704d6-6cb6-4ffe-a684-3c5f260179b8" },
+    { uuid = "318101a9-1aca-4fb5-9ba0-41b13bd3cf46" },
+    { uuid = "56e7bf62-9778-41c0-9f28-8e3e6a837160" },
+    { uuid = "8989cebc-abcf-4ab9-98f4-4c53d7548a4f" },
+    { uuid = "8b59bd8b-b0c2-4cda-817c-236e0f3105f1" },
+    { uuid = "9617ea0f-4d23-4c78-88c7-c61eae8eeb56" },
+    { uuid = "c7de7de7-411e-40ca-ae79-5c97a4bfb3aa" },
+    { uuid = "c801bb42-263f-4efd-bac2-3a7a97df3570" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
