@@ -1,0 +1,4 @@
+resource "task-option" "4fc7fac9-77ec-4b01-9a29-b2ebab91878f" {
+  uuid = "4fc7fac9-77ec-4b01-9a29-b2ebab91878f"
+  optionType = { code = "username" }
+}
