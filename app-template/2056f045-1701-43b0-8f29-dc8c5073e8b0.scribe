@@ -1,0 +1,10 @@
+resource "app-template" "2056f045-1701-43b0-8f29-dc8c5073e8b0" {
+  name = "CF EC2 Sample 1"
+  uuid = "2056f045-1701-43b0-8f29-dc8c5073e8b0"
+  active = true
+  custom = false
+  dateCreated = "2019-11-14T20:07:47.000Z"
+  lastUpdated = "2019-11-14T20:07:47.000Z"
+  templateType = { code = "cloudFormation" }
+  visibility = "private"
+}
