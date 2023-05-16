@@ -1,0 +1,24 @@
+resource "task" "echo instance vars" {
+  name = "echo instance vars"
+  uuid = "974571ee-3b75-4171-8f9e-65149f725e47"
+  allowCustomConfig = false
+  dateCreated = "2020-11-06T21:28:14.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-11-06T21:28:14.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "062fc3d8-3b4d-4974-948b-8997e763ecea" },
+    { uuid = "088cf640-5ae4-4673-b6fb-50f991b9b3c5" },
+    { uuid = "39e6c430-b95d-499a-bc94-923f3366f3c2" },
+    { uuid = "45af00b2-cafb-4079-b9cd-05cf6dae7bf6" },
+    { uuid = "75279c82-d579-4d01-8b64-97e534c5d4ff" },
+    { uuid = "781303a2-2ad4-40ad-b5b1-11a1d367cca5" },
+    { uuid = "bd9c9bce-2f9e-4b4d-ba3c-a6577207b366" },
+    { uuid = "e7b957a7-02d7-4d42-967e-7ffb02c8e4a6" },
+    { uuid = "eb5eb7af-fb15-4a07-8a6e-4e0433ec596e" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
