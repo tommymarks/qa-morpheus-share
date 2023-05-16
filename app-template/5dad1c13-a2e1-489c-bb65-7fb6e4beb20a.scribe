@@ -1,0 +1,11 @@
+resource "app-template" "5dad1c13-a2e1-489c-bb65-7fb6e4beb20a" {
+  name = "Blank Apache"
+  uuid = "5dad1c13-a2e1-489c-bb65-7fb6e4beb20a"
+  active = true
+  custom = false
+  description = "do not modify"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-03-15T19:03:22.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
