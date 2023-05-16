@@ -1,0 +1,11 @@
+resource "app-template" "8fbc5724-d8b9-48db-a0b2-4ce3926a50d1" {
+  name = "test182853411"
+  uuid = "8fbc5724-d8b9-48db-a0b2-4ce3926a50d1"
+  active = true
+  custom = false
+  dateCreated = "2022-07-29T13:49:59.000Z"
+  description = "for testing https://www.pivotaltracker.com/story/show/182853411"
+  lastUpdated = "2022-07-29T13:55:17.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
