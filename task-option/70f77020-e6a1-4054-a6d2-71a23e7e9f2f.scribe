@@ -1,0 +1,5 @@
+resource "task-option" "70f77020-e6a1-4054-a6d2-71a23e7e9f2f" {
+  uuid = "70f77020-e6a1-4054-a6d2-71a23e7e9f2f"
+  optionType = { code = "ansibleTowerJobTemplateId" }
+  value = "1239"
+}

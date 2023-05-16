@@ -1,0 +1,11 @@
+resource "task-set" "Ansible Tower Webserver" {
+  name = "Ansible Tower Webserver"
+  uuid = "0f901ac8-35b1-4b68-9761-1a923fbf73ad"
+  allowCustomConfig = false
+  dateCreated = "2021-04-21T02:29:58.000Z"
+  lastUpdated = "2021-04-21T02:29:58.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "f88e660a-5172-4430-8587-704d1d9696e7" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
