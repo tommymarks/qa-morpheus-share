@@ -1,0 +1,24 @@
+resource "task" "Job: Workflow" {
+  name = "Job: Workflow"
+  uuid = "747f80fe-a4c2-4672-9974-f2a54f898034"
+  allowCustomConfig = false
+  dateCreated = "2019-06-20T05:10:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-10-27T14:38:59.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "2bbfd87d-7546-486e-ab27-171325fc7f82" },
+    { uuid = "2fa7ce7e-60d1-4493-9f8d-4cc9377303c2" },
+    { uuid = "4a20ee7d-b917-42ea-bb81-b4a8b6039e1b" },
+    { uuid = "5162c12b-a5d6-4f92-be9b-4693ed6db32a" },
+    { uuid = "94bcd940-4a0e-494a-96a4-2092ebc10827" },
+    { uuid = "9a9be09a-2b33-4b3b-bb27-2f2fcdb2aba8" },
+    { uuid = "a65d48e2-8329-4054-bd22-69417def2ae0" },
+    { uuid = "c5b6f0c5-d1ac-445d-943e-42593dbf390d" },
+    { uuid = "daca19af-034d-4791-928c-651d990d74b1" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
