@@ -1,0 +1,21 @@
+resource "task-option" "efaa0e00-15f5-4841-bcb2-d938e3f9a846" {
+  uuid = "efaa0e00-15f5-4841-bcb2-d938e3f9a846"
+  optionType = { code = "script" }
+  value = <<EOF
+cd /opt/morpheus/lib/morpheus
+
+sudo wget --quiet --auth-no-challenge --user=bertramdev --password=Pa55w0rd https://jenkins.bertramlabs.com/job/morpheus-ui-4.2/lastSuccessfulBuild/artifact/build/libs/morpheus-ui-4.2-4.2.0.war
+
+sudo rm morpheus-ui.war
+
+sudo mv morpheus-ui-4.2-4.2.0.war /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo chown morpheus-app.morpheus-app /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo chmod 600 /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo morpheus-ctl graceful-kill morpheus-ui
+
+sudo morpheus-ctl start morpheus-ui
+EOF
+}
