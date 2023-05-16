@@ -1,0 +1,9 @@
+resource "app-template" "bab65a96-7a78-4166-8d69-bd40e4d155d2" {
+  name = "Terraform: Git"
+  uuid = "bab65a96-7a78-4166-8d69-bd40e4d155d2"
+  active = true
+  custom = false
+  labels = [ { name = "tommy" } ]
+  lastUpdated = "2022-10-05T20:37:17.000Z"
+  templateType = { code = "terraform" }
+}
