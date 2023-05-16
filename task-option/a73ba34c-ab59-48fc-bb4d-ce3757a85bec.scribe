@@ -1,0 +1,4 @@
+resource "task-option" "a73ba34c-ab59-48fc-bb4d-ce3757a85bec" {
+  uuid = "a73ba34c-ab59-48fc-bb4d-ce3757a85bec"
+  optionType = { code = "host" }
+}
