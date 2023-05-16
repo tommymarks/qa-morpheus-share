@@ -1,0 +1,4 @@
+resource "task-option" "d5c576d1-21b8-4724-bf0e-f0656afc47e5" {
+  uuid = "d5c576d1-21b8-4724-bf0e-f0656afc47e5"
+  optionType = { code = "pythonArgs" }
+}
