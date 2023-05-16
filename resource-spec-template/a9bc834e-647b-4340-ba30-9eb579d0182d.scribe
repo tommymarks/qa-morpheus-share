@@ -1,0 +1,16 @@
+resource "resource-spec-template" "a9bc834e-647b-4340-ba30-9eb579d0182d" {
+  name = "Nginx w/ Statefulset"
+  uuid = "a9bc834e-647b-4340-ba30-9eb579d0182d"
+  autoRun = false
+  dateCreated = "2023-03-10T19:40:21.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2023-03-10T19:40:21.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "b83ef1ef-8ba7-4f31-97da-9b16ac592337" }
+  templatePhase = "provision"
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
