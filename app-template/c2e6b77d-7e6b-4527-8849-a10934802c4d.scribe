@@ -1,0 +1,10 @@
+resource "app-template" "c2e6b77d-7e6b-4527-8849-a10934802c4d" {
+  name = "db-helm"
+  uuid = "c2e6b77d-7e6b-4527-8849-a10934802c4d"
+  active = true
+  custom = false
+  dateCreated = "2020-02-20T21:51:37.000Z"
+  lastUpdated = "2022-04-28T22:21:24.000Z"
+  templateType = { code = "helm" }
+  visibility = "public"
+}
