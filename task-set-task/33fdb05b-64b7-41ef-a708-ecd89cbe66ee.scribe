@@ -1,0 +1,7 @@
+resource "task-set-task" "33fdb05b-64b7-41ef-a708-ecd89cbe66ee" {
+  uuid = "33fdb05b-64b7-41ef-a708-ecd89cbe66ee"
+  entryTask = false
+  task = { name = "Job: Task (Custom Content)" }
+  taskOrder = 0
+  taskPhase = "operation"
+}
