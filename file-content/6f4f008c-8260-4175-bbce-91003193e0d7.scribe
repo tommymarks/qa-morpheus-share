@@ -1,0 +1,10 @@
+resource "file-content" "6f4f008c-8260-4175-bbce-91003193e0d7" {
+  uuid = "6f4f008c-8260-4175-bbce-91003193e0d7"
+  content = "echo customOptions = <%=customOptions%>"
+  dateCreated = "2020-06-09T20:49:42.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-06-09T20:53:59.000Z"
+  sourceType = "local"
+}
