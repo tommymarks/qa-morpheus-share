@@ -1,0 +1,19 @@
+resource "task-set" "aw-test" {
+  name = "aw-test"
+  uuid = "6b142be6-da88-4259-a407-927a9b289b05"
+  allowCustomConfig = false
+  dateCreated = "2020-11-18T22:28:31.000Z"
+  lastUpdated = "2020-11-18T22:38:01.000Z"
+  optionTypes = [
+    { code = "number1" },
+    { code = "password1" },
+    { code = "select1" },
+    { code = "text1" },
+    { code = "typeahead1" },
+    { code = "appName" },
+    { code = "aw1" }
+  ]
+  phase = "postProvision"
+  taskSetType = "operation"
+  visibility = "private"
+}
