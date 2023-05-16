@@ -1,0 +1,24 @@
+resource "task" "TM Email 2" {
+  name = "TM Email 2"
+  uuid = "3e534451-6c90-457c-a802-458f51ae7f1f"
+  allowCustomConfig = false
+  dateCreated = "2019-10-09T23:00:14.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-10-09T23:00:43.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "02c69b39-0304-48e8-996c-e75611f7fbe9" },
+    { uuid = "24ac1427-03f6-431b-a7d6-336cef0b58dd" },
+    { uuid = "2a660b9f-482c-4482-b58d-2b8ce9cc8b30" },
+    { uuid = "3c1afaf6-5a19-4b9d-b909-a7d9248b6ed4" },
+    { uuid = "5a741904-2dbc-4af7-a05f-a88c31f320c5" },
+    { uuid = "6296876a-e617-4444-8319-442763544a61" },
+    { uuid = "92228d0a-770e-45fa-a081-e798403d98d9" },
+    { uuid = "d23ba22a-3441-49fe-9a2b-39b4fa8b5fb6" },
+    { uuid = "e7ea2813-c06c-494e-bdc7-3f1f5ea6df5c" }
+  ]
+  taskType = { code = "email" }
+  visibility = "private"
+}

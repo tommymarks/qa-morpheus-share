@@ -1,0 +1,5 @@
+resource "task-option" "02c69b39-0304-48e8-996c-e75611f7fbe9" {
+  uuid = "02c69b39-0304-48e8-996c-e75611f7fbe9"
+  optionType = { code = "emailSubject" }
+  value = "ANOTHER EMAIL"
+}

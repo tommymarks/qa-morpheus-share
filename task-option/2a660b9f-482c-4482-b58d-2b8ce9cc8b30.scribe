@@ -1,0 +1,5 @@
+resource "task-option" "2a660b9f-482c-4482-b58d-2b8ce9cc8b30" {
+  uuid = "2a660b9f-482c-4482-b58d-2b8ce9cc8b30"
+  optionType = { code = "emailBody" }
+  value = "so lucky"
+}
