@@ -1,0 +1,27 @@
+resource "file-content" "935b075c-ef21-4490-b5c5-0c448c48a777" {
+  uuid = "935b075c-ef21-4490-b5c5-0c448c48a777"
+  content = <<EOF
+#!/bin/bash
+
+echo "subnet: <%= customOptions.vsInstanceNetwork.tokenize('|').getAt(1).tokenize('-')[1] %>"
+echo "idName: <%= customOptions.vsInstanceNetwork.tokenize('|').getAt(0).tokenize(' - ')[1] %>"
+echo "displayName: <%= customOptions.vsInstanceNetwork.tokenize('|').getAt(0) %>"
+echo "id: <%= customOptions.vsNetworks.tokenize('|').getAt(1) %>"
+
+
+echo "vsGroups: <%= customOptions.vsGroups %>"
+echo "vsClouds: <%= customOptions.vsClouds %>"
+echo "vsResourcepools: <%= customOptions.vsResourcepools %>"
+echo "network: <%= customOptions.vsNetworks %>"
+echo "instance network: <%= customOptions.vsInstanceNetwork %>"
+
+
+
+EOF
+  dateCreated = "2022-09-15T16:27:19.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-09-16T07:51:53.000Z"
+  sourceType = "local"
+}
