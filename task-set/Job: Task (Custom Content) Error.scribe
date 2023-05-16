@@ -1,0 +1,11 @@
+resource "task-set" "Job: Task (Custom Content) Error" {
+  name = "Job: Task (Custom Content) Error"
+  uuid = "b8643fa1-33bc-4033-aece-7d05bf3aa182"
+  allowCustomConfig = true
+  dateCreated = "2022-01-28T15:57:09.000Z"
+  lastUpdated = "2023-01-13T17:23:03.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "68389920-fcb8-44b7-a994-1a84910b975f" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}
