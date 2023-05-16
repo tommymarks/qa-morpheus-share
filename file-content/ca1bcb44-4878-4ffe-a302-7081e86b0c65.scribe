@@ -1,0 +1,13 @@
+resource "file-content" "ca1bcb44-4878-4ffe-a302-7081e86b0c65" {
+  uuid = "ca1bcb44-4878-4ffe-a302-7081e86b0c65"
+  content = <<EOF
+echo "$(date) - provision" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOF
+  dateCreated = "2021-02-19T04:17:38.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-02-19T04:17:38.000Z"
+  sourceType = "local"
+}
