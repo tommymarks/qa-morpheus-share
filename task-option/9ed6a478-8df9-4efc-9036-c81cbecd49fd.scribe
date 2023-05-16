@@ -1,0 +1,5 @@
+resource "task-option" "9ed6a478-8df9-4efc-9036-c81cbecd49fd" {
+  uuid = "9ed6a478-8df9-4efc-9036-c81cbecd49fd"
+  optionType = { code = "containerTemplateId" }
+  value = "1922"
+}
