@@ -1,0 +1,144 @@
+resource "file-content" "b93eea6f-3d62-4382-a047-b67678462f12" {
+  uuid = "b93eea6f-3d62-4382-a047-b67678462f12"
+  content = <<EOF
+import com.morpheus.util.ApiUtility
+/**
+* This script connects to vmware and applies a tag from a custom option by name to a virtual machine.
+* This is a morpheus automation script that expects the vmware credentials to live in cypher under the following keys "secret/vcenter_url", "secret/vcenter_user" and "secret/vcenter_pass"
+* TODO: This should probably be adjusted to handle categories as tags are not unique globally and can vary across category
+* @author David Estes
+*/
+ 
+def findTagByName(apiUrl,sessionId,categoryId,tagName) {
+                def apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/tag",null,null,[headers: ["vmware-api-session-id": sessionId]],'GET')
+                if(apiResults.success) {
+                                String tagId = apiResults.data?.value?.find { tagId ->
+                                                apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/tag/id:${tagId}",null,null,[headers: ["vmware-api-session-id": sessionId]],'GET')
+                                                if(apiResults.success) {
+                                                                if(apiResults.data.value.name.toString() == tagName.toString() && apiResults.data.value.category_id == categoryId) {
+                                                                                return true
+                                                                } else {
+                                                                                return false
+                                                                }
+                                                } else {
+                                                                throw new Exception("Error Getting Tag Details: ${apiResults.content}")
+                                                }
+                                }
+                                return tagId
+                } else {
+                                return null
+                }
+}
+ 
+def findCategoryByName(apiUrl,sessionId,categoryName) {
+                def apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/category",null,null,[headers: ["vmware-api-session-id": sessionId]],'GET')
+                if(apiResults.success) {
+                                String categoryId = apiResults.data?.value?.find { tagId ->
+                                                apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/category/id:${tagId}",null,null,[headers: ["vmware-api-session-id": sessionId]],'GET')
+                                                if(apiResults.success) {
+                                                                if(apiResults.data.value.name == categoryName) {
+                                                                                return true
+                                                                } else {
+                                                                                return false
+                                                                }
+                                                } else {
+                                                                throw new Exception("Error Getting Tag Details: ${apiResults.content}")
+                                                }
+                                }
+                                return categoryId
+                } else {
+                                return null
+                }
+}
+ 
+def createCategory(apiUrl,sessionId,categoryName) {
+                def body = [create_spec: [
+                                associable_types: ['VirtualMachine'],
+                                cardinality: 'SINGLE',
+                                name:categoryName,
+                                description: categoryName
+                ]
+                ]
+                def apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/category",null,null,[headers: ["vmware-api-session-id": sessionId], body: body],'POST')
+                return apiResults.success ? apiResults.data.value : null
+}
+ 
+def createTag(apiUrl,sessionId,categoryId,tagName) {
+                def body = [create_spec: [
+                                category_id: categoryId,
+                                name:tagName,
+                                description: tagName
+                ]
+                ]
+                def apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/tag",null,null,[headers: ["vmware-api-session-id": sessionId], body: body],'POST')
+                return apiResults.success ? apiResults.data.value : null
+}
+ 
+def applyTags(apiUrl,username,password,vmId,tagsMap) {
+                String sessionId
+                Map apiResults //used for tracking api results as api commands are called
+                Map body //body json map if needed
+                Map query //query params
+                try {
+                                apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/session",username,password,[:],'POST')
+                                if(apiResults.success) {
+                                                sessionId = apiResults.data.value
+                                }
+        println "Acquired Session Id: ${sessionId}"
+                                tagsMap.each { tagKey,tagValue ->
+               if(!tagValue || tagValue == 'null') {
+              //no tag value, ignore this one
+              return
+            }
+                        println "Applying Tag: ${tagKey} -- ${tagValue}"
+                                                def categoryId = findCategoryByName(apiUrl,sessionId,tagKey)
+                                                if(!categoryId) {
+                                                                categoryId = createCategory(apiUrl,sessionId,tagKey)
+                                                }
+                                                def tagId = findTagByName(apiUrl,sessionId,categoryId,tagValue)
+                                                if(!tagId) {
+                                                                tagId = createTag(apiUrl,sessionId,categoryId,tagValue)
+                                                }
+                                                if(tagId && categoryId) {
+                println "tagId: ${tagId} -- ${categoryId}"
+                                                                query = ['~action':'attach']
+                                                                body = [object_id: [type: 'VirtualMachine', id: vmId]]
+                                                                apiResults = ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/tagging/tag-association/id:${tagId}",null,null,[headers: ["vmware-api-session-id": sessionId], body: body, query:query],'POST')
+                                                                if(!apiResults.success) {
+                                                                                throw new Exception("Error Associating Tag to VM: ${apiResults.content}")
+                                                                }
+                                                } else {
+              throw new Exception("An error occurred while attempting to apply a tag to vcenter. Please verify that the vcenter account has sufficient privileges for ${username}@${apiUrl}")
+            }
+                                }
+                } finally {
+                                //Logout of the session when we are done
+                                if(sessionId) {
+                                                ApiUtility.callJsonApi(apiUrl,"/rest/com/vmware/cis/session",null,null,[headers: ["vmware-api-session-id": sessionId]],'DELETE')
+                                }
+                }
+}
+//Setup Givens
+String apiUrl = cypher.read("secret/vcenter_api_url")
+String vmId = server.externalId
+String username = cypher.read("secret/vcenter_api_user")
+String password = cypher.read("secret/vcenter_api_pass")
+Map tagsMap = [
+"aa-costcenter" : customOptions.Application_CostCenter,
+"aa-archer-id" : customOptions.Application_Archer_id,
+"aa-sdlc-environment" : customOptions.Application_sdlc_environment,
+"aa-criticality" : customOptions.Application_Criticality,
+"aa-application" : customOptions.Application_Name,
+"aa-vm-type" : "VM"
+]
+println "Connecting to VCENTER: ${apiUrl} as ${username}"
+println "tags${tagsMap}"
+applyTags(apiUrl,username,password,vmId,tagsMap)
+EOF
+  dateCreated = "2020-03-25T20:24:47.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-03-25T20:24:47.000Z"
+  sourceType = "local"
+}
