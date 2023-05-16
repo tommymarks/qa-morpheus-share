@@ -1,0 +1,10 @@
+resource "app-template" "d84b8011-e9af-4b8a-a8b9-99f3adf99288" {
+  name = "al-terraform-case"
+  uuid = "d84b8011-e9af-4b8a-a8b9-99f3adf99288"
+  active = true
+  custom = false
+  dateCreated = "2021-03-15T14:38:06.000Z"
+  lastUpdated = "2021-11-30T21:56:04.000Z"
+  templateType = { code = "terraform" }
+  visibility = "public"
+}
