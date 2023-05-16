@@ -1,0 +1,14 @@
+resource "option-type-list" "Project Environment List" {
+  name = "Project Environment List"
+  uuid = "c6fd7142-d8a2-4f7f-9262-28bb33ec9311"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+Dev,dev
+Staging,staging
+Production,production
+EOF
+  realTime = true
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}

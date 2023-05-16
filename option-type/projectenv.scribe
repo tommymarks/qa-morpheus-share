@@ -1,0 +1,35 @@
+resource "option-type" "projectenv" {
+  code = "projectenv"
+  name = "Project Environment"
+  uuid = "9d4bca24-f533-4040-b839-47261f45166d"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Project Environment"
+  fieldName = "projectenv"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "Project Environment List" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}

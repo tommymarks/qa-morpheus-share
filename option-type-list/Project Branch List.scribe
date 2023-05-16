@@ -1,0 +1,23 @@
+resource "option-type-list" "Project Branch List" {
+  name = "Project Branch List"
+  uuid = "8c837603-5feb-45e1-857a-ff9c96ab7133"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+dev,develop
+staging,staging
+production,stable
+EOF
+  realTime = true
+  sourceMethod = "GET"
+  translationScript = <<EOF
+if (input.projectenv) {
+  for (var x = 0; x < data.length; x++) {
+    if (data[x].name == input.projectenv) {
+      results.push({name:data[x].name, value:data[x].value});
+    }
+  }
+}
+EOF
+  type = "manual"
+  visibility = "private"
+}

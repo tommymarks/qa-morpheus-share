@@ -1,0 +1,16 @@
+resource "task-set" "Project Build" {
+  name = "Project Build"
+  uuid = "c1811779-10ef-4a5c-b4a6-3bd62143919b"
+  allowCustomConfig = false
+  dateCreated = "2022-06-27T18:34:19.000Z"
+  lastUpdated = "2022-06-27T18:34:19.000Z"
+  optionTypes = [
+    { code = "projectenv" },
+    { code = "projectbranch" },
+    { code = "projectsoftwareversion" }
+  ]
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "1e9b4b2e-5b92-4ec1-92e2-b1b05e16fdee" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}
