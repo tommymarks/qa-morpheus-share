@@ -1,0 +1,7 @@
+resource "task-set-task" "eae6b189-e76f-4a13-8b70-dfddb0139a73" {
+  uuid = "eae6b189-e76f-4a13-8b70-dfddb0139a73"
+  entryTask = false
+  task = { name = "DGTestNewTemplate" }
+  taskOrder = 0
+  taskPhase = "postProvision"
+}

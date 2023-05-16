@@ -1,0 +1,4 @@
+resource "task-option" "1164f076-f796-4d37-b7cc-8aebf521c855" {
+  uuid = "1164f076-f796-4d37-b7cc-8aebf521c855"
+  optionType = { code = "ansibleGroup" }
+}

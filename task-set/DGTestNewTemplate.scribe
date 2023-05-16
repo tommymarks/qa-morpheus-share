@@ -1,0 +1,11 @@
+resource "task-set" "DGTestNewTemplate" {
+  name = "DGTestNewTemplate"
+  uuid = "f9f25944-2c77-493e-8ccb-9bd2b666bb09"
+  allowCustomConfig = false
+  dateCreated = "2023-02-23T19:43:33.000Z"
+  lastUpdated = "2023-02-27T10:15:05.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "eae6b189-e76f-4a13-8b70-dfddb0139a73" } ]
+  taskSetType = "provision"
+  visibility = "public"
+}
