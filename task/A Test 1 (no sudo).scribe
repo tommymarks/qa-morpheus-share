@@ -1,0 +1,24 @@
+resource "task" "A Test 1 (no sudo)" {
+  name = "A Test 1 (no sudo)"
+  uuid = "89434f21-dc5e-4c8f-8d2e-226fad09adfc"
+  allowCustomConfig = false
+  dateCreated = "2021-08-06T19:43:06.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-08-06T19:51:03.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "32c7acbc-5569-4047-b712-ba50135716f4" },
+    { uuid = "34d74ee5-aba8-43cf-9593-79eb3b277d0c" },
+    { uuid = "43557639-c036-444a-9bd7-0b7b09781d50" },
+    { uuid = "4ac2295e-2f77-4467-bf0e-532051e6f412" },
+    { uuid = "735b3fda-70bf-413c-a95a-7f023bce84bd" },
+    { uuid = "a94d6895-0628-4961-9ccf-571a167b09f1" },
+    { uuid = "c9c690eb-552c-4c24-ac6a-6ee676de818d" },
+    { uuid = "cce4a90b-1054-4656-8bfa-d5091bbc0a67" },
+    { uuid = "f5d90c2d-8166-445c-80f2-2f5b80597598" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
