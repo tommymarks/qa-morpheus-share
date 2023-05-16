@@ -1,0 +1,10 @@
+resource "file-content" "e994862a-f93d-4da5-bbca-e9d6ae10653f" {
+  uuid = "e994862a-f93d-4da5-bbca-e9d6ae10653f"
+  content = "echo "<%= customOptions.testField %>""
+  dateCreated = "2021-11-29T12:34:24.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-11-29T12:38:35.000Z"
+  sourceType = "local"
+}

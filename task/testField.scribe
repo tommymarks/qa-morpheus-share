@@ -1,0 +1,24 @@
+resource "task" "testField" {
+  name = "testField"
+  uuid = "72942317-9f2f-4c5f-ac96-d4b51fbd4041"
+  allowCustomConfig = false
+  dateCreated = "2021-11-29T12:34:24.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-29T12:44:28.000Z"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskOptions = [
+    { uuid = "13001864-47da-4186-bb3d-72a588a415bb" },
+    { uuid = "27335b70-7b03-4585-a369-9390165dcb1c" },
+    { uuid = "2d3b763f-1947-451e-8489-e71cca6aef4c" },
+    { uuid = "412d6e0a-e13b-49c1-8fc0-f7dcb156ec6e" },
+    { uuid = "58a7406d-ef12-4594-b930-7d749172a0dd" },
+    { uuid = "5b2ff1e2-abe8-4e3c-ac36-7600979344fe" },
+    { uuid = "6c6b93ff-b78b-48f7-a6cc-94dd2545d684" },
+    { uuid = "8a9e215a-1c57-4dcf-8ee5-849cdfaf7199" },
+    { uuid = "b7c28004-3c0a-4790-8b5b-4d1376f942bd" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
