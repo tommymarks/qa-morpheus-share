@@ -1,0 +1,11 @@
+resource "task" "Reset Agent" {
+  name = "Reset Agent"
+  uuid = "3b18d84d-8290-49f9-ba48-db3a81f4003d"
+  executeTarget = "resource"
+  taskOptions = [
+    { uuid = "131e404d-18aa-4abd-aaf1-45eb2d66ec67" },
+    { uuid = "81314572-a62a-4bf9-a3ee-b3bad9c3cd5f" }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}
