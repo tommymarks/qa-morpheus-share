@@ -1,7 +1,0 @@
-resource "task-set-task" "0001aaa2-3724-48b6-8196-3c7a4725c2e2" {
-  uuid = "0001aaa2-3724-48b6-8196-3c7a4725c2e2"
-  entryTask = false
-  task = { name = "dg_disk_label_change" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

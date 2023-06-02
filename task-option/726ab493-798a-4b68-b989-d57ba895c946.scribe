@@ -1,4 +1,0 @@
-resource "task-option" "726ab493-798a-4b68-b989-d57ba895c946" {
-  uuid = "726ab493-798a-4b68-b989-d57ba895c946"
-  optionType = { code = "chefDataKeyPath" }
-}

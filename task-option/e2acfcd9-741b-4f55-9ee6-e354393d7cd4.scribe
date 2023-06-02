@@ -1,5 +1,0 @@
-resource "task-option" "e2acfcd9-741b-4f55-9ee6-e354393d7cd4" {
-  uuid = "e2acfcd9-741b-4f55-9ee6-e354393d7cd4"
-  optionType = { code = "script" }
-  value = "echo "SSH script" | sudo tee -a /tmp/task.txt"
-}

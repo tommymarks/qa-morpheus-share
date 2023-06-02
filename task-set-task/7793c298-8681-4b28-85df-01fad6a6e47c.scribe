@@ -1,7 +1,0 @@
-resource "task-set-task" "7793c298-8681-4b28-85df-01fad6a6e47c" {
-  uuid = "7793c298-8681-4b28-85df-01fad6a6e47c"
-  entryTask = false
-  task = { name = "Hello World Local Windows" }
-  taskOrder = 0
-  taskPhase = "postProvision"
-}

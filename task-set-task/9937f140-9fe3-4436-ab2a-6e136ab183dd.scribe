@@ -1,7 +1,0 @@
-resource "task-set-task" "9937f140-9fe3-4436-ab2a-6e136ab183dd" {
-  uuid = "9937f140-9fe3-4436-ab2a-6e136ab183dd"
-  entryTask = false
-  task = { name = "Add Disk" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

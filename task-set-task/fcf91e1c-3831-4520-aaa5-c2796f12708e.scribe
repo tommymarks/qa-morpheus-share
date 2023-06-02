@@ -1,7 +1,0 @@
-resource "task-set-task" "fcf91e1c-3831-4520-aaa5-c2796f12708e" {
-  uuid = "fcf91e1c-3831-4520-aaa5-c2796f12708e"
-  entryTask = false
-  task = { name = "Cypher" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

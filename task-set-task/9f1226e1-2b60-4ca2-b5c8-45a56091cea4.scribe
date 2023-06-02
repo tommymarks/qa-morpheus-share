@@ -1,7 +1,0 @@
-resource "task-set-task" "9f1226e1-2b60-4ca2-b5c8-45a56091cea4" {
-  uuid = "9f1226e1-2b60-4ca2-b5c8-45a56091cea4"
-  entryTask = false
-  task = { name = "TM Email 2" }
-  taskOrder = 2
-  taskPhase = "operation"
-}

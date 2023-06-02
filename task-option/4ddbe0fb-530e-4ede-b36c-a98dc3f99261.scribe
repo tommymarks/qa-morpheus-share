@@ -1,5 +1,0 @@
-resource "task-option" "4ddbe0fb-530e-4ede-b36c-a98dc3f99261" {
-  uuid = "4ddbe0fb-530e-4ede-b36c-a98dc3f99261"
-  optionType = { code = "ansibleTowerExecuteMode" }
-  value = "executeHost"
-}

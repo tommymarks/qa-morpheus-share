@@ -1,5 +1,0 @@
-resource "task-option" "f3f5137c-2d05-49c9-93a1-12907a281131" {
-  uuid = "f3f5137c-2d05-49c9-93a1-12907a281131"
-  optionType = { code = "chefEnv" }
-  value = "_default"
-}

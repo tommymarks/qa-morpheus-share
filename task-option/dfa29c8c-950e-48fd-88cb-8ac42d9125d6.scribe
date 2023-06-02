@@ -1,4 +1,0 @@
-resource "task-option" "dfa29c8c-950e-48fd-88cb-8ac42d9125d6" {
-  uuid = "dfa29c8c-950e-48fd-88cb-8ac42d9125d6"
-  optionType = { code = "webMethod" }
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "1265e82c-d10c-4336-b5f2-a0fde8b4e0b2" {
-  uuid = "1265e82c-d10c-4336-b5f2-a0fde8b4e0b2"
-  entryTask = false
-  task = { name = "a Sudo Test 1" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

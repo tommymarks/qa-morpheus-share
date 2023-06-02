@@ -1,5 +1,0 @@
-resource "task-option" "95c417f4-e916-48fc-a2cf-53b62a8b3c45" {
-  uuid = "95c417f4-e916-48fc-a2cf-53b62a8b3c45"
-  optionType = { code = "vroIntegrationId" }
-  value = "6254"
-}

@@ -1,7 +1,0 @@
-resource "app-template" "f3c91e7b-9b52-4748-83fd-0147f044293c" {
-  name = "Amazon OSs"
-  uuid = "f3c91e7b-9b52-4748-83fd-0147f044293c"
-  active = true
-  custom = false
-  templateType = { code = "morpheus" }
-}

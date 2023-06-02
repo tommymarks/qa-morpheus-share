@@ -1,7 +1,0 @@
-resource "task-set-task" "69ff37d7-3080-4ae6-a3b9-0d9ab018213e" {
-  uuid = "69ff37d7-3080-4ae6-a3b9-0d9ab018213e"
-  entryTask = false
-  task = { name = "whoami - user" }
-  taskOrder = 1
-  taskPhase = "provision"
-}

@@ -1,7 +1,0 @@
-resource "app-template" "f4a04b3c-b274-403b-aa8f-ecee0d1162d4" {
-  name = "hdi_hbase_cluster"
-  uuid = "f4a04b3c-b274-403b-aa8f-ecee0d1162d4"
-  active = true
-  custom = false
-  templateType = { code = "arm" }
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "41676100-285d-4bfc-bb1a-7ca414a7dba0" {
-  uuid = "41676100-285d-4bfc-bb1a-7ca414a7dba0"
-  entryTask = false
-  task = { name = "File: Ruby" }
-  taskOrder = 2
-  taskPhase = "provision"
-}

@@ -1,5 +1,0 @@
-resource "task-option" "ff32cebc-317e-4909-98a0-d868a4108029" {
-  uuid = "ff32cebc-317e-4909-98a0-d868a4108029"
-  optionType = { code = "ansibleGroup" }
-  value = "f5"
-}

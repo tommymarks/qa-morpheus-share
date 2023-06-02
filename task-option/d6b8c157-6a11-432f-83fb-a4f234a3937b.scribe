@@ -1,5 +1,0 @@
-resource "task-option" "d6b8c157-6a11-432f-83fb-a4f234a3937b" {
-  uuid = "d6b8c157-6a11-432f-83fb-a4f234a3937b"
-  optionType = { code = "webPassword" }
-  value = "guest"
-}

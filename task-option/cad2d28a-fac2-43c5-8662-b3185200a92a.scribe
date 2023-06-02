@@ -1,5 +1,0 @@
-resource "task-option" "cad2d28a-fac2-43c5-8662-b3185200a92a" {
-  uuid = "cad2d28a-fac2-43c5-8662-b3185200a92a"
-  optionType = { code = "pythonScript" }
-  template = { uuid = "a416e39a-d863-4293-8ce2-cdfb38e3b473" }
-}

@@ -1,6 +1,0 @@
-resource "task-option" "2b0c5678-b426-4ad2-924c-b9de75d89307" {
-  uuid = "2b0c5678-b426-4ad2-924c-b9de75d89307"
-  optionType = { code = "script" }
-  template = { uuid = "b1115a7a-6e9f-462b-8772-c401ddd77907" }
-  value = "echo "hello world!" | tee -a /tmp/hello.txt"
-}

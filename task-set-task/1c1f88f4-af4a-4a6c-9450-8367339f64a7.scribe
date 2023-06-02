@@ -1,7 +1,0 @@
-resource "task-set-task" "1c1f88f4-af4a-4a6c-9450-8367339f64a7" {
-  uuid = "1c1f88f4-af4a-4a6c-9450-8367339f64a7"
-  entryTask = false
-  task = { name = "a2-pwsh" }
-  taskOrder = 1
-  taskPhase = "operation"
-}

@@ -1,5 +1,0 @@
-resource "task-option" "0dae29ee-286c-4d78-84dc-6c466c77a8ee" {
-  uuid = "0dae29ee-286c-4d78-84dc-6c466c77a8ee"
-  optionType = { code = "webHeaders" }
-  value = "[]"
-}

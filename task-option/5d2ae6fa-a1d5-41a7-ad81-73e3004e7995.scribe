@@ -1,5 +1,0 @@
-resource "task-option" "5d2ae6fa-a1d5-41a7-ad81-73e3004e7995" {
-  uuid = "5d2ae6fa-a1d5-41a7-ad81-73e3004e7995"
-  optionType = { code = "pythonAdditionalPackages" }
-  value = "requests morpheus-cypher"
-}

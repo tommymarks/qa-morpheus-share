@@ -1,5 +1,0 @@
-resource "task-option" "1ed8fc2f-9c2e-46ad-b1f8-9b51bfcbcc0a" {
-  uuid = "1ed8fc2f-9c2e-46ad-b1f8-9b51bfcbcc0a"
-  optionType = { code = "containerScript" }
-  value = "Who Am I - Sudo"
-}

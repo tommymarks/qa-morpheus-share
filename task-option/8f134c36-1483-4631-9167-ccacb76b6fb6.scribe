@@ -1,5 +1,0 @@
-resource "task-option" "8f134c36-1483-4631-9167-ccacb76b6fb6" {
-  uuid = "8f134c36-1483-4631-9167-ccacb76b6fb6"
-  optionType = { code = "rubyScript" }
-  template = { uuid = "bf52fa0d-0889-4d20-9797-235d1412ec94" }
-}

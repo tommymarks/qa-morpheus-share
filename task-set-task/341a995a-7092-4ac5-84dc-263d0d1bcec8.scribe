@@ -1,7 +1,0 @@
-resource "task-set-task" "341a995a-7092-4ac5-84dc-263d0d1bcec8" {
-  uuid = "341a995a-7092-4ac5-84dc-263d0d1bcec8"
-  entryTask = false
-  task = { name = "hijack name" }
-  taskOrder = 4
-  taskPhase = "configure"
-}

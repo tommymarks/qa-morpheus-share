@@ -1,4 +1,0 @@
-resource "task-option" "2d1974aa-c3c0-467f-9ab5-584d76ee1a3d" {
-  uuid = "2d1974aa-c3c0-467f-9ab5-584d76ee1a3d"
-  optionType = { code = "webBody" }
-}

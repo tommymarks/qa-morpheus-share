@@ -1,6 +1,0 @@
-resource "task-option" "7d5483d8-5b78-4767-8740-fa744c21f934" {
-  uuid = "7d5483d8-5b78-4767-8740-fa744c21f934"
-  optionType = { code = "script" }
-  template = { uuid = "52b70c26-7ae9-4c3f-b6c3-bf9d88e5390d" }
-  value = "echo "$(date) - job task" | tee -a /tmp/job_task.txt"
-}

@@ -1,5 +1,0 @@
-resource "task-option" "dc1838b5-f59f-4ced-a0c0-5acfe791ebfb" {
-  uuid = "dc1838b5-f59f-4ced-a0c0-5acfe791ebfb"
-  optionType = { code = "containerTemplate" }
-  value = "auto template 0511110853464"
-}

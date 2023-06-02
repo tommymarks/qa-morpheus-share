@@ -1,5 +1,0 @@
-resource "task-option" "743a2b3d-133e-42d9-af3e-fb4aeef4786b" {
-  uuid = "743a2b3d-133e-42d9-af3e-fb4aeef4786b"
-  optionType = { code = "chefAttributes" }
-  value = "{}"
-}

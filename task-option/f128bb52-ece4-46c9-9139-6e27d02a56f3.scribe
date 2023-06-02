@@ -1,5 +1,0 @@
-resource "task-option" "f128bb52-ece4-46c9-9139-6e27d02a56f3" {
-  uuid = "f128bb52-ece4-46c9-9139-6e27d02a56f3"
-  optionType = { code = "ansibleTowerIntegrationId" }
-  value = "4997"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "0a3b270b-a58b-4ec7-9f12-493754a24078" {
-  uuid = "0a3b270b-a58b-4ec7-9f12-493754a24078"
-  entryTask = false
-  task = { code = "eg_send" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

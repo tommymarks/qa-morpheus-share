@@ -1,5 +1,0 @@
-resource "task-option" "72a4ea91-86a6-4ff1-a03e-5a5e5e5beb43" {
-  uuid = "72a4ea91-86a6-4ff1-a03e-5a5e5e5beb43"
-  optionType = { code = "puppetMasterId" }
-  value = "7347"
-}

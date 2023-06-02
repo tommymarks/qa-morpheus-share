@@ -1,5 +1,0 @@
-resource "task-option" "c4ce9d40-b5bc-4727-a992-5078f29495e3" {
-  uuid = "c4ce9d40-b5bc-4727-a992-5078f29495e3"
-  optionType = { code = "webMethod" }
-  value = "GET"
-}

@@ -1,7 +1,0 @@
-resource "app-template" "ef77fcf5-a828-4ba2-88eb-b5c615d6bcaa" {
-  name = "Gap hid_hbase_cluster"
-  uuid = "ef77fcf5-a828-4ba2-88eb-b5c615d6bcaa"
-  active = true
-  custom = false
-  templateType = { code = "arm" }
-}

@@ -1,5 +1,0 @@
-resource "task-option" "fa229a5d-06f6-4f8f-a723-f845cc3f242c" {
-  uuid = "fa229a5d-06f6-4f8f-a723-f845cc3f242c"
-  optionType = { code = "script" }
-  value = "echo "domain workflow test" | tee -a /tmp/domain.txt"
-}

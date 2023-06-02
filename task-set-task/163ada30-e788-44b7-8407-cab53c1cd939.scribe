@@ -1,7 +1,0 @@
-resource "task-set-task" "163ada30-e788-44b7-8407-cab53c1cd939" {
-  uuid = "163ada30-e788-44b7-8407-cab53c1cd939"
-  entryTask = false
-  task = { name = "Morpheus Setup" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

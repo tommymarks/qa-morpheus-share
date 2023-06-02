@@ -1,5 +1,0 @@
-resource "task-option" "12b7850e-6e76-4e01-8620-d4ffd2757185" {
-  uuid = "12b7850e-6e76-4e01-8620-d4ffd2757185"
-  optionType = { code = "chefServerId" }
-  value = "4"
-}

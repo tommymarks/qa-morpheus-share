@@ -1,5 +1,0 @@
-resource "task-option" "802d9a56-fe37-4fad-bf50-dbb0559e5bfb" {
-  uuid = "802d9a56-fe37-4fad-bf50-dbb0559e5bfb"
-  optionType = { code = "vroBody" }
-  value = "{"parameters":[{"name":"hostNameOrIP","type":"string","value":{"string":{"value":"10.30.21.120"}}},{"name":"port","type":"number","value":{"number":{"value":22}}},{"name":"cmd","type":"string","value":{"string":{"value":"echo \"Hello <%=instance.name%>\""}}},{"name":"encoding","type":"string","value":{"string":{"value":""}}},{"name":"username","type":"string","value":{"string":{"value":"bertram"}}},{"name":"passwordAuthentication","type":"boolean","value":{"boolean":{"value":true}}},{"name":"password","type":"string","value":{"string":{"value":"bertram4admin"}}},{"name":"path","type":"string","value":{"string":{"value":"/var/lib/vco/app-server/conf/vco_key"}}},{"name":"passphrase","type":"string","value":{"string":{"value":""}}}],"profilerOptions":{"enabled":true,"debuggerEnabled":false}}"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "1d3887b8-b8ed-431b-b8c3-ddada3cd92ab" {
-  uuid = "1d3887b8-b8ed-431b-b8c3-ddada3cd92ab"
-  entryTask = false
-  task = { code = "s-node-migrate" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

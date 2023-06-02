@@ -1,5 +1,0 @@
-resource "task-option" "e82da12c-531d-4648-94e3-b7cdb3c411a8" {
-  uuid = "e82da12c-531d-4648-94e3-b7cdb3c411a8"
-  optionType = { code = "emailAddress" }
-  value = "djb@alumni.rice.edu"
-}

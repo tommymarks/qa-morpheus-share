@@ -1,5 +1,0 @@
-resource "task-option" "5e8fa310-01f2-4c9f-81f7-9c1d90965cb7" {
-  uuid = "5e8fa310-01f2-4c9f-81f7-9c1d90965cb7"
-  optionType = { code = "script" }
-  value = "env | tee /tmp/environment.txt"
-}

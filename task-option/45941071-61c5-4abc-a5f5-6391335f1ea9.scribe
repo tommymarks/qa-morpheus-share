@@ -1,5 +1,0 @@
-resource "task-option" "45941071-61c5-4abc-a5f5-6391335f1ea9" {
-  uuid = "45941071-61c5-4abc-a5f5-6391335f1ea9"
-  optionType = { code = "password" }
-  value = "bertram4admin"
-}

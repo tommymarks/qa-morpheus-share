@@ -1,4 +1,0 @@
-resource "task-option" "3ac1f5b8-f490-466f-bb4e-71cd2495f6cf" {
-  uuid = "3ac1f5b8-f490-466f-bb4e-71cd2495f6cf"
-  optionType = { code = "username" }
-}

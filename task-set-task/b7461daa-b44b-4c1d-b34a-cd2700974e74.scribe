@@ -1,7 +1,0 @@
-resource "task-set-task" "b7461daa-b44b-4c1d-b34a-cd2700974e74" {
-  uuid = "b7461daa-b44b-4c1d-b34a-cd2700974e74"
-  entryTask = false
-  task = { name = "Puppet Agent" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

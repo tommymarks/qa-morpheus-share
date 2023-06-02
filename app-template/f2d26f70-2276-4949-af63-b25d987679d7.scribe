@@ -1,8 +1,0 @@
-resource "app-template" "f2d26f70-2276-4949-af63-b25d987679d7" {
-  name = "VM with Disks"
-  uuid = "f2d26f70-2276-4949-af63-b25d987679d7"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "arm" }
-}

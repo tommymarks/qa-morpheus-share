@@ -1,4 +1,0 @@
-resource "task-option" "84b1ed0f-9133-47a3-920b-cdb56e3afd82" {
-  uuid = "84b1ed0f-9133-47a3-920b-cdb56e3afd82"
-  optionType = { code = "shell.sudo" }
-}

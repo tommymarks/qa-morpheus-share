@@ -1,5 +1,0 @@
-resource "task-option" "15c4cc19-78f9-487f-892b-486e4231097b" {
-  uuid = "15c4cc19-78f9-487f-892b-486e4231097b"
-  optionType = { code = "webUrl" }
-  value = "https://ml-qa.agoradata.com/api/v1/model/loans/e9b09333-1138-4bf0-8bf0-cc6828627b7e/valuation"
-}

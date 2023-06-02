@@ -1,8 +1,0 @@
-resource "app-template" "29b90a5c-1a52-40d3-84f2-288a4bd9de1f" {
-  name = "CloudFormation: Ubuntu: Multiple Subnets"
-  uuid = "29b90a5c-1a52-40d3-84f2-288a4bd9de1f"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "cloudFormation" }
-}

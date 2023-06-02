@@ -1,5 +1,0 @@
-resource "task-option" "6bf4d5a4-e25d-45da-8461-7ab0c72e6d98" {
-  uuid = "6bf4d5a4-e25d-45da-8461-7ab0c72e6d98"
-  optionType = { code = "pythonArgs" }
-  value = "Hello World"
-}

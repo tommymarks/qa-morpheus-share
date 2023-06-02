@@ -1,4 +1,0 @@
-resource "task-option" "7fd684b3-7b1f-46b6-be20-39f2c43c493a" {
-  uuid = "7fd684b3-7b1f-46b6-be20-39f2c43c493a"
-  optionType = { code = "pythonBinary" }
-}

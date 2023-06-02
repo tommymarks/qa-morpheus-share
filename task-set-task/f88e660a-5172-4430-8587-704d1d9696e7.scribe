@@ -1,7 +1,0 @@
-resource "task-set-task" "f88e660a-5172-4430-8587-704d1d9696e7" {
-  uuid = "f88e660a-5172-4430-8587-704d1d9696e7"
-  entryTask = false
-  task = { name = "Ansible Tower Webserver" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

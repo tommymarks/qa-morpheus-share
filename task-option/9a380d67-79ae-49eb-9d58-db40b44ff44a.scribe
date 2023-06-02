@@ -1,4 +1,0 @@
-resource "task-option" "9a380d67-79ae-49eb-9d58-db40b44ff44a" {
-  uuid = "9a380d67-79ae-49eb-9d58-db40b44ff44a"
-  optionType = { code = "vroBody" }
-}

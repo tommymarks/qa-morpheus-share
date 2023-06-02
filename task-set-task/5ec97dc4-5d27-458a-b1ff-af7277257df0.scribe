@@ -1,7 +1,0 @@
-resource "task-set-task" "5ec97dc4-5d27-458a-b1ff-af7277257df0" {
-  uuid = "5ec97dc4-5d27-458a-b1ff-af7277257df0"
-  entryTask = false
-  task = { name = "File: Groovy" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

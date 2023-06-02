@@ -1,4 +1,0 @@
-resource "task-option" "c9353980-38d9-4531-a065-d9660cb61635" {
-  uuid = "c9353980-38d9-4531-a065-d9660cb61635"
-  optionType = { code = "ansibleTowerGitRef" }
-}

@@ -1,7 +1,0 @@
-resource "app-template" "af4432f9-f217-4332-82d8-e1c2c8659036" {
-  name = "CloudFormation: WordPress Blog"
-  uuid = "af4432f9-f217-4332-82d8-e1c2c8659036"
-  active = true
-  custom = false
-  templateType = { code = "cloudFormation" }
-}

@@ -1,5 +1,0 @@
-resource "task-option" "ec7ba384-4628-43b3-8ab8-c09f2c23df3c" {
-  uuid = "ec7ba384-4628-43b3-8ab8-c09f2c23df3c"
-  optionType = { code = "script" }
-  value = "echo "$(date) <%= instance.name %> - test" >> c:\\blah"
-}

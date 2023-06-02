@@ -1,5 +1,0 @@
-resource "task-option" "c1fe5502-1de6-4002-9121-4910630ef21c" {
-  uuid = "c1fe5502-1de6-4002-9121-4910630ef21c"
-  optionType = { code = "ansibleTowerExecuteMode" }
-  value = "executeAll"
-}

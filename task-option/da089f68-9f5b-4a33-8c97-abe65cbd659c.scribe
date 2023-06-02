@@ -1,4 +1,0 @@
-resource "task-option" "da089f68-9f5b-4a33-8c97-abe65cbd659c" {
-  uuid = "da089f68-9f5b-4a33-8c97-abe65cbd659c"
-  optionType = { code = "pythonAdditionalPackages" }
-}

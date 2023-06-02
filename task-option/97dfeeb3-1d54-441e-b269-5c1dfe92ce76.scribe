@@ -1,5 +1,0 @@
-resource "task-option" "97dfeeb3-1d54-441e-b269-5c1dfe92ce76" {
-  uuid = "97dfeeb3-1d54-441e-b269-5c1dfe92ce76"
-  optionType = { code = "username" }
-  value = "TEST\spotts"
-}

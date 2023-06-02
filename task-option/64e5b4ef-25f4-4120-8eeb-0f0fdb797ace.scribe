@@ -1,9 +1,0 @@
-resource "task-option" "64e5b4ef-25f4-4120-8eeb-0f0fdb797ace" {
-  uuid = "64e5b4ef-25f4-4120-8eeb-0f0fdb797ace"
-  optionType = { code = "pythonScript" }
-  value = <<EOF
-f = open("/tmp/task.txt","a")
-f.write("phython script\n")
-f.close()
-EOF
-}

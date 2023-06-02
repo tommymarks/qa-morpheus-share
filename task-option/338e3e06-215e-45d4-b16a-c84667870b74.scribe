@@ -1,4 +1,0 @@
-resource "task-option" "338e3e06-215e-45d4-b16a-c84667870b74" {
-  uuid = "338e3e06-215e-45d4-b16a-c84667870b74"
-  optionType = { code = "ignoreSSL" }
-}

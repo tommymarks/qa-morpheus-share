@@ -1,8 +1,0 @@
-resource "task" "Get Grails Local Repo Location" {
-  name = "Get Grails Local Repo Location"
-  uuid = "258e2e09-1dd4-4b33-9cc1-dad3cfaa7989"
-  executeTarget = "local"
-  taskOptions = [ { uuid = "d4854f04-6ed9-496c-a011-767a2364c2ac" } ]
-  taskType = { code = "groovyTask" }
-  visibility = "private"
-}

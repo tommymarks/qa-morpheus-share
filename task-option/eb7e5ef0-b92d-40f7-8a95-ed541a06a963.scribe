@@ -1,5 +1,0 @@
-resource "task-option" "eb7e5ef0-b92d-40f7-8a95-ed541a06a963" {
-  uuid = "eb7e5ef0-b92d-40f7-8a95-ed541a06a963"
-  optionType = { code = "webUser" }
-  value = "guest"
-}

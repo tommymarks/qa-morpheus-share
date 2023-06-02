@@ -1,8 +1,0 @@
-resource "app-template" "bc57d7d1-55b5-464c-b407-00120a08d014" {
-  name = "All Ubuntus"
-  uuid = "bc57d7d1-55b5-464c-b407-00120a08d014"
-  active = true
-  custom = false
-  lastUpdated = "2019-12-11T16:35:25.000Z"
-  templateType = { code = "morpheus" }
-}

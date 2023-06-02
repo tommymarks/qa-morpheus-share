@@ -1,8 +1,0 @@
-resource "task-option" "bfef7c4b-6b5d-475d-9162-5eb594a21934" {
-  uuid = "bfef7c4b-6b5d-475d-9162-5eb594a21934"
-  optionType = { code = "script" }
-  value = <<EOF
-echo ERROR: Did I do that? 1>&2
-exit 1
-EOF
-}

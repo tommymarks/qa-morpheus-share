@@ -1,4 +1,0 @@
-resource "task-option" "44eb46bd-5ca2-428e-9f1e-d9f699d2170a" {
-  uuid = "44eb46bd-5ca2-428e-9f1e-d9f699d2170a"
-  optionType = { code = "password" }
-}

@@ -1,5 +1,0 @@
-resource "task-option" "5e13f194-efe6-4e05-9a95-acbabbeabb94" {
-  uuid = "5e13f194-efe6-4e05-9a95-acbabbeabb94"
-  optionType = { code = "ansiblePlaybook" }
-  value = "jenkins.yml"
-}

@@ -1,9 +1,0 @@
-resource "task-option" "e3951cb7-da93-4d43-b37b-2efb0920a576" {
-  uuid = "e3951cb7-da93-4d43-b37b-2efb0920a576"
-  optionType = { code = "webBody" }
-  value = <<EOF
-{
-  "node_name": "<%= instance.name %>"
-}
-EOF
-}

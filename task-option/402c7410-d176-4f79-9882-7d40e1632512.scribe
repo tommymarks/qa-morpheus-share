@@ -1,5 +1,0 @@
-resource "task-option" "402c7410-d176-4f79-9882-7d40e1632512" {
-  uuid = "402c7410-d176-4f79-9882-7d40e1632512"
-  optionType = { code = "ansiblePlaybook" }
-  value = "winping"
-}

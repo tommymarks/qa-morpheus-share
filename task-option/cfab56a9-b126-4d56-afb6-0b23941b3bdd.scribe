@@ -1,5 +1,0 @@
-resource "task-option" "cfab56a9-b126-4d56-afb6-0b23941b3bdd" {
-  uuid = "cfab56a9-b126-4d56-afb6-0b23941b3bdd"
-  optionType = { code = "script" }
-  value = "echo customOptions = <%=customOptions.testField%>"
-}

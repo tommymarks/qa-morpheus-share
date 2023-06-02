@@ -1,5 +1,0 @@
-resource "task-option" "dd440205-a2c3-4760-bcfb-c549b6f75ffd" {
-  uuid = "dd440205-a2c3-4760-bcfb-c549b6f75ffd"
-  optionType = { code = "script" }
-  value = "echo "$(date) - task" | tee -a /tmp/tm_task.txt"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "6ca6b731-8c36-4ce8-afa7-6c0baf7035f0" {
-  uuid = "6ca6b731-8c36-4ce8-afa7-6c0baf7035f0"
-  entryTask = false
-  task = { name = "Phase: Stop Service" }
-  taskOrder = 11
-  taskPhase = "stop"
-}

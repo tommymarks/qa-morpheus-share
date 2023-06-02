@@ -1,4 +1,0 @@
-resource "task-option" "6c429b89-b316-4f83-8f71-898db58bfc25" {
-  uuid = "6c429b89-b316-4f83-8f71-898db58bfc25"
-  optionType = { code = "ansibleSkipTags" }
-}

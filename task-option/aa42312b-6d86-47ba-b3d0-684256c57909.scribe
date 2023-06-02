@@ -1,5 +1,0 @@
-resource "task-option" "aa42312b-6d86-47ba-b3d0-684256c57909" {
-  uuid = "aa42312b-6d86-47ba-b3d0-684256c57909"
-  optionType = { code = "username" }
-  value = "svc.scvmm"
-}

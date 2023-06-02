@@ -1,7 +1,0 @@
-resource "task-set-task" "aa1de7cf-49e3-4858-9c08-d3ffa3a35c24" {
-  uuid = "aa1de7cf-49e3-4858-9c08-d3ffa3a35c24"
-  entryTask = false
-  task = { name = "Phase: Provision One" }
-  taskOrder = 4
-  taskPhase = "provision"
-}

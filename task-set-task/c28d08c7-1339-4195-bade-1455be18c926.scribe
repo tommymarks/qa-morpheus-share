@@ -1,7 +1,0 @@
-resource "task-set-task" "c28d08c7-1339-4195-bade-1455be18c926" {
-  uuid = "c28d08c7-1339-4195-bade-1455be18c926"
-  entryTask = false
-  task = { code = "db-task-nested-0308" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

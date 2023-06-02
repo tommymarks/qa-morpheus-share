@@ -1,8 +1,0 @@
-resource "task-option" "ffdf410f-5db0-45f4-9ac1-747f55f78a98" {
-  uuid = "ffdf410f-5db0-45f4-9ac1-747f55f78a98"
-  optionType = { code = "jsScript" }
-  value = <<EOF
-output = morpheus
-output
-EOF
-}

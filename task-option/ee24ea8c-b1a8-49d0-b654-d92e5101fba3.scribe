@@ -1,5 +1,0 @@
-resource "task-option" "ee24ea8c-b1a8-49d0-b654-d92e5101fba3" {
-  uuid = "ee24ea8c-b1a8-49d0-b654-d92e5101fba3"
-  optionType = { code = "emailAddress" }
-  value = "tommymarks+3@gmail.com"
-}

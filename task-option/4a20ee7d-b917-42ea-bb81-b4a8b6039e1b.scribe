@@ -1,5 +1,0 @@
-resource "task-option" "4a20ee7d-b917-42ea-bb81-b4a8b6039e1b" {
-  uuid = "4a20ee7d-b917-42ea-bb81-b4a8b6039e1b"
-  optionType = { code = "username" }
-  value = "dblankinship"
-}

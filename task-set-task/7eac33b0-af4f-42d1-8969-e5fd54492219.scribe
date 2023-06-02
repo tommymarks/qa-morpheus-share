@@ -1,7 +1,0 @@
-resource "task-set-task" "7eac33b0-af4f-42d1-8969-e5fd54492219" {
-  uuid = "7eac33b0-af4f-42d1-8969-e5fd54492219"
-  entryTask = false
-  task = { name = "ps - Add Domain Users TEST Domain" }
-  taskOrder = 0
-  taskPhase = "postProvision"
-}

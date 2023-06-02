@@ -1,5 +1,0 @@
-resource "task-option" "e8f8dfed-9548-4af6-82df-f5d176ad05f1" {
-  uuid = "e8f8dfed-9548-4af6-82df-f5d176ad05f1"
-  optionType = { code = "containerTemplate" }
-  value = "dg post provision phase"
-}

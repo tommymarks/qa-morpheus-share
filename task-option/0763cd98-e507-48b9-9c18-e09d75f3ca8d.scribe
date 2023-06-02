@@ -1,5 +1,0 @@
-resource "task-option" "0763cd98-e507-48b9-9c18-e09d75f3ca8d" {
-  uuid = "0763cd98-e507-48b9-9c18-e09d75f3ca8d"
-  optionType = { code = "containerTemplate" }
-  value = "My CypherTemplate"
-}

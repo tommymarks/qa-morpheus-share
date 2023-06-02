@@ -1,4 +1,0 @@
-resource "task-option" "4c9fea55-1a7e-46ba-9105-a818e389e172" {
-  uuid = "4c9fea55-1a7e-46ba-9105-a818e389e172"
-  optionType = { code = "webUrl" }
-}

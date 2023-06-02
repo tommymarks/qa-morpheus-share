@@ -1,5 +1,0 @@
-resource "task-option" "2cb6bd5f-e76b-45d1-8734-14e293f53d35" {
-  uuid = "2cb6bd5f-e76b-45d1-8734-14e293f53d35"
-  optionType = { code = "script" }
-  value = "echo "version 1.0" | sudo tee -a /version.txt"
-}

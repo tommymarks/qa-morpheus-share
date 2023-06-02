@@ -1,5 +1,0 @@
-resource "task-option" "bafa68df-3aaf-460d-a0da-54407dd1d30c" {
-  uuid = "bafa68df-3aaf-460d-a0da-54407dd1d30c"
-  optionType = { code = "script" }
-  value = "echo "Hi EVERYBODY!""
-}

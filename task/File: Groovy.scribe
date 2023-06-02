@@ -1,8 +1,0 @@
-resource "task" "File: Groovy" {
-  name = "File: Groovy"
-  uuid = "45b49873-a6ed-4da0-a575-20060b279b59"
-  executeTarget = "local"
-  taskOptions = [ { uuid = "cd336f5d-8747-41c8-b38f-0bd81fb96dbb" } ]
-  taskType = { code = "groovyTask" }
-  visibility = "private"
-}

@@ -1,9 +1,0 @@
-resource "file-content" "67e30bd6-6ebb-4882-bbe0-d8179c56b6ab" {
-  uuid = "67e30bd6-6ebb-4882-bbe0-d8179c56b6ab"
-  dateCreated = "2023-01-13T16:34:42.000Z"
-  editable = true
-  enabled = true
-  fileVersion = "1"
-  lastUpdated = "2023-01-13T17:22:45.000Z"
-  sourceType = "local"
-}

@@ -1,5 +1,0 @@
-resource "task-option" "7ab2a26d-3078-41d3-8800-a5e1e93f6e90" {
-  uuid = "7ab2a26d-3078-41d3-8800-a5e1e93f6e90"
-  optionType = { code = "script" }
-  value = "echo "$(date) - test" >> C:\\Test\blah"
-}

@@ -1,5 +1,0 @@
-resource "task-option" "2ecdbeb0-e764-4686-82e2-aab280106cf4" {
-  uuid = "2ecdbeb0-e764-4686-82e2-aab280106cf4"
-  optionType = { code = "ansibleGitId" }
-  value = "147"
-}

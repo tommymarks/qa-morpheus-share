@@ -1,7 +1,0 @@
-resource "task-set-task" "60b40fab-cc12-45dd-b92b-ec3a4ef9186c" {
-  uuid = "60b40fab-cc12-45dd-b92b-ec3a4ef9186c"
-  entryTask = false
-  task = { name = "hyphentestresult" }
-  taskOrder = 1
-  taskPhase = "operation"
-}

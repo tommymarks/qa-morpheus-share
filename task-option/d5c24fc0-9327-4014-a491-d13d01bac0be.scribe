@@ -1,5 +1,0 @@
-resource "task-option" "d5c24fc0-9327-4014-a491-d13d01bac0be" {
-  uuid = "d5c24fc0-9327-4014-a491-d13d01bac0be"
-  optionType = { code = "operationalWorkflowId" }
-  value = "6157"
-}

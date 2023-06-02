@@ -1,9 +1,0 @@
-resource "task-option" "eba8320e-7601-4f8e-b2e0-c9224fecd39e" {
-  uuid = "eba8320e-7601-4f8e-b2e0-c9224fecd39e"
-  optionType = { code = "script" }
-  template = { uuid = "c1466e75-c49b-4849-87c6-8b4f1c7c7834" }
-  value = <<EOF
-echo "$(date) - start service" | tee -a /tmp/phase_task.txt
-echo whaddup
-EOF
-}

@@ -1,5 +1,0 @@
-resource "task-option" "9c8694d1-e707-40b5-9ec7-67667f8f9469" {
-  uuid = "9c8694d1-e707-40b5-9ec7-67667f8f9469"
-  optionType = { code = "ansibleGroup" }
-  value = "qa-tommy"
-}

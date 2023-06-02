@@ -1,5 +1,0 @@
-resource "task-option" "5f9535f4-e6c9-43a5-8aa5-9445d3ba148c" {
-  uuid = "5f9535f4-e6c9-43a5-8aa5-9445d3ba148c"
-  optionType = { code = "chefDataKey" }
-  value = "password"
-}

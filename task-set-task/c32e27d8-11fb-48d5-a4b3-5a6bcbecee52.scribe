@@ -1,7 +1,0 @@
-resource "task-set-task" "c32e27d8-11fb-48d5-a4b3-5a6bcbecee52" {
-  uuid = "c32e27d8-11fb-48d5-a4b3-5a6bcbecee52"
-  entryTask = false
-  task = { name = "Disable Internet Explorer Enhanced Security" }
-  taskOrder = 5
-  taskPhase = "postProvision"
-}

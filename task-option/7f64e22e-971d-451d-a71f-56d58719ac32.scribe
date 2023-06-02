@@ -1,5 +1,0 @@
-resource "task-option" "7f64e22e-971d-451d-a71f-56d58719ac32" {
-  uuid = "7f64e22e-971d-451d-a71f-56d58719ac32"
-  optionType = { code = "vroWorkflow" }
-  value = "10630717"
-}

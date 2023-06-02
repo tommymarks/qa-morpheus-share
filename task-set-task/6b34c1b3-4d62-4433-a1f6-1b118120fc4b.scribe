@@ -1,7 +1,0 @@
-resource "task-set-task" "6b34c1b3-4d62-4433-a1f6-1b118120fc4b" {
-  uuid = "6b34c1b3-4d62-4433-a1f6-1b118120fc4b"
-  entryTask = false
-  task = { code = "qa-instancenameconfig" }
-  taskOrder = 0
-  taskPhase = "configure"
-}

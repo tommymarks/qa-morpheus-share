@@ -1,7 +1,0 @@
-resource "task-set-task" "755c39df-509c-4a58-8c93-69e2f04929ef" {
-  uuid = "755c39df-509c-4a58-8c93-69e2f04929ef"
-  entryTask = false
-  task = { name = "ansible-nexus-demo" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

@@ -1,8 +1,0 @@
-resource "app-template" "2f608efa-0797-4fea-a695-2569b2ed8e1f" {
-  name = "ARM: Windows 2012 R2"
-  uuid = "2f608efa-0797-4fea-a695-2569b2ed8e1f"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "arm" }
-}

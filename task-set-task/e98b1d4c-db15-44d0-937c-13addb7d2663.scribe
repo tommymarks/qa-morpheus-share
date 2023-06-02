@@ -1,7 +1,0 @@
-resource "task-set-task" "e98b1d4c-db15-44d0-937c-13addb7d2663" {
-  uuid = "e98b1d4c-db15-44d0-937c-13addb7d2663"
-  entryTask = false
-  task = { name = "Sleep 2 Mins" }
-  taskOrder = 2
-  taskPhase = "postProvision"
-}
