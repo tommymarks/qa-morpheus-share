@@ -8,8 +8,8 @@ resource "container-type" "405c0478-5361-4d70-bf64-a056aac90915" {
   commEnabled = false
   containerLogs = [ { name = "logs" } ]
   containerMounts = [
-    { name = "data" },
-    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" }
+    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" },
+    { name = "data" }
   ]
   containerPorts = [ { name = "HTTP" }, { name = "HTTPS" } ]
   containerVersion = "1.10"
