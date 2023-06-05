@@ -1,0 +1,20 @@
+resource "instance-type-layout" "11f0663a-3626-40d8-b676-cece9eeaab80" {
+  code = "11f0663a-3626-40d8-b676-cece9eeaab80"
+  name = "Bunge"
+  uuid = "cad92931-21d4-46c3-9368-25c790bf6604"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "bunge"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "ab7b0f87-11c8-4cf2-a74f-737b78336739" } ]
+}
