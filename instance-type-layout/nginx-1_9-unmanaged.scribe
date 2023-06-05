@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-1.9-unmanaged" {
+  code = "nginx-1.9-unmanaged"
+  name = "Existing Nginx"
+  uuid = "d48723fe-7754-47d1-8d59-60757e3a6a17"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = false
+  description = "This will bind to an existing nginx instance"
+  enabled = true
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  layoutStyle = "unmanaged"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "unmanaged" }
+  serverCount = 1
+  serverType = "unmanaged"
+  sortOrder = 100
+  systemLayout = false
+  workloads = [ { code = "nginx-1.9-unmanaged-set" } ]
+}
