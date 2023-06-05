@@ -1,0 +1,52 @@
+resource "task" "Sleep Test 3" {
+  name = "Sleep Test 3"
+  uuid = "ab352782-217d-47f2-a68f-8f679395c65b"
+  allowCustomConfig = false
+  dateCreated = "2021-06-01T19:40:56.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-06-02T02:32:34.000Z"
+  options = [
+    {
+      uuid = "0fd02369-4430-4161-9394-7bcd73128405"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "35e93dfc-20bf-4e88-a4a9-91609745c498"
+      content = { uuid = "c24290a9-60a4-45e2-9536-5d664d3376d1" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "5849c365-092c-465d-9677-c770b749c1f5"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "59d56c37-b4d3-4160-98b1-bccadda329d5"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "65328f92-bacf-4ea7-909d-9c53e20c6e03"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "69a4748e-3ae4-4767-8c37-896b70a2566a"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "6cef05ca-5434-4007-a2ae-294da0eec0fe"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "f25d0771-fe99-4ac7-abd5-19780de97324"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "f6081d84-e964-490d-aa6b-e8d35d245c75"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

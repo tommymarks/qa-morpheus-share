@@ -1,0 +1,52 @@
+resource "task" "Sleep Test 1" {
+  name = "Sleep Test 1"
+  uuid = "4a915192-14ec-48dc-a463-2382abf94462"
+  allowCustomConfig = false
+  dateCreated = "2021-06-01T19:38:57.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-06-01T19:40:40.000Z"
+  options = [
+    {
+      uuid = "6c8f437a-4b9a-4d62-88cd-e591983f5266"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8d8505ae-cdf7-4832-ab6b-79ee48d54770"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "916780d9-7692-40fc-8d8d-fc9810242173"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "95209a0b-268a-47f8-9769-52955a08f1cb"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "97f5a5af-5a9d-49f3-9db0-089fd11731f7"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "9d3373fc-d5b3-4611-bda2-86619b8e1ba3"
+      content = { uuid = "2f0450b0-8b34-44bb-9070-5822edb286e0" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "b7c75981-1bc1-416c-bd47-8fb6d71d026e"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "c266eabc-c71a-498f-af09-af09337c85b8"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "dda789e9-2395-475c-96c1-b623e106e715"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
