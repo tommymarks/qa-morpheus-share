@@ -1,0 +1,38 @@
+resource "option-type" "primaryContact" {
+  code = "primaryContact"
+  name = "AD Primary Contact"
+  uuid = "2098b182-8e2d-45dd-9ffd-d93a47954f05"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Primary Contact"
+  fieldName = "primaryContact"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "ActiveDirectory Users" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "typeahead"
+}
