@@ -1,0 +1,16 @@
+resource "option-type-list" "Tag Application" {
+  name = "Tag Application"
+  uuid = "16d03818-617b-48db-b64f-b2980601b68a"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+Cyberark, CAK
+Illumio, IL0
+SEP, SEP
+EKS, EKS
+Other, '9'
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
