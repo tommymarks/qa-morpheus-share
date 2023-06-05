@@ -1,0 +1,49 @@
+resource "task" "Version 2" {
+  name = "Version 2"
+  uuid = "e10383e9-d6ec-41b9-ad89-6bd9910084ad"
+  allowCustomConfig = false
+  dateCreated = "2019-12-12T18:54:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-12-12T18:54:24.000Z"
+  options = [
+    {
+      uuid = "09eb166f-686b-4b09-8ec6-1cd26943d22d"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    },
+    {
+      uuid = "4821216a-3a15-4084-8bdb-524ef681c52c"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "4f2e1ca3-bfcd-4bd1-976f-07e3265533cd"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "65ab2aba-aa27-4226-91d4-3fc25b694721"
+      optionType = { code = "script" }
+      value = "echo \"version 2.0\" | sudo tee -a /version.txt"
+    },
+    {
+      uuid = "6ab93f24-326a-490b-b5e1-eed0c4d13cfb"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "809fa7fe-8163-4cb8-bf84-8953237b5cc3"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "d2eb8cbd-0aa7-4eec-8d97-590776c215d8"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "ecc738e7-ae39-4ce9-9a5f-7041f67e3320"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
