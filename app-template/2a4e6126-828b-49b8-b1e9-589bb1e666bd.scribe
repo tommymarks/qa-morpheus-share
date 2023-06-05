@@ -1,0 +1,10 @@
+resource "app-template" "2a4e6126-828b-49b8-b1e9-589bb1e666bd" {
+  name = "A TEST"
+  uuid = "2a4e6126-828b-49b8-b1e9-589bb1e666bd"
+  active = true
+  custom = false
+  dateCreated = "2022-01-04T21:07:19.000Z"
+  lastUpdated = "2022-01-04T21:07:19.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
