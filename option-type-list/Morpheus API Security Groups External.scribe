@@ -1,0 +1,15 @@
+resource "option-type-list" "Morpheus API Security Groups External" {
+  name = "Morpheus API Security Groups External"
+  uuid = "c6deb09c-9a8f-4968-b2e8-1e352bfe2db6"
+  apiType = "securityGroups"
+  ignoreSSLErrors = false
+  realTime = true
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+    results.push({name:data[x].name, value:data[x].externalId});
+}
+EOF
+  type = "api"
+  visibility = "private"
+}
