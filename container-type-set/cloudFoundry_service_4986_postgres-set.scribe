@@ -1,0 +1,10 @@
+resource "container-type-set" "cloudFoundry.service.4986.postgres-set" {
+  code = "cloudFoundry.service.4986.postgres-set"
+  uuid = "24782cba-7c0a-4bc0-b4c6-3f3ebed852d5"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  refId = 4986
+  refType = "ComputeZone"
+  workloadType = { code = "cloudFoundry.service.4986.postgres" }
+}
