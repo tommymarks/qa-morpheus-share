@@ -1,0 +1,24 @@
+resource "container-type" "4c852107-17c3-4b98-a53f-deac766b7e18" {
+  code = "4c852107-17c3-4b98-a53f-deac766b7e18"
+  name = "LoonarNode"
+  uuid = "8ac35bdd-189e-4230-b41a-78d7ed8a3f6d"
+  commEnabled = false
+  containerVersion = "1.0"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "oraclecloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "LoonarNode"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}
