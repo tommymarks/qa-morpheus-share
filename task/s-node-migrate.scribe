@@ -1,0 +1,45 @@
+resource "task" "s-node-migrate" {
+  code = "s-node-migrate"
+  name = "S-Node-Migrate"
+  uuid = "c6280678-55b0-4de3-87f1-b4018e3fd4e1"
+  allowCustomConfig = false
+  dateCreated = "2019-09-26T00:13:59.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [
+    {
+      uuid = "223e516d-5b95-4a99-b6b1-db22c8e4fbaf"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "5001b2cc-dd22-47a5-b01a-87e5f435413a"
+      optionType = { code = "script" }
+      value = "echo \"Hello World\""
+    },
+    {
+      uuid = "59a3b7fc-d0d8-4199-9d1a-83d24c6ecb32"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "66099c68-6257-45f4-a877-ee48e5392c08"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "7fb92934-5fd4-4398-92f5-6cde2f47f79a"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "ab9904bc-db74-4e13-a6e1-d48984961384"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "afec665f-034d-4345-9bed-51b06173a1ad"
+      optionType = { code = "port" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
