@@ -1,0 +1,22 @@
+resource "instance-type" "nginxd" {
+  code = "nginxd"
+  name = "nginx-deployment"
+  uuid = "0cd2c539-4d01-4584-8278-3aeaee5b29f8"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "NGINX-DEPLOYMENT"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "eda129e7-7909-4d64-b4cd-cc0d92a7d2f7" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
