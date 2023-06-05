@@ -1,0 +1,56 @@
+resource "task" "vro" {
+  code = "vro"
+  name = "vRO Task"
+  uuid = "86ac3b8d-6ffe-4c65-91f8-897d06f36013"
+  allowCustomConfig = false
+  dateCreated = "2019-09-12T18:39:55.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-09-12T19:49:34.000Z"
+  options = [
+    {
+      uuid = "457e3423-1623-4272-8bb4-d0aff0bb135d"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "595ce9e7-4420-40c2-bcae-f98f629c0a4f"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "60045c40-46eb-4c38-a3db-d6785c8fe001"
+      optionType = { code = "vroIntegrationId" }
+      value = "6254"
+    },
+    {
+      uuid = "77219a43-8300-4a04-b464-87de8552853f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "79f4cb53-2e09-4420-ba05-6e8366a13d69"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "802d9a56-fe37-4fad-bf50-dbb0559e5bfb"
+      optionType = { code = "vroBody" }
+      value = "{\"parameters\":[{\"name\":\"hostNameOrIP\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"10.30.21.120\"}}},{\"name\":\"port\",\"type\":\"number\",\"value\":{\"number\":{\"value\":22}}},{\"name\":\"cmd\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"echo \\\"Hello <%=instance.name%>\\\"\"}}},{\"name\":\"encoding\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"\"}}},{\"name\":\"username\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"bertram\"}}},{\"name\":\"passwordAuthentication\",\"type\":\"boolean\",\"value\":{\"boolean\":{\"value\":true}}},{\"name\":\"password\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"bertram4admin\"}}},{\"name\":\"path\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"/var/lib/vco/app-server/conf/vco_key\"}}},{\"name\":\"passphrase\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"\"}}}],\"profilerOptions\":{\"enabled\":true,\"debuggerEnabled\":false}}"
+    },
+    {
+      uuid = "939e1874-505e-4d69-aaf0-8e1ebcce49ab"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "9855218a-7021-4737-92a4-02cd93745508"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "ab8c7497-4b68-4f54-9ed6-644b4af69fc4"
+      optionType = { code = "vroWorkflow" }
+      value = "10630953"
+    }
+  ]
+  resultType = "json"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "vro" }
+  visibility = "private"
+}
