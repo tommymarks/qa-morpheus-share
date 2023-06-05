@@ -1,0 +1,16 @@
+resource "resource-spec-template" "14bcad07-b400-404d-8ef1-40986ac07b69" {
+  name = "CF Password"
+  uuid = "14bcad07-b400-404d-8ef1-40986ac07b69"
+  autoRun = false
+  dateCreated = "2021-02-16T00:49:42.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-02-16T00:49:42.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "cfe60f0e-39f1-4840-9039-a5a3873dc5c8" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
