@@ -1,7 +1,7 @@
 resource "option-type" "name" {
   code = "name"
-  name = "new option type"
-  uuid = "e3d80847-2b72-43c7-b638-4e4e2610cea6"
+  name = "Name"
+  uuid = "d2387e33-cd4b-4966-b0d3-a1e46c607414"
   advanced = false
   contextualDefault = false
   creatable = true
@@ -14,15 +14,18 @@ resource "option-type" "name" {
   excludeFromSearch = false
   exportEvar = false
   exportMeta = true
-  fieldCode = "new optionType"
   fieldContext = "config.customOptions"
-  fieldGetName = "name"
   fieldLabel = "Name"
   fieldName = "name"
-  fieldSetName = "name"
+  formField = false
   global = true
   groupExpand = false
   ignoreField = false
+  isHidden = false
+  isLocked = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  localCredential = false
+  multiTenant = false
   noBlank = false
   ownerEditable = false
   required = true
