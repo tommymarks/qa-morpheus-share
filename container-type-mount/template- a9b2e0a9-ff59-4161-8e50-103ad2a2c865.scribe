@@ -1,0 +1,21 @@
+resource "container-type-mount" "template: a9b2e0a9-ff59-4161-8e50-103ad2a2c865" {
+  code = "template: a9b2e0a9-ff59-4161-8e50-103ad2a2c865"
+  name = "vars"
+  autoRun = true
+  canPersist = false
+  certStore = false
+  containerPath = "/tmp/"
+  customType = false
+  deployable = false
+  fileMount = false
+  hostPath = "/tmp/"
+  mountType = "config"
+  required = false
+  shortName = "vars"
+  sortOrder = 0
+  subMount = false
+  template = { code = "a9b2e0a9-ff59-4161-8e50-103ad2a2c865" }
+  unmanagedEnabled = false
+  visible = false
+  volumeName = "vars"
+}

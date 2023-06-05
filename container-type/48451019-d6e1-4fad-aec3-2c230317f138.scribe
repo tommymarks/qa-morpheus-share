@@ -1,0 +1,28 @@
+resource "container-type" "48451019-d6e1-4fad-aec3-2c230317f138" {
+  code = "48451019-d6e1-4fad-aec3-2c230317f138"
+  name = "Centos 7.5 VMware Node"
+  uuid = "beb57da0-c6f0-44de-80f9-e7923389ff47"
+  category = "Centos"
+  commEnabled = false
+  containerMounts = [ { code = "template: a9b2e0a9-ff59-4161-8e50-103ad2a2c865" } ]
+  containerVersion = "7.5"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "c75VN"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  templates = [ { code = "a9b2e0a9-ff59-4161-8e50-103ad2a2c865" } ]
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.centos.7.5" }
+}
