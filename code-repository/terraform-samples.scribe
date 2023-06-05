@@ -1,21 +1,19 @@
 resource "code-repository" "terraform-samples" {
   name = "terraform-samples"
-  uuid = "4079fb3b-38a2-4374-af8c-28df12e1e3b6"
+  uuid = "02c7588b-bcc2-4be3-92a3-8ea0ea5a119e"
   active = true
   cacheRepo = false
-  codeLanguage = "HCL"
-  dateCreated = "2018-03-06T23:19:37.000Z"
+  dateCreated = "2018-11-05T21:37:39.000Z"
   defaultBranch = "master"
-  displayName = "tommymarks/terraform-samples"
+  displayName = "QA Terraform Samples"
   enabled = true
-  externalId = "124150153"
-  forkRepo = true
-  integration = { name = "Github - TM" }
-  lastUpdated = "2023-05-10T16:58:21.000Z"
-  orgId = "1141849"
-  orgName = "tommymarks"
-  privateRepo = false
-  repoSize = 8228
+  externalId = "https://github.com/tommymarks/terraform-samples.git"
+  forkRepo = false
+  integration = { name = "QA Terraform Samples" }
+  lastUpdated = "2023-05-22T01:42:13.000Z"
+  orgId = "//github.com/tommymarks"
+  orgName = "//github.com/tommymarks"
+  privateRepo = true
   scribeRepo = false
-  serviceUrl = "https://github.com/tommymarks/terraform-samples"
+  serviceUrl = "https://github.com/tommymarks/terraform-samples.git"
 }
