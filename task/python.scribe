@@ -1,0 +1,65 @@
+resource "task" "python" {
+  code = "python"
+  name = "auto python2 0602203739800"
+  uuid = "ff71a14a-a683-4a0d-be04-b8e99975fd84"
+  allowCustomConfig = false
+  dateCreated = "2023-06-03T03:41:18.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-06-03T03:41:18.000Z"
+  options = [
+    {
+      uuid = "0b948ab4-6dab-4e22-9dd0-e22c18bd65b5"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "1bce2bfa-a87a-44ce-bbfb-a117052fb399"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "3df65ee1-33f7-4c35-a3a3-3c8dffe90634"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "56224159-eddf-4939-8f42-ec687e7d26cc"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "5b1e4590-8ea0-4b7c-a9b8-26d9aedc6523"
+      content = { uuid = "f70c78bf-42be-4855-923c-c47150879cfd" }
+      optionType = { code = "pythonScript" }
+    },
+    {
+      uuid = "5cbd246e-df04-4471-95bc-c4157835aef4"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "5ee2065d-2d2b-4bdd-9954-e0e4a81c55e7"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "83d73ba0-4385-437c-bda2-9dbd8b79242f"
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "mechanize"
+    },
+    {
+      uuid = "9435c85e-5c65-41a9-95a6-c68216b57602"
+      optionType = { code = "pythonArgs" }
+      value = "Hello World"
+    },
+    {
+      uuid = "c6a88b09-6f38-4952-be65-292d19b5922a"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "e5b61556-939a-40d6-833d-d61f5051c866"
+      optionType = { code = "pythonBinary" }
+      value = "python3"
+    }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
