@@ -1,0 +1,24 @@
+resource "compute-type-layout" "ce61b573-be4f-45d2-8e10-8feff81998a1" {
+  code = "ce61b573-be4f-45d2-8e10-8feff81998a1"
+  name = "Amazon Custom SLES 15"
+  computeServers = [
+    {
+      code = "ce61b573-be4f-45d2-8e10-8feff81998a1-c8a752e2-210a-4c00-bb45-4e91ff0cddb2"
+    }
+  ]
+  computeVersion = "SLES 15"
+  creatable = true
+  dateCreated = "2020-04-14T15:14:02.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:00:48.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  type = { code = "amazonLinux" }
+}

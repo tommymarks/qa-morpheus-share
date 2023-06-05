@@ -1,0 +1,19 @@
+resource "compute-type-set" "ce61b573-be4f-45d2-8e10-8feff81998a1-c8a752e2-210a-4c00-bb45-4e91ff0cddb2" {
+  code = "ce61b573-be4f-45d2-8e10-8feff81998a1-c8a752e2-210a-4c00-bb45-4e91ff0cddb2"
+  name = "Amazon Custom SLES 15-worker-c8a752e2-210a-4c00-bb45-4e91ff0cddb2-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = true
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "c8a752e2-210a-4c00-bb45-4e91ff0cddb2" }
+}
