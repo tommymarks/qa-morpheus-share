@@ -1,13 +1,13 @@
 resource "option-type" "morphnetwork" {
   code = "morphnetwork"
-  name = "BungeNetworks"
-  uuid = "b193cf12-4f93-4bab-a72a-50b988488f9a"
+  name = "API Networks"
+  uuid = "357a7c71-e563-44f1-809e-93900259c2e8"
   advanced = false
   contextualDefault = false
   creatable = true
   custom = false
   dependsOnCode = "morphpool"
-  displayOrder = 0
+  displayOrder = 5
   displayValueOnDetails = false
   editable = false
   enabled = true
@@ -15,16 +15,17 @@ resource "option-type" "morphnetwork" {
   exportMeta = false
   fieldContext = "config.customOptions"
   fieldGetName = "morphnetwork"
-  fieldLabel = "BungeNetworks"
+  fieldLabel = "Network"
   fieldName = "morphnetwork"
   fieldSetName = "morphnetwork"
   global = true
   groupExpand = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
   noBlank = false
-  optionList = { name = "BungeNetworks" }
+  optionList = { name = "API Networks" }
   optionSource = "list"
   ownerEditable = false
-  required = true
+  required = false
   secretField = false
   showOnCreate = true
   showOnEdit = true
