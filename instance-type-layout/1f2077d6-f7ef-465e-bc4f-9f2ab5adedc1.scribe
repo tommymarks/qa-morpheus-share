@@ -1,0 +1,24 @@
+resource "instance-type-layout" "1f2077d6-f7ef-465e-bc4f-9f2ab5adedc1" {
+  code = "1f2077d6-f7ef-465e-bc4f-9f2ab5adedc1"
+  name = "Azure NGINX"
+  uuid = "a6943d48-13d1-449d-b781-d9c098be1f44"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "latest"
+  labels = [ { name = "qa" } ]
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "azure" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "76e5bbc4-4490-4ffb-abdf-16b5db251142" } ]
+}
