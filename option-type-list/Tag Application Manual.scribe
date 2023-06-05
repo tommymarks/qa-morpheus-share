@@ -1,0 +1,15 @@
+resource "option-type-list" "Tag Application Manual" {
+  name = "Tag Application Manual"
+  uuid = "789473bb-5c88-488e-bd61-9e1d1e38bec8"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+test, test
+app, app
+web, web
+db, db
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
