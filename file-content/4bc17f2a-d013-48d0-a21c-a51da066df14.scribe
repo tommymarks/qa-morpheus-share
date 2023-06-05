@@ -1,0 +1,12 @@
+resource "file-content" "4bc17f2a-d013-48d0-a21c-a51da066df14" {
+  uuid = "4bc17f2a-d013-48d0-a21c-a51da066df14"
+  contentPath = "./specs/cloudformation.json"
+  contentRef = "auto"
+  dateCreated = "2021-10-18T15:23:58.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-10-18T15:23:58.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}

@@ -1,0 +1,16 @@
+resource "resource-spec-template" "f05e4d58-5b57-4705-a7e8-f8510334e343" {
+  name = "A Git CloudForm"
+  uuid = "f05e4d58-5b57-4705-a7e8-f8510334e343"
+  autoRun = false
+  dateCreated = "2021-10-18T15:23:58.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-10-18T15:23:58.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "4bc17f2a-d013-48d0-a21c-a51da066df14" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
