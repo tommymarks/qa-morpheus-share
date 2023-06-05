@@ -1,0 +1,22 @@
+resource "instance-type" "extra" {
+  code = "extra"
+  name = "Extra options"
+  uuid = "5d0eb8f5-2963-42a3-8f4a-fc49773ac95c"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "EXTRA_OPTIONS"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "a8dca4a9-00ee-4ffc-8c3b-f3ff56434612" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
