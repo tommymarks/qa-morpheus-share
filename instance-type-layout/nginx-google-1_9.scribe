@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-google-1.9" {
+  code = "nginx-google-1.9"
+  name = "Google NGINX"
+  uuid = "ac3ea4c8-c926-46ff-82c5-6f817b7b12ff"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "google" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  systemLayout = false
+  workloads = [ { code = "nginx-google-1.9-set" } ]
+}

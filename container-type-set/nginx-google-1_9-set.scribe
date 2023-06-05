@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-google-1.9-set" {
+  code = "nginx-google-1.9-set"
+  uuid = "f11aa728-af98-4105-8818-18397e8554e3"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-google-1.9" }
+}
