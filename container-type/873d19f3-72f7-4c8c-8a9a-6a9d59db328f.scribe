@@ -1,0 +1,29 @@
+resource "container-type" "873d19f3-72f7-4c8c-8a9a-6a9d59db328f" {
+  code = "873d19f3-72f7-4c8c-8a9a-6a9d59db328f"
+  name = "Ubuntu Scale"
+  uuid = "997b69ae-7334-41b8-9f10-09055a3ac28d"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "16.04"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  mountData = "/usr/share/misc"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntuscale"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = {
+    code = "vmware.vsphere.image.morpheus.ubuntu.16.04.6-v1.ubuntu.16.04.6.amd64"
+  }
+}
