@@ -1,0 +1,10 @@
+resource "option-type-list" "Approved Numbers" {
+  name = "Approved Numbers"
+  uuid = "c7d20db2-1651-4973-b9c8-818553c8f986"
+  ignoreSSLErrors = false
+  initialDataset = "[{\"name\":\"One\",\"value\":\"One\"},{\"name\":\"Two\",\"value\":\"Two\"},{\"name\":\"Three\",\"value\":\"Three\"}]"
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
