@@ -1,0 +1,25 @@
+resource "container-type" "d005f2da-d4b6-4a8e-9ef5-d52d766ac039" {
+  code = "d005f2da-d4b6-4a8e-9ef5-d52d766ac039"
+  name = "Vmware2Disks"
+  uuid = "7f883dda-c2e4-4284-9562-21a79803b4d7"
+  commEnabled = false
+  containerVersion = "2"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmw2"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-58814" }
+}
