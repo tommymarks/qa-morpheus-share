@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-vmware-2.4-centos-7.3-set" {
+  code = "apache-vmware-2.4-centos-7.3-set"
+  uuid = "7b3b3a55-c6a3-46f5-bb92-5bca4d9431fb"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-vmware-2.4-centos-7.3" }
+}
