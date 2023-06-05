@@ -1,0 +1,16 @@
+resource "resource-spec-template" "640c3959-13cf-4dec-858a-3c3e3ac6838d" {
+  name = "AWS Bool"
+  uuid = "640c3959-13cf-4dec-858a-3c3e3ac6838d"
+  autoRun = false
+  dateCreated = "2021-11-19T05:19:17.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-11-19T05:19:39.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "76590a0f-d013-4526-b422-95601e5b9d46" }
+  templatePhase = "provision"
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
