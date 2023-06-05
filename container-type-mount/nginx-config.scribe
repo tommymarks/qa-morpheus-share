@@ -1,0 +1,20 @@
+resource "container-type-mount" "nginx-config" {
+  code = "nginx-config"
+  name = "nginx config"
+  autoRun = false
+  canPersist = false
+  certStore = false
+  containerPath = "/etc/nginx/conf.d"
+  customType = false
+  deployable = false
+  hostPath = "/config"
+  mountType = "config"
+  required = false
+  shortName = "config"
+  sortOrder = 0
+  subMount = false
+  template = { code = "nginx-1.14-container" }
+  unmanagedEnabled = false
+  visible = true
+  volumeName = "config"
+}

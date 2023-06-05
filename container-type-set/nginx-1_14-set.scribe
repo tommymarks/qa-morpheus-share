@@ -1,0 +1,8 @@
+resource "container-type-set" "nginx-1.14-set" {
+  code = "nginx-1.14-set"
+  uuid = "5e4bb52e-3889-4175-8a7c-e7e7899b895a"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-1.14" }
+}

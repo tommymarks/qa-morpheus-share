@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-1.14-single" {
+  code = "nginx-1.14-single"
+  name = "Nginx Container"
+  uuid = "72f899eb-0cc5-4c34-b033-3441d3ba6392"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "1.14"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "docker" }
+  serverCount = 1
+  sortOrder = 10
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "nginx-1.14-set" } ]
+}
