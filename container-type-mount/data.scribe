@@ -3,11 +3,11 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/morpheus/data"
+  containerPath = "/usr/share/misc"
   customType = false
   deployable = true
   fileMount = false
-  hostPath = "/morpheus/data"
+  hostPath = "/usr/share/misc"
   required = false
   shortName = "data"
   sortOrder = 0
