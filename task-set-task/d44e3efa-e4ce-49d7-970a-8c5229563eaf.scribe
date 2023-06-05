@@ -1,0 +1,7 @@
+resource "task-set-task" "d44e3efa-e4ce-49d7-970a-8c5229563eaf" {
+  uuid = "d44e3efa-e4ce-49d7-970a-8c5229563eaf"
+  entryTask = false
+  task = { name = "A Fail" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
