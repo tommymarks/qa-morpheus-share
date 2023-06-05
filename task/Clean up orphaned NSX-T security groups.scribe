@@ -1,0 +1,48 @@
+resource "task" "Clean up orphaned NSX-T security groups" {
+  name = "Clean up orphaned NSX-T security groups"
+  uuid = "acec06de-9c47-4769-a035-2186268a8249"
+  allowCustomConfig = false
+  dateCreated = "2022-09-07T19:18:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-09-07T19:18:22.000Z"
+  options = [
+    {
+      uuid = "14f603c8-7767-4753-a44a-d40802fc7e1f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "4d0ff664-7824-4e4f-a92a-c94524dfe091"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "85f51bb9-8449-4c73-ab75-7a068494ea94"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "9680b663-8573-47ef-b998-d33fb43be28b"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "a6ea6daf-9a76-41bc-b3bd-686e63c639f0"
+      content = { uuid = "7061e35b-5637-414a-821b-f96716f8150c" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "b3225bd2-31d0-42d5-a45a-3f7db83ecabb"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "bc1749ed-e3b9-453a-bba8-e494c1ff2ee6"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "bf4515c5-d414-424b-8ed0-7c53803e3c4d"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
