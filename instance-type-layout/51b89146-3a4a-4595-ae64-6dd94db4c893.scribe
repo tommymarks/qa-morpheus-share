@@ -1,0 +1,20 @@
+resource "instance-type-layout" "51b89146-3a4a-4595-ae64-6dd94db4c893" {
+  code = "51b89146-3a4a-4595-ae64-6dd94db4c893"
+  name = "A Git CloudFormation"
+  uuid = "256b0433-ae5a-4a4f-9897-2f08f66c3845"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "gitcf"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "f05e4d58-5b57-4705-a7e8-f8510334e343" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
