@@ -1,0 +1,23 @@
+resource "instance-type" "69732" {
+  code = "69732"
+  name = "ap-69732"
+  uuid = "160c6711-782f-44bc-ab28-511cb67be923"
+  category = "os"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "AP-69732"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "e24c6730-119a-4884-914e-84203a17ec98" } ]
+  optionTypes = [ { code = "appName" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
