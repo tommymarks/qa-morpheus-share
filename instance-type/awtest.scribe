@@ -1,0 +1,23 @@
+resource "instance-type" "awtest" {
+  code = "awtest"
+  name = "aw-test"
+  uuid = "9feeee03-cc4a-4087-8da7-f6d5d427014b"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "AW-TEST"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "aa4e82bb-203b-4120-b9ac-1eb9d87df010" } ]
+  optionTypes = [ { code = "awSelect" }, { code = "aw1" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
