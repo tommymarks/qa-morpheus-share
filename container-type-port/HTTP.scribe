@@ -4,8 +4,8 @@ resource "container-type-port" "HTTP" {
   customType = false
   export = true
   exportName = "HTTP"
-  externalPort = 3000
-  internalPort = 3000
+  externalPort = 80
+  internalPort = 80
   link = true
   loadBalance = true
   loadBalanceProtocol = "HTTP"
