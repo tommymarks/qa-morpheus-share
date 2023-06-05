@@ -1,0 +1,20 @@
+resource "instance-type-layout" "74248f54-00bb-49b0-8bd3-263cf8252cc7" {
+  code = "74248f54-00bb-49b0-8bd3-263cf8252cc7"
+  name = "Vault"
+  uuid = "7a828d7e-bcc2-4e6a-80d6-071f8a136729"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "latest"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "docker" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "2a68eac2-d123-4d14-b1f5-7ba2f6d7376f" } ]
+}
