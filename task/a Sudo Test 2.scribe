@@ -1,0 +1,52 @@
+resource "task" "a Sudo Test 2" {
+  name = "a Sudo Test 2"
+  uuid = "3d267f09-66c9-4651-9457-a592a10d3145"
+  allowCustomConfig = false
+  dateCreated = "2021-02-12T04:13:47.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T23:11:23.000Z"
+  options = [
+    {
+      uuid = "096fec2b-94ea-4f44-adcc-6c930a358cf4"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "32af90e3-841e-41b4-b4fd-e29c5b2b0415"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "7d831f50-5c03-4bfc-8853-2c89112f27ed"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "9ef7f057-7a46-49d7-a8fe-afca25bc8ec5"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "b0429e07-6b96-49e7-8be3-96ff9d746fbd"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "b5d3e2c0-2348-4452-8be9-49c3f62dab48"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "bac957b0-abee-41bd-bbdf-67230837484d"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "e834626b-5899-4a6d-b7f8-5c4a50e2501f"
+      content = { uuid = "f19befd4-e9db-4813-801e-3ba296162083" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "f7ef3b85-ec62-421a-9828-e2c2fb4c1a6f"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
