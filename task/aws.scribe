@@ -1,0 +1,48 @@
+resource "task" "aws" {
+  name = "aws"
+  uuid = "334c31fc-a0e0-46fe-9499-92f80c5c9fca"
+  allowCustomConfig = false
+  dateCreated = "2022-10-20T17:21:09.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-10-20T17:21:49.000Z"
+  options = [
+    {
+      uuid = "1bc54d57-fa09-4679-a75a-a73f95b53166"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "39efdeca-33d2-413c-a07f-82b2f63ac5e7"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "624e988f-2cc5-4d07-ab0d-cba521f0547e"
+      content = { uuid = "e00d162b-1d7f-4fbc-b737-1834b96c27f1" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "8f3500e1-ebd3-482b-acfc-3fe1a191636d"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "975653c8-eb15-48fd-88fd-6505e5e794b1"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "9d9587c0-83d8-467c-9b26-c98c51f888b7"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "cabe0657-9b15-463c-a9c6-eb72baa17675"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "f777880a-bb1a-482a-a40e-d8eb8c8cf974"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
