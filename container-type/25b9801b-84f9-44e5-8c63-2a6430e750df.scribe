@@ -1,0 +1,25 @@
+resource "container-type" "25b9801b-84f9-44e5-8c63-2a6430e750df" {
+  code = "25b9801b-84f9-44e5-8c63-2a6430e750df"
+  name = "case 67039-NT"
+  uuid = "d07bb264-79c8-4e5f-93d4-409979d35800"
+  commEnabled = false
+  containerVersion = "1.0"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "google"
+  priorityOrder = 0
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "67039-NT"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "edf11af5-2cb4-4e99-9f44-ed4aab9d448a" }
+}
