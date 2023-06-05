@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-google-2.4-set" {
+  code = "apache-google-2.4-set"
+  uuid = "78229b8b-be8f-4c73-9925-41872cb4ee7d"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-google-2.4" }
+}
