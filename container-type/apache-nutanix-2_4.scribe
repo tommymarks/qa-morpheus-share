@@ -1,0 +1,43 @@
+resource "container-type" "apache-nutanix-2.4" {
+  code = "apache-nutanix-2.4"
+  name = "Apache 2.4"
+  uuid = "104044fb-3868-4729-9dcc-3f4f7646c8fd"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "nutanixSnapshot"
+  checkTypeCode = "webGetCheck"
+  cloneType = "apache"
+  commEnabled = false
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4"
+  customType = false
+  deploymentType = { code = "default" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "apache"
+  mountConfig = "/morpheus/config"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "nutanix"
+  provisionType = { code = "nutanix" }
+  repositoryImage = ""
+  scripts = [
+    { code = "apache-folder-config" },
+    { code = "apache-2.4-vm-entrypoint" },
+    { code = "apache-2.4-vm-stop" },
+    { code = "apache-2.4-vm-start" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "nutanix.image.morpheus.apache.2.4-1" }
+}

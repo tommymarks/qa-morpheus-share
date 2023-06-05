@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-nutanix-2.4-set" {
+  code = "apache-nutanix-2.4-set"
+  uuid = "90175f8b-139b-4c8b-aea1-7be941311e7f"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-nutanix-2.4" }
+}
