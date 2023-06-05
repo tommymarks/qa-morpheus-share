@@ -1,0 +1,27 @@
+resource "container-type" "e5adc33f-f0b0-41c3-8014-b3079af760b6" {
+  code = "e5adc33f-f0b0-41c3-8014-b3079af760b6"
+  name = "Vmware1Disk"
+  uuid = "ae178a66-fdca-40dd-9138-9000cd1d58ed"
+  commEnabled = false
+  containerVersion = "1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmw1"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = {
+    code = "fusion.image.morpheus.ubuntu.18.04.2-v1.ubuntu.18.04.2.amd64"
+  }
+}
