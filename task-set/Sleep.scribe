@@ -1,0 +1,10 @@
+resource "task-set" "Sleep" {
+  name = "Sleep"
+  uuid = "e49c0f29-07f3-494b-b4d9-a3836ff9086b"
+  dateCreated = "2018-12-05T00:20:24.000Z"
+  lastUpdated = "2018-12-05T00:20:24.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "038271bb-eb64-417f-b66a-9fa3cc05ce1e" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
