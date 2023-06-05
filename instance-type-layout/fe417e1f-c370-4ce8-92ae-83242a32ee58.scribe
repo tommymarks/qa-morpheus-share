@@ -1,0 +1,20 @@
+resource "instance-type-layout" "fe417e1f-c370-4ce8-92ae-83242a32ee58" {
+  code = "fe417e1f-c370-4ce8-92ae-83242a32ee58"
+  name = "create_pool"
+  uuid = "f65b7033-300e-41a8-b906-ae6be97646d9"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "v1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "workflow" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  taskSets = [ { name = "f5CreatePool" } ]
+}
