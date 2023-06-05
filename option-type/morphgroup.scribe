@@ -1,7 +1,7 @@
 resource "option-type" "morphgroup" {
   code = "morphgroup"
-  name = "BungeGroup"
-  uuid = "e01a17d3-70e2-4bbb-bb66-13a61de05e1d"
+  name = "API2 Group"
+  uuid = "cf550128-1d77-4d1f-b7ba-454d91d2928a"
   advanced = false
   contextualDefault = false
   creatable = true
@@ -14,22 +14,25 @@ resource "option-type" "morphgroup" {
   exportEvar = false
   exportMeta = false
   fieldContext = "config.customOptions"
-  fieldGetName = "morphgroup"
   fieldLabel = "Group"
   fieldName = "morphgroup"
-  fieldSetName = "morphgroup"
+  formField = false
   global = true
   groupExpand = false
   ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
   noBlank = false
   optionList = { name = "API Groups" }
   optionSource = "list"
   ownerEditable = false
-  required = true
+  required = false
   secretField = false
   showOnCreate = true
   showOnEdit = true
   tenantEditable = false
   tenantVisible = true
-  type = "select"
+  type = "typeahead"
 }
