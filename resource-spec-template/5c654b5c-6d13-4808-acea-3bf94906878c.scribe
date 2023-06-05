@@ -1,0 +1,16 @@
+resource "resource-spec-template" "5c654b5c-6d13-4808-acea-3bf94906878c" {
+  name = "CF Sample: YAML: Spec Template"
+  uuid = "5c654b5c-6d13-4808-acea-3bf94906878c"
+  autoRun = false
+  dateCreated = "2021-02-04T00:35:59.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-02-04T00:35:59.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "e66ffba6-8e1c-407e-9ac9-fa89f0771966" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
