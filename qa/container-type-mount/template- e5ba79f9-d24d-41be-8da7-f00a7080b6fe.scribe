@@ -1,0 +1,21 @@
+resource "container-type-mount" "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" {
+  code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe"
+  name = "Nginx Config"
+  autoRun = true
+  canPersist = false
+  certStore = false
+  containerPath = "/etc/nginx/conf.d"
+  customType = false
+  deployable = false
+  fileMount = false
+  hostPath = "/etc/nginx/conf.d"
+  mountType = "config"
+  required = false
+  shortName = "nginx-config"
+  sortOrder = 0
+  subMount = false
+  template = { code = "e5ba79f9-d24d-41be-8da7-f00a7080b6fe" }
+  unmanagedEnabled = false
+  visible = false
+  volumeName = "nginx-config"
+}

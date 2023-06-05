@@ -1,0 +1,24 @@
+resource "instance-type-layout" "6cb19663-7e5d-4e8f-9a8a-53a34081fd66" {
+  code = "6cb19663-7e5d-4e8f-9a8a-53a34081fd66"
+  name = "Google NGINX"
+  uuid = "86e5623a-6f77-490a-91bd-9baf91864fcf"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "latest"
+  labels = [ { name = "qa" } ]
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "google" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "668c738c-31ce-4d5a-a2b2-8fb308ea765c" } ]
+}
