@@ -1,0 +1,25 @@
+resource "container-type" "65f3152d-be57-477d-acf2-0e093db40409" {
+  code = "65f3152d-be57-477d-acf2-0e093db40409"
+  name = "al-centos-ovf"
+  uuid = "018dca68-a7a5-4b09-9c2a-bcc98004a3ef"
+  commEnabled = false
+  containerVersion = "0.1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "al-centos-ovf"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "94431cf4-8179-40a6-bfc0-e7985f4204b0" }
+}
