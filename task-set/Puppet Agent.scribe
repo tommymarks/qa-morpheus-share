@@ -1,0 +1,10 @@
+resource "task-set" "Puppet Agent" {
+  name = "Puppet Agent"
+  uuid = "63d936e4-529e-4af5-8462-dbfa5e318d11"
+  dateCreated = "2017-08-07T16:41:02.000Z"
+  lastUpdated = "2017-08-07T16:41:02.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "b7461daa-b44b-4c1d-b34a-cd2700974e74" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
