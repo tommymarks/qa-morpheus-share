@@ -1,0 +1,22 @@
+resource "instance-type" "nginxsvc" {
+  code = "nginxsvc"
+  name = "Nginx Service"
+  uuid = "a81b15ce-dc0d-4c80-8ada-0cfb17e7ccd6"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "NGINX_SERVICE"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "10121662-0bd5-4aae-b9f4-d966c040f5a7" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
