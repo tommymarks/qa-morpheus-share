@@ -1,0 +1,52 @@
+resource "container-type" "nginx-fusion-1.9" {
+  code = "nginx-fusion-1.9"
+  name = "NGINX 1.9"
+  uuid = "65098979-c36c-454c-b7b4-d4c4b50c7de1"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  backupType = "fusionSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  cloneType = "nginx"
+  commEnabled = false
+  containerMounts = [
+    { code = "nginx-1.9-certs" },
+    { code = "nginx-1.9-config" },
+    { code = "nginx-1.9-data" },
+    { code = "nginx-1.9-logs" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.9"
+  customType = false
+  deploymentType = { code = "nginx" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = true
+  logTypeCode = "nginx"
+  mountConfig = "/etc/nginx"
+  mountData = "/morpheus/data"
+  mountLogs = "/var/log/nginx"
+  priorityOrder = 0
+  providerType = "fusion"
+  provisionType = { code = "fusion" }
+  repositoryImage = ""
+  scripts = [
+    { code = "nginx-1.9-vm-entrypoint" },
+    { code = "nginx-1.9-vm-start" },
+    { code = "nginx-1.9-vm-stop" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  templates = [ { code = "nginx-1.9" } ]
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "fusion.image.morpheus.nginx.1.9" }
+}

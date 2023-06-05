@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-fusion-1.9-set" {
+  code = "nginx-fusion-1.9-set"
+  uuid = "6f5bdf28-23e4-45bd-a6a4-4adae5455346"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-fusion-1.9" }
+}
