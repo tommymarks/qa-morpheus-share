@@ -1,0 +1,31 @@
+resource "container-type" "centos-xen-7.3" {
+  code = "centos-xen-7.3"
+  name = "CentOS 7.3"
+  uuid = "72422b2c-5217-416a-94c4-87e023909d4f"
+  category = "centos"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "xenSnapshot"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerVersion = "7.3"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "centos"
+  priorityOrder = 0
+  providerType = "xen"
+  provisionType = { code = "xen" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "centos"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "xen.image.morpheus.centos.7.3" }
+}
