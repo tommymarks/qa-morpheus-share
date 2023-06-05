@@ -1,0 +1,52 @@
+resource "task" "al-bash-simple" {
+  name = "al-bash-simple"
+  uuid = "1697674d-9328-475b-95c5-721f0d79ea66"
+  allowCustomConfig = false
+  dateCreated = "2021-12-06T13:24:50.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-18T13:14:20.000Z"
+  options = [
+    {
+      uuid = "0ba0c4e8-defa-435a-abd3-235e52fda9f0"
+      content = { uuid = "521cd07c-4b58-4f48-a702-495dbf6ea862" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "1b3d7368-1ec8-453f-9af5-7774b37059f6"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "31bb3395-85b5-4f66-b729-940ae6bcec2d"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "32c9b0d0-f4ac-4bc8-ab1b-2dad19af36ce"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "50b296d3-e85c-401f-9fd8-3cd416d5e8b6"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "6b1c99f8-f7a6-4b0b-bd90-2e1d9d8a9a50"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "7314a7c5-cd0e-448c-abdf-7128ceec9636"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "742ad5a0-25bf-4adf-8e8f-ba017edd8391"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "aec3e676-f219-4a57-9352-d04a6efdd93b"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
