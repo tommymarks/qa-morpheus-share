@@ -1,0 +1,25 @@
+resource "container-type" "959e3697-a19f-405c-9dbc-370745795294" {
+  code = "959e3697-a19f-405c-9dbc-370745795294"
+  name = "workflow"
+  uuid = "5a9a0a0b-351d-4701-ad4c-ac73fbe43ccc"
+  commEnabled = false
+  containerVersion = "1.0"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "workflow"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.centos.8.4" }
+}
