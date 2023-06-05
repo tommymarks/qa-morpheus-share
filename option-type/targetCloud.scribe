@@ -1,0 +1,34 @@
+resource "option-type" "targetCloud" {
+  code = "targetCloud"
+  name = "Target Cloud"
+  uuid = "065b8140-e9ef-4037-b85c-669853032626"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "targetGroup"
+  displayOrder = 1
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud"
+  fieldName = "targetCloud"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Target Clouds" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}

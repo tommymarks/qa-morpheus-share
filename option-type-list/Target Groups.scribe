@@ -1,0 +1,15 @@
+resource "option-type-list" "Target Groups" {
+  name = "Target Groups"
+  uuid = "19017fa6-de31-4866-a432-dface512550c"
+  apiType = "groups"
+  ignoreSSLErrors = false
+  realTime = true
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+results.push({name:data[x].name, value:data[x].id});
+    }
+EOF
+  type = "api"
+  visibility = "public"
+}

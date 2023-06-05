@@ -1,0 +1,21 @@
+resource "option-type-list" "Target Pools" {
+  name = "Target Pools"
+  uuid = "93ea79a9-55d1-462b-b07a-737fff18d926"
+  apiType = "resourcePools"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = <<EOF
+if (input.targetCloud && input.targetGroup) {
+  results.siteId = input.targetGroup
+  results.zoneId = input.targetCloud
+}
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+results.push({name:data[x].name, value:data[x].id});
+    }
+EOF
+  type = "api"
+  visibility = "public"
+}
