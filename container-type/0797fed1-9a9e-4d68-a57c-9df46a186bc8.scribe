@@ -12,8 +12,8 @@ resource "container-type" "0797fed1-9a9e-4d68-a57c-9df46a186bc8" {
   commEnabled = false
   containerLogs = [ { name = "logs" } ]
   containerMounts = [
-    { name = "data" },
-    { code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" }
+    { code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" },
+    { name = "data" }
   ]
   containerPorts = [ { name = "Http" }, { name = "Https" } ]
   containerVersion = "latest"
