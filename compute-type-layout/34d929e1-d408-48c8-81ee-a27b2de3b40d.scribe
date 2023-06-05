@@ -1,0 +1,24 @@
+resource "compute-type-layout" "34d929e1-d408-48c8-81ee-a27b2de3b40d" {
+  code = "34d929e1-d408-48c8-81ee-a27b2de3b40d"
+  name = "Amazon Custom RHEL 8"
+  computeServers = [
+    {
+      code = "34d929e1-d408-48c8-81ee-a27b2de3b40d-dbe42def-698e-48f2-9ff9-bd55c4f4fed6"
+    }
+  ]
+  computeVersion = "RHEL 8"
+  creatable = true
+  dateCreated = "2020-05-16T01:18:55.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2022-05-13T14:04:15.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  type = { code = "amazonLinux" }
+}

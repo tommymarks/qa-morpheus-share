@@ -1,0 +1,26 @@
+resource "container-type" "dbe42def-698e-48f2-9ff9-bd55c4f4fed6" {
+  code = "dbe42def-698e-48f2-9ff9-bd55c4f4fed6"
+  name = "Amazon RHEL 8"
+  uuid = "a00e6148-3ea8-4f0a-a4f7-38b5be548aa1"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "RHEL 8"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsrhel8"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "amazon"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "a97639c2-2053-4e92-9fe0-a485eff812b3" }
+}
