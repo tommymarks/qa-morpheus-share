@@ -1,0 +1,48 @@
+resource "task" "dg-custom-echo" {
+  name = "dg-custom-echo"
+  uuid = "6cd9c6d5-e1c8-492c-8f82-b18b9a74a1b5"
+  allowCustomConfig = false
+  dateCreated = "2023-03-17T11:50:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-03-17T11:50:54.000Z"
+  options = [
+    {
+      uuid = "59c6b37d-41a5-4f1b-8446-75b5d96a8bf7"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "79ab1c7b-7544-4338-ad25-5f45ea9cd81f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "ae7b51d6-8d30-468e-8fe1-7ae2851d4e71"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "bfdeab9f-9e6b-4aa0-bfa9-8a03e8e13f7b"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "ca8fc3b1-9f2a-4df8-81ee-6a146a9b2ca0"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "d6fdf4ce-f049-4173-8db4-eb849dcbdc74"
+      content = { uuid = "6cb2cbad-8d02-447c-8fed-771bab83a1c4" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "db8d5cb2-63e9-4de8-b3ef-7ac6acace758"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "e1b684e6-b30d-4833-a7f7-2f5528df0acc"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
