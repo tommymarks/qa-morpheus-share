@@ -1,0 +1,7 @@
+resource "task-set-task" "22010413-c3a6-46ea-b30a-177efc7f987b" {
+  uuid = "22010413-c3a6-46ea-b30a-177efc7f987b"
+  entryTask = false
+  task = { name = "A Loop" }
+  taskOrder = 0
+  taskPhase = "operation"
+}
