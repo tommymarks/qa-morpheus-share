@@ -1,0 +1,28 @@
+resource "task" "winping" {
+  name = "winping"
+  uuid = "6d905793-19a3-4967-8028-519e014d696b"
+  dateCreated = "2019-01-07T14:41:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-01-07T14:41:54.000Z"
+  options = [
+    {
+      uuid = "402c7410-d176-4f79-9882-7d40e1632512"
+      optionType = { code = "ansiblePlaybook" }
+      value = "winping"
+    },
+    {
+      uuid = "ac93aaf7-0f3c-4cf2-b1a1-3d80a1d86655"
+      optionType = { code = "ansibleGitRef" }
+    },
+    {
+      uuid = "db589ed9-7243-40a3-bcd6-8dabb37b15c3"
+      optionType = { code = "ansibleGitId" }
+      value = "147"
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTask" }
+  visibility = "private"
+}
