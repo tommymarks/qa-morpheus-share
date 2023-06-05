@@ -1,0 +1,8 @@
+resource "container-type-set" "vmware-centos-8-stream" {
+  code = "vmware-centos-8-stream"
+  uuid = "e647c0c4-3048-4f72-9f24-01dd47066c10"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  workloadType = { code = "vmware-centos-8-stream" }
+}
