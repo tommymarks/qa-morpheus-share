@@ -1,0 +1,16 @@
+resource "resource-spec-template" "a34f3eb2-5d99-421f-ba16-031c331a4fd6" {
+  name = "a tf test"
+  uuid = "a34f3eb2-5d99-421f-ba16-031c331a4fd6"
+  autoRun = false
+  dateCreated = "2021-03-29T18:31:41.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2022-03-18T18:21:08.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "33b3927a-5c25-404b-952e-a5de0a39e38a" }
+  templatePhase = "provision"
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
