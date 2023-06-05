@@ -1,0 +1,10 @@
+resource "app-template" "916128a1-25fb-47f4-b0c0-7557008b4345" {
+  name = "CloudFormation: Sample: YAML"
+  uuid = "916128a1-25fb-47f4-b0c0-7557008b4345"
+  active = true
+  custom = false
+  dateCreated = "2021-02-04T00:32:37.000Z"
+  lastUpdated = "2021-02-04T00:32:37.000Z"
+  templateType = { code = "cloudFormation" }
+  visibility = "private"
+}
