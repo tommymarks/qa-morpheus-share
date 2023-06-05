@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-upcloud-1.9-ubuntu-20.04-set" {
+  code = "nginx-upcloud-1.9-ubuntu-20.04-set"
+  uuid = "a177a939-6e0d-4afb-9016-34789d2db204"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-upcloud-1.9-ubuntu-20.04" }
+}
