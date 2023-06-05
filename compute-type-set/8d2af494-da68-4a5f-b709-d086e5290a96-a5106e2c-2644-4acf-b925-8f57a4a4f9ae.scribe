@@ -1,0 +1,19 @@
+resource "compute-type-set" "8d2af494-da68-4a5f-b709-d086e5290a96-a5106e2c-2644-4acf-b925-8f57a4a4f9ae" {
+  code = "8d2af494-da68-4a5f-b709-d086e5290a96-a5106e2c-2644-4acf-b925-8f57a4a4f9ae"
+  name = "Amazon Custom RHEL 7-worker-a5106e2c-2644-4acf-b925-8f57a4a4f9ae-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = false
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 0
+  workloadType = { code = "a5106e2c-2644-4acf-b925-8f57a4a4f9ae" }
+}
