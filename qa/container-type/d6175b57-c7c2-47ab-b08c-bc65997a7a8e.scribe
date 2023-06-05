@@ -1,0 +1,29 @@
+resource "container-type" "d6175b57-c7c2-47ab-b08c-bc65997a7a8e" {
+  code = "d6175b57-c7c2-47ab-b08c-bc65997a7a8e"
+  name = "Windows Server"
+  uuid = "5d0bd584-9d38-4e84-8101-4044f9b08c6d"
+  category = "windows"
+  actions = [ { code = "generic-remove-node" } ]
+  commEnabled = false
+  containerPorts = [ { name = "RDP" } ]
+  containerVersion = "2019"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  labels = [ { name = "auto" }, { name = "qa" } ]
+  logTypeCode = "vm"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "win"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-58692" }
+}
