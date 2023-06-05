@@ -1,0 +1,23 @@
+resource "instance-type-layout" "nginx-bluemix-1.9-ubuntu-16.04-single" {
+  code = "nginx-bluemix-1.9-ubuntu-16.04-single"
+  name = "IBM Cloud NGINX"
+  uuid = "a0390cee-4b1c-4bbf-ad9a-bbe63d57d6f3"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "bluemix" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "nginx-bluemix-1.9-ubuntu-16.04-set" } ]
+}
