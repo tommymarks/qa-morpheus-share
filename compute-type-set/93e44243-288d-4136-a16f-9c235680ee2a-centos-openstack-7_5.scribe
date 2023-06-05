@@ -1,0 +1,19 @@
+resource "compute-type-set" "93e44243-288d-4136-a16f-9c235680ee2a-centos-openstack-7.5" {
+  code = "93e44243-288d-4136-a16f-9c235680ee2a-centos-openstack-7.5"
+  name = "OpenStack Custom Centos 7-worker-centos-openstack-7.5-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "openstackLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = false
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 0
+  workloadType = { code = "centos-openstack-7.5" }
+}

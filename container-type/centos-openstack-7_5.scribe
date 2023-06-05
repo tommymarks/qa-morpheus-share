@@ -1,0 +1,31 @@
+resource "container-type" "centos-openstack-7.5" {
+  code = "centos-openstack-7.5"
+  name = "CentOS 7.5"
+  uuid = "dbd9b891-8aa4-4112-972e-6e085f7eea89"
+  category = "centos"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "openstackSnapshot"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerVersion = "7.5"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "centos"
+  priorityOrder = 0
+  providerType = "openstack"
+  provisionType = { code = "openstack" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "centos"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "kvm.image.morpheus.centos.7.5" }
+}
