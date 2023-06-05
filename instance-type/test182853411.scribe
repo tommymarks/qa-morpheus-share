@@ -1,0 +1,25 @@
+resource "instance-type" "test182853411" {
+  code = "test182853411"
+  name = "test182853411"
+  uuid = "356156c1-201d-4bb1-b536-c1724f5ab345"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "TEST182853411"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "0e461ace-0707-4814-a212-4b63daf3bcf1" },
+    { code = "ef34716f-c00e-46dd-a382-1fd2de7180f1" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
