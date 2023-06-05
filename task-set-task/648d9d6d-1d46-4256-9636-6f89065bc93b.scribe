@@ -1,0 +1,7 @@
+resource "task-set-task" "648d9d6d-1d46-4256-9636-6f89065bc93b" {
+  uuid = "648d9d6d-1d46-4256-9636-6f89065bc93b"
+  entryTask = false
+  task = { name = "Environment Variables" }
+  taskOrder = 0
+  taskPhase = "provision"
+}
