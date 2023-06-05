@@ -1,0 +1,21 @@
+resource "instance-type" "apache-opc" {
+  code = "apache-opc"
+  name = "apache for opc"
+  uuid = "02e2336c-25a8-4931-89b6-8e0639127868"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "APACHE_FOR_OPC"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
