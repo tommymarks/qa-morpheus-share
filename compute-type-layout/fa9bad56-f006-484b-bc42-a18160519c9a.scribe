@@ -1,0 +1,23 @@
+resource "compute-type-layout" "fa9bad56-f006-484b-bc42-a18160519c9a" {
+  code = "fa9bad56-f006-484b-bc42-a18160519c9a"
+  name = "UpCloud Custom Centos 7"
+  computeServers = [
+    {
+      code = "fa9bad56-f006-484b-bc42-a18160519c9a-d0613d68-4ec6-4162-ba1c-9306fd5d1abf"
+    }
+  ]
+  computeVersion = "Centos 7.5"
+  creatable = true
+  dateCreated = "2019-08-28T19:20:19.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2019-08-28T19:20:19.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "upcloud" }
+  serverCount = 1
+  sortOrder = 0
+}
