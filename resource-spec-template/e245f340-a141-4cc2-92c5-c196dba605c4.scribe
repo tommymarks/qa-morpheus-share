@@ -1,0 +1,17 @@
+resource "resource-spec-template" "e245f340-a141-4cc2-92c5-c196dba605c4" {
+  name = "Test CloudFormation Spec"
+  uuid = "e245f340-a141-4cc2-92c5-c196dba605c4"
+  category = "test"
+  autoRun = false
+  dateCreated = "2021-07-22T03:13:05.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-07-22T03:50:12.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "054d0b4c-683c-4a7b-bbc9-b4de0e91304e" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
