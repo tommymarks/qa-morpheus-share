@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-fusion-2.4-set" {
+  code = "apache-fusion-2.4-set"
+  uuid = "1980a12f-ee47-4209-8f29-c841e1bf07b3"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-fusion-2.4" }
+}

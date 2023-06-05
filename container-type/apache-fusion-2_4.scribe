@@ -1,0 +1,43 @@
+resource "container-type" "apache-fusion-2.4" {
+  code = "apache-fusion-2.4"
+  name = "Apache 2.4"
+  uuid = "9ece0845-738f-4e5b-a0e2-e72fe5dc44c3"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "fusionSnapshot"
+  checkTypeCode = "webGetCheck"
+  cloneType = "apache"
+  commEnabled = false
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4"
+  customType = false
+  deploymentType = { code = "default" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "apache"
+  mountConfig = "/morpheus/config"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "fusion"
+  provisionType = { code = "fusion" }
+  repositoryImage = ""
+  scripts = [
+    { code = "apache-folder-config" },
+    { code = "apache-2.4-vm-entrypoint" },
+    { code = "apache-2.4-vm-stop" },
+    { code = "apache-2.4-vm-start" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "fusion.image.morpheus.apache.2.4.v1" }
+}

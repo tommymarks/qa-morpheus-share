@@ -1,0 +1,20 @@
+resource "instance-type-layout" "apache-fusion-2.4-single" {
+  code = "apache-fusion-2.4-single"
+  name = "Fusion Apache on Ubuntu 14.04"
+  uuid = "7a1d8de7-3564-4f6a-83fc-91aa3b6c6030"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process in fusion"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "fusion" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 30
+  systemLayout = false
+  workloads = [ { code = "apache-fusion-2.4-set" } ]
+}
