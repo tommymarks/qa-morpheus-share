@@ -1,0 +1,20 @@
+resource "instance-type-layout" "4832147a-82b8-4e9a-9fb4-d7ddf7dcab14" {
+  code = "4832147a-82b8-4e9a-9fb4-d7ddf7dcab14"
+  name = "CF RDS Replica"
+  uuid = "8711ed80-2edf-4b40-95f6-532da84b6d5f"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "rdsreplica"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "a92dd3f3-9dd2-4042-8704-c1433b0450d8" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
