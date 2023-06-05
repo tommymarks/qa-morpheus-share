@@ -1,0 +1,26 @@
+resource "container-type" "62a4dd3f-ece2-4c4f-a512-db48dba939a6" {
+  code = "62a4dd3f-ece2-4c4f-a512-db48dba939a6"
+  name = "Amazon Ubuntu 22"
+  uuid = "effc164a-1b98-46c5-84c3-4335b4485a32"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Ubuntu 22"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsubu22"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "5e4a48b7-6857-4796-a50e-66b8367c697c" }
+}
