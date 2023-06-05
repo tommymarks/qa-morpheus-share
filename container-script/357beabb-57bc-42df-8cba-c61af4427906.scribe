@@ -1,0 +1,17 @@
+resource "container-script" "357beabb-57bc-42df-8cba-c61af4427906" {
+  code = "357beabb-57bc-42df-8cba-c61af4427906"
+  name = "phase: provision"
+  uuid = "309773ff-b4e6-4c5a-a85b-537659f53552"
+  failOnError = true
+  lastUpdated = "2021-02-19T04:20:16.000Z"
+  script = <<EOF
+echo "$(date) - provision" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+echo ERROR: Did I do that? 1>&2
+EOF
+  scriptPhase = "provision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = true
+}
