@@ -1,0 +1,15 @@
+resource "option-type-list" "rest get" {
+  name = "rest get"
+  uuid = "ca408cbd-3b01-42a5-b10d-52f418472b18"
+  ignoreSSLErrors = false
+  realTime = false
+  sourceMethod = "GET"
+  sourceUrl = "https://jsonplaceholder.typicode.com/posts"
+  translationScript = <<EOF
+for(var x=0;x < data.length; x++) {
+	results.push({name: data[x].title, value: data[x].id});
+}
+EOF
+  type = "rest"
+  visibility = "public"
+}

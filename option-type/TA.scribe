@@ -1,0 +1,29 @@
+resource "option-type" "TA" {
+  code = "TA"
+  name = "TA"
+  uuid = "4014d125-a88b-4c67-962f-7b4570bea492"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  defaultValue = "dolor sint quo a velit explicabo quia nam"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "TA"
+  fieldLabel = "TA"
+  fieldName = "TA"
+  fieldSetName = "TA"
+  global = true
+  noBlank = false
+  optionList = { name = "rest get" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "typeahead"
+}
