@@ -1,0 +1,71 @@
+resource "task" "DGTestNewTemplate" {
+  name = "DGTestNewTemplate"
+  uuid = "3b4baa1f-0eaf-48f7-b1ab-19f9aa2edc2e"
+  allowCustomConfig = false
+  dateCreated = "2023-02-23T19:29:05.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-02-27T10:15:15.000Z"
+  options = [
+    {
+      uuid = "02a3ed1a-3400-4e06-be1c-83714d737f4f"
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    },
+    {
+      uuid = "1164f076-f796-4d37-b7cc-8aebf521c855"
+      optionType = { code = "ansibleGroup" }
+    },
+    {
+      uuid = "15679aac-2b02-410f-9f14-869a2ba6364c"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "1b1eba73-b88d-4464-b980-df73571604c0"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "27791c15-1887-44cc-9e5c-8b9aa0c428dc"
+      optionType = { code = "ansibleTowerGitRef" }
+    },
+    {
+      uuid = "4dd0c2da-8fc4-48b1-b917-e9477aa165ed"
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "2788"
+    },
+    {
+      uuid = "5b2a1baf-e527-4761-bf7f-303a58974dbc"
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = "4997"
+    },
+    {
+      uuid = "8ae2326c-3923-416a-a311-2aacaeca516c"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "936a490a-ade3-4656-a52f-7545ff3f9c2c"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "ba90f5b5-2d07-4412-9157-8b077c477885"
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = "32522"
+    },
+    {
+      uuid = "c00d4c7e-2901-406c-9599-08224b718db8"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "cd54083c-ed5e-40ca-840b-1a8a0a314730"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "d1380c80-20cb-4609-8217-3560e3612c44"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTowerTask" }
+  visibility = "public"
+}
