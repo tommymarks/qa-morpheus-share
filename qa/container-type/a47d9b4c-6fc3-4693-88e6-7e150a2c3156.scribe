@@ -1,0 +1,35 @@
+resource "container-type" "a47d9b4c-6fc3-4693-88e6-7e150a2c3156" {
+  code = "a47d9b4c-6fc3-4693-88e6-7e150a2c3156"
+  name = "Tomcat 7"
+  uuid = "6a5de431-12dd-4b2c-94cb-df85662ac82d"
+  category = "tomcat"
+  checkTypeCode = "webGetCheck"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "Http" } ]
+  containerVersion = "7"
+  customType = false
+  deploymentPath = "data/staging"
+  deploymentType = { code = "tomcat" }
+  entryPoint = "/opt/tomcat/bin/deploy-and-run.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  labels = [ { name = "qa" } ]
+  logTypeCode = "docker"
+  mountPoint = "/data"
+  priorityOrder = 0
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "fabric8/tomcat-7"
+  repositoryVersion = "latest"
+  scripts = [ { code = "tomcat-deploy" }, { code = "tomcat-reconfigure" } ]
+  shortName = "tomcat7"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "docker"
+  userDeploy = true
+  viewSet = "default"
+}
