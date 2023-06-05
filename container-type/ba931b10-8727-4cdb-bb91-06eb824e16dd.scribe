@@ -1,0 +1,25 @@
+resource "container-type" "ba931b10-8727-4cdb-bb91-06eb824e16dd" {
+  code = "ba931b10-8727-4cdb-bb91-06eb824e16dd"
+  name = "Docker Nginx"
+  uuid = "470ab0b7-e158-4628-b6fa-3dfb55ed3e0b"
+  category = "Web"
+  commEnabled = false
+  containerVersion = "options"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "docker"
+  priorityOrder = 0
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "nginx"
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "docker"
+  userDeploy = true
+  viewSet = "default"
+}
