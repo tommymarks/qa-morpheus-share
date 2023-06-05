@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-azure-2.4-ubuntu-16.04-set" {
+  code = "apache-azure-2.4-ubuntu-16.04-set"
+  uuid = "fede8876-6398-4f13-a330-e76fcfecc1cc"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-azure-2.4-ubuntu-16.04" }
+}
