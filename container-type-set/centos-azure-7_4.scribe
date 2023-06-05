@@ -1,0 +1,8 @@
+resource "container-type-set" "centos-azure-7.4" {
+  code = "centos-azure-7.4"
+  uuid = "a3ab4066-0935-4a18-bf76-3481a7e7664f"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  workloadType = { code = "centos-azure-7.4" }
+}
