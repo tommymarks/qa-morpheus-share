@@ -1,0 +1,34 @@
+resource "option-type" "customIP" {
+  code = "customIP"
+  name = "Custom IP"
+  uuid = "6222d72f-50ff-45ea-a696-062c8cec9966"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "customIP"
+  fieldLabel = "Custom IP"
+  fieldName = "customIP"
+  fieldSetName = "customIP"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  placeHolder = "[]"
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "text"
+}
