@@ -1,0 +1,25 @@
+resource "container-type" "e95e4b71-f3ba-4711-82aa-6320d5324409" {
+  code = "e95e4b71-f3ba-4711-82aa-6320d5324409"
+  name = "Windows 11"
+  uuid = "1c9db1f8-0e66-4c77-b5c2-811839f45382"
+  commEnabled = false
+  containerVersion = "11"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "Windows11"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-72238" }
+}
