@@ -1,0 +1,24 @@
+resource "container-type" "539c21e6-60a2-4b82-8eeb-1b5373f755c1" {
+  code = "539c21e6-60a2-4b82-8eeb-1b5373f755c1"
+  name = "Ubuntu-18.0.4.5-gen2"
+  uuid = "9b302369-1dbc-411b-82da-b697fe5f9bc3"
+  commEnabled = false
+  containerVersion = "18.04.5 Generation 2 Hardware"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "hyperv"
+  priorityOrder = 0
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "Ubuntu-18.0.4.5-gen2"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "hyperv"
+  userDeploy = true
+  viewSet = "default"
+}
