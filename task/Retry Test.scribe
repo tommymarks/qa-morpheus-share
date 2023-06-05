@@ -1,0 +1,47 @@
+resource "task" "Retry Test" {
+  name = "Retry Test"
+  uuid = "230c6857-95ee-4b3d-8a73-0d5f5522e1e5"
+  executeTarget = "resource"
+  options = [
+    {
+      uuid = "cdc4f52f-b126-4769-abf6-9ae930693180"
+      optionType = { code = "script" }
+      value = <<EOF
+#!/bin/bash
+set -euo pipefail
+
+function myFunction() {
+	myCommand
+	return $?
+}
+
+retry=0
+maxRetries=3
+retryInterval=5
+until [ ${retry} -ge ${maxRetries} ]
+do
+	myFunction && break
+	retry=$[${retry}+1]
+	echo "Retrying [${retry}/${maxRetries}] in ${retryInterval}(s) "
+    echo "Hello, today's date is $(date)" | tee -a /tmp/date.txt
+	sleep ${retryInterval}
+done
+
+if [ ${retry} -ge ${maxRetries} ]; then
+  echo "Failed after ${maxRetries} attempts!"
+  exit 1
+fi
+EOF
+    },
+    {
+      uuid = "e433a29b-6dd3-480a-b4c5-e6444d1b64ad"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 0
+  retryable = true
+  taskType = { code = "script" }
+  visibility = "private"
+}
