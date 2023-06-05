@@ -1,0 +1,61 @@
+resource "task" "db-hello-py" {
+  code = "db-hello-py"
+  name = "db-hello-py"
+  uuid = "32cd9d64-bf36-4dd4-815b-a99fb2114b69"
+  allowCustomConfig = false
+  dateCreated = "2022-01-26T15:42:07.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-26T15:42:07.000Z"
+  options = [
+    {
+      uuid = "0deb4be3-2bf3-4362-9fdd-8264b52dc5a4"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "4e3d6bfc-38ec-4795-84f6-7cd3a17976fc"
+      optionType = { code = "pythonAdditionalPackages" }
+    },
+    {
+      uuid = "537e5fa1-224c-4e31-a38c-0e4541e9004e"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "57869552-e269-4b57-8e95-c2ffb4ee318b"
+      content = { uuid = "945aa0e7-42ee-40ff-94c6-99dc74d84f43" }
+      optionType = { code = "pythonScript" }
+    },
+    {
+      uuid = "6b746a5a-ef75-49a6-9727-db5f682fbeed"
+      optionType = { code = "pythonBinary" }
+    },
+    {
+      uuid = "8f0f14d3-803c-4318-a0e6-6fcd41b9e3c7"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "96fa1e92-90e5-46ea-9efd-c4a4c8ee97ea"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "d5c576d1-21b8-4724-bf0e-f0656afc47e5"
+      optionType = { code = "pythonArgs" }
+    },
+    {
+      uuid = "dba91e03-8625-4e60-8b9c-736cafdbb6f3"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "e3edc334-fdd0-4dc6-930a-e46523916049"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "f0004911-0039-4144-8d2a-0a89fe6242d0"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
