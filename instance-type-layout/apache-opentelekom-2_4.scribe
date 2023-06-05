@@ -1,0 +1,20 @@
+resource "instance-type-layout" "apache-opentelekom-2.4" {
+  code = "apache-opentelekom-2.4"
+  name = "Open Telekom Apache on Ubuntu 14.04"
+  uuid = "a7011aa6-b159-46e2-9293-629292634b55"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "opentelekom" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  systemLayout = false
+  workloads = [ { code = "apache-opentelekom-2.4-set" } ]
+}

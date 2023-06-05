@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-opentelekom-2.4-set" {
+  code = "apache-opentelekom-2.4-set"
+  uuid = "b68d0240-01f7-4865-a20e-14ae4775a4d0"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-opentelekom-2.4" }
+}
