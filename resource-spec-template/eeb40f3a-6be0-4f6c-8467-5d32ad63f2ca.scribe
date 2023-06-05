@@ -1,0 +1,16 @@
+resource "resource-spec-template" "eeb40f3a-6be0-4f6c-8467-5d32ad63f2ca" {
+  name = "DB Morpheus AKS Template"
+  uuid = "eeb40f3a-6be0-4f6c-8467-5d32ad63f2ca"
+  autoRun = false
+  dateCreated = "2020-11-13T15:38:15.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2020-11-13T15:38:15.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "ebda22c0-126b-4b60-b3bd-0ec15e3933d3" }
+  templatePhase = "clusterProvision"
+  templateType = "arm"
+  type = { code = "aks" }
+}
