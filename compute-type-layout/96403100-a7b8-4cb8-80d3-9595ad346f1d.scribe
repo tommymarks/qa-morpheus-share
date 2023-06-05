@@ -1,0 +1,23 @@
+resource "compute-type-layout" "96403100-a7b8-4cb8-80d3-9595ad346f1d" {
+  code = "96403100-a7b8-4cb8-80d3-9595ad346f1d"
+  name = "Amazon Custom Centos 7"
+  computeServers = [
+    {
+      code = "96403100-a7b8-4cb8-80d3-9595ad346f1d-0e4261af-76fc-4d42-babb-eacb97c61319"
+    }
+  ]
+  computeVersion = "Centos 7"
+  creatable = true
+  dateCreated = "2019-08-28T18:33:24.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:00:14.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+}

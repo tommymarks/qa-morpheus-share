@@ -1,0 +1,26 @@
+resource "container-type" "0e4261af-76fc-4d42-babb-eacb97c61319" {
+  code = "0e4261af-76fc-4d42-babb-eacb97c61319"
+  name = "Amazon Centos 7"
+  uuid = "cfbe5ddf-0741-4964-bf4d-0aaa91ecba07"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Centos 7"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awscent7"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "55c03cbf-7150-47fd-a763-eeedd6c2dbfc" }
+}
