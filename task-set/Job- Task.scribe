@@ -1,0 +1,11 @@
+resource "task-set" "Job: Task" {
+  name = "Job: Task"
+  uuid = "6ab4cc97-bbe8-44fe-9f63-5c6590ef5c5a"
+  allowCustomConfig = false
+  dateCreated = "2020-11-06T20:06:34.000Z"
+  lastUpdated = "2020-11-06T20:13:20.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "b044cd3a-bf4e-48f8-9b48-38310b48533c" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}
