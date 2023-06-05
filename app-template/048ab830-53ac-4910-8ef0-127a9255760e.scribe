@@ -1,0 +1,14 @@
+resource "app-template" "048ab830-53ac-4910-8ef0-127a9255760e" {
+  name = "case 67284"
+  uuid = "048ab830-53ac-4910-8ef0-127a9255760e"
+  category = "s3"
+  active = true
+  custom = false
+  dateCreated = "2022-08-02T06:24:43.000Z"
+  description = "Testing 67282"
+  lastUpdated = "2022-09-17T18:57:19.000Z"
+  secretKey = "tfvars/67284-secrets"
+  secretType = "cypher"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
