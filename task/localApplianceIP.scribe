@@ -1,0 +1,53 @@
+resource "task" "localApplianceIP" {
+  code = "localApplianceIP"
+  name = "localApplianceIP"
+  uuid = "4efe56b1-95d7-4025-bd82-fc93de7035e4"
+  allowCustomConfig = false
+  dateCreated = "2021-12-15T14:20:53.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-12-15T14:21:45.000Z"
+  options = [
+    {
+      uuid = "1d5962c5-2a58-486e-b139-930df22445e1"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "2d44e581-763c-4012-9052-2dd82df2079e"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "3f010771-256b-458a-9da6-c064f3fdcfaf"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "4647f2db-d63f-40b8-b69f-3bf930822c98"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "5ac0919b-4596-4c43-95fd-e40319129f83"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "6df098a8-8acd-41b2-90df-aa1df637990b"
+      content = { uuid = "35748f3a-0d7d-4524-855e-ec7b3184c699" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "ad110b02-cd16-4925-ad99-5a6714a6f899"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "e430ba9a-3d91-4199-9349-2630a65aaf75"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "f027a7ab-5787-4acf-a469-1d2056dec4a0"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
