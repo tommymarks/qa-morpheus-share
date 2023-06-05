@@ -1,0 +1,26 @@
+resource "instance-type" "al-centos-template" {
+  code = "al-centos-template"
+  name = "al-centos-template"
+  uuid = "26bb54aa-0083-468c-a09c-edbbb4eef439"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "AL-CENTOS-TEMPLATE"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "325d4355-dcb9-4330-b245-b70abe4a24eb" },
+    { code = "bed9e1e5-aee6-4b72-be6b-9b2814489241" },
+    { code = "f31b8693-86db-419f-bab2-67472d6817c5" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "public"
+}
