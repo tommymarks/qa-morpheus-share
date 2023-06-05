@@ -1,0 +1,9 @@
+resource "container-type-log" "nginx-1.9-logs" {
+  code = "nginx-1.9-logs"
+  name = "logs"
+  canPersist = true
+  containerPath = "/var/log/nginx"
+  hostPath = "/logs"
+  shortName = "logs"
+  sortOrder = 5
+}

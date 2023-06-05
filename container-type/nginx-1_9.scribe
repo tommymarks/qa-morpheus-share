@@ -1,0 +1,41 @@
+resource "container-type" "nginx-1.9" {
+  code = "nginx-1.9"
+  name = "Nginx 1.9"
+  uuid = "edf8463a-928f-4d6a-9b2f-e8732bc913c3"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  backupType = "lvmSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  commEnabled = false
+  containerLogs = [ { code = "nginx-1.9-logs" } ]
+  containerMounts = [
+    { code = "nginx-1.9-certs" },
+    { code = "nginx-1.9-config" },
+    { code = "nginx-1.9-data" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.9"
+  customType = false
+  deploymentType = { code = "nginx" }
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = true
+  logTypeCode = "nginx"
+  priorityOrder = 0
+  provisionType = { code = "docker" }
+  repositoryImage = "registry.morpheusdata.com/library/nginx"
+  scripts = [ { code = "nginx-1.9-container-entrypoint" } ]
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "container"
+  templates = [ { code = "nginx-1.9" } ]
+  userDeploy = true
+  viewSet = "default"
+}
