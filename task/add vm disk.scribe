@@ -1,0 +1,57 @@
+resource "task" "add vm disk" {
+  name = "add vm disk"
+  uuid = "34babf05-e09b-406a-8cdf-b81dde568a66"
+  allowCustomConfig = false
+  dateCreated = "2021-11-03T12:56:32.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-03T12:56:32.000Z"
+  options = [
+    {
+      uuid = "62833e77-0824-4f67-97cd-2618cc9055c6"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "7f64e22e-971d-451d-a71f-56d58719ac32"
+      optionType = { code = "vroWorkflow" }
+      value = "10630717"
+    },
+    {
+      uuid = "82c24dc2-c43b-4674-bd2a-cd0e34a57236"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "95c417f4-e916-48fc-a2cf-53b62a8b3c45"
+      optionType = { code = "vroIntegrationId" }
+      value = "6254"
+    },
+    {
+      uuid = "9a380d67-79ae-49eb-9d58-db40b44ff44a"
+      optionType = { code = "vroBody" }
+    },
+    {
+      uuid = "ad3e2b61-5d4a-4dab-8d85-b9c14aabee7b"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "bc3a1a62-5dd8-4a2e-a0d5-4ce3de17883c"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "c9e015dd-cf4c-4c8a-b726-063611d0cb6f"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "dd1d1572-c5d5-4cf4-9a14-aa1d97f8c3ad"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "e4591c55-776a-41e9-92f1-2e2f2b693c08"
+      optionType = { code = "port" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "vro" }
+  visibility = "private"
+}
