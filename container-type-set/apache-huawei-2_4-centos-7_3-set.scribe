@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-huawei-2.4-centos-7.3-set" {
+  code = "apache-huawei-2.4-centos-7.3-set"
+  uuid = "8707ccb6-d273-4a3c-823e-3edda057fde3"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-huawei-2.4-centos-7.3" }
+}
