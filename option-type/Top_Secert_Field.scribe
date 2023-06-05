@@ -1,0 +1,33 @@
+resource "option-type" "Top.Secert.Field" {
+  code = "Top.Secert.Field"
+  name = "Top Secert"
+  uuid = "5084e49a-d0ec-4d66-aa81-a6895262f9e7"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "Top.Secert.Field"
+  fieldLabel = "Top Secert Password"
+  fieldName = "Top.Secert.Field"
+  fieldSetName = "Top.Secert.Field"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "password"
+}
