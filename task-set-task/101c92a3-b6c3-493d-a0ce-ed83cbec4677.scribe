@@ -1,0 +1,7 @@
+resource "task-set-task" "101c92a3-b6c3-493d-a0ce-ed83cbec4677" {
+  uuid = "101c92a3-b6c3-493d-a0ce-ed83cbec4677"
+  entryTask = false
+  task = { name = "PyPrint2" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
