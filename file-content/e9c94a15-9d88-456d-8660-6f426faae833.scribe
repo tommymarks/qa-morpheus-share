@@ -1,0 +1,64 @@
+resource "file-content" "e9c94a15-9d88-456d-8660-6f426faae833" {
+  uuid = "e9c94a15-9d88-456d-8660-6f426faae833"
+  content = <<EOF
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+
+  "Description" : "AWS CloudFormation Sample Template ElastiCache: Sample template showing how to create an Amazon ElastiCache Cache Cluster with Auto Discovery. **WARNING** This template creates an Amazon ElastiCache Cluster. You will be billed for the AWS resources used if you create a stack from this template.",
+
+  "Parameters" : {
+
+    "CacheNodeType" : {
+      "Description" : "The compute and memory capacity of the nodes in the Cache Cluster",
+      "Type" : "String",
+      "Default" : "cache.t2.small",
+      "AllowedValues" : [ "cache.m1.small", "cache.m1.large", "cache.m1.xlarge", "cache.m2.xlarge", "cache.m2.2xlarge", "cache.m2.4xlarge", "cache.c1.xlarge", "cache.t2.micro", "cache.t2.small", "cache.t2.medium", "cache.m3.medium", "cache.m3.large", "cache.m3.xlarge", "cache.m3.2xlarge", "cache.r3.large", "cache.r3.xlarge", "cache.r3.2xlarge", "cache.r3.4xlarge", "cache.r3.8xlarge" ]
+,
+      "ConstraintDescription" : "must select a valid Cache Node type."
+    },
+
+    "NumberOfCacheNodes" : {
+      "Default": "1",
+      "Description" : "The number of Cache Nodes the Cache Cluster should have",
+      "Type": "Number",
+      "MinValue": "1",
+      "MaxValue": "10",
+      "ConstraintDescription" : "must be between 5 and 10."
+    }
+  },
+
+  "Resources" : {
+
+    "CacheCluster" : {
+      "Type": "AWS::ElastiCache::CacheCluster",
+      "Properties": {
+        "CacheNodeType"           : { "Ref" : "CacheNodeType" },
+        "CacheSecurityGroupNames" : [ { "Ref" : "CacheSecurityGroup" } ],
+        "Engine"                  : "memcached",
+        "NumCacheNodes"           : { "Ref" : "NumberOfCacheNodes" }
+      }
+    },
+
+    "CacheSecurityGroup": {
+      "Type": "AWS::ElastiCache::SecurityGroup",
+      "Properties": {
+        "Description"  : "Lock cache down to Web Server access only"
+      }
+    }
+  },
+	"Outputs": {
+		"Connection": {
+			"Value": {
+				"Fn::GetAtt": ["CacheCluster", "ConfigurationEndpoint.Address"]
+			}
+		}
+	}
+}
+EOF
+  dateCreated = "2019-10-29T14:03:20.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2019-11-04T19:55:45.000Z"
+  sourceType = "local"
+}

@@ -1,0 +1,15 @@
+resource "resource-spec-template" "c3fdd0c4-f500-433a-ac56-a9c0ebeccf24" {
+  name = "CF ElastiCache"
+  uuid = "c3fdd0c4-f500-433a-ac56-a9c0ebeccf24"
+  autoRun = false
+  dateCreated = "2019-10-29T14:03:20.000Z"
+  failOnError = true
+  hasDeployment = false
+  lastUpdated = "2019-11-04T19:55:45.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "e9c94a15-9d88-456d-8660-6f426faae833" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
