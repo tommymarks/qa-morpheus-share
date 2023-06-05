@@ -1,0 +1,36 @@
+resource "container-type" "ad36396a-9eea-4835-8970-6d1f00decfad" {
+  code = "ad36396a-9eea-4835-8970-6d1f00decfad"
+  name = "Nginx svc"
+  uuid = "54f0a669-491c-4104-b46d-9308d3a5a9a5"
+  commEnabled = false
+  containerScript = <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  name: <%= instance.name %>
+  labels:
+    run: <%= instance.name %>
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: test-1234
+EOF
+  containerVersion = "1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "docker"
+  priorityOrder = 0
+  provisionType = { code = "kubernetes" }
+  shortName = "nginxsvc"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "docker"
+  userDeploy = true
+  viewSet = "default"
+}
