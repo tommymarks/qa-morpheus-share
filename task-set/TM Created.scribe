@@ -1,0 +1,11 @@
+resource "task-set" "TM Created" {
+  name = "TM Created"
+  uuid = "ff1649c3-1474-4326-92f3-fd9dc9365473"
+  allowCustomConfig = false
+  dateCreated = "2022-10-17T21:19:18.000Z"
+  lastUpdated = "2022-10-17T21:19:18.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "7141c5aa-c7e8-4a82-83bc-81dc559fa899" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
