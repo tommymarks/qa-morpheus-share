@@ -1,0 +1,34 @@
+resource "container-type" "amazon-centos-7.3" {
+  code = "amazon-centos-7.3"
+  name = "CentOS 7.3"
+  uuid = "42b188a4-0b8f-4ed5-ac77-88ce05201e0a"
+  category = "centos"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "amazonSnapshot"
+  cloneType = "centos"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerVersion = "7.3"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "centos"
+  mountLogs = "/var/log/"
+  priorityOrder = 0
+  providerType = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  repositoryVersion = "7.3"
+  serverType = "vm"
+  shortName = "centos"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "amazon.ec2.image.morpheus.centos.7.3-v2.centos.7.3" }
+}

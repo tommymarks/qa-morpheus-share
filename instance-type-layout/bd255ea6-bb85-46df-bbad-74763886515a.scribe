@@ -1,0 +1,21 @@
+resource "instance-type-layout" "bd255ea6-bb85-46df-bbad-74763886515a" {
+  code = "bd255ea6-bb85-46df-bbad-74763886515a"
+  name = "Centos Webserver"
+  uuid = "20f50089-7034-438d-968e-25c7b19853d4"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "centweb"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  taskSets = [ { name = "Ansible Tower Webserver" } ]
+  workloads = [ { code = "amazon-centos-7.3" } ]
+}
