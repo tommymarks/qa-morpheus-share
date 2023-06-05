@@ -1,0 +1,27 @@
+resource "instance-type" "al-windows-server" {
+  code = "al-windows-server"
+  name = "al-windows-server"
+  uuid = "eb4d5963-5294-4715-bb4f-8dce0ed545c4"
+  category = "os"
+  active = true
+  deploymentService = "defaultDeployService"
+  description = "Windows Server"
+  enabled = true
+  environmentPrefix = "AL-WINDOWS-SERVER"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = true
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = true
+  layouts = [
+    { code = "0436879d-7645-41fe-80a7-4e2001c6f51b" },
+    { code = "5f9406e5-99b5-4cf9-88ae-2b74df34210e" },
+    { code = "94d5932c-adc4-4a47-bfdc-665eb17d008b" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "public"
+}
