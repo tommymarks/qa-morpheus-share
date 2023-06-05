@@ -1,0 +1,7 @@
+resource "task-set-task" "5e3dc93c-89c9-45ea-9686-dbb29aaeb039" {
+  uuid = "5e3dc93c-89c9-45ea-9686-dbb29aaeb039"
+  entryTask = false
+  task = { name = "Hello World Local Windows" }
+  taskOrder = 1
+  taskPhase = "teardown"
+}
