@@ -1,0 +1,20 @@
+resource "instance-type-layout" "eda129e7-7909-4d64-b4cd-cc0d92a7d2f7" {
+  code = "eda129e7-7909-4d64-b4cd-cc0d92a7d2f7"
+  name = "nginx deployment layout"
+  uuid = "549f243c-fefc-4b32-9c59-589e81582a4a"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "kubernetes" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "dd6700c5-3531-4d6a-b734-cebc070d61f8" } ]
+}
