@@ -1,0 +1,10 @@
+resource "task-set" "bash echo" {
+  name = "bash echo"
+  uuid = "531cb657-2034-4f11-a63b-f3d6658b999e"
+  dateCreated = "2017-12-08T19:05:59.000Z"
+  lastUpdated = "2017-12-08T19:05:59.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "ee09dd43-756c-469e-b848-72d935f7f248" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
