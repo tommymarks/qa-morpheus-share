@@ -1,0 +1,20 @@
+resource "instance-type-layout" "3dd5af83-7351-4001-beb7-571223e48215" {
+  code = "3dd5af83-7351-4001-beb7-571223e48215"
+  name = "CF Redis"
+  uuid = "a1ee8199-e8e6-4b99-b1f3-c672e55abdba"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "redis"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "38dd75a3-5605-47e8-b637-3575b2215247" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
