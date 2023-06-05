@@ -1,0 +1,10 @@
+resource "app-template" "c65a2906-4444-4645-b463-e491a16703aa" {
+  name = "ARM: Resource Group - vmName Parameter"
+  uuid = "c65a2906-4444-4645-b463-e491a16703aa"
+  active = true
+  custom = false
+  dateCreated = "2019-08-16T21:26:54.000Z"
+  lastUpdated = "2019-08-16T21:26:54.000Z"
+  templateType = { code = "arm" }
+  visibility = "private"
+}
