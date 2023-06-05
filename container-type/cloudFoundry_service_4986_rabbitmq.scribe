@@ -1,0 +1,31 @@
+resource "container-type" "cloudFoundry.service.4986.rabbitmq" {
+  code = "cloudFoundry.service.4986.rabbitmq"
+  name = "Cloud Foundry RabbitMQ"
+  uuid = "bad5553e-8c13-483e-9cae-d4ce7e2ab8c6"
+  category = "rabbitmq"
+  checkTypeCode = "rabbitCheck"
+  commEnabled = false
+  containerPorts = [
+    { code = "rabbitmq.5672" },
+    { code = "rabbitmq.5671" },
+    { code = "rabbitmq.15672" },
+    { code = "rabbitmq.25672" },
+    { code = "rabbitmq.4369" },
+    { code = "rabbitmq.35197" }
+  ]
+  containerVersion = "cloudFoundry3.5-morph.0.1"
+  customType = false
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "rabbitmq"
+  priorityOrder = 0
+  provisionType = { code = "cloudFoundryService" }
+  shortName = "rabbitmq"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "rabbitmq"
+  userDeploy = true
+  viewSet = "default"
+}

@@ -1,0 +1,17 @@
+resource "container-type-port" "rabbitmq.35197" {
+  code = "rabbitmq.35197"
+  name = "Cluster Port"
+  allowMapping = false
+  customType = false
+  export = true
+  exportName = "CLUSTER"
+  externalPort = 35197
+  internalPort = 35197
+  link = false
+  loadBalance = false
+  primaryPort = false
+  shortName = "cluster"
+  sortOrder = 4
+  unmanagedEnabled = false
+  visible = false
+}

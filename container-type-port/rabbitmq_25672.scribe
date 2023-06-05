@@ -1,0 +1,17 @@
+resource "container-type-port" "rabbitmq.25672" {
+  code = "rabbitmq.25672"
+  name = "Distributed"
+  allowMapping = false
+  customType = false
+  evarName = "RABBITMQ_DIST_PORT"
+  export = true
+  externalPort = 25672
+  internalPort = 25672
+  link = false
+  loadBalance = false
+  primaryPort = false
+  shortName = "distributed"
+  sortOrder = 3
+  unmanagedEnabled = false
+  visible = false
+}
