@@ -1,0 +1,23 @@
+resource "instance-type-layout" "nginx-azure-1.9-ubuntu-16.04-single" {
+  code = "nginx-azure-1.9-ubuntu-16.04-single"
+  name = "Azure NGINX"
+  uuid = "00f5e7db-9971-486c-b59f-b5a52371575b"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "azure" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "nginx-azure-1.9-ubuntu-16.04-set" } ]
+}

@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-azure-1.9-ubuntu-16.04-set" {
+  code = "nginx-azure-1.9-ubuntu-16.04-set"
+  uuid = "a3f7e452-3516-4397-ad69-b9dbba555a8d"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-azure-1.9-ubuntu-16.04" }
+}
