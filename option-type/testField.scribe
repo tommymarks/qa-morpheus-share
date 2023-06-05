@@ -1,0 +1,31 @@
+resource "option-type" "testField" {
+  code = "testField"
+  name = "testField"
+  uuid = "85210bc4-70f8-4891-b39e-c2102482a2d1"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  defaultValue = "Deepti Gaharwar"
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "testField"
+  fieldLabel = "Test Field"
+  fieldName = "testField"
+  fieldSetName = "testField"
+  global = true
+  groupExpand = false
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "text"
+}
