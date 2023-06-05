@@ -1,0 +1,27 @@
+resource "container-type" "cloudFoundry.service.4986.compose-for-mongodb.35.latest" {
+  code = "cloudFoundry.service.4986.compose-for-mongodb.35.latest"
+  name = "Cloud Foundry Service - compose-for-mongodb"
+  uuid = "11c3cea2-486d-45f8-b6c4-0e3a623b9afd"
+  category = "compose-for-mongodb"
+  checkTypeCode = ""
+  commEnabled = false
+  containerVersion = "cloudFoundry3.5-morph.0.1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = ""
+  priorityOrder = 0
+  provisionType = { code = "cloudFoundryService" }
+  refId = 4986
+  refType = "ComputeZone"
+  repositoryImage = ""
+  shortName = "compose-for-mongodb"
+  showServerLogs = false
+  slave = false
+  statTypeCode = ""
+  userDeploy = true
+  viewSet = "default"
+}
