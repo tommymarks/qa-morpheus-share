@@ -1,0 +1,35 @@
+resource "option-type" "google_virtual_image" {
+  code = "google_virtual_image"
+  name = "GCP Virtual Image"
+  uuid = "fae570e4-e6a6-462e-b43b-9d89ea37334e"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "google_virtual_image"
+  fieldLabel = "GCP Virtual Image"
+  fieldName = "google_virtual_image"
+  fieldSetName = "google_virtual_image"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "GCP Virtual-Images" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
