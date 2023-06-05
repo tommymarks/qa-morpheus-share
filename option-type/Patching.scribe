@@ -1,0 +1,35 @@
+resource "option-type" "Patching" {
+  code = "Patching"
+  name = "Case 65503"
+  uuid = "559a796f-90c4-44c3-a3f9-d9790f6db830"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = true
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Select MECM collection"
+  fieldName = "Patching"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "MECM Groups [array]" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
