@@ -1,0 +1,33 @@
+resource "option-type" "mplan" {
+  code = "mplan"
+  name = "Plan Manual"
+  uuid = "d0ba793c-75f2-4d32-9dae-7a320cd99722"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Plan Manual"
+  fieldName = "mplan"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "API Plans" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = false
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
