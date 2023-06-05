@@ -1,7 +1,7 @@
 resource "container-type-log" "logs" {
   name = "logs"
   canPersist = false
-  containerPath = "/morpheus/logs"
-  hostPath = "/morpheus/logs"
+  containerPath = "/var/log/apache2"
+  hostPath = "/var/log/apache2"
   sortOrder = 0
 }
