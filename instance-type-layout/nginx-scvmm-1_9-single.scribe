@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-scvmm-1.9-single" {
+  code = "nginx-scvmm-1.9-single"
+  name = "SCVMM NGINX"
+  uuid = "7f014aac-8b04-4a12-abb3-83a735eda34e"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single vm in scvmm"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "scvmm" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 30
+  systemLayout = false
+  workloads = [ { code = "nginx-scvmm-1.9-set" } ]
+}
