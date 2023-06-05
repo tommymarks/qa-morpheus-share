@@ -1,0 +1,25 @@
+resource "container-type" "8d6f964c-410a-4a79-a86a-7d311290c390" {
+  code = "8d6f964c-410a-4a79-a86a-7d311290c390"
+  name = "test182853411-1"
+  uuid = "39dad1d1-00b5-4b88-82e0-4a9aef632a2c"
+  commEnabled = false
+  containerVersion = "1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "test182853411-1"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "718f7b27-14c7-4f13-92ce-478bd6989f65" }
+}

@@ -1,0 +1,20 @@
+resource "instance-type-layout" "ef34716f-c00e-46dd-a382-1fd2de7180f1" {
+  code = "ef34716f-c00e-46dd-a382-1fd2de7180f1"
+  name = "test182853411-1"
+  uuid = "e7a175e2-629c-439a-ad8c-53eff1e33257"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "8d6f964c-410a-4a79-a86a-7d311290c390" } ]
+}
