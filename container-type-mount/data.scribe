@@ -3,11 +3,12 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/usr/share/misc"
+  containerPath = "/usr/share/nginx/html"
   customType = false
-  deployable = true
+  deployable = false
   fileMount = false
-  hostPath = "/usr/share/misc"
+  hostPath = "/data"
+  mountType = "volume"
   required = false
   shortName = "data"
   sortOrder = 0
