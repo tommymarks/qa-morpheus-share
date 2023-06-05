@@ -1,0 +1,53 @@
+resource "task" "Hello World Local Windows" {
+  name = "Hello World Local Windows"
+  uuid = "c39920e9-6c0c-43df-88f3-5ac36adc97fc"
+  allowCustomConfig = false
+  dateCreated = "2021-05-24T19:43:07.000Z"
+  executeTarget = "local"
+  labels = [ { name = "hello" } ]
+  lastUpdated = "2022-08-25T19:05:50.000Z"
+  options = [
+    {
+      uuid = "0c47cf14-c4e2-4faa-a916-187f1dd93735"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "0c6a05be-5640-4f6f-bc01-f6d76ea92f20"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "27fac27f-f914-4820-93ad-ee0858f65e08"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "4bf96985-585b-41ab-8177-0ed357e0678a"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "60606aec-fa23-4e69-ab1d-7b79d42bd06d"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "a53e3d31-bde4-4575-8f88-67adf06589ff"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "d38cb399-f8f4-4465-af08-9a17f0c931b7"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "f784704f-b947-43c1-95c3-089ec0bd9f0e"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "faef603e-aaf0-41ab-bb99-30aae4800b29"
+      content = { uuid = "37f345b8-6640-4b8c-80ca-d8f8f97a9f12" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
