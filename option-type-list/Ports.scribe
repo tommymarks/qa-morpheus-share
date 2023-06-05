@@ -1,0 +1,17 @@
+resource "option-type-list" "Ports" {
+  name = "Ports"
+  uuid = "2b0b2715-b7b5-4e0c-917d-de3e8e33a7b3"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+'27015','27015'
+'27016','27016'
+'27017','27017'
+'27018','27018'
+'27019','27019'
+'27020','27020'
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
