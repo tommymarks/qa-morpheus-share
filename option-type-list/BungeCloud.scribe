@@ -1,0 +1,22 @@
+resource "option-type-list" "BungeCloud" {
+  name = "BungeCloud"
+  uuid = "408caa38-6a04-4866-b275-d0ef16e35179"
+  apiType = "clouds"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = <<EOF
+if (input.group) {
+  results.siteId = input.group
+}
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+//Grab vCenter Clouds and Push Values
+
+for (var x = 0; x < data.length; x++) {
+    results.push({name:data[x].name, value:data[x].id});
+}
+EOF
+  type = "api"
+  visibility = "private"
+}
