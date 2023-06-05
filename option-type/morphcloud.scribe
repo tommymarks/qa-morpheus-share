@@ -1,13 +1,13 @@
 resource "option-type" "morphcloud" {
   code = "morphcloud"
-  name = "BungeClouds"
-  uuid = "1af661c7-5080-4cc3-9e04-7fc31924ac38"
+  name = "API Clouds"
+  uuid = "c622e7e3-ac50-4eed-9c03-6637dd6a7496"
   advanced = false
   contextualDefault = false
   creatable = true
   custom = false
   dependsOnCode = "morphgroup"
-  displayOrder = 0
+  displayOrder = 1
   displayValueOnDetails = false
   editable = false
   enabled = true
@@ -20,11 +20,13 @@ resource "option-type" "morphcloud" {
   fieldSetName = "morphcloud"
   global = true
   groupExpand = false
+  helpBlock = "Select a Cloud"
+  labels = [ { name = "auto" }, { name = "keep" } ]
   noBlank = false
   optionList = { name = "API Clouds" }
   optionSource = "list"
   ownerEditable = false
-  required = true
+  required = false
   secretField = false
   showOnCreate = true
   showOnEdit = true
