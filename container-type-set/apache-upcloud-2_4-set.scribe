@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-upcloud-2.4-set" {
+  code = "apache-upcloud-2.4-set"
+  uuid = "d92d8b0e-a3cf-4bb6-b8ab-e46bf9bf11d4"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-upcloud-2.4" }
+}
