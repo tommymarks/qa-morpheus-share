@@ -1,0 +1,12 @@
+resource "file-content" "be1df252-9092-4d08-8de0-f2de4f146f70" {
+  uuid = "be1df252-9092-4d08-8de0-f2de4f146f70"
+  contentPath = "/terraform/aws/ec2Custom/singleec2custom.tf"
+  contentRef = ""
+  dateCreated = "2021-08-30T19:13:50.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-09-09T19:38:49.000Z"
+  repository = { name = "automation" }
+  sourceType = "repository"
+}
