@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-digitalocean-1.9-ubuntu-20.04-set" {
+  code = "nginx-digitalocean-1.9-ubuntu-20.04-set"
+  uuid = "c9ddecb2-58fd-4bad-afc6-d5c00ae64800"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-digitalocean-1.9-ubuntu-20.04" }
+}
