@@ -1,0 +1,52 @@
+resource "task" "A Loop - 50000" {
+  name = "A Loop - 50000"
+  uuid = "8197996a-5422-4504-86ac-8e38bb54b5e3"
+  allowCustomConfig = false
+  dateCreated = "2022-11-16T20:12:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-11-17T18:16:20.000Z"
+  options = [
+    {
+      uuid = "0b19eb65-8d1a-4d94-bdba-803eefacfff8"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "12115c9e-7441-4e45-b32e-ed3483221971"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "20e955ea-eb72-4ab7-8dd0-0cda392c8230"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "256eb857-3ceb-42d2-b0c2-611edde6e709"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "26526a98-b835-423a-9b67-b2857e78011a"
+      content = { uuid = "97d1e2e3-9749-4361-8d97-1a79f180864c" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "819f9056-d0df-430e-9f9f-7610c6ae7051"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "c99c1a57-f2ba-4b3c-8645-3d826a34d694"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "ca672952-d4ff-4980-b8a6-40c0ff5ba865"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "eca872cc-c074-4145-93ba-5c36690d1547"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
