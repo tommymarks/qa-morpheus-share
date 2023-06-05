@@ -1,0 +1,48 @@
+resource "task" "Purge Duplicate Tags" {
+  name = "Purge Duplicate Tags"
+  uuid = "979b64a9-b05e-40cf-b100-e90e8589284e"
+  allowCustomConfig = false
+  dateCreated = "2022-04-06T14:02:38.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-04-06T14:02:38.000Z"
+  options = [
+    {
+      uuid = "091a58b5-be38-4d94-ae55-df1afff56980"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "1838ac62-ac29-40d1-8acb-0f7cd9300cd5"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "1a821cc1-243d-41fb-b97c-5fb2cdf03a69"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "37d93173-92e0-4c6c-bf70-6ead6dd21548"
+      content = { uuid = "deff2ce7-64b4-4055-8556-30a633e126ab" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "3cf8f7af-f17c-4c95-99f0-80a3950db788"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "9163a045-bb74-4ff7-a851-0afb2aaf6747"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "edd8ec8a-3902-4a96-8d2d-6ace885dba89"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "fc1a2c4a-4318-4d68-813e-80a67c1fcec7"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
