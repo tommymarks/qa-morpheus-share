@@ -1,0 +1,12 @@
+resource "app-template" "23b6f951-e6c6-4eeb-88e6-dd2d2ff594b6" {
+  name = "Kube: Test"
+  uuid = "23b6f951-e6c6-4eeb-88e6-dd2d2ff594b6"
+  active = true
+  custom = false
+  dateCreated = "2019-08-01T20:30:39.000Z"
+  description = "dont delete"
+  labels = [ { name = "tommy" } ]
+  lastUpdated = "2022-10-05T20:38:14.000Z"
+  templateType = { code = "kubernetes" }
+  visibility = "private"
+}
