@@ -1,0 +1,23 @@
+resource "instance-type-layout" "5f9406e5-99b5-4cf9-88ae-2b74df34210e" {
+  code = "5f9406e5-99b5-4cf9-88ae-2b74df34210e"
+  name = "Windows Server Non Sysprep"
+  uuid = "3f211d48-a7d3-4781-a68b-cea5610407f9"
+  actions = [ { code = "5f9406e5-99b5-4cf9-88ae-2b74df34210e" } ]
+  creatable = true
+  description = "None Sysprep image"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "2019"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "scvmm" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "9fb2e0a7-8355-4e31-ac60-262609c5f515" } ]
+}
