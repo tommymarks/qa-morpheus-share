@@ -1,0 +1,14 @@
+resource "option-type-list" "manual csv (single quotes)" {
+  name = "manual csv (single quotes)"
+  uuid = "ce69f70e-80ab-457a-a224-f7710aa3cd4c"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+David's Test,1
+'Testing',2
+"David's Testing",3
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "public"
+}
