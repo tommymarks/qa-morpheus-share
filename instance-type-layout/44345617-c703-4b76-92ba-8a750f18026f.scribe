@@ -1,0 +1,20 @@
+resource "instance-type-layout" "44345617-c703-4b76-92ba-8a750f18026f" {
+  code = "44345617-c703-4b76-92ba-8a750f18026f"
+  name = "CF RDS"
+  uuid = "81ce5171-44cf-4e38-ba1a-abdd1d69baf2"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "rds"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "a92dd3f3-9dd2-4042-8704-c1433b0450d8" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
