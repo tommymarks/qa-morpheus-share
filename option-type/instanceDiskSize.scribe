@@ -1,0 +1,33 @@
+resource "option-type" "instanceDiskSize" {
+  code = "instanceDiskSize"
+  name = "Instance Disk Size"
+  uuid = "a5f2ea91-5438-436d-9bc8-798d94f6f7ba"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "instanceDiskSize"
+  fieldLabel = "Instance Disk Size"
+  fieldName = "instanceDiskSize"
+  fieldSetName = "instanceDiskSize"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "number"
+}
