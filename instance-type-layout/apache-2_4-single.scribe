@@ -1,0 +1,19 @@
+resource "instance-type-layout" "apache-2.4-single" {
+  code = "apache-2.4-single"
+  name = "Apache Container"
+  uuid = "de284414-1846-4076-a798-b3b4e5c3e5a0"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single container with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "docker" }
+  serverCount = 1
+  sortOrder = 0
+  systemLayout = false
+  workloads = [ { code = "apache-2.4-set" } ]
+}

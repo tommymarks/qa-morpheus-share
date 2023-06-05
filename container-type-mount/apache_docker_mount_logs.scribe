@@ -1,0 +1,18 @@
+resource "container-type-mount" "apache.docker.mount.logs" {
+  code = "apache.docker.mount.logs"
+  name = "apache logs"
+  autoRun = true
+  canPersist = false
+  certStore = false
+  containerPath = "/var/log/apache2"
+  customType = false
+  deployable = false
+  hostPath = "/logs"
+  mountType = "volume"
+  required = false
+  shortName = "logs"
+  sortOrder = 2
+  subMount = false
+  unmanagedEnabled = false
+  visible = true
+}

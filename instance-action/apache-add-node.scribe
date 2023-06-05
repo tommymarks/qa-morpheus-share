@@ -1,0 +1,13 @@
+resource "instance-action" "apache-add-node" {
+  code = "apache-add-node"
+  name = "Add Apache Node"
+  uuid = "a2b1c25d-dfc8-4a39-be4f-43d08db3f445"
+  actionCode = "scaleInstance"
+  active = true
+  countEnabled = true
+  description = "This will add an additional apache node"
+  minCount = 1
+  provisionSelectType = "zone"
+  sortOrder = 0
+  userTriggered = true
+}

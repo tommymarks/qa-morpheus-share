@@ -1,0 +1,37 @@
+resource "container-type" "apache-2.4" {
+  code = "apache-2.4"
+  name = "Apache 2.4"
+  uuid = "4a7cc6fe-b39c-46e6-8d78-2c2139311657"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "lvmSnapshot"
+  checkTypeCode = "webGetCheck"
+  commEnabled = false
+  containerMounts = [
+    { code = "apache.docker.mount.data" },
+    { code = "apache.docker.mount.logs" }
+  ]
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4-morph.0.1"
+  customType = false
+  deploymentType = { code = "default" }
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "apache"
+  mountData = "/var/www"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  priorityOrder = 0
+  provisionType = { code = "docker" }
+  repositoryImage = "registry.morpheusdata.com/library/apache"
+  scripts = [ { code = "apache-folder-config" } ]
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "container"
+  userDeploy = true
+  viewSet = "default"
+}
