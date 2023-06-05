@@ -1,0 +1,25 @@
+resource "instance-type" "tftest" {
+  code = "tftest"
+  name = "tf test"
+  uuid = "ded012c3-d37f-4bd9-a842-531cb8acdc7c"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "CF_TEST"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "3fd41975-60fd-41de-9d23-9f611c5a2f0f" },
+    { code = "685df95c-521a-4a46-9360-59c8ce476db4" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
