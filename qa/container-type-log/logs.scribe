@@ -2,6 +2,6 @@ resource "container-type-log" "logs" {
   name = "logs"
   canPersist = false
   containerPath = "/var/log/apache2"
-  hostPath = "/logs"
+  hostPath = "/var/log/apache2"
   sortOrder = 0
 }
