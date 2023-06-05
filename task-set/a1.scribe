@@ -1,0 +1,14 @@
+resource "task-set" "a1" {
+  name = "a1"
+  uuid = "f164e77d-33cb-4043-b6d7-2c03db6bdfd8"
+  allowCustomConfig = false
+  dateCreated = "2021-09-28T16:28:24.000Z"
+  lastUpdated = "2022-10-19T16:27:37.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "1c1f88f4-af4a-4a6c-9450-8367339f64a7" },
+    { uuid = "40fe3331-f8ef-4c11-a104-a3975b699d81" }
+  ]
+  taskSetType = "operation"
+  visibility = "public"
+}

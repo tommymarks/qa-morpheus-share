@@ -1,0 +1,7 @@
+resource "task-set-task" "40fe3331-f8ef-4c11-a104-a3975b699d81" {
+  uuid = "40fe3331-f8ef-4c11-a104-a3975b699d81"
+  entryTask = false
+  task = { name = "a1-shell" }
+  taskOrder = 0
+  taskPhase = "operation"
+}
