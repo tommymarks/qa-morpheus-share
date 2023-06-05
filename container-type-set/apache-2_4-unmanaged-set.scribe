@@ -1,0 +1,8 @@
+resource "container-type-set" "apache-2.4-unmanaged-set" {
+  code = "apache-2.4-unmanaged-set"
+  uuid = "97176bf5-d23e-4c6f-8084-6d2e681ed6c1"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-2.4-unmanaged" }
+}
