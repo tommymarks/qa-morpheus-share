@@ -1,0 +1,16 @@
+resource "resource-spec-template" "7968ef63-a271-4d8f-ad80-cc14dfc0bc8e" {
+  name = "Destroy Test"
+  uuid = "7968ef63-a271-4d8f-ad80-cc14dfc0bc8e"
+  autoRun = false
+  dateCreated = "2023-03-06T20:06:59.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2023-03-06T20:06:59.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "439cd73f-d04c-4225-9537-c6bf0dcfa9da" }
+  templatePhase = "provision"
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
