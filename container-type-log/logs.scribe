@@ -1,7 +1,7 @@
 resource "container-type-log" "logs" {
   name = "logs"
   canPersist = false
-  containerPath = "/var/log/mysql"
-  hostPath = "/var/log/mysql"
+  containerPath = "/var/log/nginx"
+  hostPath = "/var/log/nginx"
   sortOrder = 0
 }
