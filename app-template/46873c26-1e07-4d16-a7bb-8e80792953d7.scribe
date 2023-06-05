@@ -1,0 +1,10 @@
+resource "app-template" "46873c26-1e07-4d16-a7bb-8e80792953d7" {
+  name = "Terraform: AWS (Variable IFDEF)"
+  uuid = "46873c26-1e07-4d16-a7bb-8e80792953d7"
+  active = true
+  custom = false
+  dateCreated = "2020-09-28T18:21:47.000Z"
+  lastUpdated = "2021-08-03T15:59:23.000Z"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
