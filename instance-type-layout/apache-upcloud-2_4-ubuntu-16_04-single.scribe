@@ -1,0 +1,23 @@
+resource "instance-type-layout" "apache-upcloud-2.4-ubuntu-16.04-single" {
+  code = "apache-upcloud-2.4-ubuntu-16.04-single"
+  name = "UpCloud Apache"
+  uuid = "a007552b-739c-4ee7-b7b0-23191906da19"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "upcloud" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "apache-upcloud-2.4-ubuntu-16.04-set" } ]
+}
