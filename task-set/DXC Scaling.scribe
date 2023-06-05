@@ -1,0 +1,11 @@
+resource "task-set" "DXC Scaling" {
+  name = "DXC Scaling"
+  uuid = "0f0ef70a-2113-41d8-bceb-00287dd9e837"
+  allowCustomConfig = false
+  dateCreated = "2022-09-14T18:08:02.000Z"
+  lastUpdated = "2022-09-14T18:08:02.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "61b14afe-a0a1-4cde-8c2f-6dad48384b30" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
