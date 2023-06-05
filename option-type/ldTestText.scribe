@@ -1,0 +1,33 @@
+resource "option-type" "ldTestText" {
+  code = "ldTestText"
+  name = "ld test text"
+  uuid = "069089ac-6b73-42fd-ba9b-bf8fdc465fff"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "ldTestText"
+  fieldLabel = "Test Text"
+  fieldName = "ldTestText"
+  fieldSetName = "ldTestText"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "text"
+}

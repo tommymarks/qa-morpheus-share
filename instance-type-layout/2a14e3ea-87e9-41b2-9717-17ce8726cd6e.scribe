@@ -1,0 +1,21 @@
+resource "instance-type-layout" "2a14e3ea-87e9-41b2-9717-17ce8726cd6e" {
+  code = "2a14e3ea-87e9-41b2-9717-17ce8726cd6e"
+  name = "ld-pass-layout"
+  uuid = "d8bffd7f-e3da-4657-867a-32147b1aae75"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  optionTypes = [ { code = "ldTestText" }, { code = "ldPass2" } ]
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "apache-vmware-2.4" } ]
+}
