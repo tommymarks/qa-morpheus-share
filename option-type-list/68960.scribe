@@ -1,0 +1,10 @@
+resource "option-type-list" "68960" {
+  name = "68960"
+  uuid = "0b5552ba-b9ee-4379-8797-02aba8450e98"
+  ignoreSSLErrors = false
+  initialDataset = "[{\"name\":\"yes\",\"value\":\"yes\"},{\"name\":\"no\",\"value\":\"no\"}]"
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
