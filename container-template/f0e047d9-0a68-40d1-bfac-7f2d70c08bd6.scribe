@@ -1,0 +1,16 @@
+resource "container-template" "f0e047d9-0a68-40d1-bfac-7f2d70c08bd6" {
+  code = "f0e047d9-0a68-40d1-bfac-7f2d70c08bd6"
+  name = "dg post provision phase"
+  uuid = "d88b0333-d880-4c04-b205-91235ac09f19"
+  autoRun = true
+  dateCreated = "2021-09-07T18:26:07.000Z"
+  failOnError = true
+  fileName = "postprovision.txt"
+  filePath = "/var/tmp/templates"
+  lastUpdated = "2022-12-03T03:52:12.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  settingName = "dg post provision phase"
+  template = "post provision template"
+  templatePhase = "postProvision"
+}
