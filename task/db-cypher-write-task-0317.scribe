@@ -1,0 +1,48 @@
+resource "task" "db-cypher-write-task-0317" {
+  name = "db-cypher-write-task-0317"
+  uuid = "da311c80-64dc-4f30-a364-9e6947040772"
+  allowCustomConfig = false
+  dateCreated = "2023-03-17T15:28:48.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-17T15:51:44.000Z"
+  options = [
+    {
+      uuid = "60e4ce5f-57dc-4be6-9e16-ef08f875a49d"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "62c6684b-a36e-40c8-80a4-8efcd7322052"
+      content = { uuid = "394d8d7a-baad-4766-b84e-619ff9351f49" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "77350af2-7387-4044-8c4c-c891f9dba783"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8262ddfc-114e-4058-8858-48774c62bd3f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "863667a9-f642-4444-97dc-04336dfbf5c7"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "a2c260ac-b081-4f3a-bd38-878d2b9cb2e1"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "c5b30d10-798f-4bca-8091-d5a30680236f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "e8b8d42e-16c0-4788-a4f8-cdb0dcebd266"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
