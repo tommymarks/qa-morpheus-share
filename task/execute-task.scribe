@@ -1,0 +1,47 @@
+resource "task" "execute-task" {
+  name = "execute-task"
+  uuid = "fba279ad-c903-428f-b511-ce4f6d9c7e63"
+  allowCustomConfig = false
+  dateCreated = "2019-09-19T18:33:58.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T18:33:58.000Z"
+  options = [
+    {
+      uuid = "57c1bfd7-9cb0-48eb-8bfd-b2cc7c608ffe"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "7401989b-9d43-49a9-be87-5a7e7a4446e8"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "795a9c61-c3dc-437a-b69f-5cd718f187cd"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b2c8b035-40dc-4599-9adb-361e2f7aaf6a"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "d6519d9f-8be1-4f4c-9b73-d9e3ef5afeb7"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "e6f2539a-fee9-4280-937e-228a1672085e"
+      optionType = { code = "script" }
+      value = <<EOF
+echo "TASK EXECUTION"
+echo ERROR: Did I do that? 1>&2
+EOF
+    },
+    {
+      uuid = "fb79929a-b58e-47b8-bd38-95263579047c"
+      optionType = { code = "port" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
