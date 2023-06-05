@@ -1,0 +1,35 @@
+resource "option-type" "radio1" {
+  code = "radio1"
+  name = "Radio 1"
+  uuid = "80c591c0-808a-432c-88d1-081bd0395cd7"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "radio1"
+  fieldLabel = "Radio 1"
+  fieldName = "radio1"
+  fieldSetName = "radio1"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "manual csv" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "radio"
+}
