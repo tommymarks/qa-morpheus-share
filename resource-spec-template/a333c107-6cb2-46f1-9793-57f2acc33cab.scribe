@@ -1,0 +1,15 @@
+resource "resource-spec-template" "a333c107-6cb2-46f1-9793-57f2acc33cab" {
+  name = "CF Cache Cluster"
+  uuid = "a333c107-6cb2-46f1-9793-57f2acc33cab"
+  autoRun = false
+  dateCreated = "2019-10-16T18:32:29.000Z"
+  failOnError = true
+  hasDeployment = false
+  lastUpdated = "2019-10-16T18:32:29.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "12b6cd92-2849-4a98-a441-3d188837b9cc" }
+  templatePhase = "provision"
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
