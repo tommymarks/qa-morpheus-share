@@ -1,0 +1,19 @@
+resource "compute-type-set" "bc587edc-b892-4d18-816f-250c034bbdae-2d54a630-a701-4490-a724-542c7f5e3212" {
+  code = "bc587edc-b892-4d18-816f-250c034bbdae-2d54a630-a701-4490-a724-542c7f5e3212"
+  name = "VCD Custom Centos 7-worker-2d54a630-a701-4490-a724-542c7f5e3212-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "vcdLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = false
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 0
+  workloadType = { code = "2d54a630-a701-4490-a724-542c7f5e3212" }
+}

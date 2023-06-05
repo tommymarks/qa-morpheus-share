@@ -1,0 +1,26 @@
+resource "container-type" "2d54a630-a701-4490-a724-542c7f5e3212" {
+  code = "2d54a630-a701-4490-a724-542c7f5e3212"
+  name = "VCD Centos 7"
+  uuid = "a28b747d-a429-4826-b1c8-fa2fb95989b9"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Centos 7.3"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vcd" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vcdcent7"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vcd.image.morpheus.centos-7_3.ovf" }
+}
