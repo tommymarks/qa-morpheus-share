@@ -1,0 +1,23 @@
+resource "compute-type-layout" "263db30a-51a1-4756-a09a-59a7612cf0a9" {
+  code = "263db30a-51a1-4756-a09a-59a7612cf0a9"
+  name = "Amazon Custom Debian 11"
+  computeServers = [
+    {
+      code = "263db30a-51a1-4756-a09a-59a7612cf0a9-ff6b9683-9162-49d9-b45f-d9cfbf230a5e"
+    }
+  ]
+  computeVersion = "Debian 11"
+  creatable = true
+  dateCreated = "2021-09-14T15:25:05.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:00:22.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+}

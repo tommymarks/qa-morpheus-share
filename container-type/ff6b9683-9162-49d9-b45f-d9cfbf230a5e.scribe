@@ -1,0 +1,26 @@
+resource "container-type" "ff6b9683-9162-49d9-b45f-d9cfbf230a5e" {
+  code = "ff6b9683-9162-49d9-b45f-d9cfbf230a5e"
+  name = "Amazon Debian 11"
+  uuid = "4880e1f2-e202-438e-bfc0-e1ad7b563ada"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Debian 11"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsdeb11"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "amazon"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "2d49b663-6cf2-46aa-b1b6-194c8fcc81ed" }
+}
