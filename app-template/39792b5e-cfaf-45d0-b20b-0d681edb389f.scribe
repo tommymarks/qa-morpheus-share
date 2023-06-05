@@ -1,0 +1,9 @@
+resource "app-template" "39792b5e-cfaf-45d0-b20b-0d681edb389f" {
+  name = "ARM: Ubuntu 16"
+  uuid = "39792b5e-cfaf-45d0-b20b-0d681edb389f"
+  active = true
+  custom = false
+  labels = [ { name = "tommy" } ]
+  lastUpdated = "2022-10-05T21:32:42.000Z"
+  templateType = { code = "arm" }
+}
