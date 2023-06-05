@@ -1,0 +1,10 @@
+resource "app-template" "19652b79-4bde-4f8f-8d28-bb11920ad38d" {
+  name = "Dand Nginx"
+  uuid = "19652b79-4bde-4f8f-8d28-bb11920ad38d"
+  active = true
+  custom = false
+  dateCreated = "2022-04-11T18:13:03.000Z"
+  lastUpdated = "2023-02-17T14:11:41.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
