@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-xen-1.9-set" {
+  code = "nginx-xen-1.9-set"
+  uuid = "25a18498-ff41-4312-9d6e-48ecc0994d3c"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-xen-1.9" }
+}
