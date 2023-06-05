@@ -1,0 +1,48 @@
+resource "task" "BashPath" {
+  name = "BashPath"
+  uuid = "3b3a7ae3-cd02-416b-9576-5a2c43bedf76"
+  allowCustomConfig = false
+  dateCreated = "2022-02-07T13:03:55.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-02-07T13:03:55.000Z"
+  options = [
+    {
+      uuid = "352d9c1c-3dd5-4dfe-a8ff-bdd5d53da823"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "40728978-b63d-4b50-91b5-5f8cc2ba7d3d"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "5f73fc36-ea55-4e59-b03c-d24245e9007e"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "60e5ff2b-0860-4c9a-bcf8-4e6a79efde4f"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "6f915ea0-b115-4cf1-89e1-abf58cda818d"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "9231da31-8b60-4d38-bf60-3dce7989962a"
+      content = { uuid = "cb709b7d-c16b-4632-8c54-9b1f05e7c807" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "cf761090-d898-4843-b87f-43a410c93951"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "e9c1c410-4657-463a-bdb5-70edcdae2205"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
