@@ -1,0 +1,10 @@
+resource "task-set" "BungeOperational" {
+  name = "BungeOperational"
+  uuid = "bf670f9e-4441-4404-bca9-4be70ef0a066"
+  allowCustomConfig = false
+  dateCreated = "2020-02-18T15:54:12.000Z"
+  lastUpdated = "2020-02-18T15:54:12.000Z"
+  phase = "postProvision"
+  taskSetType = "provision"
+  visibility = "private"
+}
