@@ -1,0 +1,10 @@
+resource "app-template" "0495dac8-1e14-4f11-8d54-d9980c8570f0" {
+  name = "db-kubernetes-blueprint-fromspec"
+  uuid = "0495dac8-1e14-4f11-8d54-d9980c8570f0"
+  active = true
+  custom = false
+  dateCreated = "2019-10-10T23:34:12.000Z"
+  lastUpdated = "2020-03-25T21:24:54.000Z"
+  templateType = { code = "kubernetes" }
+  visibility = "private"
+}
