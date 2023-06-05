@@ -1,0 +1,7 @@
+resource "task-set-task" "2f12c05a-dafb-4f8b-80d3-aa294f2eaa85" {
+  uuid = "2f12c05a-dafb-4f8b-80d3-aa294f2eaa85"
+  entryTask = false
+  task = { name = "File: Library Script" }
+  taskOrder = 4
+  taskPhase = "provision"
+}

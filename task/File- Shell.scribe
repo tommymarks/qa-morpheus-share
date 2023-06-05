@@ -1,0 +1,19 @@
+resource "task" "File: Shell" {
+  name = "File: Shell"
+  uuid = "af39e672-7bbd-46b3-a98f-df7b152ec57b"
+  executeTarget = "resource"
+  options = [
+    {
+      uuid = "45ec19e0-f600-4d15-8835-dbb2c084dea6"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    },
+    {
+      uuid = "95dde003-42d7-47f6-bc23-2c5dfd42b48d"
+      optionType = { code = "script" }
+      value = "echo \"shell script\" >> /tmp/task.txt"
+    }
+  ]
+  taskType = { code = "script" }
+  visibility = "private"
+}

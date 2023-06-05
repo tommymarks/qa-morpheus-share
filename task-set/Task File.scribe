@@ -1,0 +1,17 @@
+resource "task-set" "Task File" {
+  name = "Task File"
+  uuid = "e179d110-c819-4711-b315-dfa1136fe776"
+  dateCreated = "2017-05-18T21:38:50.000Z"
+  lastUpdated = "2017-05-18T21:38:50.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "2f12c05a-dafb-4f8b-80d3-aa294f2eaa85" },
+    { uuid = "41676100-285d-4bfc-bb1a-7ca414a7dba0" },
+    { uuid = "5ec97dc4-5d27-458a-b1ff-af7277257df0" },
+    { uuid = "ae9e5105-1bb4-4c60-9173-1f728ef9e8d1" },
+    { uuid = "d734b6e4-7249-4d1a-943a-61002a6c0ef9" },
+    { uuid = "dec6da4e-0ed1-4d92-98f7-e7663d7a3a95" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}

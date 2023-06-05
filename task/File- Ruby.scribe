@@ -1,0 +1,18 @@
+resource "task" "File: Ruby" {
+  name = "File: Ruby"
+  uuid = "3d1cb12a-4c8e-4a96-b8e2-2b35226b7b00"
+  executeTarget = "local"
+  options = [
+    {
+      uuid = "c067ad56-f68f-42c8-bc7b-ec629518c8c0"
+      optionType = { code = "rubyScript" }
+      value = <<EOF
+open('/tmp/task.txt', 'a') { |f|
+  f.puts "ruby script"
+}
+EOF
+    }
+  ]
+  taskType = { code = "jrubyTask" }
+  visibility = "private"
+}
