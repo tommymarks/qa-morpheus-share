@@ -1,0 +1,7 @@
+resource "task-set-task" "1b4b60e0-a33c-4474-9b33-978bdea16de1" {
+  uuid = "1b4b60e0-a33c-4474-9b33-978bdea16de1"
+  entryTask = false
+  task = { name = "VDI - Create RDS Deployment" }
+  taskOrder = 3
+  taskPhase = "postProvision"
+}
