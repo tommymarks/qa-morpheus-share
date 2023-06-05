@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-openstack-1.9-set" {
+  code = "nginx-openstack-1.9-set"
+  uuid = "48dd5084-df82-4671-bdb0-1208fd17744f"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-openstack-1.9" }
+}

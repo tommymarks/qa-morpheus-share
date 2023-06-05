@@ -1,0 +1,52 @@
+resource "container-type" "nginx-openstack-1.9" {
+  code = "nginx-openstack-1.9"
+  name = "NGINX 1.9"
+  uuid = "1a44f215-2fcf-4040-99db-f94121ec1690"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  backupType = "openstackSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  cloneType = "nginx"
+  commEnabled = false
+  containerMounts = [
+    { code = "nginx-1.9-certs" },
+    { code = "nginx-1.9-config" },
+    { code = "nginx-1.9-data" },
+    { code = "nginx-1.9-logs" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.9"
+  customType = false
+  deploymentType = { code = "nginx" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = true
+  logTypeCode = "nginx"
+  mountConfig = "/etc/nginx"
+  mountData = "/morpheus/data"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  priorityOrder = 0
+  provisionType = { code = "openstack" }
+  repositoryImage = ""
+  scripts = [
+    { code = "nginx-1.9-vm-entrypoint" },
+    { code = "nginx-1.9-vm-start" },
+    { code = "nginx-1.9-vm-stop" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  templates = [ { code = "nginx-1.9" } ]
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "openstack.image.morpheus.nginx.1.9-1" }
+}
