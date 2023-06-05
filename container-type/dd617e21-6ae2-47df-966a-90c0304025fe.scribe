@@ -1,0 +1,24 @@
+resource "container-type" "dd617e21-6ae2-47df-966a-90c0304025fe" {
+  code = "dd617e21-6ae2-47df-966a-90c0304025fe"
+  name = "CH Win 7 Ent"
+  uuid = "dfaad61a-a1c5-4d62-8688-64dc18b82e80"
+  commEnabled = false
+  containerVersion = "Latest"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ch-win-7-ent"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}
