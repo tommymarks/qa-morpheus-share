@@ -1,0 +1,15 @@
+resource "resource-spec-template" "c905cf0f-0561-4e29-a2dc-7993549d8aeb" {
+  name = "ARM Blank"
+  uuid = "c905cf0f-0561-4e29-a2dc-7993549d8aeb"
+  autoRun = false
+  dateCreated = "2020-05-19T21:15:14.000Z"
+  failOnError = true
+  hasDeployment = false
+  lastUpdated = "2020-05-19T21:15:14.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "2896516c-29e0-4482-95eb-c0b1f91165f6" }
+  templatePhase = "provision"
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
