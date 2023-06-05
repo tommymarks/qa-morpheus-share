@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-opentelekom-1.9" {
+  code = "nginx-opentelekom-1.9"
+  name = "Open Telekom NGINX"
+  uuid = "77a2801a-edfb-444e-9306-aa1f249e328c"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "opentelekom" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  systemLayout = false
+  workloads = [ { code = "nginx-opentelekom-1.9-set" } ]
+}
