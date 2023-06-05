@@ -1,0 +1,10 @@
+resource "app-template" "db135c2f-c6d9-4ccd-9793-568fc5fcdaea" {
+  name = "case 67303"
+  uuid = "db135c2f-c6d9-4ccd-9793-568fc5fcdaea"
+  active = true
+  custom = false
+  dateCreated = "2022-08-09T05:54:31.000Z"
+  lastUpdated = "2022-09-17T18:57:24.000Z"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
