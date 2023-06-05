@@ -1,0 +1,7 @@
+resource "task-set-task" "d339b911-1fc1-4e6c-8797-c981fda8e3f2" {
+  uuid = "d339b911-1fc1-4e6c-8797-c981fda8e3f2"
+  entryTask = false
+  task = { name = "Morpheus Update" }
+  taskOrder = 1
+  taskPhase = "postProvision"
+}
