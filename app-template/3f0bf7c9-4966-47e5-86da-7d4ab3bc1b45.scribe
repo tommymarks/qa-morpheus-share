@@ -1,0 +1,10 @@
+resource "app-template" "3f0bf7c9-4966-47e5-86da-7d4ab3bc1b45" {
+  name = "PT: 182553855"
+  uuid = "3f0bf7c9-4966-47e5-86da-7d4ab3bc1b45"
+  active = true
+  custom = false
+  dateCreated = "2022-08-10T22:15:54.000Z"
+  lastUpdated = "2022-08-15T18:27:21.000Z"
+  templateType = { code = "cloudFormation" }
+  visibility = "private"
+}
