@@ -1,14 +1,14 @@
-resource "container-type-port" "HTTP" {
-  name = "HTTP"
+resource "container-type-port" "SSH" {
+  name = "SSH"
   allowMapping = true
   customType = false
   export = true
-  exportName = "HTTP"
-  externalPort = 80
-  internalPort = 80
-  link = true
+  exportName = "SSH"
+  externalPort = 22
+  internalPort = 22
+  link = false
   loadBalance = true
-  loadBalanceProtocol = "HTTP"
+  loadBalanceProtocol = "null"
   primaryPort = false
   sortOrder = 0
   unmanagedEnabled = false

@@ -1,0 +1,21 @@
+resource "instance-type-layout" "faa67705-7426-4c1b-a00d-8582252346dc" {
+  code = "faa67705-7426-4c1b-a00d-8582252346dc"
+  name = "Custom ESXi"
+  uuid = "4ba274d5-a1a5-4a48-8d5c-b546611dae81"
+  actions = [ { code = "faa67705-7426-4c1b-a00d-8582252346dc" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "vmdk"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "esxi" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "6cd74509-7093-4db0-a6bc-005c1733de35" } ]
+}
