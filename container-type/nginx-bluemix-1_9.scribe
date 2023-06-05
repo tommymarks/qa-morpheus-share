@@ -1,0 +1,53 @@
+resource "container-type" "nginx-bluemix-1.9" {
+  code = "nginx-bluemix-1.9"
+  name = "NGINX 1.9"
+  uuid = "78a894cd-c7c2-4f90-92ab-2e4040e9a59b"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  backupType = "bluemixSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  cloneType = "nginx"
+  commEnabled = false
+  containerMounts = [
+    { code = "nginx-1.9-certs" },
+    { code = "nginx-1.9-config" },
+    { code = "nginx-1.9-data" },
+    { code = "nginx-1.9-logs" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.9"
+  customType = false
+  deploymentType = { code = "nginx" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = true
+  logTypeCode = "nginx"
+  mountConfig = "/etc/nginx"
+  mountData = "/morpheus/data"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "bluemix"
+  provisionType = { code = "bluemix" }
+  repositoryImage = ""
+  scripts = [
+    { code = "nginx-1.9-vm-entrypoint" },
+    { code = "nginx-1.9-vm-stop" },
+    { code = "nginx-1.9-vm-start" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  templates = [ { code = "nginx-1.9" } ]
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "bluemix.image.morpheus.ubuntu.16.04" }
+}

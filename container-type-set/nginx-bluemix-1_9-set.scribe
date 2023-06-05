@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-bluemix-1.9-set" {
+  code = "nginx-bluemix-1.9-set"
+  uuid = "b2c55408-d5c2-44eb-99f9-b81b67f7c0fb"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-bluemix-1.9" }
+}
