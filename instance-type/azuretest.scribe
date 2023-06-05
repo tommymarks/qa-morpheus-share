@@ -1,0 +1,22 @@
+resource "instance-type" "azuretest" {
+  code = "azuretest"
+  name = "azuretest"
+  uuid = "fab89f3e-1b3c-4ab3-8424-82ae3bea506b"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "AZURETEST"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "08e22a76-6b2f-4804-a75b-861ec4ad8ff0" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
