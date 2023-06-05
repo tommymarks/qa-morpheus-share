@@ -1,0 +1,230 @@
+resource "option-type-list" "CS NA Primary Application - All Apps" {
+  name = "CS NA Primary Application - All Apps"
+  uuid = "9419d1c6-81af-42c1-a2ce-d708cd2cc722"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+[
+ {
+   "ID": 1,
+   "name": "Aardvark - CA",
+   "ApplicationServiceTier": "Tier 2",
+   "ServerOwner": "ARTA KOGAN",
+   "GBU": "GBU - Communication Services",
+   "CRAMInfoOwner": "Dave Brown",
+   "CRAMCustodian": "Arta Kogan",
+   "SupportOwner": "ARTA KOGAN"
+ },
+ {
+   "ID": 2,
+   "name": "Aardvark - US",
+   "ApplicationServiceTier": "Tier 2",
+   "ServerOwner": "ARTA KOGAN",
+   "GBU": "GBU - Communication Services",
+   "CRAMInfoOwner": "James Johnson",
+   "CRAMCustodian": "Arta Kogan",
+   "SupportOwner": "ARTA KOGAN"
+ },
+ {
+   "ID": 3,
+   "name": "ABBYY",
+   "ApplicationServiceTier": "Tier 5",
+   "ServerOwner": "George Foltak",
+   "GBU": "GBU - Communication Services",
+   "CRAMInfoOwner": "George Foltak",
+   "CRAMCustodian": "George Foltak",
+   "SupportOwner": "George Foltak"
+ },
+ {
+   "ID": 4,
+   "name": "Able Batch Converter v1.8",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 5,
+   "name": "Accelus",
+   "ApplicationServiceTier": "Tier 5",
+   "ServerOwner": "Mark Fitzgibbon",
+   "GBU": "No Data",
+   "CRAMInfoOwner": "Mark Fitzgibbon",
+   "CRAMCustodian": "Carrie Maclellan",
+   "SupportOwner": "Tim Newman"
+ },
+ {
+   "ID": 6,
+   "name": "Accurate - NA",
+   "ApplicationServiceTier": "Tier 2",
+   "ServerOwner": "SAM ROBERTSON",
+   "GBU": "GBU - Shared Services",
+   "CRAMInfoOwner": "Olga Syrmalis",
+   "CRAMCustodian": "Rowan Abbott",
+   "SupportOwner": "Rik Nelson"
+ },
+ {
+   "ID": 7,
+   "name": "ACCURATE - NORTH AMERICA",
+   "ApplicationServiceTier": "Tier 2",
+   "ServerOwner": "Dan Sawtell",
+   "GBU": "GBU - Shared Services",
+   "CRAMInfoOwner": "No Data",
+   "CRAMCustodian": "No Data",
+   "SupportOwner": "No Data"
+ },
+ {
+   "ID": 8,
+   "name": "ACE10-6500-K9",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 9,
+   "name": "Acorns Dynamic Client Proxy",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 10,
+   "name": "Acrobat Reader DC (CRT)",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 11,
+   "name": "Acrobat XI Standard",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 12,
+   "name": "ACS 1120",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 13,
+   "name": "ACS16",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 14,
+   "name": "ACS32",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "STEPHEN KENNEDY",
+   "CRAMCustodian": "STEPHEN KENNEDY",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 15,
+   "name": "ACS4",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 16,
+   "name": "ACS48",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 17,
+   "name": "ACS6000",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 18,
+   "name": "ACS6004",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 19,
+   "name": "ACS6008MDAC-001",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 20,
+   "name": "ACS6016",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ },
+ {
+   "ID": 21,
+   "name": "ACS6032",
+   "ApplicationServiceTier": "Tier 1",
+   "ServerOwner": "STEPHEN KENNEDY",
+   "GBU": "GBU - Plans",
+   "CRAMInfoOwner": "Victoria Diaz",
+   "CRAMCustodian": "Julie Kelly-Young",
+   "SupportOwner": "STEPHEN KENNEDY"
+ }
+]
+EOF
+  realTime = true
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for(var x=0;x < data.length; x++) {
+if (input.App_Name == data[x].ID) {
+results.push({name: data[x].name,value:data[x].name});
+}
+}
+EOF
+  type = "manual"
+  visibility = "private"
+}
