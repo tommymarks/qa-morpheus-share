@@ -1,0 +1,10 @@
+resource "app-template" "fc675c72-3b09-47ee-acf2-fe8aca463ee7" {
+  name = "! List"
+  uuid = "fc675c72-3b09-47ee-acf2-fe8aca463ee7"
+  active = true
+  custom = false
+  dateCreated = "2021-11-11T20:10:54.000Z"
+  lastUpdated = "2022-12-03T03:50:39.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
