@@ -1,0 +1,48 @@
+resource "task" "Vault KV2 Example" {
+  name = "Vault KV2 Example"
+  uuid = "46edb83a-f425-4488-ad23-5f5c512df660"
+  allowCustomConfig = false
+  dateCreated = "2022-07-01T10:15:46.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-07-01T10:15:46.000Z"
+  options = [
+    {
+      uuid = "23b36b4a-f034-4f6e-9971-c1d14425fe7f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "4cdbdbd9-f0f7-4955-b6cf-280b43675bfc"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "581cef64-8f20-4c7b-9d06-9cf02dafb763"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "58773304-fa8b-493a-9f5f-5344915fbe12"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "8590e179-94df-4dad-a92e-b0ebc8b78c8a"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "921cb329-04d5-4e39-9216-66d46d6c4975"
+      content = { uuid = "3593bdcd-014b-4c1a-9c0e-109fb266f6ba" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "9f30fff0-bf84-4938-9e45-c757358caa0f"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "e12d0696-eeb2-4b24-875e-37c4f97175dd"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
