@@ -1,0 +1,16 @@
+resource "instance-action" "f570c148-1495-411b-956c-98e269aa8593" {
+  code = "f570c148-1495-411b-956c-98e269aa8593"
+  name = "Add Node"
+  uuid = "3e0d5d97-29cd-4b85-99c9-4f816477bcc9"
+  actionOperation = "addNode"
+  actionService = "containerService"
+  active = true
+  countEnabled = true
+  description = "This will add an additional node"
+  minCount = 1
+  provisionOperation = "joinNode"
+  provisionSelectType = "zone"
+  provisionService = "containerService"
+  sortOrder = 0
+  userTriggered = true
+}

@@ -1,0 +1,11 @@
+resource "container-action" "f570c148-1495-411b-956c-98e269aa8593" {
+  code = "f570c148-1495-411b-956c-98e269aa8593"
+  name = "Remove Node"
+  uuid = "26efa936-c800-40d2-a1df-7b0341fe8591"
+  actionOperation = "removeNode"
+  actionService = "containerService"
+  countEnabled = false
+  description = "This will remove the node"
+  minCount = 1
+  sortOrder = 0
+}
