@@ -1,0 +1,47 @@
+resource "task" "execute-workflow" {
+  name = "execute-workflow"
+  uuid = "b7ded94e-1e89-446e-aee1-ace10071da07"
+  allowCustomConfig = false
+  dateCreated = "2019-09-19T18:34:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T18:34:22.000Z"
+  options = [
+    {
+      uuid = "0253bf17-f7f6-4318-a178-0362ce9eda76"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "408eb116-6901-4e1b-8af4-b63dc7eddfbd"
+      optionType = { code = "script" }
+      value = <<EOF
+echo "EXECUTE WORKFLOW"
+echo ERROR: Did I do that? 1>&2
+EOF
+    },
+    {
+      uuid = "47f0077b-13f1-412b-84f2-f71584023ff8"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "49d59440-a640-4890-aa3d-d5047d6b8c3a"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "693ba27e-d84b-4872-a388-f719f53bbb92"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "acd34b7b-5708-479d-8e0a-8b45e82bc94b"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "c37924e5-be67-4b94-908e-a7f67ce9e182"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
