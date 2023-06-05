@@ -3,10 +3,10 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/usr/src/redmine/files"
+  containerPath = "/var/www/html"
   customType = false
   deployable = true
-  hostPath = "/usr/src/redmine/files"
+  hostPath = "/var/www/html"
   required = false
   sortOrder = 0
   subMount = false
