@@ -1,0 +1,49 @@
+resource "task" "Purge Orphaned Metadata Tags Job" {
+  name = "Purge Orphaned Metadata Tags Job"
+  uuid = "f2e17e93-0b03-4201-bb9d-81e20e428cc0"
+  allowCustomConfig = false
+  dateCreated = "2023-03-09T23:23:26.000Z"
+  executeTarget = "local"
+  labels = [ { name = "utility" } ]
+  lastUpdated = "2023-03-09T23:23:26.000Z"
+  options = [
+    {
+      uuid = "36ab1149-d2a8-4095-9f52-f5bd8056b69d"
+      content = { uuid = "ffd06785-36b2-497c-a87f-070534c4fa67" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "62194b68-63d0-4a58-9c71-53395f68f749"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "635b1be0-4d7c-4b17-a22b-a9522124034e"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "6bdf5856-487e-43f4-9aeb-15cbc3872311"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "7ae5f3b7-5ff0-48cf-bd0b-d193b6430b81"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "b57005bc-b013-4929-8590-c10388d4d2c7"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "c86afbeb-8353-49a7-b3c8-c80d5f47a3e4"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "d3cc4f66-b411-414f-9061-61f94c63eea8"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
