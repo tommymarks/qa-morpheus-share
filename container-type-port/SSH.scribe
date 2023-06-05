@@ -7,8 +7,7 @@ resource "container-type-port" "SSH" {
   externalPort = 22
   internalPort = 22
   link = false
-  loadBalance = true
-  loadBalanceProtocol = "TCP"
+  loadBalance = false
   primaryPort = false
   sortOrder = 0
   unmanagedEnabled = false
