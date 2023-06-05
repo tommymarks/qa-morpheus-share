@@ -1,7 +1,7 @@
 resource "container-type-log" "logs" {
   name = "logs"
   canPersist = false
-  containerPath = "/var/log/nginx"
+  containerPath = "/vault/logs"
   hostPath = "/logs"
   sortOrder = 0
 }
