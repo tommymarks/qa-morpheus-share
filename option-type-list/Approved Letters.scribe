@@ -1,0 +1,10 @@
+resource "option-type-list" "Approved Letters" {
+  name = "Approved Letters"
+  uuid = "9559aef6-b024-4ce1-bcaa-acb473775e3d"
+  ignoreSSLErrors = false
+  initialDataset = "[{\"name\":\"A\",\"value\":\"A\"},{\"name\":\"B\",\"value\":\"B\"},{\"name\":\"C\",\"value\":\"C\"}]"
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
