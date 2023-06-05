@@ -1,0 +1,48 @@
+resource "task" "Check Inventory Field" {
+  name = "Check Inventory Field"
+  uuid = "30fcf2da-42c5-4442-a43b-9776c14170a3"
+  allowCustomConfig = false
+  dateCreated = "2021-04-27T13:22:46.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-04-27T13:22:46.000Z"
+  options = [
+    {
+      uuid = "2e6ceab3-8346-452f-b9d1-c2db0d229c14"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "8484ce22-6783-4997-9bac-5bcf2715eef2"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "8515d376-4f0b-4051-bbf1-c52abb6b4ce1"
+      content = { uuid = "1d2267dd-c171-43ac-8d9f-8d5511ecebfd" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "99a2954a-5dc4-400c-8381-adb8b35b869a"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b06cbd72-2393-4c5f-b08a-801979faad33"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "bc41c286-ca6e-41ad-bfdd-d8028d6b5a7d"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "e6b9a9a7-c0cc-4763-b3a2-4ff950568a6f"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "ebf899d0-ee21-4d1c-b1ea-94d04f3dd6e6"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
