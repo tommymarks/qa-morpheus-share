@@ -1,0 +1,20 @@
+resource "instance-type-layout" "b14e8e43-2f37-4faf-9adb-24f841a6c81f" {
+  code = "b14e8e43-2f37-4faf-9adb-24f841a6c81f"
+  name = "CF Ubuntu VM"
+  uuid = "b942d50c-8b6b-4a38-8a24-b93e35afe6be"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "ubuntu"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "c37550c6-c878-4762-93ae-5602b51fef7b" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
