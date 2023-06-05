@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-softlayer-2.4-centos-7.3-set" {
+  code = "apache-softlayer-2.4-centos-7.3-set"
+  uuid = "d2881e73-29cd-40d8-ab62-ee6c32e696a9"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-softlayer-2.4-centos-7.3" }
+}
