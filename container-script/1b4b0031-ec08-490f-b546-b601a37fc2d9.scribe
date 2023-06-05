@@ -1,0 +1,12 @@
+resource "container-script" "1b4b0031-ec08-490f-b546-b601a37fc2d9" {
+  code = "1b4b0031-ec08-490f-b546-b601a37fc2d9"
+  name = "Who Am I - User"
+  uuid = "78f42095-728b-4272-b82f-446149be9e0f"
+  failOnError = true
+  script = "echo whoami | tee -a ~/whoami_user.txt"
+  scriptPhase = "provision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = false
+}
