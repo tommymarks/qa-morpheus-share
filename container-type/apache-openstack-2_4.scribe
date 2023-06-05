@@ -1,0 +1,42 @@
+resource "container-type" "apache-openstack-2.4" {
+  code = "apache-openstack-2.4"
+  name = "Apache 2.4"
+  uuid = "a3bb9356-e9c7-49e1-b169-5295f6fed59c"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "openstackSnapshot"
+  checkTypeCode = "webGetCheck"
+  cloneType = "apache"
+  commEnabled = false
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4"
+  customType = false
+  deploymentType = { code = "default" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "apache"
+  mountConfig = "/morpheus/config"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "openstack"
+  provisionType = { code = "openstack" }
+  repositoryImage = ""
+  scripts = [
+    { code = "apache-2.4-vm-entrypoint" },
+    { code = "apache-2.4-vm-stop" },
+    { code = "apache-2.4-vm-start" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "openstack.image.morpheus.apache.2.4-1" }
+}
