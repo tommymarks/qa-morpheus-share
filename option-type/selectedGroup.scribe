@@ -1,7 +1,7 @@
 resource "option-type" "selectedGroup" {
   code = "selectedGroup"
-  name = "Group"
-  uuid = "a455f58f-d706-49c3-99d9-b3ef3e9935a9"
+  name = "Groups"
+  uuid = "520ae44d-1fc2-4a6b-9e62-3a10024a2f9a"
   advanced = false
   contextualDefault = false
   creatable = true
@@ -14,15 +14,17 @@ resource "option-type" "selectedGroup" {
   exportEvar = false
   exportMeta = false
   fieldContext = "config.customOptions"
-  fieldGetName = "selectedGroup"
   fieldLabel = "Group"
   fieldName = "selectedGroup"
-  fieldSetName = "selectedGroup"
+  formField = false
   global = true
   groupExpand = false
   ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
   noBlank = false
-  optionList = { name = "Groups" }
   optionSource = "list"
   ownerEditable = false
   required = false
