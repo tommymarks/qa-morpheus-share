@@ -1,0 +1,48 @@
+resource "task" "cypher-write-test" {
+  name = "cypher-write-test"
+  uuid = "feb8db0a-aacd-4393-85bf-70e6905c9075"
+  allowCustomConfig = false
+  dateCreated = "2023-03-08T21:15:42.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-08T21:15:42.000Z"
+  options = [
+    {
+      uuid = "1ed6108c-4cc2-4352-9a6e-77f52a5e5cd6"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "2a62ef9d-3a0f-4f9e-adfc-d72209d17f93"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "338bd178-a78d-4d9e-81c3-3b7632394195"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "36546df5-7c25-4b36-8469-df34b23cb02c"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "440c7576-a6dc-4f01-9b84-06d50567f6a9"
+      content = { uuid = "55113840-d443-4455-9759-b124798a69a5" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "ad094a46-6784-4709-93b3-e4ca03cf4b58"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "d4e69eae-f02a-48f2-8228-42ef819588da"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "dee360e4-564b-45c7-a618-f05acbe10fda"
+      optionType = { code = "password" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
