@@ -1,0 +1,12 @@
+resource "container-script" "apache-2.4-vm-start" {
+  code = "apache-2.4-vm-start"
+  name = "apache start"
+  uuid = "6dcb8067-8f54-4dfe-9967-71e20166edf0"
+  failOnError = true
+  script = "bash -c \"service apache2 start\""
+  scriptPhase = "start"
+  scriptType = "bash"
+  scriptVersion = "1.0"
+  sortOrder = 2
+  sudoUser = true
+}

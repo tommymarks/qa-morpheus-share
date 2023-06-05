@@ -1,0 +1,12 @@
+resource "container-script" "apache-2.4-vm-stop" {
+  code = "apache-2.4-vm-stop"
+  name = "apache stop"
+  uuid = "298d915b-5274-462f-a32a-8bd707b15613"
+  failOnError = true
+  script = "bash -c \"service apache2 stop\""
+  scriptPhase = "stop"
+  scriptType = "bash"
+  scriptVersion = "1.0"
+  sortOrder = 2
+  sudoUser = true
+}

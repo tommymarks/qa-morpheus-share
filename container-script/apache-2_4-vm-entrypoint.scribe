@@ -1,0 +1,12 @@
+resource "container-script" "apache-2.4-vm-entrypoint" {
+  code = "apache-2.4-vm-entrypoint"
+  name = "apache vm entrypoint"
+  uuid = "84d04211-e94e-4e8a-bd43-5c00ce5b7c15"
+  failOnError = true
+  script = "bash -c \"cd / && ./entrypoint.sh\""
+  scriptPhase = "provision"
+  scriptType = "bash"
+  scriptVersion = "1.0"
+  sortOrder = 1
+  sudoUser = true
+}

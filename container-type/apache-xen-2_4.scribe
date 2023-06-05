@@ -1,0 +1,43 @@
+resource "container-type" "apache-xen-2.4" {
+  code = "apache-xen-2.4"
+  name = "Apache 2.4"
+  uuid = "7e105b46-4bef-419a-9c44-0284fd61e5ab"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "xenSnapshot"
+  checkTypeCode = "webGetCheck"
+  cloneType = "apache"
+  commEnabled = false
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4"
+  customType = false
+  deploymentType = { code = "default" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "apache"
+  mountConfig = "/morpheus/config"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "xen"
+  provisionType = { code = "xen" }
+  repositoryImage = ""
+  scripts = [
+    { code = "apache-folder-config" },
+    { code = "apache-2.4-vm-entrypoint" },
+    { code = "apache-2.4-vm-stop" },
+    { code = "apache-2.4-vm-start" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "xen.image.morpheus.apache.2.4" }
+}
