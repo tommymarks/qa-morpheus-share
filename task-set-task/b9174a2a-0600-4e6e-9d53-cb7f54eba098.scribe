@@ -1,0 +1,7 @@
+resource "task-set-task" "b9174a2a-0600-4e6e-9d53-cb7f54eba098" {
+  uuid = "b9174a2a-0600-4e6e-9d53-cb7f54eba098"
+  entryTask = false
+  task = { code = "tmemail" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

@@ -1,0 +1,51 @@
+resource "task" "tmshell" {
+  code = "tmshell"
+  name = "TM Shell"
+  uuid = "94d509c0-6129-4672-abb6-58457ac55595"
+  allowCustomConfig = false
+  dateCreated = "2019-10-09T22:56:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-10-09T22:56:19.000Z"
+  options = [
+    {
+      uuid = "1299b043-76e5-4d9a-90a2-1a1793c8429f"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "1d2a4d71-e534-45b1-bb3f-93df9e92a2ff"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "3e626494-0da0-49e2-8ddf-ef8181f6cc27"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "a3f5774e-0cfd-4d66-9313-db65f9d41845"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "a4a4738c-2a75-4e2a-9316-796509f01c83"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "b6513663-f2c5-40c3-8a25-0430b5ddf914"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "bafa68df-3aaf-460d-a0da-54407dd1d30c"
+      optionType = { code = "script" }
+      value = "echo \"Hi EVERYBODY!\""
+    },
+    {
+      uuid = "f76906f4-f646-4b41-9bbf-1f39bdd3c93e"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
