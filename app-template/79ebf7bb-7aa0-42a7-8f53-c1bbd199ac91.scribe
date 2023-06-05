@@ -1,0 +1,7 @@
+resource "app-template" "79ebf7bb-7aa0-42a7-8f53-c1bbd199ac91" {
+  name = "All Images"
+  uuid = "79ebf7bb-7aa0-42a7-8f53-c1bbd199ac91"
+  active = true
+  custom = false
+  templateType = { code = "morpheus" }
+}
