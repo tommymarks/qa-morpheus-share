@@ -1,0 +1,22 @@
+resource "instance-type-layout" "e948988e-85ce-4080-a61e-c7a5f84d70d6" {
+  code = "e948988e-85ce-4080-a61e-c7a5f84d70d6"
+  name = "custom-centos"
+  uuid = "e49a6767-4f83-4511-bff6-38f5bb3cfa0a"
+  actions = [ { code = "e948988e-85ce-4080-a61e-c7a5f84d70d6" } ]
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = true
+  systemLayout = false
+  workloads = [ { code = "ff5517cf-d6d5-41c5-a09e-fc692472ff79" } ]
+}
