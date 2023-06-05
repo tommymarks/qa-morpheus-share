@@ -3,16 +3,13 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/usr/share/nginx/html"
+  containerPath = "/usr/src/redmine/files"
   customType = false
   deployable = true
-  hostPath = "/data"
-  mountType = "volume"
+  hostPath = "/usr/src/redmine/files"
   required = false
-  shortName = "data"
   sortOrder = 0
   subMount = false
   unmanagedEnabled = false
   visible = false
-  volumeName = "data"
 }

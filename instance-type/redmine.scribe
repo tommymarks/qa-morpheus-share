@@ -1,0 +1,21 @@
+resource "instance-type" "redmine" {
+  code = "redmine"
+  name = "Redmine"
+  uuid = "9a1b3786-9093-4943-b1ce-1dae31ea6c81"
+  category = "apps"
+  active = true
+  deploymentService = ""
+  description = "A great project management system built on top of ruby on rails."
+  enabled = true
+  environmentPrefix = "REDMINE"
+  featured = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasSettings = false
+  layouts = [ { code = "707baed1-03cf-4f05-a958-5cf81f346baf" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
