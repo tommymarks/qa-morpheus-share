@@ -1,0 +1,26 @@
+resource "container-type" "d949b49e-30c3-4568-bc4d-788078ee1b09" {
+  code = "d949b49e-30c3-4568-bc4d-788078ee1b09"
+  name = "Azure Ubuntu 18"
+  uuid = "eb3fa175-5ef0-4a71-8a64-9b2f6b787129"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Ubuntu 18"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "azure"
+  priorityOrder = 0
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "azrubu18"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "azure"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "74344e02-38c7-41fc-9e0e-04b9198b476c" }
+}

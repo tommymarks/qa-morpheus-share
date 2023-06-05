@@ -1,0 +1,23 @@
+resource "compute-type-layout" "5e83e83c-fd1b-434e-b595-ad11544fc3da" {
+  code = "5e83e83c-fd1b-434e-b595-ad11544fc3da"
+  name = "Azure Custom Ubuntu 18"
+  computeServers = [
+    {
+      code = "5e83e83c-fd1b-434e-b595-ad11544fc3da-d949b49e-30c3-4568-bc4d-788078ee1b09"
+    }
+  ]
+  computeVersion = "Ubuntu 18"
+  creatable = true
+  dateCreated = "2019-08-28T19:17:41.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-07-22T19:32:44.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  serverCount = 1
+  sortOrder = 0
+}
