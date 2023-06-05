@@ -1,0 +1,35 @@
+resource "option-type" "SelectedGroup" {
+  code = "SelectedGroup"
+  name = "Selected Group"
+  uuid = "c6537b0e-3679-440f-82fb-e68ce15e897a"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "SelectedGroup"
+  fieldLabel = "Group"
+  fieldName = "SelectedGroup"
+  fieldSetName = "SelectedGroup"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Selected Group" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
