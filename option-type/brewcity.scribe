@@ -1,7 +1,7 @@
 resource "option-type" "brewcity" {
   code = "brewcity"
-  name = "Brewery - City Input - Typeahead"
-  uuid = "8cd623e0-0a9a-4049-9065-4002904dd0c3"
+  name = "Brewery - City Input - Select"
+  uuid = "435020ea-64fa-4a7e-b44d-170754b67c7d"
   advanced = false
   contextualDefault = false
   creatable = true
@@ -14,7 +14,7 @@ resource "option-type" "brewcity" {
   exportEvar = false
   exportMeta = false
   fieldContext = "config.customOptions"
-  fieldLabel = "Brewery - City Input - Typeahead"
+  fieldLabel = "Brewery - City Input - Select"
   fieldName = "brewcity"
   formField = false
   global = true
@@ -34,5 +34,5 @@ resource "option-type" "brewcity" {
   showOnEdit = true
   tenantEditable = false
   tenantVisible = true
-  type = "typeahead"
+  type = "select"
 }
