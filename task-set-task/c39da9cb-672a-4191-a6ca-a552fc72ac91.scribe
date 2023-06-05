@@ -1,0 +1,7 @@
+resource "task-set-task" "c39da9cb-672a-4191-a6ca-a552fc72ac91" {
+  uuid = "c39da9cb-672a-4191-a6ca-a552fc72ac91"
+  entryTask = false
+  task = { name = "! Ruby" }
+  taskOrder = 2
+  taskPhase = "configure"
+}

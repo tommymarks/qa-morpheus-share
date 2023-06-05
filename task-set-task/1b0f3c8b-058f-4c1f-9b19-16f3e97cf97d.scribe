@@ -1,0 +1,7 @@
+resource "task-set-task" "1b0f3c8b-058f-4c1f-9b19-16f3e97cf97d" {
+  uuid = "1b0f3c8b-058f-4c1f-9b19-16f3e97cf97d"
+  entryTask = false
+  task = { name = "! Email" }
+  taskOrder = 0
+  taskPhase = "configure"
+}
