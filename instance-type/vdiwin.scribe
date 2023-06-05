@@ -1,0 +1,22 @@
+resource "instance-type" "vdiwin" {
+  code = "vdiwin"
+  name = "vdiwin"
+  uuid = "ea5604b7-c6d7-49ac-a531-a23fd6b1cc58"
+  category = "os"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "VDIWIN"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "6b66c41b-8d7d-4f4c-81d2-103613f81708" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
