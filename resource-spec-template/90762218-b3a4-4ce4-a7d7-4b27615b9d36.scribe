@@ -1,0 +1,16 @@
+resource "resource-spec-template" "90762218-b3a4-4ce4-a7d7-4b27615b9d36" {
+  name = "arm1"
+  uuid = "90762218-b3a4-4ce4-a7d7-4b27615b9d36"
+  autoRun = false
+  dateCreated = "2021-08-02T18:46:23.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2021-08-02T18:46:23.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "07e32cbe-1e1a-4b60-9a62-fa94c7db4474" }
+  templatePhase = "provision"
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}

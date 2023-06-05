@@ -1,0 +1,12 @@
+resource "file-content" "07e32cbe-1e1a-4b60-9a62-fa94c7db4474" {
+  uuid = "07e32cbe-1e1a-4b60-9a62-fa94c7db4474"
+  contentPath = "/arm1"
+  contentRef = "auto"
+  dateCreated = "2021-08-02T18:46:23.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2021-08-02T18:46:23.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}
