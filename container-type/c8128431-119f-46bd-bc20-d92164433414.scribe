@@ -1,0 +1,25 @@
+resource "container-type" "c8128431-119f-46bd-bc20-d92164433414" {
+  code = "c8128431-119f-46bd-bc20-d92164433414"
+  name = "Windows Server 2019 GUI"
+  uuid = "97b195af-20c1-482a-aa16-0972e60d47e5"
+  commEnabled = false
+  containerVersion = "2019"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "hyperv"
+  priorityOrder = 0
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "win-srv-2019-gui"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "scvmm.image.31314.b92a8ece-587c-4d3f-8620-4fe04395107f" }
+}
