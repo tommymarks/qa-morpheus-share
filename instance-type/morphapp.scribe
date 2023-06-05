@@ -1,0 +1,27 @@
+resource "instance-type" "morphapp" {
+  code = "morphapp"
+  name = "Morpheus Appliance"
+  uuid = "698a2655-ecfd-4163-84ad-4fbaf45985b2"
+  category = "apps"
+  active = true
+  deploymentService = ""
+  description = "morpheus awesomeness"
+  enabled = true
+  environmentPrefix = "MORPH"
+  featured = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasSettings = false
+  layouts = [
+    { code = "0214d585-7cd1-4e73-b897-f9b75c8d9d3b" },
+    { code = "3ddf79e8-14bd-452c-9c5f-5902806fc624" },
+    { code = "606c1144-3838-47ec-ae8b-4f04f281d2f3" },
+    { code = "9f26dd88-f70e-49fd-a21a-3f0ca0a47f8e" },
+    { code = "a1069e2a-4fcd-42cd-b00f-519b6da13f31" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
