@@ -1,0 +1,17 @@
+resource "option-type-list" "acColorTypeahead" {
+  name = "acColorTypeahead"
+  uuid = "8887f093-c781-44a7-8d3d-5ae4e897adb2"
+  description = "color typeahead"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+[
+{"name": "first-color-name", "value": "red"},
+{"name": "second-color-name", "value": "green"},
+{"name": "third-color-name", "value": "blue"}
+]
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
