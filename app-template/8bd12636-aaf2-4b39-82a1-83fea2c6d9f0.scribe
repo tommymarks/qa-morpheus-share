@@ -1,0 +1,10 @@
+resource "app-template" "8bd12636-aaf2-4b39-82a1-83fea2c6d9f0" {
+  name = "CIS Valley-Case 69549"
+  uuid = "8bd12636-aaf2-4b39-82a1-83fea2c6d9f0"
+  active = true
+  custom = false
+  dateCreated = "2023-03-06T11:35:59.000Z"
+  lastUpdated = "2023-03-06T11:35:59.000Z"
+  templateType = { code = "arm" }
+  visibility = "private"
+}
