@@ -1,0 +1,35 @@
+resource "option-type" "checkbox3" {
+  code = "checkbox3"
+  name = "config.customOptions.checkbox3"
+  uuid = "b86f9c8c-fb91-4c98-ae5e-c1dc19d6e7a1"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  defaultValue = "on"
+  description = "sample checkbox field"
+  displayOrder = 2
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "checkbox3"
+  fieldLabel = "Checkbox 3"
+  fieldName = "checkbox3"
+  fieldSetName = "checkbox3"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = false
+  tenantEditable = false
+  tenantVisible = true
+  type = "checkbox"
+}
