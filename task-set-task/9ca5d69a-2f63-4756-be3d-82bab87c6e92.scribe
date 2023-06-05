@@ -1,0 +1,7 @@
+resource "task-set-task" "9ca5d69a-2f63-4756-be3d-82bab87c6e92" {
+  uuid = "9ca5d69a-2f63-4756-be3d-82bab87c6e92"
+  entryTask = false
+  task = { name = "Hello World Local Linux" }
+  taskOrder = 1
+  taskPhase = "teardown"
+}
