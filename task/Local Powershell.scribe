@@ -1,0 +1,52 @@
+resource "task" "Local Powershell" {
+  name = "Local Powershell"
+  uuid = "c15ffcb6-1dea-4dd7-9593-e56bd22df043"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T16:23:41.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-16T16:26:50.000Z"
+  options = [
+    {
+      uuid = "25a779fd-d2e4-49d8-80a1-e2bbbe54e93f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "4cbef106-0a64-4640-b10d-fd885d693279"
+      content = { uuid = "217129dd-256a-49d6-8ec5-8a90f09cf664" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "53e41f4c-60b4-4477-921d-91cfcdc82687"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "878d3f2e-f1ad-4575-be5d-3b268cba5ed5"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "8fc78bed-7194-45e3-8f97-a4aa79fbe0e0"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "e70a4dec-de89-4946-bca6-591ecc7e713d"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "edd4ac84-a39b-4535-94c7-db7dbfde265a"
+      optionType = { code = "winrm.elevated" }
+    },
+    {
+      uuid = "f8cfd21a-ce43-4329-8ebc-29bf63a9b421"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "fb5a19e8-9bd7-4f4f-b8b8-ee3af0b73f2e"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
