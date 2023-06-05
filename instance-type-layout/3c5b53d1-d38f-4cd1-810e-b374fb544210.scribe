@@ -1,0 +1,22 @@
+resource "instance-type-layout" "3c5b53d1-d38f-4cd1-810e-b374fb544210" {
+  code = "3c5b53d1-d38f-4cd1-810e-b374fb544210"
+  name = "RHEL Server"
+  uuid = "352f2ba7-d62a-4017-b07e-07bf48a26723"
+  creatable = true
+  description = "CIS Server Level 1"
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "8.7"
+  labels = [ { name = "CIS" }, { name = "security" } ]
+  memoryRequirement = 2147483648
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "ce88fb5b-9ce4-4877-abc0-25aac7062e03" } ]
+}

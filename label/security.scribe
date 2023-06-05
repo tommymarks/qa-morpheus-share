@@ -1,0 +1,3 @@
+resource "label" "security" {
+  name = "security"
+}
