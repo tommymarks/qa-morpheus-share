@@ -1,0 +1,20 @@
+resource "instance-type-layout" "37450efe-cc65-4307-b0d3-11a4e441b713" {
+  code = "37450efe-cc65-4307-b0d3-11a4e441b713"
+  name = "centos-stream"
+  uuid = "de95ebff-0ce8-4ad1-8825-ee161f6ff8f1"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "9"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "kvm" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "f0a72e33-cb39-4c8c-8169-2e3b7ca30f6b" } ]
+}
