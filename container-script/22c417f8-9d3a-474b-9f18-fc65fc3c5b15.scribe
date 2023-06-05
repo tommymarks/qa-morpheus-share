@@ -1,0 +1,13 @@
+resource "container-script" "22c417f8-9d3a-474b-9f18-fc65fc3c5b15" {
+  code = "22c417f8-9d3a-474b-9f18-fc65fc3c5b15"
+  name = "bash echo"
+  uuid = "10b397d0-9f94-4ae4-8f31-51d1657b9073"
+  failOnError = true
+  lastUpdated = "2022-12-03T03:52:59.000Z"
+  script = "echo \"$(date) - test\" | tee -a /tmp/phase_script.txt"
+  scriptPhase = "provision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = false
+}
