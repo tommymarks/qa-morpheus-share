@@ -1,0 +1,21 @@
+resource "instance-type-layout" "3fd41975-60fd-41de-9d23-9f611c5a2f0f" {
+  code = "3fd41975-60fd-41de-9d23-9f611c5a2f0f"
+  name = "tf test"
+  uuid = "da95349d-ddb5-4020-8901-ed24b98e7711"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "terraform" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "a34f3eb2-5d99-421f-ba16-031c331a4fd6" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+  taskSets = [ { name = "Ansible: Tags" } ]
+}
