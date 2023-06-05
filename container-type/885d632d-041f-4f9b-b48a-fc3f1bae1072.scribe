@@ -1,0 +1,26 @@
+resource "container-type" "885d632d-041f-4f9b-b48a-fc3f1bae1072" {
+  code = "885d632d-041f-4f9b-b48a-fc3f1bae1072"
+  name = "Custom Oracle Cloud"
+  uuid = "71b19b08-04cd-4394-872d-cd03951699d0"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" }, { name = "HTTP" } ]
+  containerVersion = "oc"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "oraclecloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "84e4c9ac-8fa2-475c-88ff-43a1e27fa72b" }
+}
