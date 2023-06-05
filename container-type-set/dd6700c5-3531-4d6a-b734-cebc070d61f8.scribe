@@ -1,6 +1,6 @@
 resource "container-type-set" "dd6700c5-3531-4d6a-b734-cebc070d61f8" {
   code = "dd6700c5-3531-4d6a-b734-cebc070d61f8"
-  uuid = "7b493b83-2004-44c1-8722-ffccba31c1ad"
+  uuid = "95ae238a-0baf-4241-b465-df3165fdb6a3"
   containerCount = 1
   dynamicCount = false
   priorityOrder = 0
