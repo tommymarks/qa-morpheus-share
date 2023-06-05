@@ -1,0 +1,70 @@
+resource "task" "Setup Additional Ubuntu Disk" {
+  name = "Setup Additional Ubuntu Disk"
+  uuid = "15181240-9224-473b-bdbf-75a4adad601b"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2023-03-21T20:24:41.000Z"
+  options = [
+    {
+      uuid = "00d6a2a8-781f-48e3-a56f-ff314b59f9bc"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    },
+    {
+      uuid = "173281b0-a2a2-498e-822b-00f8c9ee7cf9"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "3de31024-6ba4-462d-baa5-9f97d5e95864"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "5de37594-5eaf-46a4-963d-32a8b3d95b9d"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "6da14d46-df23-4fd5-af11-9628bf5c3f57"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "8b04e167-e52d-4f81-aee0-390606b8ab7e"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "a1b4b235-aafa-44ea-bd7e-ecf7a3883930"
+      content = { uuid = "5b076104-33e2-4b71-a7ba-ae41704d6cda" }
+      optionType = { code = "script" }
+      value = <<EOF
+disks=(sdb xvdd xvdb vdb xvdc)
+setup=false
+for disk in ${disks[@]}; do
+  if !($setup) && (lsblk | grep -q "${disk}") && !(lsblk | grep -q "${disk}1"); then
+    setup=true
+    sudo parted /dev/${disk} mklabel gpt
+	sleep 2
+    sudo parted -a opt /dev/${disk} mkpart primary ext4 0% 100%
+	sleep 2
+    sudo mkfs.ext4 -L datapartition /dev/${disk}1
+    sudo mkdir -p /mnt/data
+    #echo "LABEL=datapartition /mnt/data ext4 defaults,nofail 0 2" | sudo tee -a /etc/fstab
+	sleep 2
+    sudo mount -a
+	sleep 2
+    echo "success!" | sudo tee /mnt/data/setup.txt
+  fi
+done
+EOF
+    },
+    {
+      uuid = "c4ceb138-22c1-41a4-b78c-8f7fa8436985"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "e2e88da3-4561-4d7d-9e9a-66228e917bb9"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
