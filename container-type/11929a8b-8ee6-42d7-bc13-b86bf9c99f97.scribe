@@ -1,0 +1,26 @@
+resource "container-type" "11929a8b-8ee6-42d7-bc13-b86bf9c99f97" {
+  code = "11929a8b-8ee6-42d7-bc13-b86bf9c99f97"
+  name = "Amazon Ubuntu 18"
+  uuid = "30021e9a-f830-4ad1-ae50-0d663d742bf8"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Ubuntu 18"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsubu18"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "amazon"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "341dd401-6875-4e97-a22f-ebb6d7fb4204" }
+}

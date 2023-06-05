@@ -1,0 +1,23 @@
+resource "compute-type-layout" "63935b36-de21-46b0-bd4d-70d1c70af7a7" {
+  code = "63935b36-de21-46b0-bd4d-70d1c70af7a7"
+  name = "Amazon Custom Ubuntu 18"
+  computeServers = [
+    {
+      code = "63935b36-de21-46b0-bd4d-70d1c70af7a7-11929a8b-8ee6-42d7-bc13-b86bf9c99f97"
+    }
+  ]
+  computeVersion = "Ubuntu 18"
+  creatable = true
+  dateCreated = "2019-08-28T18:34:49.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:01:07.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+}

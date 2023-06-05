@@ -1,0 +1,19 @@
+resource "compute-type-set" "63935b36-de21-46b0-bd4d-70d1c70af7a7-11929a8b-8ee6-42d7-bc13-b86bf9c99f97" {
+  code = "63935b36-de21-46b0-bd4d-70d1c70af7a7-11929a8b-8ee6-42d7-bc13-b86bf9c99f97"
+  name = "Amazon Custom Ubuntu 18-worker-11929a8b-8ee6-42d7-bc13-b86bf9c99f97-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = true
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 0
+  workloadType = { code = "11929a8b-8ee6-42d7-bc13-b86bf9c99f97" }
+}
