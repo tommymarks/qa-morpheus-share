@@ -4,18 +4,15 @@ resource "container-type-mount" "template: 6b372edc-4a68-498e-bb1c-04ce8c452c50"
   autoRun = true
   canPersist = false
   certStore = false
-  containerPath = "/tmp/templates/predeploy.txt"
+  containerPath = "/var/tmp/templates"
   customType = false
   deployable = false
-  fileMount = false
-  hostPath = "/tmp/templates/predeploy.txt"
+  hostPath = "/var/tmp/templates"
   mountType = "config"
   required = false
-  shortName = "phase:-pre-deploy"
   sortOrder = 0
   subMount = false
   template = { code = "6b372edc-4a68-498e-bb1c-04ce8c452c50" }
   unmanagedEnabled = false
   visible = false
-  volumeName = "phase:-pre-deploy"
 }

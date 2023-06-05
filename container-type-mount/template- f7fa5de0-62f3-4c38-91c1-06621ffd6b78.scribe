@@ -4,18 +4,15 @@ resource "container-type-mount" "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78"
   autoRun = true
   canPersist = false
   certStore = false
-  containerPath = "/tmp/templates/postprovision.txt"
+  containerPath = "/var/tmp/templates"
   customType = false
   deployable = false
-  fileMount = false
-  hostPath = "/tmp/templates/postprovision.txt"
+  hostPath = "/var/tmp/templates"
   mountType = "config"
   required = false
-  shortName = "phase:-post-provision"
   sortOrder = 0
   subMount = false
   template = { code = "f7fa5de0-62f3-4c38-91c1-06621ffd6b78" }
   unmanagedEnabled = false
   visible = false
-  volumeName = "phase:-post-provision"
 }

@@ -4,18 +4,15 @@ resource "container-type-mount" "template: 08aa784c-b0c5-4fe3-8a37-e5ceb46b6e80"
   autoRun = true
   canPersist = false
   certStore = false
-  containerPath = "/tmp/templates/preprovision.txt"
+  containerPath = "/var/tmp/templates"
   customType = false
   deployable = false
-  fileMount = false
-  hostPath = "/tmp/templates/preprovision.txt"
+  hostPath = "/var/tmp/templates"
   mountType = "config"
   required = false
-  shortName = "phase:-pre-provision"
   sortOrder = 0
   subMount = false
   template = { code = "08aa784c-b0c5-4fe3-8a37-e5ceb46b6e80" }
   unmanagedEnabled = false
   visible = false
-  volumeName = "phase:-pre-provision"
 }
