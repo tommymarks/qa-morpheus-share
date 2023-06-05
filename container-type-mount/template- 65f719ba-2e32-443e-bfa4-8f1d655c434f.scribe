@@ -1,0 +1,21 @@
+resource "container-type-mount" "template: 65f719ba-2e32-443e-bfa4-8f1d655c434f" {
+  code = "template: 65f719ba-2e32-443e-bfa4-8f1d655c434f"
+  name = "QA Test Container"
+  autoRun = true
+  canPersist = false
+  certStore = false
+  containerPath = "/config"
+  customType = false
+  deployable = false
+  fileMount = false
+  hostPath = "/config"
+  mountType = "config"
+  required = false
+  shortName = "qa-test-container"
+  sortOrder = 0
+  subMount = false
+  template = { code = "65f719ba-2e32-443e-bfa4-8f1d655c434f" }
+  unmanagedEnabled = false
+  visible = false
+  volumeName = "qa-test-container"
+}
