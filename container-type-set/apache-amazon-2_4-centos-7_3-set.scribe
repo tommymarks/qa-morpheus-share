@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-amazon-2.4-centos-7.3-set" {
+  code = "apache-amazon-2.4-centos-7.3-set"
+  uuid = "e67bcde4-7856-4719-b586-2aeeb3e81ba7"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-amazon-2.4-centos-7.3" }
+}
