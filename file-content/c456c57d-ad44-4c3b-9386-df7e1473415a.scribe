@@ -1,0 +1,813 @@
+resource "file-content" "c456c57d-ad44-4c3b-9386-df7e1473415a" {
+  uuid = "c456c57d-ad44-4c3b-9386-df7e1473415a"
+  content = <<EOF
+variable "cloudUrl" {
+  default = "vcenter01.prod.dc2.den.morpheusdata.com"
+}
+variable "cloudUsername" {
+  default = "svc.morpheus-qa@ad.morpheusdata.com"
+}
+variable "cloudPassword" {
+  default = "1QALphUwM3rydTfL"
+  sensitive = true
+}
+variable "datacenterName" {
+  default = "labs-den-dc2-qa"
+}
+
+terraform {
+  required_version = ">= 0.12"
+}
+
+provider "vsphere" {
+  user           = var.cloudUsername
+  password       = var.cloudPassword
+  vsphere_server = var.cloudUrl
+  allow_unverified_ssl = true
+}
+
+data "vsphere_datacenter" "dc" {
+  name = var.datacenterName
+}
+
+data "vsphere_datastore" "datastore" {
+  name = "ESXi-DC2-QA-LUN01"
+  datacenter_id = data.vsphere_datacenter.dc.id
+}
+
+data "vsphere_resource_pool" "pool" {
+  name = "QA"
+  datacenter_id = data.vsphere_datacenter.dc.id
+}
+
+data "vsphere_network" "network" {
+  name = "VLAN0002 - Internal Server"
+  datacenter_id = data.vsphere_datacenter.dc.id
+}
+
+data "vsphere_virtual_machine" "template" {
+  name = "qa-apache"
+  datacenter_id = data.vsphere_datacenter.dc.id
+}
+
+resource "vsphere_virtual_machine" "vm01" {
+  name = "tm-vmw-terra-01"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "disk0"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm02" {
+  name = "tm-vmw-terra-02"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm03" {
+  name = "tm-vmw-terra-03"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm04" {
+  name = "tm-vmw-terra-04"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm05" {
+  name = "tm-vmw-terra-05"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm06" {
+  name = "tm-vmw-terra-06"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm07" {
+  name = "tm-vmw-terra-07"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm08" {
+  name = "tm-vmw-terra-08"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm09" {
+  name = "tm-vmw-terra-09"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm10" {
+  name = "tm-vmw-terra-10"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm11" {
+  name = "tm-vmw-terra-11"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm12" {
+  name = "tm-vmw-terra-12"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm13" {
+  name = "tm-vmw-terra-13"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm14" {
+  name = "tm-vmw-terra-14"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm15" {
+  name = "tm-vmw-terra-15"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm16" {
+  name = "tm-vmw-terra-16"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm17" {
+  name = "tm-vmw-terra-17"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm18" {
+  name = "tm-vmw-terra-18"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm19" {
+  name = "tm-vmw-terra-19"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm20" {
+  name = "tm-vmw-terra-20"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm21" {
+  name = "tm-vmw-terra-21"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm22" {
+  name = "tm-vmw-terra-22"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm23" {
+  name = "tm-vmw-terra-23"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm24" {
+  name = "tm-vmw-terra-24"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm25" {
+  name = "tm-vmw-terra-25"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+
+resource "vsphere_virtual_machine" "vm26" {
+  name = "tm-vmw-terra-26"
+  resource_pool_id = data.vsphere_resource_pool.pool.id
+  datastore_id = data.vsphere_datastore.datastore.id
+  num_cpus = 1
+  memory = 512
+  guest_id = "ubuntu64Guest"
+
+  network_interface {
+    network_id = data.vsphere_network.network.id
+  }
+
+  disk {
+    label = "os"
+    thin_provisioned = true
+    size  = 10
+  }
+
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
+
+  connection {
+    type = "ssh"
+    user = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+}
+EOF
+  dateCreated = "2022-10-28T15:09:19.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2022-10-28T15:09:19.000Z"
+  sourceType = "local"
+}
