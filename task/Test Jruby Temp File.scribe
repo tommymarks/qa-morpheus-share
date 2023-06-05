@@ -1,0 +1,48 @@
+resource "task" "Test Jruby Temp File" {
+  name = "Test Jruby Temp File"
+  uuid = "2e0679af-2ab0-4072-a964-07279a3df0fb"
+  allowCustomConfig = false
+  dateCreated = "2020-05-05T00:11:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-05-05T00:11:05.000Z"
+  options = [
+    {
+      uuid = "09c6743c-a4bc-4c07-83c2-d78cf8ff262c"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "1f8ca6e3-2514-4743-a0ec-5fa7e7b1d85c"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "7eb14b77-1f05-44ca-b939-0825bb5ad4cf"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "896ce789-8614-4efb-a471-bc8e63b41850"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "8dcaf6d3-47ec-4a4a-92e0-4a2554bd5e93"
+      content = { uuid = "6981fb41-11c7-44e2-8966-f97e25240ae6" }
+      optionType = { code = "rubyScript" }
+    },
+    {
+      uuid = "bd34f2fc-d050-4221-b0c4-3d70fdad5075"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "c268e53b-85b1-4f1e-838a-a64a953aa145"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "c869fb6b-9e76-4d55-8397-015602b8de92"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jrubyTask" }
+  visibility = "private"
+}
