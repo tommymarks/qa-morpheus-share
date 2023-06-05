@@ -1,0 +1,27 @@
+resource "option-type" "Application_sdlc_environment" {
+  code = "Application_sdlc_environment"
+  name = "Application_sdlc_environment"
+  uuid = "4a0cabf0-5366-4d26-85a9-8061244f4bd5"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Application_sdlc_environment aa"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "Application_sdlc_environment"
+  fieldLabel = "Application_sdlc_environment"
+  fieldName = "Application_sdlc_environment"
+  fieldSetName = "Application_sdlc_environment"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
