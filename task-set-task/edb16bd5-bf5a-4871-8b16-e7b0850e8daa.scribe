@@ -1,0 +1,7 @@
+resource "task-set-task" "edb16bd5-bf5a-4871-8b16-e7b0850e8daa" {
+  uuid = "edb16bd5-bf5a-4871-8b16-e7b0850e8daa"
+  entryTask = false
+  task = { name = "XaaS: Reconfigure" }
+  taskOrder = 3
+  taskPhase = "reconfigure"
+}

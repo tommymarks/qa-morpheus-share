@@ -1,0 +1,48 @@
+resource "task" "XaaS: Provision" {
+  name = "XaaS: Provision"
+  uuid = "0863c9cc-331c-4776-b0af-359fe2c094f6"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:06:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:06:31.000Z"
+  options = [
+    {
+      uuid = "22fb0ab3-a0de-467b-acbd-01c8334d1080"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "6679acc8-f6f1-49d2-bf71-83386f4b53b7"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "6e8643c4-c56a-43fb-bd54-342159d3bc0c"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "74a8bb3e-ff34-44f6-8cb0-0cf177615e20"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "7f32c701-63a0-4142-b3ed-ac3981092c26"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "8c4e3af9-c332-4a5a-93d6-85bf705aa17f"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "caf2f74f-f85c-4929-92da-619233b30757"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "dc261ae0-34b9-40fb-be4d-df6a4b0a8c9e"
+      content = { uuid = "efdd7cd2-874a-443f-887c-a1bc78956308" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

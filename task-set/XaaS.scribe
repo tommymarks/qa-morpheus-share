@@ -1,0 +1,17 @@
+resource "task-set" "XaaS" {
+  name = "XaaS"
+  uuid = "c5bd3791-86f4-41c0-b396-7f2aa9475c50"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:09:08.000Z"
+  lastUpdated = "2022-01-06T05:09:08.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "b08be1f1-3f61-4188-bb2e-bf7bc82f6c6e" },
+    { uuid = "cd18f800-87df-4eb6-be81-ff1255b40ff2" },
+    { uuid = "d1f07a45-c212-4a68-8349-67f1d42907ce" },
+    { uuid = "d87ebf73-ed5d-4441-a1ce-7fd0c8bc3509" },
+    { uuid = "edb16bd5-bf5a-4871-8b16-e7b0850e8daa" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
