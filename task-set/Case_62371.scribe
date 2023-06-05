@@ -1,0 +1,15 @@
+resource "task-set" "Case_62371" {
+  name = "Case_62371"
+  uuid = "d97f72a6-05af-461c-834a-bf6cf4461e14"
+  allowCustomConfig = false
+  dateCreated = "2021-05-26T12:11:21.000Z"
+  lastUpdated = "2021-05-26T12:11:21.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "1716b60e-cc84-4b79-9c39-4d3d2e5e1961" },
+    { uuid = "7afdbbf5-7286-4a3c-ab36-7051a18178ca" },
+    { uuid = "8d82593f-3355-43c5-ac83-80f5d6678466" }
+  ]
+  taskSetType = "provision"
+  visibility = "private"
+}
