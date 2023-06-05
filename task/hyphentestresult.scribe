@@ -1,0 +1,53 @@
+resource "task" "hyphentestresult" {
+  name = "hyphentestresult"
+  uuid = "810080f5-12a2-44cd-8156-a6a05fece7d7"
+  allowCustomConfig = false
+  dateCreated = "2022-08-17T09:42:42.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-17T09:45:39.000Z"
+  options = [
+    {
+      uuid = "101a6a96-2a0e-4489-89de-ce576c850761"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "5d23262c-9698-4ccb-8a00-d11f3d5dfa65"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "8859d1c3-05c3-4083-889f-a54500df3322"
+      content = { uuid = "309069f4-09b6-43fe-9f1d-9694cac2108a" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "aba39319-77ec-49d2-b047-8df98c23fd2a"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "b2058d5b-2d64-45bc-90e7-5806b950b74a"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "b489bab3-1b51-4b80-bc2a-27a5b56c4f2d"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "dd64b52c-7955-460f-ba39-992f95293466"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "e1a3a2d1-b39d-43a3-96cd-a495cae369b3"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "ecf0c194-3f95-4258-aff4-8215d48195e7"
+      optionType = { code = "host" }
+    }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

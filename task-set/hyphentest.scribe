@@ -1,0 +1,14 @@
+resource "task-set" "hyphentest" {
+  name = "hyphentest"
+  uuid = "0dabe6f5-b69f-43a0-a86a-eddb5eea5f0c"
+  allowCustomConfig = false
+  dateCreated = "2022-08-17T09:43:07.000Z"
+  lastUpdated = "2022-08-17T09:43:07.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "0de240f2-865e-4280-8de7-12e9c83a47e7" },
+    { uuid = "60b40fab-cc12-45dd-b92b-ec3a4ef9186c" }
+  ]
+  taskSetType = "operation"
+  visibility = "private"
+}
