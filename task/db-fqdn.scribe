@@ -1,0 +1,48 @@
+resource "task" "db-fqdn" {
+  name = "db-fqdn"
+  uuid = "87b9bdd7-8095-4a30-b3d9-0efe2c358fe8"
+  allowCustomConfig = false
+  dateCreated = "2021-06-16T15:53:30.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-06-16T15:53:30.000Z"
+  options = [
+    {
+      uuid = "2d5f9b67-5003-47cd-9465-3818b52154ff"
+      content = { uuid = "765fb115-cdac-43db-8e1b-53a5fe986834" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "6436c364-befd-4273-9a05-35080665abb4"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "724bdcd8-7f12-4bdb-9b1a-ca7d07757c34"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "80270b8b-3b5a-43b0-b7c3-3ddc5bf67c90"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "e898de82-f06c-449e-a811-0185b6f8e849"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "f2d2707e-7bbf-4141-a65b-4483176e8bc5"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "f362796f-316e-471c-9fa7-397729b34f57"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "f3991042-fede-4c66-be7d-759e3c3f7050"
+      optionType = { code = "host" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
