@@ -1,0 +1,22 @@
+resource "instance-type" "ch-win-7-ent" {
+  code = "ch-win-7-ent"
+  name = "CH Win 7 Ent"
+  uuid = "ab1b512c-5cfa-4947-87e4-51a9d1474fff"
+  category = "os"
+  active = true
+  deploymentService = "defaultDeployService"
+  enabled = true
+  environmentPrefix = "CH_WIN_7_ENT"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = true
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = true
+  layouts = [ { code = "24bd8fef-e588-4102-9ac4-2964714116d6" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
