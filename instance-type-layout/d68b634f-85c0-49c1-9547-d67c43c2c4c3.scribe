@@ -1,0 +1,45 @@
+resource "instance-type-layout" "d68b634f-85c0-49c1-9547-d67c43c2c4c3" {
+  code = "d68b634f-85c0-49c1-9547-d67c43c2c4c3"
+  name = "Options"
+  uuid = "56d85ad3-0015-4752-ab29-91f675199c66"
+  actions = [ { code = "d68b634f-85c0-49c1-9547-d67c43c2c4c3" } ]
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "opts1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  optionTypes = [
+    { code = "text1" },
+    { code = "text2" },
+    { code = "text3" },
+    { code = "password1" },
+    { uuid = "49042078-4cd0-4f03-a622-b127f65c8265" },
+    { uuid = "8f4fb9b6-2d26-41ad-8bb4-d68c5654c2b8" },
+    { code = "number1" },
+    { uuid = "f9c6a713-a212-47b4-8b4b-bda6da7a0849" },
+    { uuid = "5d77bab8-ca92-4a38-8854-7b84aed25b2f" },
+    { code = "checkbox1" },
+    { uuid = "60807e70-a373-46db-b72f-025c87e41de6" },
+    { uuid = "3ebf8c9c-1915-4cb7-aa01-a0131ba2e70f" },
+    { code = "typeahead1" },
+    { uuid = "c47d8428-c359-4900-ab78-bec85765534a" },
+    { code = "typeahead3" },
+    { code = "select1" },
+    { code = "selectNoBlank" },
+    { uuid = "c68a2e86-3848-4a11-83c3-8e7e0cefbc3b" },
+    { uuid = "8ead0646-3552-4283-8080-e66742e973c2" },
+    { code = "testuserid" },
+    { code = "testuserpost" }
+  ]
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = true
+  systemLayout = false
+  workloads = [ { code = "e911c062-1a44-4c87-be46-848a6abd32fe" } ]
+}

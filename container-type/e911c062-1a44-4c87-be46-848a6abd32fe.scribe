@@ -1,0 +1,25 @@
+resource "container-type" "e911c062-1a44-4c87-be46-848a6abd32fe" {
+  code = "e911c062-1a44-4c87-be46-848a6abd32fe"
+  name = "Options VMware"
+  uuid = "c8550e00-bf18-4219-b390-fa3c66b27e2b"
+  commEnabled = false
+  containerVersion = "options"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "optsvmware"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-58812" }
+}

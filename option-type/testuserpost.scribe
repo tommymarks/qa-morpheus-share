@@ -1,0 +1,29 @@
+resource "option-type" "testuserpost" {
+  code = "testuserpost"
+  name = "Test User Post"
+  uuid = "40b098ea-c47f-4c82-bb32-08bb82d174d8"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "testuserid"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "testuserpost"
+  fieldLabel = "Test User List"
+  fieldName = "testuserpost"
+  fieldSetName = "testuserpost"
+  global = true
+  groupExpand = false
+  noBlank = false
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}

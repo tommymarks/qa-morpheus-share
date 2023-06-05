@@ -1,0 +1,39 @@
+resource "option-type" "selectNoBlank" {
+  code = "selectNoBlank"
+  name = "Test Select List No Blank"
+  uuid = "3fc245e6-8d24-4585-928c-1d0da2b808d8"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  defaultValue = "Test"
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "test Select List"
+  fieldName = "selectNoBlank"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "manual csv" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
