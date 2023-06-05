@@ -1,0 +1,35 @@
+resource "option-type" "name" {
+  code = "name"
+  name = "new option type"
+  uuid = "e3d80847-2b72-43c7-b638-4e4e2610cea6"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Option type for catalog item"
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldCode = "new optionType"
+  fieldContext = "config.customOptions"
+  fieldGetName = "name"
+  fieldLabel = "Name"
+  fieldName = "name"
+  fieldSetName = "name"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "text"
+}
