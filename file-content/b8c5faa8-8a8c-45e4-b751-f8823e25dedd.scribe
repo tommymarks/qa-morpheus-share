@@ -1,0 +1,21 @@
+resource "file-content" "b8c5faa8-8a8c-45e4-b751-f8823e25dedd" {
+  uuid = "b8c5faa8-8a8c-45e4-b751-f8823e25dedd"
+  content = <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod-234
+  labels:
+    name: myapp-234
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+EOF
+  dateCreated = "2020-12-09T21:27:29.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2020-12-09T21:27:29.000Z"
+  sourceType = "local"
+}
