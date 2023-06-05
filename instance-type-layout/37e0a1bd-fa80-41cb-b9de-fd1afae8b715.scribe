@@ -1,0 +1,21 @@
+resource "instance-type-layout" "37e0a1bd-fa80-41cb-b9de-fd1afae8b715" {
+  code = "37e0a1bd-fa80-41cb-b9de-fd1afae8b715"
+  name = "Custom Amazon"
+  uuid = "42095695-ced6-4edf-8ed0-7558158a121f"
+  actions = [ { code = "37e0a1bd-fa80-41cb-b9de-fd1afae8b715" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "amazon"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "921b1e0f-22c9-421d-91ab-05b05b6337f1" } ]
+}
