@@ -1,0 +1,21 @@
+resource "instance-type-layout" "apache-huawei-2.4" {
+  code = "apache-huawei-2.4"
+  name = "Huawei Apache on Ubuntu 14.04"
+  uuid = "3066db2c-3f00-47b6-9470-b5a4a6dd071e"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "huawei" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "apache-huawei-2.4-set" } ]
+}
