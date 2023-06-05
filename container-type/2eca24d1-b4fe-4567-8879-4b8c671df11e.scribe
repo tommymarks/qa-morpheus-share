@@ -1,0 +1,25 @@
+resource "container-type" "2eca24d1-b4fe-4567-8879-4b8c671df11e" {
+  code = "2eca24d1-b4fe-4567-8879-4b8c671df11e"
+  name = "case 67629-node-1"
+  uuid = "38162dfd-f7c0-4fa2-8b77-632f24a0b079"
+  commEnabled = false
+  containerVersion = "1.3"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vm"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "amazon.ec2.image.morpheus.centos.8.4-v2" }
+}
