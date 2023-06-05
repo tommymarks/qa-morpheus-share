@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-virtualbox-2.4-centos-7.3-set" {
+  code = "apache-virtualbox-2.4-centos-7.3-set"
+  uuid = "69484ff5-d915-4e0e-bfb0-e3d4521c05bf"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  workloadType = { code = "apache-virtualbox-2.4-centos-7.3" }
+}
