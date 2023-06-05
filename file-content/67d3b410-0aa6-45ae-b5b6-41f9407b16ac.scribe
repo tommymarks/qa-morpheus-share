@@ -1,0 +1,32 @@
+resource "file-content" "67d3b410-0aa6-45ae-b5b6-41f9407b16ac" {
+  uuid = "67d3b410-0aa6-45ae-b5b6-41f9407b16ac"
+  content = <<EOF
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+
+EOF
+  dateCreated = "2019-12-04T20:20:20.000Z"
+  editable = true
+  enabled = true
+  fileVersion = "1"
+  lastUpdated = "2019-12-04T20:20:20.000Z"
+  sourceType = "local"
+}
