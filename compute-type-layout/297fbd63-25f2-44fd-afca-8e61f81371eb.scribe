@@ -1,0 +1,23 @@
+resource "compute-type-layout" "297fbd63-25f2-44fd-afca-8e61f81371eb" {
+  code = "297fbd63-25f2-44fd-afca-8e61f81371eb"
+  name = "Amazon Custom Ubuntu 16"
+  computeServers = [
+    {
+      code = "297fbd63-25f2-44fd-afca-8e61f81371eb-cca72e86-c971-446e-8a03-b09bab3b0bb7"
+    }
+  ]
+  computeVersion = "Ubuntu 16"
+  creatable = true
+  dateCreated = "2019-08-28T18:34:21.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:01:03.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+}
