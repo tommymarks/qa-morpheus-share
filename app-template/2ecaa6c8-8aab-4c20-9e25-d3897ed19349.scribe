@@ -1,0 +1,10 @@
+resource "app-template" "2ecaa6c8-8aab-4c20-9e25-d3897ed19349" {
+  name = "Terraform: AWS Orig"
+  uuid = "2ecaa6c8-8aab-4c20-9e25-d3897ed19349"
+  active = true
+  custom = false
+  dateCreated = "2021-02-24T20:45:17.000Z"
+  lastUpdated = "2021-02-24T20:45:17.000Z"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
