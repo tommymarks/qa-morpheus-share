@@ -1,0 +1,20 @@
+resource "instance-type-layout" "3de9e9b4-b6ba-45ba-8f62-4687ac3defe8" {
+  code = "3de9e9b4-b6ba-45ba-8f62-4687ac3defe8"
+  name = "vsvmwareLO"
+  uuid = "77d0b57f-2c43-4507-a77f-f9e3ba6c2318"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "f7949d1c-3d7c-4738-9f2f-41cd40e4db9d" } ]
+}
