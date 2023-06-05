@@ -1,0 +1,37 @@
+resource "option-type" "fnADUsers" {
+  code = "fnADUsers"
+  name = "AD USers"
+  uuid = "023a0ae8-2336-46f2-b2b1-b566d267dee8"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "AD Users"
+  fieldName = "fnADUsers"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "ActiveDirectory Users" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
