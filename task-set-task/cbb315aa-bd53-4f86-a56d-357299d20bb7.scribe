@@ -1,0 +1,7 @@
+resource "task-set-task" "cbb315aa-bd53-4f86-a56d-357299d20bb7" {
+  uuid = "cbb315aa-bd53-4f86-a56d-357299d20bb7"
+  entryTask = false
+  task = { name = "vs67541" }
+  taskOrder = 0
+  taskPhase = "operation"
+}

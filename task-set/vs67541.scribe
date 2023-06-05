@@ -1,0 +1,18 @@
+resource "task-set" "vs67541" {
+  name = "vs67541"
+  uuid = "491e45cd-60ab-49fb-a66f-d409a8b7f3e0"
+  allowCustomConfig = false
+  dateCreated = "2022-08-19T09:45:22.000Z"
+  lastUpdated = "2022-09-08T11:36:12.000Z"
+  optionTypes = [
+    { code = "vsGroups" },
+    { code = "vsClouds" },
+    { code = "vsResourcepools" },
+    { code = "vsNetworks" },
+    { code = "vsInstanceNetwork" }
+  ]
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "cbb315aa-bd53-4f86-a56d-357299d20bb7" } ]
+  taskSetType = "operation"
+  visibility = "private"
+}
