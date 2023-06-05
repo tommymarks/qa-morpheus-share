@@ -1,0 +1,20 @@
+resource "instance-type-layout" "bed9e1e5-aee6-4b72-be6b-9b2814489241" {
+  code = "bed9e1e5-aee6-4b72-be6b-9b2814489241"
+  name = "CentOS-Cust"
+  uuid = "cb9a5c25-d4ad-411d-a81c-e952c20b3a23"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "7.8"
+  memoryRequirement = 536870912
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vcd" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "9aa2ffff-f1bd-40b3-887c-e0c6c0e406f6" } ]
+}

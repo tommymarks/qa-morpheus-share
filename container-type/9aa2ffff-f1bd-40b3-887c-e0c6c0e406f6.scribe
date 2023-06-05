@@ -1,0 +1,25 @@
+resource "container-type" "9aa2ffff-f1bd-40b3-887c-e0c6c0e406f6" {
+  code = "9aa2ffff-f1bd-40b3-887c-e0c6c0e406f6"
+  name = "CentOSCust"
+  uuid = "022be439-255e-4a0c-bbd5-c82bc67a5432"
+  commEnabled = false
+  containerVersion = "7"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vcd" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "CentOSCust"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-79881" }
+}
