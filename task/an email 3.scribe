@@ -1,0 +1,63 @@
+resource "task" "an email 3" {
+  name = "an email 3"
+  uuid = "8aaa896b-b4dd-492e-8e3a-ab47fdcc794a"
+  allowCustomConfig = false
+  dateCreated = "2020-04-07T02:51:21.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-04-07T02:51:21.000Z"
+  options = [
+    {
+      uuid = "33a82b62-ac2a-4aa4-a494-3ad7fbfe3f59"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "3b59677e-efe5-457e-925a-0250f52ef10c"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "74d6d792-7817-47cd-bbad-5c553018e60f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "87883255-4ff9-43e6-a9bc-d44ccc50353b"
+      optionType = { code = "emailSkipTemplate" }
+      value = "on"
+    },
+    {
+      uuid = "ab9ae946-11fd-49fd-817b-f239a04796ee"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "ac540e3e-fdad-4302-a31a-19cd7648aac1"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "b10d0847-314f-4f66-a15a-08de29aa5de6"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b99dceb9-2f88-4a94-9a80-c6c3ee25e740"
+      content = { uuid = "1309bc8c-749e-45dd-9259-bb42f8a73e3d" }
+      optionType = { code = "emailBody" }
+    },
+    {
+      uuid = "cd358112-cf65-4284-aafd-56e3c92d6764"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "ee24ea8c-b1a8-49d0-b654-d92e5101fba3"
+      optionType = { code = "emailAddress" }
+      value = "tommymarks+3@gmail.com"
+    },
+    {
+      uuid = "ee4e0128-47a4-4647-8ca3-3cfd1056024d"
+      optionType = { code = "emailSubject" }
+      value = "email 3"
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "email" }
+  visibility = "private"
+}
