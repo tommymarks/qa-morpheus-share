@@ -1,0 +1,20 @@
+resource "instance-type-layout" "fd9a6e3f-3872-43df-b60b-e0046f5b829b" {
+  code = "fd9a6e3f-3872-43df-b60b-e0046f5b829b"
+  name = "26 VMs"
+  uuid = "9b329435-7060-4258-b380-f8c19bf8666c"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "26vms"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "terraform" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "c141db5d-b837-49bc-aded-08487c7b2108" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
