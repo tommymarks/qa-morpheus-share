@@ -1,0 +1,54 @@
+resource "task" "api-task-bash-variables" {
+  code = "api-task-bash-variables"
+  name = "api-task-bash-variables"
+  uuid = "1894bdab-9a66-42a2-baf8-55780573d236"
+  allowCustomConfig = false
+  dateCreated = "2023-03-06T23:05:14.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-06T23:28:12.000Z"
+  options = [
+    {
+      uuid = "00b87230-1e76-438c-a0ac-ea5a35cfddb9"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "01332894-9676-4693-8941-9c2014026267"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "0cb18815-1ea2-4511-b09b-ce46ebca1afd"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "2191dd03-129a-4336-b7be-1d318008095c"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    },
+    {
+      uuid = "67dba44d-52e3-4d68-beb9-267d872ac4bc"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "84059765-b4e3-4b81-a32f-c72561a0f2f8"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8593200e-3fb0-4353-90df-5ed63d0e576f"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "90dc70f7-c44f-493f-a762-3726d618bb76"
+      content = { uuid = "4760ce53-c527-42f3-9be8-b14b13593d13" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "b0dea6d4-3e8f-4a53-8b50-d49c2dfce9a6"
+      optionType = { code = "port" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
