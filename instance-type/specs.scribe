@@ -1,0 +1,41 @@
+resource "instance-type" "specs" {
+  code = "specs"
+  name = "Spec Templates"
+  uuid = "d111ac07-84f8-4e8a-813c-1589b34a9b8b"
+  category = "web"
+  active = true
+  deploymentService = ""
+  description = "spec template tests"
+  enabled = true
+  environmentPrefix = "SPEC"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "1b0399e5-3246-497c-aa4a-35e1e0f0f36b" },
+    { code = "34ee7b82-574a-43a4-948d-96684c296445" },
+    { code = "4049a249-81b3-4433-b486-ef6c0d7fd291" },
+    { code = "51b89146-3a4a-4595-ae64-6dd94db4c893" },
+    { code = "5996c9fb-675f-4e0e-809c-2048f817cb37" },
+    { code = "5c7cd8e4-f2cd-4424-abcd-9b4e073e41c4" },
+    { code = "7fcebe1f-5837-4d96-b077-227ab14a06e1" },
+    { code = "7fd3b603-3730-4e39-8567-1ffe7b67c654" },
+    { code = "87928a5c-25e0-4c57-afa6-985eb95acb16" },
+    { code = "a11593e8-448a-41a6-81b0-4cee00738868" },
+    { code = "adedef99-d5b8-49af-9441-82a2bb89f6bf" },
+    { code = "baa1cd51-02be-4daa-8f7b-795bc6bf156d" },
+    { code = "c8873d0a-3302-490b-8fa3-51a2bc42de20" },
+    { code = "cb685036-3a97-4fe0-962b-792e5c1bbfed" },
+    { code = "e28b957f-12ff-4a8f-8125-9c31fe11f147" },
+    { code = "eb99ce78-5cd7-4ea8-ba1c-9f48e1cb4744" },
+    { code = "fd9a6e3f-3872-43df-b60b-e0046f5b829b" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
