@@ -1,0 +1,10 @@
+resource "task-set" "Ansible: Nginx" {
+  name = "Ansible: Nginx"
+  uuid = "69a95197-99d0-4986-9e9a-b076e5d4298d"
+  dateCreated = "2017-05-16T21:58:30.000Z"
+  lastUpdated = "2017-05-16T21:58:30.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "7ce545b7-89b8-47af-a697-b35c8e2c1142" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
