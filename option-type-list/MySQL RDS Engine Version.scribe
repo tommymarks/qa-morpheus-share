@@ -1,0 +1,16 @@
+resource "option-type-list" "MySQL RDS Engine Version" {
+  name = "MySQL RDS Engine Version"
+  uuid = "17af9a18-6f5b-4f84-b273-cc36229d2035"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+[
+          {"name":"5.6","value":"5.6"},
+          {"name":"5.7","value":"5.7"},
+          {"name":"5.8","value":"5.8"}
+]
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
