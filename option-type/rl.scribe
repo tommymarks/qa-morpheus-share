@@ -1,0 +1,35 @@
+resource "option-type" "rl" {
+  code = "rl"
+  name = "Manual Radio"
+  uuid = "9b16a12d-5c15-45dc-81a4-7af5c4f049c4"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "rl"
+  fieldLabel = "Radio List"
+  fieldName = "rl"
+  fieldSetName = "rl"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "manual csv" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "radio"
+}
