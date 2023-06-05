@@ -1,0 +1,10 @@
+resource "app-template" "56b83332-3273-40a7-acb1-02795e5dc6a3" {
+  name = "ARM: PaaS: Container Registry"
+  uuid = "56b83332-3273-40a7-acb1-02795e5dc6a3"
+  active = true
+  custom = false
+  dateCreated = "2020-01-23T22:02:26.000Z"
+  lastUpdated = "2023-01-25T00:56:39.000Z"
+  templateType = { code = "arm" }
+  visibility = "private"
+}
