@@ -1,0 +1,11 @@
+resource "task-set" "Hello World Local Teardown" {
+  name = "Hello World Local Teardown"
+  uuid = "ad49dd29-7682-4cbb-8427-d2dc3ac2b893"
+  allowCustomConfig = false
+  dateCreated = "2022-11-03T18:26:47.000Z"
+  lastUpdated = "2022-11-03T18:26:47.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "26fba88c-434f-43c2-917b-460d0af3244a" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}
