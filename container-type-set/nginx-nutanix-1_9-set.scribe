@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-nutanix-1.9-set" {
+  code = "nginx-nutanix-1.9-set"
+  uuid = "eaf9c6d9-e656-4811-abb6-d02546ff3b6b"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-nutanix-1.9" }
+}
