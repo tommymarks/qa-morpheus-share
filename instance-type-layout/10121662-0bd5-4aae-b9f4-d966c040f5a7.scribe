@@ -1,0 +1,20 @@
+resource "instance-type-layout" "10121662-0bd5-4aae-b9f4-d966c040f5a7" {
+  code = "10121662-0bd5-4aae-b9f4-d966c040f5a7"
+  name = "Nginx Layout Service"
+  uuid = "63c9eadc-ffbf-4ed8-81e3-1ee886c4349a"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "kubernetes" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "ad36396a-9eea-4835-8970-6d1f00decfad" } ]
+}
