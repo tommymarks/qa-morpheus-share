@@ -3,7 +3,7 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/morpheus/data"
+  containerPath = "/usr/share/nginx/html"
   customType = false
   deployable = false
   fileMount = false
