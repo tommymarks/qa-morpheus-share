@@ -3,13 +3,16 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/var/www/html"
+  containerPath = "/morpheus/data"
   customType = false
   deployable = true
-  hostPath = "/var/www/html"
+  fileMount = false
+  hostPath = "/morpheus/data"
   required = false
+  shortName = "data"
   sortOrder = 0
   subMount = false
   unmanagedEnabled = false
   visible = false
+  volumeName = "data"
 }
