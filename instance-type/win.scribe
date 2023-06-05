@@ -1,0 +1,27 @@
+resource "instance-type" "win" {
+  code = "win"
+  name = "WindowsOS"
+  uuid = "ecee8ccb-eadd-4832-887d-b2560914d630"
+  category = "os"
+  active = true
+  deploymentService = ""
+  description = "Microsoft Windows Operating System"
+  enabled = true
+  environmentPrefix = "WIN"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "07847b23-74d3-498e-9385-2500a5340ae8" },
+    { code = "4656320b-a887-48a8-8387-e65185fb2d27" },
+    { code = "6ef969ad-5e7a-422c-bb42-1993eef23055" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "public"
+}
