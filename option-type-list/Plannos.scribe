@@ -1,0 +1,19 @@
+resource "option-type-list" "Plannos" {
+  name = "Plannos"
+  uuid = "50236560-1e3f-4b30-8647-c700fa3e5b67"
+  apiType = "servicePlans"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = <<EOF
+results.zoneId = 1
+results.provisionTypeCode = "VMware"
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+    results.push({name:data[x].name, value:data[x].id});
+}
+EOF
+  type = "api"
+  visibility = "private"
+}
