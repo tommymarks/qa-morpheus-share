@@ -1,0 +1,23 @@
+resource "instance-type" "cis-svr-l1" {
+  code = "cis-svr-l1"
+  name = "CIS-SVR-L1"
+  uuid = "b81509bb-47b0-4542-b262-3488175f2f2c"
+  category = "os"
+  active = true
+  deploymentService = ""
+  description = "This instance is a security hardened to the CIS Server Level1 benchmark"
+  enabled = true
+  environmentPrefix = "CIS-SVR-L1"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "3c5b53d1-d38f-4cd1-810e-b374fb544210" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
