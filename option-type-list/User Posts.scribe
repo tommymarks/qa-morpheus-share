@@ -1,0 +1,21 @@
+resource "option-type-list" "User Posts" {
+  name = "User Posts"
+  uuid = "afc38439-89ea-4a8a-a78c-079304c66828"
+  ignoreSSLErrors = true
+  realTime = true
+  requestScript = <<EOF
+results.push({name: 'userId', value : data.conuser})
+print("--- Beginning Posts Print ---")
+print(data)
+print("--- Ending Posts Print ---")
+EOF
+  sourceMethod = "GET"
+  sourceUrl = "https://jsonplaceholder.typicode.com/posts"
+  translationScript = <<EOF
+for(var x=0;x < data.length; x++) {
+results.push({name:data[x].title,value:data[x].id});
+}
+EOF
+  type = "rest"
+  visibility = "private"
+}
