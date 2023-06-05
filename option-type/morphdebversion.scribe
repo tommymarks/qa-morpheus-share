@@ -1,0 +1,27 @@
+resource "option-type" "morphdebversion" {
+  code = "morphdebversion"
+  name = "Morpheus DEB Version"
+  uuid = "89f2b37d-398d-4347-83e7-659c529048a0"
+  advanced = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphdebversion"
+  fieldLabel = "morphdebversion"
+  fieldName = "morphdebversion"
+  fieldSetName = "morphdebversion"
+  global = true
+  optionList = { name = "Morpheus DEB Versions" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "typeahead"
+}

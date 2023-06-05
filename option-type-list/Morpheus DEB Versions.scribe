@@ -1,0 +1,28 @@
+resource "option-type-list" "Morpheus DEB Versions" {
+  name = "Morpheus DEB Versions"
+  uuid = "29ea0eb7-c741-4346-8648-011ad05e1516"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+3.1.1,morpheus-appliance_3.1.1-1_amd64.deb
+2.12.4,morpheus-appliance_2.12.4-1_amd64.deb
+3.1.0,morpheus-appliance_3.1.0-2_amd64.deb
+2.12.3,morpheus-appliance_2.12.3-1_amd64.deb
+3.0.1,morpheus-appliance_3.0.1-1_amd64.deb
+2.12.2,morpheus-appliance_2.12.2-1_amd64.deb
+2.12.1,morpheus-appliance_2.12.1-1_amd64.deb
+2.12.0,morpheus-appliance_2.12.0-1_amd64.deb
+2.11.4,morpheus-appliance_2.11.4-2_amd64.deb
+2.10.9,morpheus-appliance_2.10.9-1_amd64.deb
+2.11.3,morpheus-appliance_2.11.3-1_amd64.deb
+2.10.8,morpheus-appliance_2.10.8-1_amd64.deb
+2.11.2,morpheus-appliance_2.11.2-1_amd64.deb
+2.10.7,morpheus-appliance_2.10.7-1_amd64.deb
+2.11.1,morpheus-appliance_2.11.1-1_amd64.deb
+2.10.6,morpheus-appliance_2.10.6-1_amd64.deb
+2.!.6,morpheus-appliance_2.!.6-1_amd64.deb
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}

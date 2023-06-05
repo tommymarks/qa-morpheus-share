@@ -1,0 +1,12 @@
+resource "container-script" "12a113ea-6d5d-4fd1-9d32-cbd1e139043a" {
+  code = "12a113ea-6d5d-4fd1-9d32-cbd1e139043a"
+  name = "morpheus: stop"
+  uuid = "9cd14494-50c6-4496-a3fe-9626aa613386"
+  failOnError = true
+  script = "sudo morpheus-ctl graceful-kill morpheus-ui"
+  scriptPhase = "stop"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = false
+}
