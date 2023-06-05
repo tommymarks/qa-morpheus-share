@@ -1,0 +1,16 @@
+resource "resource-spec-template" "32c39929-3197-4dba-8097-a423fdf1d7b7" {
+  name = "TF Variable: Default Name"
+  uuid = "32c39929-3197-4dba-8097-a423fdf1d7b7"
+  autoRun = false
+  dateCreated = "2022-03-02T23:44:24.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2022-03-02T23:44:39.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "b26ef47d-b0a4-4298-aea7-aa22f0543161" }
+  templatePhase = "provision"
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
