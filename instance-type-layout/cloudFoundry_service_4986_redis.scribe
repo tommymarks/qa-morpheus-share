@@ -1,0 +1,21 @@
+resource "instance-type-layout" "cloudFoundry.service.4986.redis" {
+  code = "cloudFoundry.service.4986.redis"
+  name = "Cloud Foundry Redis"
+  uuid = "63901b67-5678-4f47-949a-e0060066ce00"
+  creatable = true
+  description = "Provision cloud foundry redis service"
+  enabled = true
+  externalId = "0e314aea-d2fb-41b9-9eac-bccb2e0f9595"
+  instanceLevel = "user"
+  instanceVersion = "3.2"
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFoundryService" }
+  refId = 4986
+  refType = "ComputeZone"
+  serverCount = 1
+  serverType = "service"
+  sortOrder = 0
+  systemLayout = false
+  workloads = [ { code = "cloudFoundry.service.4986.redis-set" } ]
+}

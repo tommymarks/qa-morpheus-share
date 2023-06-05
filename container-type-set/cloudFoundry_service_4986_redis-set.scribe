@@ -1,0 +1,10 @@
+resource "container-type-set" "cloudFoundry.service.4986.redis-set" {
+  code = "cloudFoundry.service.4986.redis-set"
+  uuid = "7305b704-c7be-4819-a9e0-d10cb598ff44"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  refId = 4986
+  refType = "ComputeZone"
+  workloadType = { code = "cloudFoundry.service.4986.redis" }
+}

@@ -1,0 +1,24 @@
+resource "container-type" "cloudFoundry.service.4986.redis" {
+  code = "cloudFoundry.service.4986.redis"
+  name = "Cloud Foundry Redis"
+  uuid = "b21dc8b5-4ea9-44fa-b386-4377552e8f5a"
+  category = "redis"
+  checkTypeCode = "redisCheck"
+  commEnabled = false
+  containerPorts = [ { code = "redis.6379" } ]
+  containerVersion = "cloudFoundry3.5-morph.0.1"
+  customType = false
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "redis"
+  priorityOrder = 0
+  provisionType = { code = "cloudFoundryService" }
+  shortName = "redis"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "redis"
+  userDeploy = true
+  viewSet = "default"
+}
