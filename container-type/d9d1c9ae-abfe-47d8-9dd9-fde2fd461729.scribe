@@ -1,0 +1,30 @@
+resource "container-type" "d9d1c9ae-abfe-47d8-9dd9-fde2fd461729" {
+  code = "d9d1c9ae-abfe-47d8-9dd9-fde2fd461729"
+  name = "Custom Google"
+  uuid = "068ff4dd-a907-497d-8426-20d2030b5313"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "HTTP" }, { name = "HTTPS" }, { name = "SSL" } ]
+  containerVersion = "raw"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "google"
+  mountData = "/morpheus/data"
+  mountLogs = "/morpheus/logs"
+  priorityOrder = 0
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "google"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "google.images.6.1746061433971894113" }
+}
