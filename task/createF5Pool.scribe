@@ -1,0 +1,73 @@
+resource "task" "createF5Pool" {
+  name = "createF5Pool"
+  uuid = "436e399e-a1f6-4422-817f-6c226a9b3930"
+  allowCustomConfig = false
+  dateCreated = "2023-01-16T13:21:22.000Z"
+  executeTarget = "local"
+  labels = [ { name = "localTask" }, { name = "runForAll" } ]
+  lastUpdated = "2023-01-16T13:21:54.000Z"
+  options = [
+    {
+      uuid = "0a19ea4c-f2f7-41b6-8b8e-da5fd7f5a9dd"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "1a325180-937a-45c9-9c37-65418ff8f5b4"
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = "26452"
+    },
+    {
+      uuid = "3130a4d4-9e42-48b9-9177-318e33a2bbd3"
+      optionType = { code = "ansibleTowerGitRef" }
+    },
+    {
+      uuid = "37892f0f-2277-4527-9af1-12b597664414"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "8ebad90a-0231-4ee6-9b43-388ed3d8e3aa"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "9a88edbd-6d79-4502-9a44-2a33d110092e"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b11fbf58-8f58-4a10-bdb6-b19908862c09"
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "3220"
+    },
+    {
+      uuid = "b6e60a7e-9972-49a8-a046-2545ad92bd0c"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "c1fe5502-1de6-4002-9121-4910630ef21c"
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeAll"
+    },
+    {
+      uuid = "c8f27c78-d3ff-4ea0-a3cc-9e044991d78b"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "d09e1a67-4469-46a9-a9a0-4efde9c39a26"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "f86a81e9-c27a-4eab-8166-c4d5b6874778"
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = "4997"
+    },
+    {
+      uuid = "ff32cebc-317e-4909-98a0-d868a4108029"
+      optionType = { code = "ansibleGroup" }
+      value = "f5"
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTowerTask" }
+  visibility = "private"
+}

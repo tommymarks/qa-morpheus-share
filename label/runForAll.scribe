@@ -1,0 +1,3 @@
+resource "label" "runForAll" {
+  name = "runForAll"
+}
