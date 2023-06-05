@@ -1,0 +1,14 @@
+resource "task-set" "Foo" {
+  name = "Foo"
+  uuid = "51db795b-6a89-426e-ae95-4737a9ddd647"
+  allowCustomConfig = false
+  dateCreated = "2019-10-01T00:01:21.000Z"
+  lastUpdated = "2019-10-01T03:08:37.000Z"
+  phase = "postProvision"
+  taskSetTasks = [
+    { uuid = "26ac6937-794c-499a-8a88-8a2379b0e118" },
+    { uuid = "bf3e5e45-09cd-4263-9c2d-01a4f17509ce" }
+  ]
+  taskSetType = "operation"
+  visibility = "private"
+}
