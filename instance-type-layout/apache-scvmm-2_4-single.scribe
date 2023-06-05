@@ -1,0 +1,20 @@
+resource "instance-type-layout" "apache-scvmm-2.4-single" {
+  code = "apache-scvmm-2.4-single"
+  name = "SCVMM Apache"
+  uuid = "51ad1ff5-00b2-4a46-8d65-8d6d8d302923"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single vm in scvmm"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "scvmm" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 30
+  systemLayout = false
+  workloads = [ { code = "apache-scvmm-2.4-set" } ]
+}
