@@ -1,0 +1,23 @@
+resource "compute-type-layout" "cca93db2-2788-4ef4-9611-c95182544325" {
+  code = "cca93db2-2788-4ef4-9611-c95182544325"
+  name = "RHEL 9"
+  computeServers = [
+    {
+      code = "cca93db2-2788-4ef4-9611-c95182544325-0f575a83-9c70-4a0a-a170-d7f5a0220fdb"
+    }
+  ]
+  computeVersion = "rhel9"
+  creatable = true
+  dateCreated = "2022-11-19T02:59:03.000Z"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2022-11-19T02:59:03.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  type = { code = "amazonLinux" }
+}

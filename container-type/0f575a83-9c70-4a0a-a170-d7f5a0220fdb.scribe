@@ -1,0 +1,25 @@
+resource "container-type" "0f575a83-9c70-4a0a-a170-d7f5a0220fdb" {
+  code = "0f575a83-9c70-4a0a-a170-d7f5a0220fdb"
+  name = "RHEL 9"
+  uuid = "f34bf358-c2fb-45e6-b0cf-02cd16af66bf"
+  commEnabled = false
+  containerVersion = "9.0"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "rhel9"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "709fd177-fb3a-46c5-93de-35b2e55c4af6" }
+}
