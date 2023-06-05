@@ -1,0 +1,14 @@
+resource "container-script" "8463eb09-5200-4c25-baf1-820d907feb4f" {
+  code = "8463eb09-5200-4c25-baf1-820d907feb4f"
+  name = "tm-script"
+  uuid = "de55e612-467b-4ba6-8b99-e2d520c08f12"
+  dateCreated = "2019-07-01T01:38:44.000Z"
+  failOnError = true
+  lastUpdated = "2019-09-19T18:32:02.000Z"
+  script = "echo \"$(date) - script\" | tee -a /tmp/tm_script.txt"
+  scriptPhase = "postProvision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = false
+}
