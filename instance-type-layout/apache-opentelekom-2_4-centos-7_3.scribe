@@ -1,0 +1,21 @@
+resource "instance-type-layout" "apache-opentelekom-2.4-centos-7.3" {
+  code = "apache-opentelekom-2.4-centos-7.3"
+  name = "Open Telekom Apache on CentOS 7.3"
+  uuid = "eb859eed-ba89-47c9-974b-16681d26075a"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  memoryRequirement = 1073741824
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "opentelekom" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 100
+  systemLayout = false
+  workloads = [ { code = "apache-opentelekom-2.4-centos-7.3-set" } ]
+}
