@@ -1,0 +1,20 @@
+resource "instance-type-layout" "apache-esxi-2.4-single" {
+  code = "apache-esxi-2.4-single"
+  name = "ESXi Apache on Ubuntu 14.04"
+  uuid = "9bd1a341-6561-4a8a-bfe3-fee42ca657b2"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "esxi" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  systemLayout = false
+  workloads = [ { code = "apache-esxi-2.4-set" } ]
+}
