@@ -1,0 +1,36 @@
+resource "option-type" "ParsedCloud" {
+  code = "ParsedCloud"
+  name = "Parsed Cloud"
+  uuid = "8e6c90c7-1cae-46d7-b2d2-442d7269d31b"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "SelectedGroup"
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "ParsedCloud"
+  fieldLabel = "Cloud"
+  fieldName = "ParsedCloud"
+  fieldSetName = "ParsedCloud"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Parsed Clouds" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
