@@ -1,0 +1,10 @@
+resource "app-template" "e6b11dbc-a905-4c71-b2fd-dec7a72d8fef" {
+  name = "Project Build Blueprint"
+  uuid = "e6b11dbc-a905-4c71-b2fd-dec7a72d8fef"
+  active = true
+  custom = false
+  dateCreated = "2022-06-27T18:54:51.000Z"
+  lastUpdated = "2022-06-27T19:16:07.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
