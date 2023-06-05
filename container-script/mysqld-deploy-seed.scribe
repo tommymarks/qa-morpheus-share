@@ -1,0 +1,25 @@
+resource "container-script" "mysqld-deploy-seed" {
+  code = "mysqld-deploy-seed"
+  name = "mysql deployment seed"
+  uuid = "d2d21031-6ca7-422f-a11b-54f65f7fb74f"
+  failOnError = true
+  lastUpdated = "2019-09-30T16:42:12.000Z"
+  script = <<EOF
+
+			CONTAINER_CATEGORY="<%=container.containerTypeCategory%>"
+			if [ "$CONTAINER_CATEGORY" != "slave" ] ; then
+				sleep 10
+				cd /morpheus/seed
+				for filename in /morpheus/seed/*.sql; do
+					mysql  -u $MYSQL_USER -p$MYSQL_PASSWORD < $filename
+				done
+			fi
+			rm -rf /morpheus/seed/*
+		
+EOF
+  scriptPhase = "postDeploy"
+  scriptType = "bash"
+  scriptVersion = "1.0"
+  sortOrder = 1
+  sudoUser = false
+}

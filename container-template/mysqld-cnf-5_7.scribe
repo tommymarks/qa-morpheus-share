@@ -1,0 +1,27 @@
+resource "container-template" "mysqld-cnf-5.7" {
+  code = "mysqld-cnf-5.7"
+  name = "morpheus mysqld 5.7 config"
+  uuid = "8bf7d388-a17e-440f-ac97-443197e62766"
+  autoRun = true
+  dateCreated = "2017-03-16T21:13:12.000Z"
+  failOnError = true
+  fileName = "mysqld.cnf"
+  filePath = "/config/mysqld.cnf"
+  lastUpdated = "2019-09-26T00:27:50.000Z"
+  permissions = 420
+  runOnDeploy = false
+  runOnScale = false
+  template = <<EOF
+[mysqld]
+skip_name_resolve
+user=mysql
+server-id = <%=container.id%>
+log_error = stderr
+pid-file = /var/run/mysqld/mysqld.pid
+socket = /var/run/mysqld/mysqld.sock
+datadir = /var/lib/mysql/data
+symbolic-links=0
+
+EOF
+  templatePhase = "preProvision"
+}

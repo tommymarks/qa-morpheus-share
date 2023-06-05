@@ -1,7 +1,7 @@
 resource "container-type-log" "logs" {
   name = "logs"
   canPersist = false
-  containerPath = "/morpheus/logs"
-  hostPath = "/logs"
+  containerPath = "/var/log/mysql"
+  hostPath = "/var/log/mysql"
   sortOrder = 0
 }

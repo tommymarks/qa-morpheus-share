@@ -1,0 +1,50 @@
+resource "container-type" "mysql-5.7" {
+  code = "mysql-5.7"
+  name = "MySQL 5.7"
+  uuid = "225d87c2-feaa-448d-90bc-191276818f81"
+  category = "master"
+  backupType = "MySQL"
+  checkTypeCode = "mysqlCheck"
+  cloneType = "mysql"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [
+    { code = "mysql-config" },
+    { code = "mysql-data" },
+    { code = "mysql-logs" },
+    { code = "mysql-seed" },
+    { code = "template: mysql-charset-5.6" },
+    { code = "template: mysql-cnf-5.6" },
+    { code = "template: mysql-cnf-custom-5.6" },
+    { code = "template: mysqld-cnf-5.7" }
+  ]
+  containerPorts = [ { code = "mysql.3306" } ]
+  containerVersion = "5.7-v2"
+  customType = false
+  deploymentType = { code = "mysql" }
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "mysql"
+  mountConfig = "/etc/mysql/conf.d"
+  mountData = "/var/lib/mysql"
+  mountLogs = "/var/log/mysql"
+  priorityOrder = 0
+  provisionType = { code = "docker" }
+  repositoryImage = "registry.morpheusdata.com/library/mysql"
+  scripts = [ { code = "mysqld-deploy-seed" } ]
+  shortName = "mysql"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "mysql"
+  templates = [
+    { code = "mysql-cnf-5.6" },
+    { code = "mysql-charset-5.6" },
+    { code = "mysql-cnf-custom-5.6" },
+    { code = "mysqld-cnf-5.7" }
+  ]
+  userDeploy = true
+  viewSet = "default"
+}

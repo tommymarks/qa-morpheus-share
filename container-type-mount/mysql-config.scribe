@@ -1,0 +1,20 @@
+resource "container-type-mount" "mysql-config" {
+  code = "mysql-config"
+  name = "mysql config"
+  autoRun = false
+  canPersist = false
+  certStore = false
+  containerPath = "/etc/mysql/conf.d"
+  customType = false
+  deployable = false
+  hostPath = "/config"
+  mountType = "config"
+  required = false
+  shortName = "config"
+  sortOrder = 0
+  subMount = false
+  template = { code = "mysql-cnf-5.7" }
+  unmanagedEnabled = false
+  visible = true
+  volumeName = "config"
+}
