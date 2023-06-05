@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-hyperv-1.9-set" {
+  code = "nginx-hyperv-1.9-set"
+  uuid = "1ca5d9a5-fe23-4be2-a583-9431e7738292"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-hyperv-1.9" }
+}

@@ -1,0 +1,20 @@
+resource "instance-type-layout" "nginx-hyperv-1.9-single" {
+  code = "nginx-hyperv-1.9-single"
+  name = "Hyper-V NGINX"
+  uuid = "afd458ca-62b6-4c82-ada6-6014b0418b9d"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  creatable = true
+  description = "This will provision a single vm in hyperv"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "1.9"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "hyperv" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 30
+  systemLayout = false
+  workloads = [ { code = "nginx-hyperv-1.9-set" } ]
+}
