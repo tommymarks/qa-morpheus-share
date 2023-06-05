@@ -1,0 +1,35 @@
+resource "option-type" "costCenter" {
+  code = "costCenter"
+  name = "Cost Center"
+  uuid = "f651b0e1-25d3-45f0-ac60-ece81d5b90c0"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "costCenter"
+  fieldLabel = "Cost Center"
+  fieldName = "costCenter"
+  fieldSetName = "costCenter"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Cost Center" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}

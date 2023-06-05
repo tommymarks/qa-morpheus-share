@@ -1,0 +1,16 @@
+resource "option-type-list" "Cost Center" {
+  name = "Cost Center"
+  uuid = "cb1d5f92-d8b2-4d73-b2b1-2d3faee1cbf0"
+  description = "Department Cost Center"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+'Operations','Operations'
+'Engineering','Engineering'
+'IT','IT'
+'Marketing','Marketing'
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}
