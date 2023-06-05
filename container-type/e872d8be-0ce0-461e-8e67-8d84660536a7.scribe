@@ -1,0 +1,31 @@
+resource "container-type" "e872d8be-0ce0-461e-8e67-8d84660536a7" {
+  code = "e872d8be-0ce0-461e-8e67-8d84660536a7"
+  name = "Morpheus Appliance"
+  uuid = "7c8ecf17-99b0-407e-83c7-f4c638bb86f6"
+  category = "Apps"
+  commEnabled = false
+  containerPorts = [ { name = "Morpheus" } ]
+  containerVersion = "rhel7"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  scripts = [
+    { code = "12a113ea-6d5d-4fd1-9d32-cbd1e139043a" },
+    { code = "582220ab-ba4a-44cf-9dcb-b39c53a75353" },
+    { code = "fc11be3a-3f09-4fbd-a1b9-951d1107c597" }
+  ]
+  serverType = "vm"
+  shortName = "morph"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "amazon"
+  userDeploy = true
+  viewSet = "default"
+}
