@@ -1,0 +1,25 @@
+resource "container-type" "946140f5-4b58-49f1-b7dd-e1a88f67eee4" {
+  code = "946140f5-4b58-49f1-b7dd-e1a88f67eee4"
+  name = "al-ubuntu-node"
+  uuid = "7e079fcf-427a-404d-8abf-87108aceca50"
+  commEnabled = false
+  containerVersion = "20.4.3"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "al-ubuntu-node"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "d3285bc0-ec0d-4912-8905-436a90a0d1fe" }
+}
