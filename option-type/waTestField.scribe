@@ -1,0 +1,32 @@
+resource "option-type" "waTestField" {
+  code = "waTestField"
+  name = "wa test field"
+  uuid = "091d069f-1434-4439-98f0-d9830c9dd317"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "WA Test Field"
+  fieldName = "waTestField"
+  global = true
+  groupExpand = false
+  helpBlock = "."
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "text"
+}
