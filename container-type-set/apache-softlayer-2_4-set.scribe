@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-softlayer-2.4-set" {
+  code = "apache-softlayer-2.4-set"
+  uuid = "3520dd0b-132f-4d23-9e01-7b0c249fbc35"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-softlayer-2.4" }
+}
