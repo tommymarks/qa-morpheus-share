@@ -1,0 +1,26 @@
+resource "instance-type" "cftemps" {
+  code = "cftemps"
+  name = "CloudFormation Templates"
+  uuid = "98c7b74c-c168-4aa0-ae55-cf67cbb77d1d"
+  category = "web"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "CLOUD_FORMATION_TEST"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [
+    { code = "3854a74d-c456-4e50-bd31-b2fc2f094480" },
+    { code = "44345617-c703-4b76-92ba-8a750f18026f" },
+    { code = "6126e570-8af2-49df-bfc8-8f3cb2ae5dad" }
+  ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
