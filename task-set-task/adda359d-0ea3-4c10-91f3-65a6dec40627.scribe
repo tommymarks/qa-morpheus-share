@@ -1,0 +1,7 @@
+resource "task-set-task" "adda359d-0ea3-4c10-91f3-65a6dec40627" {
+  uuid = "adda359d-0ea3-4c10-91f3-65a6dec40627"
+  entryTask = false
+  task = { name = "A Public Task" }
+  taskOrder = 1
+  taskPhase = "operation"
+}
