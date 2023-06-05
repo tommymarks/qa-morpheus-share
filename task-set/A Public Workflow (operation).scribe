@@ -1,0 +1,11 @@
+resource "task-set" "A Public Workflow (operation)" {
+  name = "A Public Workflow (operation)"
+  uuid = "7758bb0e-58ec-4b14-a77f-92814eb3621b"
+  allowCustomConfig = false
+  dateCreated = "2022-11-16T21:49:18.000Z"
+  lastUpdated = "2022-11-16T21:49:18.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "76e687f2-f659-4c4d-880b-ab9d7e933fb3" } ]
+  taskSetType = "operation"
+  visibility = "public"
+}
