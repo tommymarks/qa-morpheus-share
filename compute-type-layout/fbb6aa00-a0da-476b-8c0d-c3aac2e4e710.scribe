@@ -1,0 +1,23 @@
+resource "compute-type-layout" "fbb6aa00-a0da-476b-8c0d-c3aac2e4e710" {
+  code = "fbb6aa00-a0da-476b-8c0d-c3aac2e4e710"
+  name = "Google Custom Ubuntu 16"
+  computeServers = [
+    {
+      code = "fbb6aa00-a0da-476b-8c0d-c3aac2e4e710-722b4196-d1c7-4d14-a5a2-4feb979044f2"
+    }
+  ]
+  computeVersion = "Ubuntu 16"
+  creatable = true
+  dateCreated = "2019-08-28T19:18:25.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-08-18T16:56:48.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "google" }
+  serverCount = 1
+  sortOrder = 0
+}

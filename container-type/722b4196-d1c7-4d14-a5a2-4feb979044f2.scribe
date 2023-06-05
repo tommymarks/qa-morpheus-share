@@ -1,0 +1,26 @@
+resource "container-type" "722b4196-d1c7-4d14-a5a2-4feb979044f2" {
+  code = "722b4196-d1c7-4d14-a5a2-4feb979044f2"
+  name = "Google Ubuntu 16"
+  uuid = "b2557821-10ad-4b27-b4c1-854f3747f79b"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "Ubuntu 16"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "google"
+  priorityOrder = 0
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "googubu16"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "google"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "google.images.24935.5017377426839174413" }
+}
