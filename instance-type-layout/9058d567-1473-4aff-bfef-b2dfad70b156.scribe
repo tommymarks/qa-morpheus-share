@@ -1,0 +1,21 @@
+resource "instance-type-layout" "9058d567-1473-4aff-bfef-b2dfad70b156" {
+  code = "9058d567-1473-4aff-bfef-b2dfad70b156"
+  name = "XaaS"
+  uuid = "5e297603-6f84-4c0f-965f-3533db860ee1"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "xaas"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "workflow" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = true
+  systemLayout = false
+  taskSets = [ { name = "XaaS" } ]
+}
