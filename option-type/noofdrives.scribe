@@ -1,0 +1,31 @@
+resource "option-type" "noofdrives" {
+  code = "noofdrives"
+  name = "Number of Drives"
+  uuid = "dc1c99a4-2cd2-4766-aec2-eb7e626afd2e"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Number of Drives"
+  fieldName = "noofdrives"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "number"
+}
