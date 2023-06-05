@@ -1,0 +1,11 @@
+resource "app-template" "8eb23a4e-2176-42d4-9e57-c6a7472eb0c1" {
+  name = "Blank Ubuntu"
+  uuid = "8eb23a4e-2176-42d4-9e57-c6a7472eb0c1"
+  active = true
+  custom = false
+  description = "do not modify"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2022-10-22T18:36:10.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "public"
+}
