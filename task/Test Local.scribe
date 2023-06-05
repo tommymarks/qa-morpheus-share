@@ -1,0 +1,46 @@
+resource "task" "Test Local" {
+  name = "Test Local"
+  uuid = "e72b11a7-95b7-4fd2-89df-572b8936609d"
+  allowCustomConfig = false
+  dateCreated = "2019-10-03T18:12:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [
+    {
+      uuid = "58111b51-ab17-4ce3-9076-10698f88f5eb"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "5a70763b-8e03-47f9-b653-09e1de63b851"
+      optionType = { code = "localScriptGitRef" }
+      value = "master"
+    },
+    {
+      uuid = "73126b1f-52c5-4ddc-ae1f-3f261b9c7daa"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8800316f-a742-4902-8aac-58da190351bc"
+      optionType = { code = "localScriptGitId" }
+      value = "389"
+    },
+    {
+      uuid = "8be2f800-1ee3-4013-973a-3afbc0abf6f9"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "9012107d-cc66-4bde-87e7-ec9a78ea74ed"
+      optionType = { code = "script" }
+      value = "./test.sh"
+    },
+    {
+      uuid = "aa5d43d3-3c76-45a1-bfbb-9ba5c8c5e9bd"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
