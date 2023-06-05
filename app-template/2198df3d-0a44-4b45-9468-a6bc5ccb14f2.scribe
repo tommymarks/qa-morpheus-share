@@ -1,0 +1,10 @@
+resource "app-template" "2198df3d-0a44-4b45-9468-a6bc5ccb14f2" {
+  name = "AC Test Blueprint"
+  uuid = "2198df3d-0a44-4b45-9468-a6bc5ccb14f2"
+  active = true
+  custom = false
+  dateCreated = "2023-05-25T21:40:30.000Z"
+  lastUpdated = "2023-05-25T21:41:02.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
