@@ -1,0 +1,55 @@
+resource "task" "! powershellll" {
+  name = "! powershellll"
+  uuid = "0af286a9-c3f4-4bb0-9736-859d21b03c04"
+  allowCustomConfig = false
+  dateCreated = "2022-04-27T04:48:54.000Z"
+  executeTarget = "remote"
+  labels = [ { name = "david" }, { name = "hello" } ]
+  lastUpdated = "2022-12-03T03:45:18.000Z"
+  options = [
+    {
+      uuid = "19b073e5-e947-41de-83d7-f6c420706f90"
+      optionType = { code = "port" }
+      value = "5985"
+    },
+    {
+      uuid = "252f2bf0-29e4-4bfd-affa-fd1ce21a38a5"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "57832556-0ad7-41c1-9ac7-681ebd5d9cfc"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "6fd28c2a-c1d0-4523-b43e-3760eb84eddd"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "986208de-239b-4fa1-85c7-0814c5cff118"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "b70266ff-999f-4763-b7b7-a3e603ab0db3"
+      content = { uuid = "86e050c8-c63d-4c1c-bfb2-c829df6d5e8b" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "f57314b7-abe1-495d-918c-192be011b745"
+      optionType = { code = "winrm.elevated" }
+    },
+    {
+      uuid = "f8e307b2-7780-414b-b744-5257a0459e83"
+      optionType = { code = "host" }
+      value = "54.183.240.150"
+    },
+    {
+      uuid = "f949765a-b0f8-440f-8317-80253ce8bd1d"
+      optionType = { code = "password" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
