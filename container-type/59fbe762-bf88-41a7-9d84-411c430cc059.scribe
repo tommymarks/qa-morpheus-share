@@ -1,0 +1,25 @@
+resource "container-type" "59fbe762-bf88-41a7-9d84-411c430cc059" {
+  code = "59fbe762-bf88-41a7-9d84-411c430cc059"
+  name = "2307770"
+  uuid = "a6607087-5705-4fa2-9ae2-84eda971d08d"
+  commEnabled = false
+  containerVersion = "1.0"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "aws"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "amazon.ec2.image.3.ami-891e30e9" }
+}
