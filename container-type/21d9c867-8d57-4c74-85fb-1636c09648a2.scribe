@@ -1,0 +1,24 @@
+resource "container-type" "21d9c867-8d57-4c74-85fb-1636c09648a2" {
+  code = "21d9c867-8d57-4c74-85fb-1636c09648a2"
+  name = "Windows Server GUI Cloudbase init"
+  uuid = "f7c88b1d-9936-43d2-abf5-f679573e929b"
+  commEnabled = false
+  containerVersion = "2019"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vcd" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "Windows-Server-GUI-Cloudbase-init"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}
