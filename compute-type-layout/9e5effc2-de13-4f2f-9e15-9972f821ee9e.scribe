@@ -1,0 +1,23 @@
+resource "compute-type-layout" "9e5effc2-de13-4f2f-9e15-9972f821ee9e" {
+  code = "9e5effc2-de13-4f2f-9e15-9972f821ee9e"
+  name = "Amazon Custom Debian 9"
+  computeServers = [
+    {
+      code = "9e5effc2-de13-4f2f-9e15-9972f821ee9e-821b9ee8-eda1-420e-afa6-155d11005c11"
+    }
+  ]
+  computeVersion = "Debian 9"
+  creatable = true
+  dateCreated = "2019-08-28T18:31:12.000Z"
+  description = "do not modify"
+  enabled = true
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = false
+  hasConfig = false
+  hasSettings = false
+  lastUpdated = "2021-12-07T20:00:26.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+}
