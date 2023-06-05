@@ -1,0 +1,52 @@
+resource "task" "Phase: Startup" {
+  name = "Phase: Startup"
+  uuid = "1e80fdb6-79c9-42ec-bf52-9a483d70b910"
+  allowCustomConfig = false
+  dateCreated = "2021-02-18T16:19:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-18T18:17:15.000Z"
+  options = [
+    {
+      uuid = "573a1e1d-0360-48ed-8502-7da1a1a5998e"
+      content = { uuid = "97518093-0c07-46c5-9ce6-39ae12bd4b2c" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "629f973d-e14d-4ce7-9dcb-6e666b67cc0e"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "ace91955-a7a0-4539-8dc0-0bec157a16d1"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "b086b445-0fe4-4226-a660-a8915cd69e6c"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "d01b8188-89b5-41b9-99d9-b1503176d9c4"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "ea7f7af6-0f03-45a1-8b3f-c61c6f1dc547"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "ef029ae2-b0db-4ec0-a517-6fbb71721211"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "f325814e-bb14-4f06-b805-1499aec360a5"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "fec7be13-f831-49d9-90aa-50996c198a06"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

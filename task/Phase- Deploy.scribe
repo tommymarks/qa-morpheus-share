@@ -1,0 +1,53 @@
+resource "task" "Phase: Deploy" {
+  name = "Phase: Deploy"
+  uuid = "b7ddbc9d-3f04-44f5-90e6-7a1528dc6905"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:16:46.000Z"
+  options = [
+    {
+      uuid = "35868072-ff6a-4c48-8e14-9f015b0cd63c"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "3ca9919c-96c3-4271-a599-27f7961f8154"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "4e310458-ae0f-40b7-a9e8-670ac6059e71"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "726a310f-e4a8-4e50-a1d7-b4e75f5fb4d1"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "aba126a7-84b7-4dc1-bd4e-37fff848de81"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "ba819c5e-a0ad-4090-b03b-ba46d688345d"
+      content = { uuid = "cfa8b0f9-8eac-4300-b183-552ff3b64240" }
+      optionType = { code = "script" }
+      value = <<EOF
+echo "$(date) - deploy" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+    },
+    {
+      uuid = "ee0f3005-9546-467f-8833-ed74d4888e83"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "f08300ae-f5b3-4e04-a5e3-8a99c2231da8"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "f4d4f7f1-4c94-4bc7-a26c-8569f8a3e306"
+      optionType = { code = "port" }
+    }
+  ]
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

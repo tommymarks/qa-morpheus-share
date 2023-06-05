@@ -1,0 +1,53 @@
+resource "task" "Phase: Stop Service" {
+  name = "Phase: Stop Service"
+  uuid = "ec4a913e-f398-45f8-8f6e-f5aa2cb05df5"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:16:55.000Z"
+  options = [
+    {
+      uuid = "05e9cd0e-412e-447e-8b11-286a89fdae1f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "0d1983ae-caba-4342-b742-fdd01d70c67b"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8ed7f8c1-9faa-4738-8433-e92eefe14e1f"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "ac241734-b644-4f47-aae8-78d3edd40b81"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "c8b14819-a5d4-4c7a-8b50-86236c3547e4"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "d01b35ae-8940-446a-bb1d-268c59e4abdd"
+      content = { uuid = "392834b5-b566-4b6f-a707-3349fe676776" }
+      optionType = { code = "script" }
+      value = <<EOF
+echo "$(date) - stop service" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+    },
+    {
+      uuid = "d2b52658-cc7b-4156-adde-54e7632fc26e"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "dfd05e4d-ebc5-4250-a7f1-8990835c2bfb"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "ecc3cc7d-92e9-4898-aa43-2624407e7c6d"
+      optionType = { code = "host" }
+    }
+  ]
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
