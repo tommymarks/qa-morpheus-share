@@ -1,0 +1,27 @@
+resource "option-type" "Application_CostCenter" {
+  code = "Application_CostCenter"
+  name = "Application_CostCenter"
+  uuid = "be2e92c2-f814-4e9e-8544-42f5e6efd986"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Application_CostCenter aa"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "Application_CostCenter"
+  fieldLabel = "Application_CostCenter"
+  fieldName = "Application_CostCenter"
+  fieldSetName = "Application_CostCenter"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
