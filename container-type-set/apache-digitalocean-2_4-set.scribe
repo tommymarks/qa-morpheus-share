@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-digitalocean-2.4-set" {
+  code = "apache-digitalocean-2.4-set"
+  uuid = "839246ac-8715-4606-b9f3-9fe6e4635339"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "apache-digitalocean-2.4" }
+}
