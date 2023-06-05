@@ -1,0 +1,20 @@
+resource "instance-type-layout" "3854a74d-c456-4e50-bd31-b2fc2f094480" {
+  code = "3854a74d-c456-4e50-bd31-b2fc2f094480"
+  name = "CF Ubuntu"
+  uuid = "7befdfe8-a5c7-490d-ae1d-be71ee08c2e9"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "ubuntu"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "cloudFormation" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "c37550c6-c878-4762-93ae-5602b51fef7b" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
