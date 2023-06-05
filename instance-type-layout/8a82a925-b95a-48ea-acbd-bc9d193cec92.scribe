@@ -1,0 +1,20 @@
+resource "instance-type-layout" "8a82a925-b95a-48ea-acbd-bc9d193cec92" {
+  code = "8a82a925-b95a-48ea-acbd-bc9d193cec92"
+  name = "Ingress v1"
+  uuid = "7831473c-c8ca-4ce6-80e2-26a2a41bdd93"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "ingress1"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "kubernetes" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "d65342bd-e7eb-441f-8256-50d06550916c" } ]
+}
