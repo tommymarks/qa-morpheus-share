@@ -1,0 +1,24 @@
+resource "container-type" "f2f2ceeb-46ea-463b-89f9-baa38f6ef1d8" {
+  code = "f2f2ceeb-46ea-463b-89f9-baa38f6ef1d8"
+  name = "Ubuntu Gen2 vhdx"
+  uuid = "f32d10f0-e8d9-4c70-9a12-ad0042afb021"
+  commEnabled = false
+  containerVersion = "18.04.5 Gen2"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "hyperv"
+  priorityOrder = 0
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntu-gen2-vhdx"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "hyperv"
+  userDeploy = true
+  viewSet = "default"
+}
