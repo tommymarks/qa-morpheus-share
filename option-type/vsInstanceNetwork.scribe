@@ -1,0 +1,36 @@
+resource "option-type" "vsInstanceNetwork" {
+  code = "vsInstanceNetwork"
+  name = "vsInstanceNetwork"
+  uuid = "8f1eccaf-84d6-483e-98c3-806f98555577"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "vsNetworks"
+  displayOrder = 4
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Instance Network"
+  fieldName = "vsInstanceNetwork"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "vsInstanceNetwork" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}

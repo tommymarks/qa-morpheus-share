@@ -1,0 +1,47 @@
+resource "option-type-list" "vsNetworks" {
+  name = "vsNetworks"
+  uuid = "d18b54e0-a266-461b-9cf2-59a920803886"
+  apiType = "networks"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = <<EOF
+function parseObjectProperties (obj, parse) {
+  for (var k in obj) {
+    if (typeof obj[k] === 'object' && obj[k] !== null) {
+      parseObjectProperties(obj[k], parse)
+    } else {
+      parse(k, obj[k])
+    }
+  }
+}
+
+
+// then apply to the property the task you want, in this case just console
+console.log('---------Start Req Networks Input------')
+parseObjectProperties(input, function(k, prop) {
+console.log(k + ': ' + prop)
+})
+console.log('---------Stop Req Networks Input------')
+
+console.log('---------Start Req Networks Data------')
+parseObjectProperties(data, function(k, prop) {
+console.log(k + ': ' + prop)
+})
+console.log('---------Stop Req Networks Data------')
+
+
+results.poolId = input.vsResourcepools
+results.zoneId = input.vsClouds
+results.siteId = input.vsGroups
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+for (var x = 0; x < data.length; x++) {
+ if (input.vsGroups && input.vsClouds && input.vsResourcepools) {
+   results.push({name:data[x].name,value:data[x].name});
+ }
+}
+EOF
+  type = "api"
+  visibility = "public"
+}
