@@ -1,0 +1,22 @@
+resource "instance-type" "centos-scvmm" {
+  code = "centos-scvmm"
+  name = "centos-scvmm"
+  uuid = "4c049187-acb9-4066-9b12-df5a56fac540"
+  category = "web"
+  active = true
+  deploymentService = "defaultDeployService"
+  enabled = true
+  environmentPrefix = "CENTOS-SCVMM"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = true
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = true
+  layouts = [ { code = "e741f251-eec1-449a-9cb9-7e4f56b88bc4" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
