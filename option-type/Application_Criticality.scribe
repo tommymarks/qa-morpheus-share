@@ -1,0 +1,29 @@
+resource "option-type" "Application_Criticality" {
+  code = "Application_Criticality"
+  name = "Application_Criticality"
+  uuid = "72bd379f-1155-45ea-b9bb-c6dcf063a9b1"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Application_Criticality aa"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "Application_Criticality"
+  fieldLabel = "Application_Criticality"
+  fieldName = "Application_Criticality"
+  fieldSetName = "Application_Criticality"
+  global = true
+  noBlank = false
+  optionList = { name = "critical level" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}
