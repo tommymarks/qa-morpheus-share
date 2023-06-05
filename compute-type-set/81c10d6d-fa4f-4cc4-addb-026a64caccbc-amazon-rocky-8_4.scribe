@@ -1,0 +1,19 @@
+resource "compute-type-set" "81c10d6d-fa4f-4cc4-addb-026a64caccbc-amazon-rocky-8.4" {
+  code = "81c10d6d-fa4f-4cc4-addb-026a64caccbc-amazon-rocky-8.4"
+  name = "Amazon Custom Rocky 8-worker-amazon-rocky-8.4-set"
+  canAddNodes = true
+  canChooseLayout = false
+  canSetNodeCount = false
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  forceNameIndex = false
+  installContainerRuntime = true
+  installStorageRuntime = true
+  loadBalance = false
+  minNodeCount = 1
+  nameSuffix = "-worker"
+  nodeCount = 1
+  nodeType = "worker"
+  priorityOrder = 0
+  workloadType = { code = "amazon-rocky-8.4" }
+}
