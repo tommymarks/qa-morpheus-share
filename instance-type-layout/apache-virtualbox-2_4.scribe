@@ -1,0 +1,20 @@
+resource "instance-type-layout" "apache-virtualbox-2.4" {
+  code = "apache-virtualbox-2.4"
+  name = "VirtualBox Apache 2.4 on Ubuntu 14.04"
+  uuid = "1747d86a-0e03-41e0-ae44-6a4407ca1f4d"
+  actions = [ { code = "apache-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "2.4"
+  networkLevel = "container"
+  portCount = 2
+  provisionType = { code = "virtualbox" }
+  serverCount = 1
+  serverType = "vm"
+  sortOrder = 10
+  systemLayout = false
+  workloads = [ { code = "apache-virtualbox-2.4-set" } ]
+}

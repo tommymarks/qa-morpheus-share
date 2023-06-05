@@ -1,0 +1,9 @@
+resource "container-type-set" "apache-virtualbox-2.4-set" {
+  code = "apache-virtualbox-2.4-set"
+  uuid = "f0f86a4f-32d9-40f3-b4dc-fb0a6f25e53a"
+  category = "apache"
+  containerCount = 1
+  dynamicCount = false
+  priorityOrder = 0
+  workloadType = { code = "apache-virtualbox-2.4" }
+}
