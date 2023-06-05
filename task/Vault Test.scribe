@@ -1,0 +1,52 @@
+resource "task" "Vault Test" {
+  name = "Vault Test"
+  uuid = "e1eeb8ea-cb6e-4ea2-91fa-6e5ec66dc486"
+  allowCustomConfig = false
+  dateCreated = "2022-07-01T20:11:00.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-07-08T04:53:34.000Z"
+  options = [
+    {
+      uuid = "1efacc1d-131e-404c-9074-0652e5105a50"
+      content = { uuid = "5078846a-3543-43a6-b527-1d2049eaf09b" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "2ff57090-aaef-4465-a292-46ccf7bfe7b2"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "8ad412a2-6e6d-4784-9caf-a9b950a0c41c"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "8b2d2a68-5580-4496-baa9-1db0d3e26499"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "8d0151e5-84e0-48c6-9e17-5736ba09b584"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "a492e102-3c18-493a-ae2f-1d2fe44de904"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "af95e7f1-353e-4e3e-aa04-7ecd9d3f90f7"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "f0058541-a6c4-4af6-a893-e57f395e2b5c"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "f9b66320-7c8e-480f-95ae-8433a709669d"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
