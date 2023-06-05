@@ -1,0 +1,26 @@
+resource "container-type" "6f9ac222-6d3a-4045-b1c7-c7e6ca9a7f78" {
+  code = "6f9ac222-6d3a-4045-b1c7-c7e6ca9a7f78"
+  name = "Amazon SUSE 15"
+  uuid = "3590a8a1-8fdc-42a5-97ac-73422cb01b18"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "SUSE 15"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "amazon"
+  priorityOrder = 0
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awssuse15"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "amazon.ec2.image.3.ami-023fdaf1dbf9849a3" }
+}
