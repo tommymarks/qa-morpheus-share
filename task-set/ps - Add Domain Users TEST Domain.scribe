@@ -1,0 +1,12 @@
+resource "task-set" "ps - Add Domain Users TEST Domain" {
+  name = "ps - Add Domain Users TEST Domain"
+  uuid = "ed149409-ff1b-439e-936f-9a34fcd680ab"
+  allowCustomConfig = false
+  dateCreated = "2022-03-30T20:25:19.000Z"
+  lastUpdated = "2022-03-30T20:25:19.000Z"
+  phase = "postProvision"
+  platform = "windows"
+  taskSetTasks = [ { uuid = "7eac33b0-af4f-42d1-8969-e5fd54492219" } ]
+  taskSetType = "provision"
+  visibility = "private"
+}

@@ -1,0 +1,53 @@
+resource "task" "ps - Add Domain Users TEST Domain" {
+  name = "ps - Add Domain Users TEST Domain"
+  uuid = "706d2dc3-c1ce-4810-8405-75874e7d0ce6"
+  allowCustomConfig = false
+  dateCreated = "2022-03-30T19:55:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-03-30T19:55:19.000Z"
+  options = [
+    {
+      uuid = "49d072b7-13b5-4dbe-9e1b-d34ee048356f"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "661a7bbb-d0b4-42cf-98b0-9db2598b794e"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "84a04850-e8e1-4221-8965-aef04c005ced"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "86de0045-cb1b-4a81-bcd4-9b267c25590d"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "962a97dc-a759-45ac-b161-8602cdb90c5a"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "96806ce0-0b65-4e53-9db3-11897ee74b05"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "9e1721d3-3958-4af6-b608-e474178d52e3"
+      optionType = { code = "winrm.elevated" }
+      value = "on"
+    },
+    {
+      uuid = "d27118ba-e778-4d07-9536-bff619715146"
+      content = { uuid = "9ac09d68-80a1-47ca-ad30-c0aaff3eeb83" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "ecd76628-f129-407b-b0cb-307fdc04a17c"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
