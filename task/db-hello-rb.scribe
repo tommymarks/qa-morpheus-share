@@ -1,0 +1,49 @@
+resource "task" "db-hello-rb" {
+  code = "db-hello-rb"
+  name = "db-hello-rb"
+  uuid = "7bbd149b-bcd0-465e-8478-6c19e188eb01"
+  allowCustomConfig = false
+  dateCreated = "2022-01-26T15:42:50.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-26T15:42:50.000Z"
+  options = [
+    {
+      uuid = "0fcf16ec-3d74-4b06-811f-c3ecd2ba463f"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "124bdbb5-cb51-487d-9900-ce7630b3a0b5"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "14236045-f116-4832-817c-e5b6cbc03bde"
+      content = { uuid = "53a8d566-0c75-4be9-a653-0ca2b67b9146" }
+      optionType = { code = "rubyScript" }
+    },
+    {
+      uuid = "2fa126d4-aed5-4b49-a024-603d8eecd158"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "65ae4f4e-35a9-4167-894b-951b8ea38e65"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "ef26a961-df05-4f92-b839-40d867d0b769"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "fc63cbf6-4004-45a6-8802-bed14f8a36f0"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "fde6431d-5467-4277-a496-39cb38ee36a7"
+      optionType = { code = "port" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jrubyTask" }
+  visibility = "private"
+}
