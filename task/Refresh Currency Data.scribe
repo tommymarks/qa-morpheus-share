@@ -1,0 +1,48 @@
+resource "task" "Refresh Currency Data" {
+  name = "Refresh Currency Data"
+  uuid = "16a6ccac-734d-4d47-8b23-46c6428754ef"
+  allowCustomConfig = false
+  dateCreated = "2021-11-10T20:20:10.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-10T20:20:10.000Z"
+  options = [
+    {
+      uuid = "01218763-042d-4b0b-a9f6-2ed397a196a1"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "4933ad6e-507b-4c6d-828e-f4a471c30a19"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "688870c8-3f51-4e11-bd6a-943256b3e098"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "824bee26-9e5b-42ea-9cb0-2ff9eeb79b7d"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "8b6fc778-a01c-4867-8933-b269e45477e5"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "9edbd524-9024-428b-a6d1-2a36c12a5fc6"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "cdf7da1f-c3b7-4f6e-b066-2e4a1f8947b7"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "e19ac62e-1b71-438e-8da5-3d9be0c059e9"
+      content = { uuid = "d621541f-808e-4226-bee5-bef6b788e62d" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
