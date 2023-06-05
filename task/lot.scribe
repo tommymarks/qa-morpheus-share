@@ -1,0 +1,49 @@
+resource "task" "lot" {
+  code = "lot"
+  name = "Lots O Text"
+  uuid = "6ee4ebba-d020-46df-abff-832428b0b486"
+  allowCustomConfig = false
+  dateCreated = "2021-09-03T18:16:16.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-09-03T18:16:16.000Z"
+  options = [
+    {
+      uuid = "11442c9c-7356-4966-8b05-715a72f3ba5b"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "16bc6b8b-539a-4f63-bbf3-b68533d851cd"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "228de445-e473-4bdd-ad46-12b69e17d382"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "912261b8-a761-44bc-9bc2-2ef871156206"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "bab6f6c3-515e-4a4c-99b6-ad83f283d2cd"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "cab45a2f-7b4a-4142-8c7f-4cfefb891439"
+      content = { uuid = "1f5c24be-e0c4-47ae-8c89-5dcd3864aa0a" }
+      optionType = { code = "script" }
+    },
+    {
+      uuid = "d1e5eb59-5d5c-4a8c-8fae-415d3711197b"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "dfb2958c-7731-46f8-8bca-402109a43826"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
