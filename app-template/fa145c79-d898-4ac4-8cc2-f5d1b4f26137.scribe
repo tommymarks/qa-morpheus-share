@@ -1,0 +1,10 @@
+resource "app-template" "fa145c79-d898-4ac4-8cc2-f5d1b4f26137" {
+  name = "brian example"
+  uuid = "fa145c79-d898-4ac4-8cc2-f5d1b4f26137"
+  active = true
+  custom = false
+  dateCreated = "2020-07-08T17:19:16.000Z"
+  lastUpdated = "2020-07-08T17:19:16.000Z"
+  templateType = { code = "terraform" }
+  visibility = "private"
+}
