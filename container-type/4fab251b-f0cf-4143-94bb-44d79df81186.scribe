@@ -1,0 +1,43 @@
+resource "container-type" "4fab251b-f0cf-4143-94bb-44d79df81186" {
+  code = "4fab251b-f0cf-4143-94bb-44d79df81186"
+  name = "Cron Job"
+  uuid = "49f3f2ca-c8b1-41a5-b5ad-bfe1a6516692"
+  commEnabled = false
+  containerScript = <<EOF
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hello
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox:1.28
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - date; echo Hello from the Kubernetes cluster
+          restartPolicy: OnFailure
+EOF
+  containerVersion = "cronjob"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "docker"
+  priorityOrder = 0
+  provisionType = { code = "kubernetes" }
+  shortName = "cron"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "docker"
+  userDeploy = true
+  viewSet = "default"
+}
