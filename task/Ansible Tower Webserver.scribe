@@ -1,0 +1,72 @@
+resource "task" "Ansible Tower Webserver" {
+  name = "Ansible Tower Webserver"
+  uuid = "572c2e66-056f-4956-8012-920ba494a90b"
+  allowCustomConfig = false
+  dateCreated = "2021-04-21T02:29:41.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-04-21T02:29:41.000Z"
+  options = [
+    {
+      uuid = "181921de-3801-4931-9121-7be0e763f979"
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "2798"
+    },
+    {
+      uuid = "27242663-a613-4017-9013-d3b416bf1ab0"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "2a17bceb-52b7-4835-8c0c-ef15c50e578b"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "38a52b8c-0302-4247-9893-900f24d59140"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "4ddbe0fb-530e-4ede-b36c-a98dc3f99261"
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    },
+    {
+      uuid = "65c25972-ab05-4ef5-a54a-9b850c5b8ad6"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "70f77020-e6a1-4054-a6d2-71a23e7e9f2f"
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = "1239"
+    },
+    {
+      uuid = "9ad25f6f-7220-4690-9a1d-7c0f988be5b7"
+      optionType = { code = "ansibleGroup" }
+      value = "qa-tenant"
+    },
+    {
+      uuid = "a7dd1a36-3ad3-4321-971f-65bddc006287"
+      optionType = { code = "ansibleTowerGitRef" }
+    },
+    {
+      uuid = "b54f760d-cc6d-45fb-afa5-b3c4911d69ea"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "d9054413-eef2-4cce-911c-40d5c6df17f7"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "f128bb52-ece4-46c9-9139-6e27d02a56f3"
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = "4997"
+    },
+    {
+      uuid = "f62d544f-be7a-41aa-9e94-cf396ed805aa"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTowerTask" }
+  visibility = "private"
+}
