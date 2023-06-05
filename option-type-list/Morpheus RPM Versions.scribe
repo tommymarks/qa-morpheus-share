@@ -1,0 +1,26 @@
+resource "option-type-list" "Morpheus RPM Versions" {
+  name = "Morpheus RPM Versions"
+  uuid = "d1ee2aff-f3d1-4459-987e-f09245d19a32"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+3.1.1,morpheus-appliance-3.1.1-2.el7.x86_64.rpm
+2.12.4,morpheus-appliance-2.12.4-1.el7.x86_64.rpm
+3.1.0,morpheus-appliance-3.1.0-2.el7.x86_64.rpm
+2.12.3,morpheus-appliance-2.12.3-1.el7.x86_64.rpm
+3.0.1,morpheus-appliance-3.0.1-1.el7.x86_64.rpm
+2.12.2,morpheus-appliance-2.12.2-1.el7.x86_64.rpm
+2.12.1,morpheus-appliance-2.12.1-1.el7.x86_64.rpm
+2.12.0,morpheus-appliance-2.12.0-1.el7.x86_64.rpm
+2.11.4,morpheus-appliance-2.11.4-2.el7.x86_64.rpm
+2.10.9,morpheus-appliance-2.10.9-1.el7.x86_64.rpm
+2.11.3,morpheus-appliance-2.11.3-1.el7.x86_64.rpm
+2.10.8,morpheus-appliance-2.10.8-1.el7.x86_64.rpm
+2.11.2,morpheus-appliance-2.11.2-1.el7.x86_64.rpm
+2.10.7,morpheus-appliance-2.10.7-1.el7.x86_64.rpm
+2.11.1,morpheus-appliance-2.11.1-1.el7.x86_64.rpm
+2.10.6,morpheus-appliance-2.10.6-1.el7.x86_64.rpm
+EOF
+  realTime = false
+  sourceMethod = "GET"
+  type = "manual"
+}

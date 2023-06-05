@@ -1,0 +1,18 @@
+resource "instance-type-layout" "9f26dd88-f70e-49fd-a21a-3f0ca0a47f8e" {
+  code = "9f26dd88-f70e-49fd-a21a-3f0ca0a47f8e"
+  name = "Morpheus Appliance"
+  uuid = "826ef49f-66ff-4da0-a6a4-693de57b9d3a"
+  creatable = true
+  description = "Morpheus Appliance"
+  enabled = true
+  instanceLevel = "user"
+  instanceVersion = "centos7"
+  networkLevel = "container"
+  optionTypes = [ { code = "morphrpmversion" } ]
+  portCount = 1
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  systemLayout = false
+  workloads = [ { code = "71d26002-f522-4b43-822f-72f3f9f85a5a" } ]
+}

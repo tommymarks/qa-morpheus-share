@@ -1,0 +1,26 @@
+resource "option-type" "morphrpmversion" {
+  code = "morphrpmversion"
+  name = "Morpheus RPM Version"
+  uuid = "1da7bad9-7883-4659-bb41-75ce6eb0e80f"
+  advanced = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphrpmversion"
+  fieldLabel = "Morpheus RPM Version"
+  fieldName = "morphrpmversion"
+  fieldSetName = "morphrpmversion"
+  global = true
+  optionList = { name = "Morpheus RPM Versions" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}

@@ -1,0 +1,16 @@
+resource "container-script" "fc11be3a-3f09-4fbd-a1b9-951d1107c597" {
+  code = "fc11be3a-3f09-4fbd-a1b9-951d1107c597"
+  name = "morpheus: install (rpm)"
+  uuid = "275d48d9-215d-4dc8-bf34-b5617bc87ff2"
+  failOnError = true
+  script = <<EOF
+wget https://downloads.gomorpheus.com/yum/el/7/x86_64/<%=instance.customOptions.morphversion%>
+sudo rpm -i <%=instance.customOptions.morphversion%>
+sudo morpheus-ctl reconfigure
+EOF
+  scriptPhase = "postProvision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = false
+}
