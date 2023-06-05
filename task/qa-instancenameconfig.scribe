@@ -1,0 +1,50 @@
+resource "task" "qa-instancenameconfig" {
+  code = "qa-instancenameconfig"
+  name = "instance name config"
+  uuid = "c9906c27-04c5-4f81-ad14-33de3fdb7ff9"
+  allowCustomConfig = false
+  dateCreated = "2020-10-29T17:23:47.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-10-29T20:51:49.000Z"
+  options = [
+    {
+      uuid = "0bf1016a-b5c4-45e2-8dba-4d8007c96bf4"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "3a3fce1a-2b48-47c8-9a78-7415778698a3"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "46c7c636-4c60-4c7a-b7f4-88b6e601bfc9"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "ac5c78f6-9e44-4f4b-95ba-b7fc87fd3cb0"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "c06273f0-5a8a-4547-89f9-b3357bfa4e53"
+      content = { uuid = "4e7e23c7-faee-469f-8bcc-4d3f92b34815" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "cf268136-3b42-48b9-a558-8e16d3edc585"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "dc4f2a7c-8881-4e5e-a07e-7b15c0af7a3c"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "e59207ba-5e03-40a9-9626-e6ea825d0895"
+      optionType = { code = "sshKey" }
+    }
+  ]
+  resultType = "json"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
