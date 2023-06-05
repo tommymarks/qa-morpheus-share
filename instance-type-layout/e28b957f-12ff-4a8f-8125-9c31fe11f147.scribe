@@ -1,0 +1,20 @@
+resource "instance-type-layout" "e28b957f-12ff-4a8f-8125-9c31fe11f147" {
+  code = "e28b957f-12ff-4a8f-8125-9c31fe11f147"
+  name = "Test ARM"
+  uuid = "6ac0af04-440c-4c61-ad0f-ec85bbf06e21"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "test_arm"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "arm" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "f8a0be60-3f17-4965-8aab-4774e81a8ec8" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
