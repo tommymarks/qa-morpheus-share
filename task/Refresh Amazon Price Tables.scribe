@@ -1,0 +1,49 @@
+resource "task" "Refresh Amazon Price Tables" {
+  name = "Refresh Amazon Price Tables"
+  uuid = "db17fa97-abdc-40ea-8cc6-90e264fe6386"
+  allowCustomConfig = false
+  dateCreated = "2023-03-09T20:33:07.000Z"
+  executeTarget = "local"
+  labels = [ { name = "utility" } ]
+  lastUpdated = "2023-03-09T20:33:07.000Z"
+  options = [
+    {
+      uuid = "15b568ae-cd1f-4bf2-bbfb-a8283389817c"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "3a7e00fd-7f40-45d4-afa9-41baa929d9b2"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "3f44f4ac-8d06-46c7-b61a-57b07a5b4b97"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "5755e355-01b7-4017-9388-9f2058823eea"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "62a1c48f-7668-408b-91f6-a9a4d009e87f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "836d0b98-0817-443b-964e-9019026c34f5"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "cfbaa482-b23d-48be-91c0-c0ee12aa39aa"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "e0a7300e-074e-4ff3-990f-fb26e204f8ec"
+      content = { uuid = "48213249-3756-43e9-9a06-e26103e48943" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
