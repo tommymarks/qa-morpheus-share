@@ -1,0 +1,49 @@
+resource "task" "Refresh Google Cloud Types" {
+  name = "Refresh Google Cloud Types"
+  uuid = "b2469e06-9d80-449b-99c7-c75b6d4ae509"
+  allowCustomConfig = false
+  dateCreated = "2023-05-17T17:13:14.000Z"
+  executeTarget = "local"
+  labels = [ { name = "utility" } ]
+  lastUpdated = "2023-05-17T17:13:15.000Z"
+  options = [
+    {
+      uuid = "1f0586b3-6f23-4871-9470-5b5aeef2ef9b"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "2dad9ee7-264a-48bb-85a1-25c491238964"
+      content = { uuid = "9c97d80f-b4eb-42e2-8a1f-ddf6abda4384" }
+      optionType = { code = "groovyScript" }
+    },
+    {
+      uuid = "34f3e278-699b-4916-b73c-6ba6d1b00e35"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "5bde4184-cd64-411a-a864-009a0df10833"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "791de1e8-4ea2-4150-93b1-d31ead91992f"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "7f1ad991-7a20-4209-b0f1-b66d99427a60"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "90aca148-986b-4596-a021-e468a44a8817"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "df64a1b2-2107-4505-a8a0-020fddbe117a"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
