@@ -1,0 +1,49 @@
+resource "task" "Version 3" {
+  name = "Version 3"
+  uuid = "d51d5833-7869-4a8b-af1d-777aa546f995"
+  allowCustomConfig = false
+  dateCreated = "2019-12-12T18:54:35.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-12-12T18:54:35.000Z"
+  options = [
+    {
+      uuid = "061deaa2-a3a6-4174-8522-e1ecc413a2ca"
+      optionType = { code = "shell.sudo" }
+      value = "on"
+    },
+    {
+      uuid = "61f16493-5c2f-4a71-9cdd-6ca871f22ea7"
+      optionType = { code = "script" }
+      value = "echo \"version 3.0\" | sudo tee -a /version.txt"
+    },
+    {
+      uuid = "6667576a-70d9-49a0-ad3a-75897d824d92"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "7fc4d728-229e-4f39-8f9d-53e5403663e2"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "89a8627a-510b-4aaf-90c0-2c961321537c"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "a6d9c37c-d3c1-4de9-b8a3-dc37ac25c280"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "d8457d5a-1190-4425-afcc-5aab62390c37"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "f0df2f08-9ced-448a-b569-8dfc9106e442"
+      optionType = { code = "password" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
