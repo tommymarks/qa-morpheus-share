@@ -1,0 +1,28 @@
+resource "container-type" "baaa8947-b1f9-433b-b307-8554f4ed7939" {
+  code = "baaa8947-b1f9-433b-b307-8554f4ed7939"
+  name = "Custom Azure"
+  uuid = "694db86b-07a6-49cd-a609-906690eee512"
+  category = "Web"
+  actions = [ { code = "5ade08c5-3078-4893-94e3-ea7b40923f0c" } ]
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "marketplace"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "azure"
+  priorityOrder = 0
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "azure"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "2b800436-a7fd-4bdd-b3ad-02d78b7c06cd" }
+}
