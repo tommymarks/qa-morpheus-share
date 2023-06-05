@@ -1,0 +1,39 @@
+resource "option-type" "brewlist" {
+  code = "brewlist"
+  name = "Brewery List - By City"
+  uuid = "654aad09-1486-42e2-a97e-826546fa5551"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "brewcity"
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Brewery List - By City"
+  fieldName = "brewlist"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "Breweries - Search by City" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}

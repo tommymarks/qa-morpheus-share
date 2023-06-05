@@ -1,0 +1,16 @@
+resource "option-type-list" "Breweries - City List" {
+  name = "Breweries - City List"
+  uuid = "83f72dd1-eb42-44a3-88e3-7b5e2da22e52"
+  ignoreSSLErrors = false
+  initialDataset = <<EOF
+'san_diego','san_diego'
+'knox','knox'
+'bend','bend'
+'boulder','boulder'
+'asheville','asheville'
+EOF
+  realTime = true
+  sourceMethod = "GET"
+  type = "manual"
+  visibility = "private"
+}

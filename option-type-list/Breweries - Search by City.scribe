@@ -1,0 +1,11 @@
+resource "option-type-list" "Breweries - Search by City" {
+  name = "Breweries - Search by City"
+  uuid = "513c7d84-361a-407b-ae49-571165d2081b"
+  ignoreSSLErrors = false
+  realTime = true
+  requestScript = "results=[{\"name\": \"by_city\",\"value\": data.brewcity}]"
+  sourceMethod = "GET"
+  sourceUrl = "https://api.openbrewerydb.org/breweries"
+  type = "rest"
+  visibility = "private"
+}

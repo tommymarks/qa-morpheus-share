@@ -1,0 +1,38 @@
+resource "option-type" "brewcity" {
+  code = "brewcity"
+  name = "Brewery - City Input - Select"
+  uuid = "435020ea-64fa-4a7e-b44d-170754b67c7d"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "Brewery - City Input - Select"
+  fieldName = "brewcity"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "Breweries - City List" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
