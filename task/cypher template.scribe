@@ -1,0 +1,53 @@
+resource "task" "cypher template" {
+  name = "cypher template"
+  uuid = "9fdcf378-5d5b-4ca9-b8fe-2edc5d6ecc66"
+  allowCustomConfig = false
+  dateCreated = "2023-04-20T16:50:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-04-20T16:50:24.000Z"
+  options = [
+    {
+      uuid = "0763cd98-e507-48b9-9c18-e09d75f3ca8d"
+      optionType = { code = "containerTemplate" }
+      value = "My CypherTemplate"
+    },
+    {
+      uuid = "2014df56-cc61-436c-827a-bcc22f1919f3"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "20265f55-4369-45db-b2bc-a279b2515980"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "32e315b5-633d-4ba9-ade4-c60921019c5b"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "56fd1f12-eb6f-4090-bf70-cedffb46689f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "8b4a6068-fd19-4475-bbdb-715108bc42c2"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "9eccf325-f266-4b5d-a0d4-751a9f8b4202"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "b383e451-307b-4945-82a9-f74b20c5267b"
+      optionType = { code = "containerTemplateId" }
+      value = "2119"
+    },
+    {
+      uuid = "d18c129e-6a9c-4610-bf98-c9eedd403685"
+      optionType = { code = "username" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "containerTemplate" }
+  visibility = "private"
+}
