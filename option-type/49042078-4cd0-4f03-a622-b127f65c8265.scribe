@@ -1,0 +1,25 @@
+resource "option-type" "49042078-4cd0-4f03-a622-b127f65c8265" {
+  name = "config.customOptions.password2"
+  uuid = "49042078-4cd0-4f03-a622-b127f65c8265"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample password field"
+  displayOrder = 16
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "password2"
+  fieldLabel = "Password 2"
+  fieldName = "password2"
+  fieldSetName = "password2"
+  global = true
+  ownerEditable = false
+  placeHolder = "placeholder"
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "password"
+}

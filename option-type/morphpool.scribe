@@ -1,0 +1,34 @@
+resource "option-type" "morphpool" {
+  code = "morphpool"
+  name = "API Resource Pools"
+  uuid = "93f5b266-f59f-4fc0-a550-752fcf06b9ac"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "morphcloud"
+  displayOrder = 3
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphpool"
+  fieldLabel = "Resource Pool"
+  fieldName = "morphpool"
+  fieldSetName = "morphpool"
+  global = true
+  groupExpand = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  noBlank = false
+  optionList = { name = "API Resource Pool" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "select"
+}

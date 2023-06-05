@@ -1,0 +1,26 @@
+resource "option-type" "8ead0646-3552-4283-8080-e66742e973c2" {
+  name = "config.customOptions.select3"
+  uuid = "8ead0646-3552-4283-8080-e66742e973c2"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample select field"
+  displayOrder = 20
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "select3"
+  fieldLabel = "Select 3"
+  fieldName = "select3"
+  fieldSetName = "select3"
+  global = true
+  optionList = { name = "rest get initial" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}

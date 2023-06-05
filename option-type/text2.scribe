@@ -1,0 +1,29 @@
+resource "option-type" "text2" {
+  code = "text2"
+  name = "config.customOptions.text2"
+  uuid = "52d40ee9-de19-4f3b-9b55-2d8496bfa4b5"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample text field"
+  displayOrder = 22
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "text2"
+  fieldLabel = "Text 2"
+  fieldName = "text2"
+  fieldSetName = "text2"
+  global = true
+  ownerEditable = false
+  placeHolder = "placeholder"
+  required = true
+  secretField = false
+  showOnEdit = false
+  tenantEditable = false
+  type = "text"
+}

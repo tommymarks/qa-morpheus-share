@@ -1,0 +1,26 @@
+resource "option-type" "c68a2e86-3848-4a11-83c3-8e7e0cefbc3b" {
+  name = "config.customOptions.select2"
+  uuid = "c68a2e86-3848-4a11-83c3-8e7e0cefbc3b"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample select field"
+  displayOrder = 19
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "select2"
+  fieldLabel = "Select 2"
+  fieldName = "select2"
+  fieldSetName = "select2"
+  global = true
+  optionList = { name = "manual json" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "select"
+}

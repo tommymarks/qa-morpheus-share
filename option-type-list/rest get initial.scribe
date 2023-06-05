@@ -1,0 +1,16 @@
+resource "option-type-list" "rest get initial" {
+  name = "rest get initial"
+  uuid = "26251f3c-d86e-4af2-a8a9-761806f0f9df"
+  ignoreSSLErrors = false
+  initialDataset = "[{\"name\":\"Test\",\"value\":1},{\"name\":\"Testing\",\"value\":2}]"
+  realTime = false
+  sourceMethod = "GET"
+  sourceUrl = "https://jsonplaceholder.typicode.com/posts"
+  translationScript = <<EOF
+for(var x=0;x < data.length; x++) {
+	results.push({name: data[x].title, value: data[x].id});
+}
+EOF
+  type = "rest"
+  visibility = "public"
+}

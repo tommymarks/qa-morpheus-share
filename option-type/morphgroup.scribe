@@ -1,0 +1,33 @@
+resource "option-type" "morphgroup" {
+  code = "morphgroup"
+  name = "API Groups"
+  uuid = "4c77b644-904e-49e7-8d89-7ba3a7b17743"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphgroup"
+  fieldLabel = "Group"
+  fieldName = "morphgroup"
+  fieldSetName = "morphgroup"
+  global = true
+  groupExpand = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  noBlank = false
+  optionList = { name = "API Groups" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "select"
+}
