@@ -1,0 +1,50 @@
+resource "option-type-list" "morpheus_server_net_interfaces" {
+  name = "morpheus_server_net_interfaces"
+  uuid = "e6337ce6-b998-4726-8a3e-78271e068df2"
+  ignoreSSLErrors = true
+  realTime = true
+  requestScript = <<EOF
+function parseObjectProperties (obj, parse) {
+  for (var k in obj) {
+    if (typeof obj[k] === 'object' && obj[k] !== null) {
+      parseObjectProperties(obj[k], parse)
+    } else {
+      parse(k, obj[k])
+    }
+  }
+}
+console.log('---------Start Req Input_Interfaces------')
+parseObjectProperties(input, function(k, prop) {
+console.log(k + ': ' + prop)
+  
+})
+console.log('---------Stop Req Input_Interfaces------')
+
+console.log('---------Start Req Data_Interfaces------')
+parseObjectProperties(data, function(k, prop) {
+console.log(k + ': ' + prop)
+})
+console.log('---------Stop Req Data_Interfaces------')
+if(input.morpheus_network_server){
+  console.log('---------morpheus_network_server------')
+  console.log(input.morpheus_network_server)
+  results.push({name: 'name', value : input.morpheus_network_server})
+}
+EOF
+  sourceMethod = "GET"
+  sourceUrl = "https://qa.morpheusdata.com/api/servers"
+  translationScript = <<EOF
+if(input.morpheus_network_server){
+  var data = data['servers']
+  for (var x = 0; x < data.length; x++) {
+    for (var y = 0; y < data[x].interfaces.length; y++) {
+      if (data[x].interfaces.length > 1 && y === 0 ) {results.unshift({name:'All except primary', value:'all'});};
+      var ifName = data[x].name + ' - ' + data[x].interfaces[y].name + ' - ' + data[x].interfaces[y].macAddress + ((data[x].interfaces[y].primaryInterface) ? ' (Primary)' : '');
+      results.push({name:ifName, value:data[x].interfaces[y].macAddress});
+    }
+  }
+}
+EOF
+  type = "rest"
+  visibility = "public"
+}

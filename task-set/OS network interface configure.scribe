@@ -1,0 +1,14 @@
+resource "task-set" "OS network interface configure" {
+  name = "OS network interface configure"
+  uuid = "74d625df-039a-4ae0-8f0b-2b7d7cd97e15"
+  allowCustomConfig = false
+  dateCreated = "2022-08-01T06:02:56.000Z"
+  lastUpdated = "2022-08-01T06:02:56.000Z"
+  optionTypes = [
+    { code = "morpheus_network_server" },
+    { code = "morpheus_network_interface_mac" }
+  ]
+  phase = "postProvision"
+  taskSetType = "operation"
+  visibility = "private"
+}
