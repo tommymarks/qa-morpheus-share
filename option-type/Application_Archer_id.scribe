@@ -1,0 +1,27 @@
+resource "option-type" "Application_Archer_id" {
+  code = "Application_Archer_id"
+  name = "Application_Archer_id"
+  uuid = "bcad8d8b-3ecb-4bfc-90ed-b4b369007e50"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Application_Archer_id aa"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "Application_Archer_id"
+  fieldLabel = "Application_Archer_id"
+  fieldName = "Application_Archer_id"
+  fieldSetName = "Application_Archer_id"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}
