@@ -1,0 +1,16 @@
+resource "resource-spec-template" "41d95b14-8fc0-4cad-990c-e5d4ab078935" {
+  name = "Kube Ingress v1"
+  uuid = "41d95b14-8fc0-4cad-990c-e5d4ab078935"
+  autoRun = false
+  dateCreated = "2023-02-09T19:13:18.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  lastUpdated = "2023-02-09T19:13:18.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "408e428a-3a4c-4fc4-a53a-3311383e5de9" }
+  templatePhase = "provision"
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
