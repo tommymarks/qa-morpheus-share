@@ -1,0 +1,27 @@
+resource "option-type" "Application_Name" {
+  code = "Application_Name"
+  name = "Application_Name"
+  uuid = "3d7f9477-ecec-4eff-af0b-12934447cd99"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  description = "Application_Name aa"
+  displayOrder = 0
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "Application_Name"
+  fieldLabel = "Application_Name"
+  fieldName = "Application_Name"
+  fieldSetName = "Application_Name"
+  global = true
+  noBlank = false
+  ownerEditable = false
+  required = false
+  secretField = false
+  tenantEditable = false
+  type = "text"
+}

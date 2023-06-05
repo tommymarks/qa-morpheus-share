@@ -1,0 +1,24 @@
+resource "container-type" "f750d0e4-0620-4107-b3bf-43dd0e9cec90" {
+  code = "f750d0e4-0620-4107-b3bf-43dd0e9cec90"
+  name = "al-ubuntu-k8"
+  uuid = "24a04ea2-75d1-44dc-8cc3-e14ca8286fec"
+  commEnabled = false
+  containerVersion = "16.04"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "al-ubuntu-k8"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}
