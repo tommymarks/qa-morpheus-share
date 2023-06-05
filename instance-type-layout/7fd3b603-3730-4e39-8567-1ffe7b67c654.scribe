@@ -1,0 +1,20 @@
+resource "instance-type-layout" "7fd3b603-3730-4e39-8567-1ffe7b67c654" {
+  code = "7fd3b603-3730-4e39-8567-1ffe7b67c654"
+  name = "ARM2"
+  uuid = "3da4eb94-870e-45bc-8613-a6bd57e442b6"
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "arm2"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "arm" }
+  serverCount = 1
+  sortOrder = 0
+  specTemplates = [ { uuid = "6674d5ca-cec0-4758-976c-0b8babe66502" } ]
+  supportsConvertToManaged = false
+  systemLayout = false
+}
