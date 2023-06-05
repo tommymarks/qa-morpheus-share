@@ -1,0 +1,61 @@
+resource "task" "Simplest Python" {
+  name = "Simplest Python"
+  uuid = "1a6b9137-e6ee-4745-acad-f1fc59a15108"
+  allowCustomConfig = false
+  dateCreated = "2020-06-02T19:32:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-06-02T19:32:31.000Z"
+  options = [
+    {
+      uuid = "006f1ec3-d208-4721-9fc9-0e30247f1b93"
+      optionType = { code = "pythonArgs" }
+    },
+    {
+      uuid = "093bb7e1-d6d6-492a-a4fa-765b0f2e9ef1"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "44ceec79-781c-4056-ac0e-8bb7d53b1874"
+      content = { uuid = "1ee9d188-ef70-4f85-ba34-c84f3e47a6ea" }
+      optionType = { code = "pythonScript" }
+    },
+    {
+      uuid = "49a6356c-55fa-42e7-974f-d6c30b98f1fd"
+      optionType = { code = "pythonBinary" }
+      value = "python3"
+    },
+    {
+      uuid = "78858bb4-137b-4707-8326-d55cf3250662"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "809b6a8d-b4eb-4622-b545-8e5baeb40c68"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "8349f9a9-6c99-4135-a39b-f8e3879b6660"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b058a94d-b80a-4229-a7a3-138149c3ec02"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "b8ccedf9-8b3e-4b4d-82cf-ffbe1c8f52b3"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "bbd5842f-26a9-4a9d-a983-3ca94d360437"
+      optionType = { code = "pythonAdditionalPackages" }
+    },
+    {
+      uuid = "fa6cc324-d50a-4306-8300-06322ede1733"
+      optionType = { code = "localScriptGitId" }
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
