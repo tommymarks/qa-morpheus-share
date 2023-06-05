@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-virtualbox-1.9-set" {
+  code = "nginx-virtualbox-1.9-set"
+  uuid = "4a547a2f-149c-423c-aa62-0817090631b8"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-virtualbox-1.9" }
+}

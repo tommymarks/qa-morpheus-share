@@ -1,0 +1,52 @@
+resource "container-type" "nginx-virtualbox-1.9" {
+  code = "nginx-virtualbox-1.9"
+  name = "NGINX 1.9"
+  uuid = "6eea2478-f35c-4f19-b75e-09fe835ecea6"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  cloneType = "nginx"
+  commEnabled = false
+  containerMounts = [
+    { code = "nginx-1.9-certs" },
+    { code = "nginx-1.9-config" },
+    { code = "nginx-1.9-data" },
+    { code = "nginx-1.9-logs" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.9"
+  customType = false
+  deploymentType = { code = "nginx" }
+  entryPoint = "/entrypoint.sh"
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = true
+  logTypeCode = "nginx"
+  mountConfig = "/etc/nginx"
+  mountData = "/morpheus/data"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  priorityOrder = 0
+  providerType = "virtualbox"
+  provisionType = { code = "virtualbox" }
+  repositoryImage = ""
+  scripts = [
+    { code = "nginx-1.9-vm-entrypoint" },
+    { code = "nginx-1.9-vm-start" },
+    { code = "nginx-1.9-vm-stop" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "vm"
+  templates = [ { code = "nginx-1.9" } ]
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "virtualbox.image.morpheus.nginx.1.9-1" }
+}
