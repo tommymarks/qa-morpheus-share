@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-azure-1.9-set" {
+  code = "nginx-azure-1.9-set"
+  uuid = "24f534eb-63d4-4be2-9966-f5e36b4e4242"
+  category = "nginx"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-azure-1.9" }
+}
