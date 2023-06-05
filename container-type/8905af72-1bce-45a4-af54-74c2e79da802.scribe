@@ -1,0 +1,24 @@
+resource "container-type" "8905af72-1bce-45a4-af54-74c2e79da802" {
+  code = "8905af72-1bce-45a4-af54-74c2e79da802"
+  name = "ubuntu 18.04"
+  uuid = "d90ee5df-b72e-48b0-a077-17e9cc0cbf71"
+  commEnabled = false
+  containerVersion = "18.04"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "oraclecloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntu-18.04"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}
