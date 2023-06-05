@@ -1,0 +1,80 @@
+resource "task" "DB HTTP" {
+  name = "DB HTTP"
+  uuid = "ef62350c-2f31-46a0-8396-e2745007b1bd"
+  allowCustomConfig = false
+  dateCreated = "2021-04-09T21:30:57.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-04-09T21:30:57.000Z"
+  options = [
+    {
+      uuid = "15c4cc19-78f9-487f-892b-486e4231097b"
+      optionType = { code = "webUrl" }
+      value = "https://ml-qa.agoradata.com/api/v1/model/loans/e9b09333-1138-4bf0-8bf0-cc6828627b7e/valuation"
+    },
+    {
+      uuid = "264a25ef-cce8-4939-a55e-b27f804ee48c"
+      optionType = { code = "webPassword" }
+    },
+    {
+      uuid = "28d8bf2a-6c01-4758-909d-f99ea80b724f"
+      optionType = { code = "ignoreSSL" }
+    },
+    {
+      uuid = "3c92976a-77c0-45c5-910b-2740b0de4b83"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "5031e07f-bea2-406c-ad71-3724708c4856"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "5f81dc5e-9811-426d-a452-37791f77a65b"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "a571c9ae-fca7-43cc-ba80-b232868e4354"
+      optionType = { code = "webUser" }
+    },
+    {
+      uuid = "a66e158b-9a9b-4e54-b561-874097e3b35b"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "ad215001-7949-4c4c-bd0c-8ab37e167673"
+      optionType = { code = "webHeaders" }
+      value = "[]"
+    },
+    {
+      uuid = "ae9b9d50-29cd-42b8-a210-5538954b4553"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "b95de083-2e96-4b86-8c13-6910df9042c5"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "dafc5838-c11d-4cfa-80e7-5a826186eb57"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "e3951cb7-da93-4d43-b37b-2efb0920a576"
+      optionType = { code = "webBody" }
+      value = <<EOF
+{
+  "node_name": "<%= instance.name %>"
+}
+EOF
+    },
+    {
+      uuid = "e90a6285-1d83-446d-8fcc-2c5980110df8"
+      optionType = { code = "webMethod" }
+      value = "GET"
+    }
+  ]
+  resultType = "json"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "httpTask" }
+  visibility = "private"
+}
