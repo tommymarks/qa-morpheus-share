@@ -1,0 +1,35 @@
+resource "option-type" "poolId" {
+  code = "poolId"
+  name = "Morpheus Resource Pools External"
+  uuid = "e420901f-a2f7-4470-9a1a-eca5d2a82818"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "poolId"
+  fieldLabel = "Resource Pool"
+  fieldName = "poolId"
+  fieldSetName = "poolId"
+  global = true
+  groupExpand = false
+  ignoreField = false
+  noBlank = false
+  optionList = { name = "Morpheus API Resource Pools External" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
