@@ -1,0 +1,22 @@
+resource "instance-type" "al-suse" {
+  code = "al-suse"
+  name = "al-suse"
+  uuid = "edbc94b7-fe3f-48f5-919f-e8a48de055aa"
+  category = "os"
+  active = true
+  deploymentService = "defaultDeployService"
+  enabled = true
+  environmentPrefix = "AL-SUSE"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = true
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = true
+  layouts = [ { code = "3ce09212-bfe7-4272-95d9-4dda54147dd6" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
