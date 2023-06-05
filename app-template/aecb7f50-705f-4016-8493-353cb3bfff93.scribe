@@ -1,0 +1,10 @@
+resource "app-template" "aecb7f50-705f-4016-8493-353cb3bfff93" {
+  name = "CIS APP"
+  uuid = "aecb7f50-705f-4016-8493-353cb3bfff93"
+  active = true
+  custom = false
+  dateCreated = "2023-03-06T12:11:51.000Z"
+  lastUpdated = "2023-03-06T12:11:51.000Z"
+  templateType = { code = "arm" }
+  visibility = "private"
+}
