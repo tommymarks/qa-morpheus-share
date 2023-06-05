@@ -1,0 +1,9 @@
+resource "container-type-set" "nginx-amazon-1.9-set" {
+  code = "nginx-amazon-1.9-set"
+  uuid = "ac776ede-e6aa-4f90-91ec-6e5989ebc64f"
+  category = "php"
+  containerCount = 1
+  dynamicCount = true
+  priorityOrder = 0
+  workloadType = { code = "nginx-amazon-1.9" }
+}
