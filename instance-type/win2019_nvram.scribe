@@ -1,0 +1,22 @@
+resource "instance-type" "win2019.nvram" {
+  code = "win2019.nvram"
+  name = "JCS-Win2019-NVRAM"
+  uuid = "c175117c-f696-4bab-8436-fef580c30c77"
+  category = "os"
+  active = true
+  deploymentService = ""
+  enabled = true
+  environmentPrefix = "JCS-WIN2019-NVRAM"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = false
+  hasConfig = true
+  hasDeployment = false
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  layouts = [ { code = "59f52ff6-0be9-469c-aee0-a055d5166fec" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "private"
+}
