@@ -1,0 +1,10 @@
+resource "app-template" "0a5195cf-7832-457a-8746-800bc81eef56" {
+  name = "case 67709"
+  uuid = "0a5195cf-7832-457a-8746-800bc81eef56"
+  active = true
+  custom = false
+  dateCreated = "2022-09-15T07:54:57.000Z"
+  lastUpdated = "2022-09-17T18:57:35.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
