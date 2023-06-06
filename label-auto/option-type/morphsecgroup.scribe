@@ -1,0 +1,34 @@
+resource "option-type" "morphsecgroup" {
+  code = "morphsecgroup"
+  name = "API Security Groups"
+  uuid = "b8765472-4cbc-4786-976e-0eb6677912d7"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "morphnetwork"
+  displayOrder = 6
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphsecgroup"
+  fieldLabel = "Security Group"
+  fieldName = "morphsecgroup"
+  fieldSetName = "morphsecgroup"
+  global = true
+  groupExpand = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  noBlank = false
+  optionList = { name = "API Security Groups" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "select"
+}
