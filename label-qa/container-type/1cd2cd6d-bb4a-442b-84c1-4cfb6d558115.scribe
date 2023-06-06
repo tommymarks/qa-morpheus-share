@@ -1,0 +1,26 @@
+resource "container-type" "1cd2cd6d-bb4a-442b-84c1-4cfb6d558115" {
+  code = "1cd2cd6d-bb4a-442b-84c1-4cfb6d558115"
+  name = "Apache 2.4"
+  uuid = "cb002e1e-9071-4e39-b8dd-1aeab66c2552"
+  commEnabled = false
+  containerVersion = "2.4"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  labels = [ { name = "qa" } ]
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vm"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.apache.2.4-v1.centos.7.3" }
+}
