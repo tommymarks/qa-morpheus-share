@@ -1,0 +1,19 @@
+resource "instance-type-layout" "3caa5e47-c0d1-491e-b85b-2459a5869314" {
+  code = "3caa5e47-c0d1-491e-b85b-2459a5869314"
+  name = "Custom Oracle Cloud"
+  uuid = "e74a4d7a-961f-44ac-8e18-c53fbf63f838"
+  actions = [ { code = "3caa5e47-c0d1-491e-b85b-2459a5869314" } ]
+  creatable = true
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "oc"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "oraclecloud" }
+  serverCount = 1
+  sortOrder = 0
+  systemLayout = false
+  workloads = [ { code = "885d632d-041f-4f9b-b48a-fc3f1bae1072" } ]
+}

@@ -1,0 +1,22 @@
+resource "instance-type-layout" "5ade08c5-3078-4893-94e3-ea7b40923f0c" {
+  code = "5ade08c5-3078-4893-94e3-ea7b40923f0c"
+  name = "Custom Azure"
+  uuid = "a5e7c950-7624-48eb-9fd0-ea91dcf93e49"
+  actions = [ { code = "5ade08c5-3078-4893-94e3-ea7b40923f0c" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "marketplace"
+  memoryRequirement = 0
+  networkLevel = "container"
+  optionTypes = [ { code = "text1" } ]
+  portCount = 1
+  provisionType = { code = "azure" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "baaa8947-b1f9-433b-b307-8554f4ed7939" } ]
+}

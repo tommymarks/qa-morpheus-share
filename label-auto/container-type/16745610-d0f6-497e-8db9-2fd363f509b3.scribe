@@ -1,0 +1,30 @@
+resource "container-type" "16745610-d0f6-497e-8db9-2fd363f509b3" {
+  code = "16745610-d0f6-497e-8db9-2fd363f509b3"
+  name = "Custom UpCloud"
+  uuid = "7b984b79-369e-4a7e-b5b9-17f465f01053"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "HTTP" }, { name = "HTTPS" }, { name = "SSH" } ]
+  containerVersion = "qcow2"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  mountData = "/morpheus/data"
+  mountLogs = "/morpheus/logs"
+  priorityOrder = 0
+  provisionType = { code = "upcloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "upcloud.image.3280.01853abf-59c4-40e1-8413-fa19c96a9482" }
+}

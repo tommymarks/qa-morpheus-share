@@ -1,0 +1,19 @@
+resource "instance-type-layout" "f0c599cd-2bdc-4334-bfe8-a98756860ee7" {
+  code = "f0c599cd-2bdc-4334-bfe8-a98756860ee7"
+  name = "Custom UpCloud"
+  uuid = "0526cf34-39c2-4204-b2c5-9f0de6fc27de"
+  actions = [ { code = "f0c599cd-2bdc-4334-bfe8-a98756860ee7" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "qcow2"
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "upcloud" }
+  serverCount = 1
+  sortOrder = 0
+  systemLayout = false
+  workloads = [ { code = "16745610-d0f6-497e-8db9-2fd363f509b3" } ]
+}

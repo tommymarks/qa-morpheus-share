@@ -1,0 +1,21 @@
+resource "instance-type-layout" "9d1d6707-9345-4b3f-ad5c-02ee347e448c" {
+  code = "9d1d6707-9345-4b3f-ad5c-02ee347e448c"
+  name = "Custom Google"
+  uuid = "1464a344-33b1-42dd-8dfe-98d22f5c785e"
+  actions = [ { code = "9d1d6707-9345-4b3f-ad5c-02ee347e448c" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "raw"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "google" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "d9d1c9ae-abfe-47d8-9dd9-fde2fd461729" } ]
+}

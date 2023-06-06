@@ -1,0 +1,29 @@
+resource "container-type" "14bb9a8d-5f4f-4465-b14a-a9e5c325bf1c" {
+  code = "14bb9a8d-5f4f-4465-b14a-a9e5c325bf1c"
+  name = "Custom Nutanix"
+  uuid = "9a5727c5-e356-43b7-a825-5654433f6883"
+  category = "Web"
+  actions = [ { code = "52e3801a-5ae2-4c8f-9f71-88275495607c" } ]
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerPorts = [ { name = "HTTP" }, { name = "HTTPS" }, { name = "SSH" } ]
+  containerVersion = "qcow2"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "nutanix"
+  priorityOrder = 0
+  provisionType = { code = "nutanix" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "nutanix"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { uuid = "84e4c9ac-8fa2-475c-88ff-43a1e27fa72b" }
+}

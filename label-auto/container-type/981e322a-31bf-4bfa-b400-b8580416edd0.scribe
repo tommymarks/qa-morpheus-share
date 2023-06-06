@@ -1,0 +1,25 @@
+resource "container-type" "981e322a-31bf-4bfa-b400-b8580416edd0" {
+  code = "981e322a-31bf-4bfa-b400-b8580416edd0"
+  name = "Custom OracleVM"
+  uuid = "039b20de-0d60-4b2d-bdd1-8f5285e3cc6b"
+  commEnabled = false
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "ovm"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  priorityOrder = 0
+  provisionType = { code = "oraclevm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+}

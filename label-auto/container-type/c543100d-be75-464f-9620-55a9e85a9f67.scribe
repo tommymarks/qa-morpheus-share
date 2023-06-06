@@ -1,0 +1,30 @@
+resource "container-type" "c543100d-be75-464f-9620-55a9e85a9f67" {
+  code = "c543100d-be75-464f-9620-55a9e85a9f67"
+  name = "Custom VCD"
+  uuid = "b7fd5151-005f-40c7-a2c5-6fe1d22f21e1"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "SSH" } ]
+  containerVersion = "vmdk"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  logTypeCode = "vmware"
+  mountData = "/morpheus/data"
+  mountLogs = "/morpheus/logs"
+  priorityOrder = 0
+  provisionType = { code = "vcd" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  slave = false
+  statTypeCode = "vmware"
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "vcd.image.morpheus.centos-7_5.ovf" }
+}

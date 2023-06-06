@@ -1,0 +1,21 @@
+resource "instance-type-layout" "f570c148-1495-411b-956c-98e269aa8593" {
+  code = "f570c148-1495-411b-956c-98e269aa8593"
+  name = "Custom Xen"
+  uuid = "01603bf4-0981-4143-917e-33de85863664"
+  actions = [ { code = "f570c148-1495-411b-956c-98e269aa8593" } ]
+  creatable = true
+  description = "custom image"
+  enabled = true
+  hasAutoScale = true
+  instanceLevel = "user"
+  instanceVersion = "vhd"
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "xen" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "2d5212c7-2847-49c7-bdba-bba9d85b2dda" } ]
+}
