@@ -1,0 +1,25 @@
+resource "option-type" "f9c6a713-a212-47b4-8b4b-bda6da7a0849" {
+  name = "config.customOptions.number2"
+  uuid = "f9c6a713-a212-47b4-8b4b-bda6da7a0849"
+  advanced = false
+  creatable = true
+  custom = false
+  description = "sample number field"
+  displayOrder = 13
+  editable = false
+  enabled = true
+  exportEvar = false
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "number2"
+  fieldLabel = "Number 2"
+  fieldName = "number2"
+  fieldSetName = "number2"
+  global = true
+  ownerEditable = false
+  placeHolder = "placeholder"
+  required = true
+  secretField = false
+  tenantEditable = false
+  type = "number"
+}
