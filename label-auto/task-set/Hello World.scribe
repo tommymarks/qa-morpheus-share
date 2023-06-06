@@ -1,0 +1,11 @@
+resource "task-set" "Hello World" {
+  name = "Hello World"
+  uuid = "6d1f33e4-6473-48f8-97f4-a936601751a8"
+  dateCreated = "2018-11-21T17:42:16.000Z"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-03-16T00:01:41.000Z"
+  phase = "postProvision"
+  taskSetTasks = [ { uuid = "cfe6c58f-2f3d-464a-bdc1-b5b32c0ef49f" } ]
+  taskSetType = "provision"
+  visibility = "public"
+}
