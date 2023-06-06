@@ -1,0 +1,34 @@
+resource "container-type" "ec468592-a9e8-43ff-a4ab-6e6e48bfe426" {
+  code = "ec468592-a9e8-43ff-a4ab-6e6e48bfe426"
+  name = "Apache latest"
+  uuid = "cec3cae3-7232-4193-8999-e50992e9350b"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "lvmSnapshot"
+  checkTypeCode = "webGetCheck"
+  commEnabled = false
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "Http" }, { name = "Https" } ]
+  containerVersion = "latest"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  labels = [ { name = "qa" } ]
+  logTypeCode = "docker"
+  mountData = "/var/www"
+  mountLogs = "/var/log/apache2"
+  priorityOrder = 0
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "httpd"
+  shortName = "apache"
+  showServerLogs = false
+  slave = false
+  statTypeCode = "docker"
+  userDeploy = true
+  viewSet = "default"
+}
