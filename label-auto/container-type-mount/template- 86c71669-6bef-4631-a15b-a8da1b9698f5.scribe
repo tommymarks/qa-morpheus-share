@@ -7,15 +7,12 @@ resource "container-type-mount" "template: 86c71669-6bef-4631-a15b-a8da1b9698f5"
   containerPath = "/var/tmp/templates"
   customType = false
   deployable = false
-  fileMount = false
   hostPath = "/var/tmp/templates"
   mountType = "config"
   required = false
-  shortName = "phase:-provision"
   sortOrder = 0
   subMount = false
   template = { code = "86c71669-6bef-4631-a15b-a8da1b9698f5" }
   unmanagedEnabled = false
   visible = false
-  volumeName = "phase:-provision"
 }
