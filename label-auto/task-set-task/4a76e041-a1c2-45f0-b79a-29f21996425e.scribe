@@ -1,0 +1,7 @@
+resource "task-set-task" "4a76e041-a1c2-45f0-b79a-29f21996425e" {
+  uuid = "4a76e041-a1c2-45f0-b79a-29f21996425e"
+  entryTask = false
+  task = { name = "Phase: Post Provision Error" }
+  taskOrder = 8
+  taskPhase = "postProvision"
+}

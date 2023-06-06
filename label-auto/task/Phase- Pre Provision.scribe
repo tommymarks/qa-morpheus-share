@@ -1,0 +1,50 @@
+resource "task" "Phase: Pre Provision" {
+  name = "Phase: Pre Provision"
+  uuid = "4297d81d-1e50-4625-8cd4-4eb06f8720e3"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:17:43.000Z"
+  options = [
+    {
+      uuid = "0029fce5-c61c-4904-a2cc-a3ce60de906f"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "108284b7-c7ae-4a9f-8abc-8e5eb30ea7fa"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "465508b1-0b97-4ff3-920c-70ebec54f4e3"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "50d19533-c863-4c13-af7d-caa732b4ce31"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "83e3c566-b80e-48b2-a80e-bbfd7040df39"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "91e68582-e118-4ceb-8c37-1b42343dd7f5"
+      content = { uuid = "03b968e2-70f7-41d2-b75f-ece39ce62fda" }
+      optionType = { code = "script" }
+      value = "echo \"$(date) - pre provision\" | tee -a /tmp/phase_task.txt"
+    },
+    {
+      uuid = "a1cac5a7-44ca-4b6f-ba6e-83c31c359898"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "aa70b80c-6fa7-46b1-8890-0d6bb6e62f54"
+      optionType = { code = "localScriptGitRef" }
+    },
+    {
+      uuid = "b054f069-a6ee-4840-9f63-9f5ba47e5b15"
+      optionType = { code = "username" }
+    }
+  ]
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

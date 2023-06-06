@@ -1,0 +1,7 @@
+resource "task-set-task" "2681931d-41cc-4755-b812-67d2a848a0bc" {
+  uuid = "2681931d-41cc-4755-b812-67d2a848a0bc"
+  entryTask = false
+  task = { name = "Phase: Start Service" }
+  taskOrder = 10
+  taskPhase = "start"
+}

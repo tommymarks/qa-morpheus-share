@@ -1,0 +1,53 @@
+resource "task" "Phase: Provision" {
+  name = "Phase: Provision"
+  uuid = "aa6f7fc6-3226-4b95-a8a2-8e290467c237"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2023-03-13T19:12:03.000Z"
+  options = [
+    {
+      uuid = "0ea9f86f-9193-4d40-87d9-31c61d7b5e86"
+      optionType = { code = "localScriptGitId" }
+    },
+    {
+      uuid = "1d13b507-e98f-42f4-831d-a937321d000e"
+      optionType = { code = "password" }
+    },
+    {
+      uuid = "3a3c1ec6-b4ba-4e1b-9a58-63f9ded06d6a"
+      optionType = { code = "shell.sudo" }
+    },
+    {
+      uuid = "5221b7ef-3db1-45b7-a20a-2d3ac61895cd"
+      optionType = { code = "port" }
+    },
+    {
+      uuid = "976039fc-8ef9-4e36-8e98-9b570f2dcd8f"
+      optionType = { code = "sshKey" }
+    },
+    {
+      uuid = "ab91dec0-460a-45a4-86ae-ca1fd36c18a5"
+      optionType = { code = "host" }
+    },
+    {
+      uuid = "d5004056-c89e-4a72-9ec7-a150302c834a"
+      content = { uuid = "ca1bcb44-4878-4ffe-a302-7081e86b0c65" }
+      optionType = { code = "script" }
+      value = <<EOF
+echo "$(date) - provision" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+    },
+    {
+      uuid = "e6bc2895-aa53-4a11-bb7c-b9d3230e50da"
+      optionType = { code = "username" }
+    },
+    {
+      uuid = "fa8919bc-36ff-49d2-b5af-35d144911746"
+      optionType = { code = "localScriptGitRef" }
+    }
+  ]
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
