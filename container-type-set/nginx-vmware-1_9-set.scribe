@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-vmware-1.9-set" {
-  code = "nginx-vmware-1.9-set"
-  uuid = "8d802a11-d9b9-4cc7-ac55-e5a75ca345da"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-vmware-1.9" }
-}

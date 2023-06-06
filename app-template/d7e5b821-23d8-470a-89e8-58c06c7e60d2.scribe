@@ -1,8 +1,0 @@
-resource "app-template" "d7e5b821-23d8-470a-89e8-58c06c7e60d2" {
-  name = "Terraform: VMware (json)"
-  uuid = "d7e5b821-23d8-470a-89e8-58c06c7e60d2"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "terraform" }
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "7afdbbf5-7286-4a3c-ab36-7051a18178ca" {
-  uuid = "7afdbbf5-7286-4a3c-ab36-7051a18178ca"
-  entryTask = false
-  task = { name = "Hello World" }
-  taskOrder = 1
-  taskPhase = "reconfigure"
-}

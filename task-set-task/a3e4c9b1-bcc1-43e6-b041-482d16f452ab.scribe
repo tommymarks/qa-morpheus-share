@@ -1,7 +1,0 @@
-resource "task-set-task" "a3e4c9b1-bcc1-43e6-b041-482d16f452ab" {
-  uuid = "a3e4c9b1-bcc1-43e6-b041-482d16f452ab"
-  entryTask = false
-  task = { code = "fn68960Powershell" }
-  taskOrder = 0
-  taskPhase = "postProvision"
-}

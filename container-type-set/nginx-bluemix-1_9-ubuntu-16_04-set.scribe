@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-bluemix-1.9-ubuntu-16.04-set" {
-  code = "nginx-bluemix-1.9-ubuntu-16.04-set"
-  uuid = "77653005-ea15-4705-b9e3-00faef14c5c4"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-bluemix-1.9-ubuntu-16.04" }
-}

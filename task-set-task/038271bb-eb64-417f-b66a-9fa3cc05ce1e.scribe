@@ -1,7 +1,0 @@
-resource "task-set-task" "038271bb-eb64-417f-b66a-9fa3cc05ce1e" {
-  uuid = "038271bb-eb64-417f-b66a-9fa3cc05ce1e"
-  entryTask = false
-  task = { name = "Wait for 2 Hours" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

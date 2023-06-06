@@ -1,7 +1,0 @@
-resource "task-set-task" "83eb4501-c00d-4630-8e95-d6f906f79a6d" {
-  uuid = "83eb4501-c00d-4630-8e95-d6f906f79a6d"
-  entryTask = false
-  task = { code = "tmemail" }
-  taskOrder = 1
-  taskPhase = "operation"
-}

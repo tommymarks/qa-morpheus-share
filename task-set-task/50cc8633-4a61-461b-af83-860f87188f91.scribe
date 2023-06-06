@@ -1,7 +1,0 @@
-resource "task-set-task" "50cc8633-4a61-461b-af83-860f87188f91" {
-  uuid = "50cc8633-4a61-461b-af83-860f87188f91"
-  entryTask = false
-  task = { code = "tmshell" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

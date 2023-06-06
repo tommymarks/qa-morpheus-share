@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-opentelekom-1.9-set" {
-  code = "nginx-opentelekom-1.9-set"
-  uuid = "b16eead5-72ac-498a-a298-c6513a0ff73f"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-opentelekom-1.9" }
-}

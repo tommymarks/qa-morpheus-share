@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-hyperv-2.4-set" {
-  code = "apache-hyperv-2.4-set"
-  uuid = "bb2cb5c8-d57f-4864-a7ad-3be43ed514b7"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-hyperv-2.4" }
-}

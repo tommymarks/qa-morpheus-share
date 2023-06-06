@@ -1,7 +1,0 @@
-resource "task-set-task" "afe4fb89-d74c-406c-8a5c-33dd15d2a51e" {
-  uuid = "afe4fb89-d74c-406c-8a5c-33dd15d2a51e"
-  entryTask = false
-  task = { name = "68960-shell" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

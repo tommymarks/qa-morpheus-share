@@ -1,9 +1,0 @@
-resource "option-type-list" "db-optionlist" {
-  name = "db-optionlist"
-  uuid = "76f779a4-01a5-4170-b7d0-33854321fbb7"
-  apiType = "networks"
-  ignoreSSLErrors = false
-  realTime = true
-  type = "api"
-  visibility = "private"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "7141c5aa-c7e8-4a82-83bc-81dc559fa899" {
-  uuid = "7141c5aa-c7e8-4a82-83bc-81dc559fa899"
-  entryTask = false
-  task = { name = "TM Created" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

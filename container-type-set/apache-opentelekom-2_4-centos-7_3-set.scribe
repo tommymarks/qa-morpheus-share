@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-opentelekom-2.4-centos-7.3-set" {
-  code = "apache-opentelekom-2.4-centos-7.3-set"
-  uuid = "99809377-8a61-4a00-958f-362e1b3ae9a4"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-opentelekom-2.4-centos-7.3" }
-}

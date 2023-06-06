@@ -1,3 +1,0 @@
-resource "label" "test" {
-  name = "test"
-}

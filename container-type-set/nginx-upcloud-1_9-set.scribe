@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-upcloud-1.9-set" {
-  code = "nginx-upcloud-1.9-set"
-  uuid = "55a1b951-cf35-4cee-8a21-0a1e8aecde68"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-upcloud-1.9" }
-}

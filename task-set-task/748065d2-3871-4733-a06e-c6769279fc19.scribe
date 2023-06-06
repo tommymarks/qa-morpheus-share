@@ -1,7 +1,0 @@
-resource "task-set-task" "748065d2-3871-4733-a06e-c6769279fc19" {
-  uuid = "748065d2-3871-4733-a06e-c6769279fc19"
-  entryTask = false
-  task = { name = "vRO Verify" }
-  taskOrder = 1
-  taskPhase = "provision"
-}

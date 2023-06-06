@@ -1,7 +1,0 @@
-resource "task-set-task" "56079017-71e8-48c8-8127-bc4119699174" {
-  uuid = "56079017-71e8-48c8-8127-bc4119699174"
-  entryTask = false
-  task = { name = "Hello World Local" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

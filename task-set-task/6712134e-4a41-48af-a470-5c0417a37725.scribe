@@ -1,7 +1,0 @@
-resource "task-set-task" "6712134e-4a41-48af-a470-5c0417a37725" {
-  uuid = "6712134e-4a41-48af-a470-5c0417a37725"
-  entryTask = false
-  task = { code = "puppet.agent" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

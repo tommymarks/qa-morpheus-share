@@ -1,7 +1,0 @@
-resource "task-set-task" "d88de86a-462f-4d68-b727-49d90a405312" {
-  uuid = "d88de86a-462f-4d68-b727-49d90a405312"
-  entryTask = false
-  task = { name = "List Windows Users" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

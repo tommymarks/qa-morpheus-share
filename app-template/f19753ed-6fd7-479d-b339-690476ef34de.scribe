@@ -1,8 +1,0 @@
-resource "app-template" "f19753ed-6fd7-479d-b339-690476ef34de" {
-  name = "OCI Gap"
-  uuid = "f19753ed-6fd7-479d-b339-690476ef34de"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "terraform" }
-}

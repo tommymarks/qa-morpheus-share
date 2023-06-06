@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-upcloud-2.4-centos-7.3-set" {
-  code = "apache-upcloud-2.4-centos-7.3-set"
-  uuid = "bd49b304-47ad-4744-b45c-181be6a09680"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-upcloud-2.4-centos-7.3" }
-}

@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-esxi-2.4-set" {
-  code = "apache-esxi-2.4-set"
-  uuid = "14c5a7c4-40f7-4436-823a-896a32b6b66e"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-esxi-2.4" }
-}

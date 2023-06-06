@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-scvmm-2.4-set" {
-  code = "apache-scvmm-2.4-set"
-  uuid = "7f762266-5fbd-473f-9714-a10d32467b95"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-scvmm-2.4" }
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "72f7102b-24e8-4e63-ba31-7b500211908e" {
-  uuid = "72f7102b-24e8-4e63-ba31-7b500211908e"
-  entryTask = false
-  task = { code = "lot" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

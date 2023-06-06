@@ -1,7 +1,0 @@
-resource "task-set-task" "827e9e41-81f7-4342-822e-9863d85100b4" {
-  uuid = "827e9e41-81f7-4342-822e-9863d85100b4"
-  entryTask = false
-  task = { name = "Variable Test" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

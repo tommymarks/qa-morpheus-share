@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-upcloud-2.4-ubuntu-20.04-set" {
-  code = "apache-upcloud-2.4-ubuntu-20.04-set"
-  uuid = "e6414117-a294-41f9-aacb-e72b8d8dd3ad"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-upcloud-2.4-ubuntu-20.04" }
-}

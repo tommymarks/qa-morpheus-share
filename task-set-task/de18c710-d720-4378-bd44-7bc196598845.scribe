@@ -1,7 +1,0 @@
-resource "task-set-task" "de18c710-d720-4378-bd44-7bc196598845" {
-  uuid = "de18c710-d720-4378-bd44-7bc196598845"
-  entryTask = false
-  task = { name = "bunge vars" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

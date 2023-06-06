@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-bluemix-2.4-ubuntu-16.04-set" {
-  code = "apache-bluemix-2.4-ubuntu-16.04-set"
-  uuid = "a49e1b60-b0fb-45fb-87f6-586ad6b914bd"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-bluemix-2.4-ubuntu-16.04" }
-}

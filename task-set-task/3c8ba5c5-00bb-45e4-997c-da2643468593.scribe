@@ -1,7 +1,0 @@
-resource "task-set-task" "3c8ba5c5-00bb-45e4-997c-da2643468593" {
-  uuid = "3c8ba5c5-00bb-45e4-997c-da2643468593"
-  entryTask = false
-  task = { name = "Restart" }
-  taskOrder = 1
-  taskPhase = "provision"
-}

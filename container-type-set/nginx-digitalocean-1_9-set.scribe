@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-digitalocean-1.9-set" {
-  code = "nginx-digitalocean-1.9-set"
-  uuid = "daf930c8-0d8e-4369-a3f2-667750ee1ec6"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-digitalocean-1.9" }
-}

@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-azure-2.4-centos-7.3-set" {
-  code = "apache-azure-2.4-centos-7.3-set"
-  uuid = "a251716b-1344-4716-aabb-1a42d29aa264"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-azure-2.4-centos-7.3" }
-}

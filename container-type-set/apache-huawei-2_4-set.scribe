@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-huawei-2.4-set" {
-  code = "apache-huawei-2.4-set"
-  uuid = "b787ccfe-87c6-4291-afba-72fe9333311d"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-huawei-2.4" }
-}

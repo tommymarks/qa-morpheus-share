@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-bluemix-2.4-centos-7.3-set" {
-  code = "apache-bluemix-2.4-centos-7.3-set"
-  uuid = "9afe2439-9c26-4a30-a336-5b966dba6b35"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-bluemix-2.4-centos-7.3" }
-}

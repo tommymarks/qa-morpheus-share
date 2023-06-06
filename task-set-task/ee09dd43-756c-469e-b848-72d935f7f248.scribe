@@ -1,7 +1,0 @@
-resource "task-set-task" "ee09dd43-756c-469e-b848-72d935f7f248" {
-  uuid = "ee09dd43-756c-469e-b848-72d935f7f248"
-  entryTask = false
-  task = { name = "bash echo library" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

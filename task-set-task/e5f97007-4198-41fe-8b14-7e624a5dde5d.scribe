@@ -1,7 +1,0 @@
-resource "task-set-task" "e5f97007-4198-41fe-8b14-7e624a5dde5d" {
-  uuid = "e5f97007-4198-41fe-8b14-7e624a5dde5d"
-  entryTask = false
-  task = { name = "A Fail" }
-  taskOrder = 1
-  taskPhase = "postProvision"
-}

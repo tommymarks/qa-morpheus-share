@@ -1,9 +1,0 @@
-resource "app-template" "60e01528-f3a8-4f1c-9458-521f2a9e2bdf" {
-  name = "CloudFormation: Linux"
-  uuid = "60e01528-f3a8-4f1c-9458-521f2a9e2bdf"
-  active = true
-  custom = false
-  labels = [ { name = "tommy" } ]
-  lastUpdated = "2022-10-05T20:38:01.000Z"
-  templateType = { code = "cloudFormation" }
-}

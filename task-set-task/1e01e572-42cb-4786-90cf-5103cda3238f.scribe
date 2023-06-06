@@ -1,7 +1,0 @@
-resource "task-set-task" "1e01e572-42cb-4786-90cf-5103cda3238f" {
-  uuid = "1e01e572-42cb-4786-90cf-5103cda3238f"
-  entryTask = false
-  task = { name = "Phase: Shutdown" }
-  taskOrder = 0
-  taskPhase = "shutdown"
-}

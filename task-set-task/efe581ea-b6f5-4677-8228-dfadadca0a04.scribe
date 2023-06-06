@@ -1,7 +1,0 @@
-resource "task-set-task" "efe581ea-b6f5-4677-8228-dfadadca0a04" {
-  uuid = "efe581ea-b6f5-4677-8228-dfadadca0a04"
-  entryTask = false
-  task = { name = "Job: Appliance" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

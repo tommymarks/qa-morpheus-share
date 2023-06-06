@@ -1,7 +1,0 @@
-resource "task-set-task" "d734b6e4-7249-4d1a-943a-61002a6c0ef9" {
-  uuid = "d734b6e4-7249-4d1a-943a-61002a6c0ef9"
-  entryTask = false
-  task = { name = "File: SSH" }
-  taskOrder = 5
-  taskPhase = "provision"
-}

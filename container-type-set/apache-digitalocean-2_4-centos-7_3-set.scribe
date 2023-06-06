@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-digitalocean-2.4-centos-7.3-set" {
-  code = "apache-digitalocean-2.4-centos-7.3-set"
-  uuid = "4996d5cf-d67f-42c3-8066-728b26821336"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-digitalocean-2.4-centos-7.3" }
-}

@@ -1,8 +1,0 @@
-resource "app-template" "47c4192b-acfa-4288-add0-b3b8f26c82de" {
-  name = "Quicken AWS"
-  uuid = "47c4192b-acfa-4288-add0-b3b8f26c82de"
-  active = true
-  custom = false
-  lastUpdated = "2020-08-22T16:17:18.000Z"
-  templateType = { code = "terraform" }
-}

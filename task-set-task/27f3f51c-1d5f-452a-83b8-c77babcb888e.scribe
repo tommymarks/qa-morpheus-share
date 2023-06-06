@@ -1,7 +1,0 @@
-resource "task-set-task" "27f3f51c-1d5f-452a-83b8-c77babcb888e" {
-  uuid = "27f3f51c-1d5f-452a-83b8-c77babcb888e"
-  entryTask = false
-  task = { name = "Sleep Test 1" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "854808b0-9bc7-4acb-8438-2bfc696fa11e" {
-  uuid = "854808b0-9bc7-4acb-8438-2bfc696fa11e"
-  entryTask = false
-  task = { name = "tm-workflow" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

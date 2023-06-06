@@ -1,7 +1,0 @@
-resource "task-set-task" "c65ff6c8-b9bc-46f3-b170-9a4e9071bdd9" {
-  uuid = "c65ff6c8-b9bc-46f3-b170-9a4e9071bdd9"
-  entryTask = false
-  task = { name = "VDI - Configure Remote Applications" }
-  taskOrder = 4
-  taskPhase = "postProvision"
-}

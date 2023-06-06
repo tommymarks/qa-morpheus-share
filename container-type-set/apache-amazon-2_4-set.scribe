@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-amazon-2.4-set" {
-  code = "apache-amazon-2.4-set"
-  uuid = "66d4c84d-22f1-4830-a6e9-9f8e8ac1817d"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-amazon-2.4" }
-}

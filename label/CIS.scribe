@@ -1,3 +1,0 @@
-resource "label" "CIS" {
-  name = "CIS"
-}

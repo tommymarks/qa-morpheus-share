@@ -1,8 +1,0 @@
-resource "container-type-set" "amazon-centos-7.3" {
-  code = "amazon-centos-7.3"
-  uuid = "b847b4b4-258a-4bde-af21-5311a26c9e52"
-  containerCount = 1
-  dynamicCount = false
-  priorityOrder = 0
-  workloadType = { code = "amazon-centos-7.3" }
-}

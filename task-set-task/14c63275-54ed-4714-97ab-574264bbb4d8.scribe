@@ -1,7 +1,0 @@
-resource "task-set-task" "14c63275-54ed-4714-97ab-574264bbb4d8" {
-  uuid = "14c63275-54ed-4714-97ab-574264bbb4d8"
-  entryTask = false
-  task = { name = "Job: Workflow" }
-  taskOrder = 0
-  taskPhase = "operation"
-}

@@ -1,9 +1,0 @@
-resource "container-type-set" "apache-nutanix-2.4-centos-7.3-set" {
-  code = "apache-nutanix-2.4-centos-7.3-set"
-  uuid = "a48da63c-c449-46fd-97f5-61ff35727bdc"
-  category = "apache"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "apache-nutanix-2.4-centos-7.3" }
-}

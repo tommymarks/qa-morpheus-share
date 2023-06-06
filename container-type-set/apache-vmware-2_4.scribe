@@ -1,8 +1,0 @@
-resource "container-type-set" "apache-vmware-2.4" {
-  code = "apache-vmware-2.4"
-  uuid = "66734826-6d0c-462a-bfe1-8dcfb4714d48"
-  containerCount = 1
-  dynamicCount = false
-  priorityOrder = 0
-  workloadType = { code = "apache-vmware-2.4" }
-}

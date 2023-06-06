@@ -1,9 +1,0 @@
-resource "container-type-set" "nginx-huawei-1.9-set" {
-  code = "nginx-huawei-1.9-set"
-  uuid = "d35d3964-db65-4049-9466-e8b95b4bf1b9"
-  category = "nginx"
-  containerCount = 1
-  dynamicCount = true
-  priorityOrder = 0
-  workloadType = { code = "nginx-huawei-1.9" }
-}

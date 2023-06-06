@@ -1,7 +1,0 @@
-resource "task-set-task" "84a64fcc-8107-41f8-8cc8-e4ed253e5012" {
-  uuid = "84a64fcc-8107-41f8-8cc8-e4ed253e5012"
-  entryTask = false
-  task = { name = "VDI - Enable RDS Role" }
-  taskOrder = 0
-  taskPhase = "postProvision"
-}

@@ -1,3 +1,0 @@
-resource "label" "f5InstanceTypeUsed" {
-  name = "f5InstanceTypeUsed"
-}

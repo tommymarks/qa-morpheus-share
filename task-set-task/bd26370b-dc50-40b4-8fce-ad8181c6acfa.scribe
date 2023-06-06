@@ -1,7 +1,0 @@
-resource "task-set-task" "bd26370b-dc50-40b4-8fce-ad8181c6acfa" {
-  uuid = "bd26370b-dc50-40b4-8fce-ad8181c6acfa"
-  entryTask = false
-  task = { name = "Chef Bootstrap" }
-  taskOrder = 0
-  taskPhase = "provision"
-}
