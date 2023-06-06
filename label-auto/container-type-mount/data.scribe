@@ -5,8 +5,7 @@ resource "container-type-mount" "data" {
   certStore = false
   containerPath = "/usr/share/nginx/html"
   customType = false
-  deployable = false
-  fileMount = false
+  deployable = true
   hostPath = "/data"
   mountType = "volume"
   required = false
