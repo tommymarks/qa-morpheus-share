@@ -1,0 +1,23 @@
+resource "instance-type-layout" "6ef969ad-5e7a-422c-bb42-1993eef23055" {
+  code = "6ef969ad-5e7a-422c-bb42-1993eef23055"
+  name = "Windows Server"
+  uuid = "c0475b55-f8ff-4242-9db3-f471bf62dbd6"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "2019"
+  labels = [ { name = "auto" }, { name = "qa" } ]
+  memoryRequirement = 4294967296
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = true
+  systemLayout = false
+  workloads = [ { code = "d6175b57-c7c2-47ab-b08c-bc65997a7a8e" } ]
+}
