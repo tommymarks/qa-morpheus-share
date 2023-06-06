@@ -6,6 +6,7 @@ resource "container-type-mount" "data" {
   containerPath = "/usr/share/nginx/html"
   customType = false
   deployable = true
+  fileMount = false
   hostPath = "/data"
   mountType = "volume"
   required = false
