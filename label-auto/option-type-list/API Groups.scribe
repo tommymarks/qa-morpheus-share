@@ -1,0 +1,11 @@
+resource "option-type-list" "API Groups" {
+  name = "API Groups"
+  uuid = "666dde01-8c64-4e3d-93a7-273527ce06c7"
+  apiType = "groups"
+  ignoreSSLErrors = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  realTime = true
+  sourceMethod = "GET"
+  type = "api"
+  visibility = "public"
+}
