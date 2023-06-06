@@ -1,0 +1,34 @@
+resource "option-type" "morphnetwork" {
+  code = "morphnetwork"
+  name = "API Networks"
+  uuid = "357a7c71-e563-44f1-809e-93900259c2e8"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "morphpool"
+  displayOrder = 5
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphnetwork"
+  fieldLabel = "Network"
+  fieldName = "morphnetwork"
+  fieldSetName = "morphnetwork"
+  global = true
+  groupExpand = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  noBlank = false
+  optionList = { name = "API Networks" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "select"
+}

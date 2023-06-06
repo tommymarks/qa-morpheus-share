@@ -1,0 +1,23 @@
+resource "option-type-list" "API Networks" {
+  name = "API Networks"
+  uuid = "869ce6ae-6133-4d70-83e5-8edb4e509f1a"
+  apiType = "networks"
+  ignoreSSLErrors = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  realTime = true
+  requestScript = <<EOF
+results.zoneId = input.morphcloud
+results.siteId = input.morphgroup
+results.poolId = input.morphpool
+EOF
+  sourceMethod = "GET"
+  translationScript = <<EOF
+var i=0;
+results = [];
+for(i; i<data.length; i++) {
+  results.push({name: data[i].name, value: data[i].value});
+}
+EOF
+  type = "api"
+  visibility = "public"
+}
