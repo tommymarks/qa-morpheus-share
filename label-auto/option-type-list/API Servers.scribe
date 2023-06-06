@@ -1,0 +1,11 @@
+resource "option-type-list" "API Servers" {
+  name = "API Servers"
+  uuid = "02488deb-e657-4593-87ca-c876baa986a8"
+  apiType = "servers"
+  ignoreSSLErrors = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  realTime = true
+  sourceMethod = "GET"
+  type = "api"
+  visibility = "private"
+}
