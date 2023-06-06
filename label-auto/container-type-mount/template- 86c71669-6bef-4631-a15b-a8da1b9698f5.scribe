@@ -1,0 +1,18 @@
+resource "container-type-mount" "template: 86c71669-6bef-4631-a15b-a8da1b9698f5" {
+  code = "template: 86c71669-6bef-4631-a15b-a8da1b9698f5"
+  name = "phase: provision"
+  autoRun = true
+  canPersist = false
+  certStore = false
+  containerPath = "/var/tmp/templates"
+  customType = false
+  deployable = false
+  hostPath = "/var/tmp/templates"
+  mountType = "config"
+  required = false
+  sortOrder = 0
+  subMount = false
+  template = { code = "86c71669-6bef-4631-a15b-a8da1b9698f5" }
+  unmanagedEnabled = false
+  visible = false
+}

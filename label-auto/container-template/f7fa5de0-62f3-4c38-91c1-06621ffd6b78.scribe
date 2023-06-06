@@ -1,0 +1,15 @@
+resource "container-template" "f7fa5de0-62f3-4c38-91c1-06621ffd6b78" {
+  code = "f7fa5de0-62f3-4c38-91c1-06621ffd6b78"
+  name = "phase: post provision"
+  uuid = "714adee4-f780-4d60-873e-7e02a9afada8"
+  autoRun = true
+  dateCreated = "2017-05-10T17:08:26.000Z"
+  failOnError = true
+  fileName = "postprovision.txt"
+  filePath = "/var/tmp/templates"
+  lastUpdated = "2021-02-19T04:19:05.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = "post provision template"
+  templatePhase = "postProvision"
+}

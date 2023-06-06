@@ -1,0 +1,13 @@
+resource "container-script" "1793c19f-13f2-4d24-9f24-532cb09120b0" {
+  code = "1793c19f-13f2-4d24-9f24-532cb09120b0"
+  name = "phase: provision three"
+  uuid = "13ef9e07-6472-472c-8f6f-90cbb2128dd3"
+  failOnError = true
+  lastUpdated = "2021-02-19T04:19:58.000Z"
+  script = "echo \"$(date) - provision3\" | tee -a /var/tmp/phase_script.txt"
+  scriptPhase = "provision"
+  scriptType = "bash"
+  scriptVersion = "1"
+  sortOrder = 0
+  sudoUser = true
+}
