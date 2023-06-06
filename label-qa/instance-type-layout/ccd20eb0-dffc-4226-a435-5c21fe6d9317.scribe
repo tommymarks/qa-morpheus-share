@@ -1,0 +1,24 @@
+resource "instance-type-layout" "ccd20eb0-dffc-4226-a435-5c21fe6d9317" {
+  code = "ccd20eb0-dffc-4226-a435-5c21fe6d9317"
+  name = "Xen NGINX"
+  uuid = "a3af66a0-21a2-4d47-891e-c52862faabaa"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "latest"
+  labels = [ { name = "qa" } ]
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "xen" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "b75a24b7-88f0-4800-92cc-ff2e4b000838" } ]
+}
