@@ -1,0 +1,35 @@
+resource "option-type" "morphcloud" {
+  code = "morphcloud"
+  name = "API Clouds"
+  uuid = "c622e7e3-ac50-4eed-9c03-6637dd6a7496"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  dependsOnCode = "morphgroup"
+  displayOrder = 1
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphcloud"
+  fieldLabel = "Cloud"
+  fieldName = "morphcloud"
+  fieldSetName = "morphcloud"
+  global = true
+  groupExpand = false
+  helpBlock = "Select a Cloud"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  noBlank = false
+  optionList = { name = "API Clouds" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  type = "select"
+}
