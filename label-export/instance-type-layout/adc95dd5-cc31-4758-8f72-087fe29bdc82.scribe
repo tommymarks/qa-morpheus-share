@@ -1,0 +1,26 @@
+resource "instance-type-layout" "adc95dd5-cc31-4758-8f72-087fe29bdc82" {
+  code = "adc95dd5-cc31-4758-8f72-087fe29bdc82"
+  name = "Export Ansible"
+  uuid = "a432d245-d7e5-4d5b-8ae1-47af3f7146d8"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  description = "export test"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "nginx"
+  labels = [ { name = "export" } ]
+  memoryRequirement = 1073741824
+  networkLevel = "container"
+  optionTypes = [ { code = "Color" } ]
+  portCount = 1
+  provisionType = { code = "amazon" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = true
+  systemLayout = false
+  taskSets = [ { name = "Export Ansible" } ]
+  workloads = [ { code = "b386e44b-b143-43bd-b9b0-8a5321c3291b" } ]
+}
