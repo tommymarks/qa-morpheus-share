@@ -1,0 +1,24 @@
+resource "instance-type" "tomcatweb" {
+  code = "tomcatweb"
+  name = "Tomcat"
+  uuid = "670ab01a-9e12-4783-b5ad-46d03422b49d"
+  category = "web"
+  active = true
+  deploymentService = "defaultDeployService"
+  description = "A web server for running Java Servlet based applications. Easily deploy java based war files and scale horizontally."
+  enabled = true
+  environmentPrefix = "TOMCAT"
+  featured = false
+  hasAdminUser = false
+  hasAutoScale = true
+  hasConfig = true
+  hasDeployment = true
+  hasProvisioningStep = false
+  hasServiceUser = false
+  hasSettings = false
+  labels = [ { name = "qa" } ]
+  layouts = [ { code = "9449af4c-d136-4497-b557-135315235a52" } ]
+  provisionTypeDefault = false
+  viewSet = "default"
+  visibility = "public"
+}
