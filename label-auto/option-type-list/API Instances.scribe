@@ -1,0 +1,11 @@
+resource "option-type-list" "API Instances" {
+  name = "API Instances"
+  uuid = "b6d497de-8e4d-48a0-96b1-0d693fc143ab"
+  apiType = "instances"
+  ignoreSSLErrors = false
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  realTime = true
+  sourceMethod = "GET"
+  type = "api"
+  visibility = "private"
+}
