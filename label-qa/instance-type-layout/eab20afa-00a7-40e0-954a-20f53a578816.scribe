@@ -1,0 +1,24 @@
+resource "instance-type-layout" "eab20afa-00a7-40e0-954a-20f53a578816" {
+  code = "eab20afa-00a7-40e0-954a-20f53a578816"
+  name = "VMware NGINX"
+  uuid = "fa02f2c1-a581-4e94-8082-9f57eb60b349"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = true
+  description = "This will provision a single process with no redundancy"
+  enabled = true
+  hasAdminUser = false
+  hasAutoScale = true
+  hasServiceUser = false
+  instanceLevel = "user"
+  instanceVersion = "latest"
+  labels = [ { name = "qa" } ]
+  memoryRequirement = 0
+  networkLevel = "container"
+  portCount = 1
+  provisionType = { code = "vmware" }
+  serverCount = 1
+  sortOrder = 0
+  supportsConvertToManaged = false
+  systemLayout = false
+  workloads = [ { code = "90ee8cd6-ac09-462b-97e9-62b3801e654e" } ]
+}
