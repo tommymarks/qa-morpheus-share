@@ -1,7 +1,0 @@
-resource "task-set-task" "0ffe16c0-b119-4e77-b25b-fa320381cf3f" {
-  uuid = "0ffe16c0-b119-4e77-b25b-fa320381cf3f"
-  entryTask = false
-  task = { name = "Phase: Pre Deploy" }
-  taskOrder = 12
-  taskPhase = "preDeploy"
-}

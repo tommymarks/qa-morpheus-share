@@ -1,3 +1,0 @@
-resource "label" "export" {
-  name = "export"
-}

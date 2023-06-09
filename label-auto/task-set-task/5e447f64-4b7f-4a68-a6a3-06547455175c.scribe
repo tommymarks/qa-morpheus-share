@@ -1,7 +1,0 @@
-resource "task-set-task" "5e447f64-4b7f-4a68-a6a3-06547455175c" {
-  uuid = "5e447f64-4b7f-4a68-a6a3-06547455175c"
-  entryTask = false
-  task = { name = "Phase: Price" }
-  taskOrder = 1
-  taskPhase = "price"
-}
