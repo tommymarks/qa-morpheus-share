@@ -5,8 +5,8 @@ resource "task" "echo" {
   allowCustomConfig = false
   dateCreated = "2023-01-03T20:32:58.000Z"
   executeTarget = "resource"
-  labels = [ "export", "test" ]
-  lastUpdated = "2023-06-13T14:57:19.000Z"
+  labels = [ "export" ]
+  lastUpdated = "2023-06-13T15:46:05.000Z"
   options = [
     { optionType = { code = "host" } },
     { optionType = { code = "localScriptGitId" } },
