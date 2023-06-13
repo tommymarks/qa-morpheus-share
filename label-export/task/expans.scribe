@@ -1,0 +1,30 @@
+resource "task" "expans" {
+  code = "expans"
+  name = "Export Ansible"
+  uuid = "2490ebf0-66e2-4e32-9103-31abb336289a"
+  allowCustomConfig = false
+  dateCreated = "2023-06-06T03:39:30.000Z"
+  executeTarget = "resource"
+  labels = [ { name = "export" } ]
+  lastUpdated = "2023-06-06T03:39:30.000Z"
+  options = [
+    { optionType = { code = "ansibleGitId" }, value = "16494" },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansibleOptions" } },
+    { optionType = { code = "ansiblePlaybook" }, value = "nginx-1_9" },
+    { optionType = { code = "ansibleSkipTags" } },
+    { optionType = { code = "ansibleTags" } },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTask" }
+  visibility = "private"
+}
