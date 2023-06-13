@@ -5,7 +5,7 @@ resource "task" "expans" {
   allowCustomConfig = false
   dateCreated = "2023-06-06T03:39:30.000Z"
   executeTarget = "resource"
-  labels = [ { name = "export" } ]
+  labels = [ "export" ]
   lastUpdated = "2023-06-06T03:39:30.000Z"
   options = [
     { optionType = { code = "ansibleGitId" }, value = "16494" },
