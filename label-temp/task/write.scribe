@@ -1,0 +1,28 @@
+resource "task" "write" {
+  code = "write"
+  name = "temp write attributes"
+  uuid = "47cb266c-81ed-442d-b439-260c2a82bee3"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T00:06:03.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:06:03.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } },
+    {
+      optionType = { code = "writeAttributes.attributes" }
+      value = "{\"hello\":\"world\"}"
+    }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "writeAttributes" }
+  visibility = "private"
+}
