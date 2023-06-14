@@ -1,0 +1,17 @@
+resource "resource-spec-template" "5e754686-14fb-4d71-af39-c1502f465e38" {
+  name = "temp kube"
+  uuid = "5e754686-14fb-4d71-af39-c1502f465e38"
+  autoRun = false
+  dateCreated = "2023-06-14T00:42:50.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:42:50.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "47c93642-c6c7-4778-b079-48f57bf5c2b6" }
+  templatePhase = "provision"
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
