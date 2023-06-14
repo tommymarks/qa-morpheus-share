@@ -4,7 +4,7 @@ resource "task" "temp ansible nginx" {
   allowCustomConfig = false
   dateCreated = "2023-06-14T00:13:48.000Z"
   executeTarget = "resource"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:13:48.000Z"
   options = [
     { optionType = { code = "ansibleOptions" }, value = "-n options" },
