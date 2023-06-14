@@ -1,0 +1,32 @@
+resource "task" "nested" {
+  code = "nested"
+  name = "temp nested"
+  uuid = "4859b9e5-2d76-4e70-a3b8-5eddf0e432bc"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T00:08:27.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:08:27.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    {
+      optionType = { code = "operationalWorkflowId" }
+      value = "6157"
+    },
+    {
+      optionType = { code = "operationalWorkflowName" }
+      value = "Hello World Operational"
+    },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "nestedWorkflow" }
+  visibility = "private"
+}
