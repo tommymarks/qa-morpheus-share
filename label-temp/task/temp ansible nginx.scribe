@@ -1,0 +1,29 @@
+resource "task" "temp ansible nginx" {
+  name = "temp ansible nginx"
+  uuid = "5062aefe-80f6-4ebf-a08d-d261c3118a09"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T00:13:48.000Z"
+  executeTarget = "resource"
+  labels = [ { name = "temp" } ]
+  lastUpdated = "2023-06-14T00:13:48.000Z"
+  options = [
+    { optionType = { code = "ansibleOptions" }, value = "-n options" },
+    { optionType = { code = "ansibleGitId" }, value = "16494" },
+    { optionType = { code = "ansibleTags" }, value = "hello" },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansiblePlaybook" }, value = "nginx-1_9" },
+    { optionType = { code = "ansibleSkipTags" }, value = "world" },
+    { optionType = { code = "port" } },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "ansibleTask" }
+  visibility = "private"
+}
