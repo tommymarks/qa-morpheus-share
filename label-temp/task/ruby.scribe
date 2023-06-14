@@ -5,7 +5,7 @@ resource "task" "ruby" {
   allowCustomConfig = false
   dateCreated = "2023-06-13T23:52:49.000Z"
   executeTarget = "local"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:00:01.000Z"
   options = [
     { optionType = { code = "host" } },
