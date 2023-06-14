@@ -1,0 +1,39 @@
+resource "option-type" "tempTypeahead" {
+  code = "tempTypeahead"
+  name = "temp typeahead"
+  uuid = "d6f1b434-ccd0-40a5-a244-3d73e044d026"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp typeahead"
+  fieldName = "tempTypeahead"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  labels = [ { name = "temp" } ]
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "temp manual" }
+  optionSource = "list"
+  ownerEditable = false
+  required = true
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "typeahead"
+}
