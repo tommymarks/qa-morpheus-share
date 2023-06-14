@@ -1,0 +1,39 @@
+resource "option-type" "tempSelect" {
+  code = "tempSelect"
+  name = "temp select"
+  uuid = "deac5488-21de-4150-81ea-7e155772d0ed"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp select"
+  fieldName = "tempSelect"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  labels = [ { name = "temp" } ]
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "temp manual" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "select"
+}
