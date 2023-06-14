@@ -1,0 +1,27 @@
+resource "task" "temp vRO verify" {
+  name = "temp vRO verify"
+  uuid = "f3841ba1-81ed-4a91-b445-d9e88e8c7193"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T00:16:24.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:16:24.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "b45719d5-0ae5-46f4-b0d9-da8021ddb5cf" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
