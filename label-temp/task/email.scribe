@@ -1,0 +1,34 @@
+resource "task" "email" {
+  code = "email"
+  name = "temp email"
+  uuid = "7aa626d1-e02d-4e18-a7a0-1d0e1a564bcb"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T00:04:56.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:04:56.000Z"
+  options = [
+    {
+      optionType = { code = "emailAddress" }
+      value = "tommymarks@gmail.com"
+    },
+    {
+      content = { uuid = "097146be-854f-40bd-9aaa-e62bd64a0565" }
+      optionType = { code = "emailBody" }
+    },
+    { optionType = { code = "emailSkipTemplate" }, value = "on" },
+    { optionType = { code = "emailSubject" }, value = "Hello" },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "email" }
+  visibility = "private"
+}
