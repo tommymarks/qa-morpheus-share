@@ -1,0 +1,27 @@
+resource "task" "Phase: Post Provision Four" {
+  name = "Phase: Post Provision Four"
+  uuid = "f2075ac9-0ae0-4e4a-89de-e6e19c8630f7"
+  allowCustomConfig = false
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:17:55.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "be14e750-efb3-4ab0-8cca-7d547a1d1171" }
+      optionType = { code = "script" }
+      value = "echo \"$(date) - provision4\" | tee -a /tmp/phase_task.txt"
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
