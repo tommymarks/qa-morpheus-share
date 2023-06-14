@@ -23,7 +23,7 @@ resource "option-type" "tempArea" {
   ignoreField = false
   isHidden = false
   isLocked = false
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   localCredential = false
   multiTenant = false
   noBlank = false
