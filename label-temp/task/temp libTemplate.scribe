@@ -1,0 +1,28 @@
+resource "task" "temp libTemplate" {
+  name = "temp libTemplate"
+  uuid = "825b2894-19ea-445b-b680-0fac093a7ba8"
+  allowCustomConfig = false
+  dateCreated = "2023-06-02T22:11:44.000Z"
+  executeTarget = "resource"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:59:16.000Z"
+  options = [
+    {
+      optionType = { code = "containerTemplate" }
+      value = "auto template 0602150546497"
+    },
+    { optionType = { code = "containerTemplateId" }, value = "2144" },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "containerTemplate" }
+  visibility = "private"
+}
