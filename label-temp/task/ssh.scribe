@@ -5,7 +5,7 @@ resource "task" "ssh" {
   allowCustomConfig = false
   dateCreated = "2023-06-13T23:53:29.000Z"
   executeTarget = "remote"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:00:10.000Z"
   options = [
     { optionType = { code = "port" }, value = "22" },
