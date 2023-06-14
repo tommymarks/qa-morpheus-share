@@ -4,7 +4,7 @@ resource "task" "temp ansible tower" {
   allowCustomConfig = false
   dateCreated = "2023-06-14T00:12:56.000Z"
   executeTarget = "resource"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:12:56.000Z"
   options = [
     {
