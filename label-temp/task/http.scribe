@@ -1,0 +1,35 @@
+resource "task" "http" {
+  code = "http"
+  name = "temp http"
+  uuid = "d468470f-edc6-453e-8d43-3e9322ff63fe"
+  allowCustomConfig = false
+  dateCreated = "2023-06-13T23:53:38.000Z"
+  executeTarget = "local"
+  labels = [ { name = "temp" } ]
+  lastUpdated = "2023-06-13T23:58:46.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "ignoreSSL" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } },
+    { optionType = { code = "webBody" } },
+    { optionType = { code = "webHeaders" }, value = "[]" },
+    { optionType = { code = "webMethod" }, value = "GET" },
+    { optionType = { code = "webPassword" }, value = "guest" },
+    {
+      optionType = { code = "webUrl" }
+      value = "https://jigsaw.w3.org/HTTP/Basic/"
+    },
+    { optionType = { code = "webUser" }, value = "guest" }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "httpTask" }
+  visibility = "private"
+}

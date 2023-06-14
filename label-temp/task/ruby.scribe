@@ -1,0 +1,29 @@
+resource "task" "ruby" {
+  code = "ruby"
+  name = "temp rubyGit"
+  uuid = "0578e666-0cd1-43c5-b980-1969519ffe98"
+  allowCustomConfig = false
+  dateCreated = "2023-06-13T23:52:49.000Z"
+  executeTarget = "local"
+  labels = [ { name = "temp" } ]
+  lastUpdated = "2023-06-14T00:00:01.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "37d001b9-f572-4390-b19b-7de4000fa230" }
+      optionType = { code = "rubyScript" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jrubyTask" }
+  visibility = "private"
+}
