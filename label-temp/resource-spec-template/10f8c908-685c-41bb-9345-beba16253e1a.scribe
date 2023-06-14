@@ -1,0 +1,17 @@
+resource "resource-spec-template" "10f8c908-685c-41bb-9345-beba16253e1a" {
+  name = "temp aks"
+  uuid = "10f8c908-685c-41bb-9345-beba16253e1a"
+  autoRun = false
+  dateCreated = "2023-06-14T00:40:41.000Z"
+  failOnError = true
+  hasDeployment = false
+  hidden = false
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:40:41.000Z"
+  runOnDeploy = false
+  runOnScale = false
+  template = { uuid = "ce126714-dec3-46c2-8305-89b1ed383d81" }
+  templatePhase = "provision"
+  templateType = "AKS ARM Template"
+  type = { code = "aks" }
+}
