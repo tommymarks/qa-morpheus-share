@@ -4,7 +4,7 @@ resource "task" "temp results" {
   allowCustomConfig = false
   dateCreated = "2023-06-13T23:54:08.000Z"
   executeTarget = "resource"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-13T23:59:53.000Z"
   options = [
     { optionType = { code = "host" } },
