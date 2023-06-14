@@ -4,7 +4,7 @@ resource "task" "temp libTemplate2" {
   allowCustomConfig = false
   dateCreated = "2023-06-13T23:53:59.000Z"
   executeTarget = "resource"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:01:15.000Z"
   options = [
     {
