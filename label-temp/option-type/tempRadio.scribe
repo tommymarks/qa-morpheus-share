@@ -1,0 +1,39 @@
+resource "option-type" "tempRadio" {
+  code = "tempRadio"
+  name = "temp radio"
+  uuid = "2c16f5d3-94d4-4e02-b7c4-73816545f9c6"
+  advanced = false
+  contextualDefault = false
+  creatable = true
+  custom = false
+  displayOrder = 0
+  displayValueOnDetails = false
+  editable = false
+  enabled = true
+  excludeFromSearch = false
+  exportEvar = false
+  exportMeta = false
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp radio"
+  fieldName = "tempRadio"
+  formField = false
+  global = true
+  groupExpand = false
+  ignoreField = false
+  isHidden = false
+  isLocked = false
+  labels = [ { name = "temp" } ]
+  localCredential = false
+  multiTenant = false
+  noBlank = false
+  optionList = { name = "temp manual" }
+  optionSource = "list"
+  ownerEditable = false
+  required = false
+  secretField = false
+  showOnCreate = true
+  showOnEdit = true
+  tenantEditable = false
+  tenantVisible = true
+  type = "radio"
+}
