@@ -4,7 +4,7 @@ resource "task" "js" {
   uuid = "07eae0e5-61cc-41bc-91d8-67a259d48f03"
   dateCreated = "2023-06-13T23:53:08.000Z"
   executeTarget = "local"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-13T23:58:56.000Z"
   options = [
     {
