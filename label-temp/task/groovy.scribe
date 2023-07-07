@@ -4,7 +4,7 @@ resource "task" "groovy" {
   uuid = "c79cdf55-158a-4b59-b422-44ecf69023af"
   dateCreated = "2023-06-13T23:52:40.000Z"
   executeTarget = "local"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-13T23:58:31.000Z"
   resultType = "value"
   taskType = { code = "groovyTask" }
