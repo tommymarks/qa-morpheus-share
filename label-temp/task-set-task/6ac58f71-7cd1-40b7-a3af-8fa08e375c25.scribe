@@ -1,5 +1,0 @@
-resource "task-set-task" "6ac58f71-7cd1-40b7-a3af-8fa08e375c25" {
-  uuid = "6ac58f71-7cd1-40b7-a3af-8fa08e375c25"
-  task = { name = "Phase: Post Provision Error" }
-  taskOrder = 8
-}
