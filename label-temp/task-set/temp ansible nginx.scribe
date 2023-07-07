@@ -1,0 +1,8 @@
+resource "task-set" "temp ansible nginx" {
+  name = "temp ansible nginx"
+  uuid = "c4c529ba-1c4d-4df2-9109-80a76ffedec0"
+  dateCreated = "2023-06-14T00:17:21.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:17:21.000Z"
+  taskSetTasks = [ { uuid = "84d49f73-48d8-494e-8873-10ec27de98e5" } ]
+}
