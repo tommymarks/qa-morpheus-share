@@ -3,7 +3,7 @@ resource "task" "temp ansible nginx" {
   uuid = "5062aefe-80f6-4ebf-a08d-d261c3118a09"
   dateCreated = "2023-06-14T00:13:48.000Z"
   executeTarget = "resource"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:13:48.000Z"
   options = [
     {
