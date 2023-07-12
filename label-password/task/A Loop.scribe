@@ -1,0 +1,8 @@
+resource "task" "A Loop" {
+  name = "A Loop"
+  uuid = "e1762853-41c2-4b2a-b256-5169a989e3a0"
+  dateCreated = "2021-09-03T17:21:02.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-11-17T18:15:57.000Z"
+  taskType = { code = "script" }
+}
