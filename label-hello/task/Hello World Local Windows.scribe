@@ -1,9 +1,0 @@
-resource "task" "Hello World Local Windows" {
-  name = "Hello World Local Windows"
-  uuid = "c39920e9-6c0c-43df-88f3-5ac36adc97fc"
-  dateCreated = "2021-05-24T19:43:07.000Z"
-  executeTarget = "local"
-  labels = [ "hello" ]
-  lastUpdated = "2022-08-25T19:05:50.000Z"
-  taskType = { code = "script" }
-}
