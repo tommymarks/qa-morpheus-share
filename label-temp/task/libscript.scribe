@@ -4,7 +4,7 @@ resource "task" "libscript" {
   uuid = "e5518a7f-2402-4782-a648-521423acd8d4"
   dateCreated = "2023-06-13T23:53:49.000Z"
   executeTarget = "resource"
-  labels = [ "temp" ]
+  labels = [ { name = "temp" } ]
   lastUpdated = "2023-06-13T23:59:07.000Z"
   options = [
     { optionType = { code = "containerScriptId" }, value = "2448" },
