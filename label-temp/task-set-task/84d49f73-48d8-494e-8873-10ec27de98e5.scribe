@@ -1,0 +1,5 @@
+resource "task-set-task" "84d49f73-48d8-494e-8873-10ec27de98e5" {
+  uuid = "84d49f73-48d8-494e-8873-10ec27de98e5"
+  task = { name = "temp ansible nginx" }
+  taskPhase = "provision"
+}
