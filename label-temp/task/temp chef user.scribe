@@ -3,7 +3,7 @@ resource "task" "temp chef user" {
   uuid = "0c00518f-3bca-4314-8c3c-dc9279f82078"
   dateCreated = "2023-06-14T00:14:41.000Z"
   executeTarget = "resource"
-  labels = [ "temp" ]
+  labels = [ { name = "temp" } ]
   lastUpdated = "2023-06-14T00:14:42.000Z"
   options = [
     {
