@@ -7,6 +7,6 @@ resource "option-type" "tempArea" {
   fieldContext = "config.customOptions"
   fieldLabel = "temp textarea"
   fieldName = "tempArea"
-  labels = [ "temp" ]
+  labels = [ { name = "temp" } ]
   type = "textarea"
 }
