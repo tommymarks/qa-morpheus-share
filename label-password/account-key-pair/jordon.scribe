@@ -1,0 +1,9 @@
+resource "account-key-pair" "jordon" {
+  name = "jordon"
+  uuid = "2c5a78e9-a967-40e0-b914-67cfff092d89"
+  accountId = 1
+  dateCreated = "2017-08-07T19:47:11.000Z"
+  lastUpdated = "2017-08-07T19:47:11.000Z"
+  publicKey = "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAlGj0xvhKb+4rIVCC5O8hXjnpBM7hVuF4jF3eN0vpHxVLabS53+Fm7sHAAl76YPVYfUyjfygV77ltIjaVhWq+Y8paaVA9JcVPE78fBAkc8vtiC/ts59XhL7bCgrqAxlAx1DzLXmmbeYX9X54Z9jPawBCBpCf8pGJvc9+9d4dnonaDT9hCtpcvVEBuQ4azq4q/lSjWXs+WO4VANvXIF/yE6UDPiSo9eqE+dWxoyaabbwB5Kxc+HO//vbZMrC/fOW4qqVD2Uv47+z6xBMpw0yWAjqj06t7JV2U5B7zdyObHCYun+eYewapbhP9Q+v/Res4/9BZa6D+XBWbUVqWhdILEFQ== jsaardchit@Jordon-Saardchits-MacBook-Pro.local"
+  scope = "account"
+}
