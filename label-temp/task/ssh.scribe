@@ -4,7 +4,7 @@ resource "task" "ssh" {
   uuid = "acd25840-a5e8-4a37-b13d-b71cd5924d42"
   dateCreated = "2023-06-13T23:53:29.000Z"
   executeTarget = "remote"
-  labels = [ { name = "temp" } ]
+  labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:00:10.000Z"
   options = [
     { optionType = { code = "sshKey" }, value = { name = "QA Key" } },
