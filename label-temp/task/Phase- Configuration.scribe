@@ -1,9 +1,0 @@
-resource "task" "Phase: Configuration" {
-  name = "Phase: Configuration"
-  uuid = "31100628-22be-4f63-a02b-3e3df79ff396"
-  dateCreated = "2020-11-09T18:12:25.000Z"
-  executeTarget = "local"
-  lastUpdated = "2020-11-09T18:12:25.000Z"
-  resultType = "json"
-  taskType = { code = "groovyTask" }
-}
