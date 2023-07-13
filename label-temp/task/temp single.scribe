@@ -6,11 +6,11 @@ resource "task" "temp single" {
   labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:00:21.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "afda991d-d1e5-4e2c-85ad-952e779cb0f0" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
