@@ -1,0 +1,6 @@
+resource "task-set-task" "5533baa5-8922-44a7-844f-5809bc8e2844" {
+  uuid = "5533baa5-8922-44a7-844f-5809bc8e2844"
+  task = { code = "shell" }
+  taskOrder = 4
+  taskPhase = "provision"
+}
