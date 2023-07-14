@@ -1,0 +1,18 @@
+resource "option-type" "webHeaders" {
+  code = "webHeaders"
+  name = "http Header"
+  uuid = "94b1498a-9bd7-4ad2-bfa7-99fa8e6488cc"
+  category = "code"
+  config = {
+    keyLabel = "gomorpheus.label.HttpHeader"
+    keyPlaceholder = "Accept"
+    valueLabel = "gomorpheus.label.HttpHeaderValue"
+    valuePlaceholder = "text/plain"
+  }
+  displayOrder = 6
+  fieldCode = "gomorpheus.optiontype.HttpHeaders"
+  fieldContext = "taskOptions"
+  fieldLabel = "HTTP Headers"
+  fieldName = "httpHeaders"
+  type = "key-value"
+}
