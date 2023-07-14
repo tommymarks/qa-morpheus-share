@@ -1,0 +1,11 @@
+resource "option-type" "chefRunList" {
+  code = "chefRunList"
+  name = "Run List"
+  uuid = "15bf3dd0-2369-43bf-aa84-80ec3536cc93"
+  category = "chef"
+  displayOrder = 3
+  fieldCode = "gomorpheus.label.runList"
+  fieldContext = "taskOptions"
+  fieldLabel = "Run List"
+  fieldName = "chefRunList"
+}

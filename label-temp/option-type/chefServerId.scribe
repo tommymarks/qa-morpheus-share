@@ -1,0 +1,14 @@
+resource "option-type" "chefServerId" {
+  code = "chefServerId"
+  name = "Chef Server"
+  uuid = "fc0341dc-3f30-4a0b-8f4c-f0f8fd16f333"
+  category = "chef"
+  displayOrder = 1
+  fieldCode = "gomorpheus.optiontype.ChefServer"
+  fieldContext = "taskOptions"
+  fieldLabel = "Chef Server"
+  fieldName = "chefServerId"
+  optionSource = "chefServer"
+  required = true
+  type = "select"
+}

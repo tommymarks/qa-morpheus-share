@@ -1,0 +1,11 @@
+resource "option-type" "chefEnv" {
+  code = "chefEnv"
+  name = "Environment"
+  uuid = "059543ee-f168-4880-8665-fdae87b0272a"
+  category = "chef"
+  displayOrder = 2
+  fieldCode = "gomorpheus.optiontype.Environment"
+  fieldContext = "taskOptions"
+  fieldLabel = "Environment"
+  fieldName = "chefEnv"
+}
