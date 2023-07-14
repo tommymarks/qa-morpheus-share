@@ -1,0 +1,12 @@
+resource "option-type" "pythonBinary" {
+  code = "pythonBinary"
+  name = "Python Binary"
+  uuid = "4abaaedf-8c84-419f-9679-c852a976c72f"
+  category = "code"
+  displayOrder = 8
+  fieldCode = "gomorpheus.optiontype.pythonBinary"
+  fieldContext = "taskOptions"
+  fieldLabel = "Python Binary"
+  fieldName = "pythonBinary"
+  helpBlock = "Optional override default python binary"
+}

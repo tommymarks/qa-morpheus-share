@@ -1,0 +1,12 @@
+resource "option-type" "pythonAdditionalPackages" {
+  code = "pythonAdditionalPackages"
+  name = "Additional Packages"
+  uuid = "042d63bb-a5fd-4313-a3a1-659747ebe973"
+  category = "code"
+  displayOrder = 7
+  fieldCode = "gomorpheus.optiontype.pythonAdditionalPackages"
+  fieldContext = "taskOptions"
+  fieldLabel = "Additional Packages"
+  fieldName = "pythonAdditionalPackages"
+  helpBlock = "Format expected is 'packageName==x.x.x packageName2==x.x.x'. Additional packages will be installed after requirements.txt if detected."
+}
