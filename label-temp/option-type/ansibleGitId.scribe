@@ -1,0 +1,14 @@
+resource "option-type" "ansibleGitId" {
+  code = "ansibleGitId"
+  name = "Ansible Repo"
+  uuid = "9f29b735-cfd1-4b3b-8ac2-2a267e210231"
+  category = "ansible"
+  displayOrder = 1
+  fieldCode = "gomorpheus.label.option.ansiblerepo"
+  fieldContext = "taskOptions"
+  fieldLabel = "Ansible Repo"
+  fieldName = "ansibleGitId"
+  optionSource = "ansibleRepo"
+  required = true
+  type = "select"
+}
