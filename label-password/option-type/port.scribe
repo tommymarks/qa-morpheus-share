@@ -1,0 +1,11 @@
+resource "option-type" "port" {
+  code = "port"
+  name = "Port"
+  uuid = "d11a9953-26a0-4fec-9421-7bdfa73e7b5b"
+  category = "code"
+  displayOrder = 1
+  fieldCode = "gomorpheus.optiontype.Port"
+  fieldContext = "taskOptions"
+  fieldLabel = "Port"
+  fieldName = "port"
+}
