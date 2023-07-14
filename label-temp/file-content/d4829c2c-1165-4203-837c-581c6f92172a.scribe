@@ -1,0 +1,7 @@
+resource "file-content" "d4829c2c-1165-4203-837c-581c6f92172a" {
+  uuid = "d4829c2c-1165-4203-837c-581c6f92172a"
+  contentPath = "https://raw.githubusercontent.com/tommymarks/terraform-samples/auto/scripts/hello.py"
+  dateCreated = "2023-06-13T23:52:59.000Z"
+  lastUpdated = "2023-06-13T23:52:59.000Z"
+  sourceType = "url"
+}
