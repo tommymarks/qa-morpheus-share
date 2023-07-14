@@ -1,0 +1,11 @@
+resource "container-type-port" "Http" {
+  name = "Http"
+  export = true
+  exportName = "HTTP"
+  externalPort = 80
+  internalPort = 80
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "HTTP"
+  visible = true
+}
