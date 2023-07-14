@@ -1,0 +1,15 @@
+resource "container-template" "d231f6c2-be80-45dc-8e14-bc33f73135c9" {
+  code = "d231f6c2-be80-45dc-8e14-bc33f73135c9"
+  name = "temp post provision"
+  uuid = "506c86a0-52ff-4445-be7a-8f3986bccdc7"
+  dateCreated = "2023-06-14T00:45:13.000Z"
+  fileName = "postprovision.txt"
+  fileOwner = "tommy"
+  filePath = "/var/tmp/templates"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:45:13.000Z"
+  settingCategory = "settingCategory"
+  settingName = "settingName"
+  template = "post provision template"
+  templatePhase = "postProvision"
+}
