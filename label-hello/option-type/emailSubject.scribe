@@ -1,0 +1,12 @@
+resource "option-type" "emailSubject" {
+  code = "emailSubject"
+  name = "Subject"
+  uuid = "8427ddf4-6ae8-45a6-a668-10e7534358c7"
+  category = "emailScript"
+  displayOrder = 2
+  fieldCode = "gomorpheus.optiontype.Subject"
+  fieldContext = "taskOptions"
+  fieldLabel = "Subject"
+  fieldName = "emailSubject"
+  placeHolder = "My Subject"
+}
