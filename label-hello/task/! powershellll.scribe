@@ -1,0 +1,17 @@
+resource "task" "! powershellll" {
+  name = "! powershellll"
+  uuid = "0af286a9-c3f4-4bb0-9736-859d21b03c04"
+  dateCreated = "2022-04-27T04:48:54.000Z"
+  executeTarget = "remote"
+  labels = [ "david", "hello" ]
+  lastUpdated = "2023-07-14T20:05:45.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "54.183.240.150" },
+    { optionType = { code = "port" }, value = "5985" },
+    {
+      content = { uuid = "86e050c8-c63d-4c1c-bfb2-c829df6d5e8b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
