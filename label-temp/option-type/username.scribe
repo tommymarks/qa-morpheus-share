@@ -1,0 +1,13 @@
+resource "option-type" "username" {
+  code = "username"
+  name = "Username"
+  uuid = "3bf823b0-5423-44a2-8246-ac5eda933cac"
+  category = "code"
+  displayOrder = 3
+  editable = true
+  fieldCode = "gomorpheus.optiontype.Username"
+  fieldContext = "taskOptions"
+  fieldLabel = "Username"
+  fieldName = "username"
+  visibleOnCode = "matchAll::type:(rest|ldap),credentials:(^((?!oauth2).)*$)"
+}
