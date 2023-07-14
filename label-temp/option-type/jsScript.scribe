@@ -1,0 +1,12 @@
+resource "option-type" "jsScript" {
+  code = "jsScript"
+  name = "Javascript"
+  uuid = "b5d5f542-75aa-436e-8641-93b89e026b0e"
+  category = "code"
+  fieldCode = "gomorpheus.optiontype.Script"
+  fieldContext = "taskOptions"
+  fieldLabel = "Script"
+  fieldName = "jsScript"
+  format = "javascript"
+  type = "code-editor"
+}
