@@ -1,0 +1,15 @@
+resource "task" "Hello World Local Linux" {
+  name = "Hello World Local Linux"
+  uuid = "84f1d123-0c8a-4db9-bd69-27eadaa16092"
+  dateCreated = "2021-05-24T19:42:51.000Z"
+  executeTarget = "local"
+  labels = [ "hello" ]
+  lastUpdated = "2022-08-25T19:05:40.000Z"
+  options = [
+    {
+      content = { uuid = "2c752b15-1128-4bc3-9762-16df23456730" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
