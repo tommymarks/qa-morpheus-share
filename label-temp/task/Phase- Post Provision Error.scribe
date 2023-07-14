@@ -1,0 +1,21 @@
+resource "task" "Phase: Post Provision Error" {
+  name = "Phase: Post Provision Error"
+  uuid = "a73495af-8f25-433e-8763-821dc11aa4bb"
+  executeTarget = "resource"
+  lastUpdated = "2023-02-27T05:00:43.000Z"
+  options = [
+    {
+      content = { uuid = "d4fd0a3d-8aec-4159-a7fb-79c2b62fee9b" }
+      optionType = { code = "script" }
+      value = <<EOF
+echo "$(date) - error" | tee -a /tmp/phase_task.txt
+echo ERROR: Did I do that? 1>&2
+exit 1
+EOF
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 2
+  retryable = true
+  taskType = { code = "script" }
+}

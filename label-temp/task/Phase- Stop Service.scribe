@@ -1,0 +1,17 @@
+resource "task" "Phase: Stop Service" {
+  name = "Phase: Stop Service"
+  uuid = "ec4a913e-f398-45f8-8f6e-f5aa2cb05df5"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:16:55.000Z"
+  options = [
+    {
+      content = { uuid = "392834b5-b566-4b6f-a707-3349fe676776" }
+      optionType = { code = "script" }
+      value = <<EOF
+echo "$(date) - stop service" | tee -a /tmp/phase_task.txt
+echo whaddup
+EOF
+    }
+  ]
+  taskType = { code = "script" }
+}
