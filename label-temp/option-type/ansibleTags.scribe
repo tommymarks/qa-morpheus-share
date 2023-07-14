@@ -1,0 +1,11 @@
+resource "option-type" "ansibleTags" {
+  code = "ansibleTags"
+  name = "Tags"
+  uuid = "abb9d4dc-391d-4fc3-bf63-09a08dc852f0"
+  category = "ansible"
+  displayOrder = 4
+  fieldCode = "gomorpheus.label.tags"
+  fieldContext = "taskOptions"
+  fieldLabel = "Tags"
+  fieldName = "ansibleTags"
+}
