@@ -1,0 +1,6 @@
+resource "file-content" "37f345b8-6640-4b8c-80ca-d8f8f97a9f12" {
+  uuid = "37f345b8-6640-4b8c-80ca-d8f8f97a9f12"
+  content = "echo \"hello world!\" | tee -a /tmp/hellowindows.txt"
+  dateCreated = "2021-05-24T19:43:07.000Z"
+  lastUpdated = "2022-05-17T21:48:21.000Z"
+}
