@@ -1,0 +1,29 @@
+resource "task" "temp chef user" {
+  name = "temp chef user"
+  uuid = "0c00518f-3bca-4314-8c3c-dc9279f82078"
+  dateCreated = "2023-06-14T00:14:41.000Z"
+  executeTarget = "resource"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:14:42.000Z"
+  options = [
+    {
+      optionType = { code = "chefServerId" }
+      value = { name = "Labs QA Chef" }
+    },
+    {
+      optionType = { code = "chefDataKeyPath" }
+      value = "/etc/chef/databag_secret"
+    },
+    { optionType = { code = "chefEnv" }, value = "_default" },
+    {
+      optionType = { code = "chefRunList" }
+      value = "role[morph-qa-role]"
+    },
+    { optionType = { code = "chefNodeName" }, value = "tempnode" },
+    {
+      optionType = { code = "chefAttributes" }
+      value = "{\"hello\":\"world\"}"
+    }
+  ]
+  taskType = { code = "chefTask" }
+}
