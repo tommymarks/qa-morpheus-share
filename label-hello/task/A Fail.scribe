@@ -1,0 +1,15 @@
+resource "task" "A Fail" {
+  name = "A Fail"
+  uuid = "ceec4027-b675-434d-82d7-c9d7dd350dc1"
+  dateCreated = "2021-02-01T18:34:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-01T18:34:18.000Z"
+  options = [
+    {
+      content = { uuid = "ea165886-163b-49e1-876b-fec2955add30" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

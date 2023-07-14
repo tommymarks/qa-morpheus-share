@@ -1,0 +1,13 @@
+resource "option-type" "script" {
+  code = "script"
+  name = "Script"
+  uuid = "aec7a61c-4ac5-4835-9842-3ea43fb11743"
+  category = "code"
+  displayOrder = 6
+  fieldCode = "gomorpheus.optiontype.Script"
+  fieldContext = "taskOptions"
+  fieldLabel = "Script"
+  fieldName = "script"
+  format = "bash"
+  type = "file-content"
+}
