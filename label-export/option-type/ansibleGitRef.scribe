@@ -1,0 +1,11 @@
+resource "option-type" "ansibleGitRef" {
+  code = "ansibleGitRef"
+  name = "Git Ref"
+  uuid = "20cb0b0c-4a4d-4a8f-98a1-555490a17758"
+  category = "ansible"
+  displayOrder = 2
+  fieldCode = "gomorpheus.optiontype.GitRef"
+  fieldContext = "taskOptions"
+  fieldLabel = "Git Ref"
+  fieldName = "ansibleGitRef"
+}
