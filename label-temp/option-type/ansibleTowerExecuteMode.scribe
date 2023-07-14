@@ -1,0 +1,14 @@
+resource "option-type" "ansibleTowerExecuteMode" {
+  code = "ansibleTowerExecuteMode"
+  name = "Execute Mode"
+  uuid = "b46db155-7a70-44ff-aa40-fb4e2618a2d5"
+  category = "ansible"
+  displayOrder = 6
+  fieldCode = "gomorpheus.optiontype.ExecuteMode"
+  fieldContext = "taskOptions"
+  fieldLabel = "Execute Mode"
+  fieldName = "ansibleTowerExecuteMode"
+  optionSource = "ansibleTowerExecuteMode"
+  required = true
+  type = "select"
+}
