@@ -1,0 +1,14 @@
+resource "option-type" "operationalWorkflowName" {
+  code = "operationalWorkflowName"
+  name = "Workflow"
+  uuid = "5d8b1a6e-f779-4b42-bd54-b7bd548ca839"
+  category = "code"
+  displayOrder = 1
+  fieldCode = "gomorpheus.label.operationalWorkflow"
+  fieldContext = "taskOptions"
+  fieldLabel = "Operational Workflow"
+  fieldName = "operationalWorkflowName"
+  optionSource = "operationWorkflows"
+  required = true
+  type = "typeahead"
+}

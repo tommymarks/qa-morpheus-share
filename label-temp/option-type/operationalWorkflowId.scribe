@@ -1,0 +1,12 @@
+resource "option-type" "operationalWorkflowId" {
+  code = "operationalWorkflowId"
+  name = "Operational Workflow ID"
+  uuid = "0bc3630d-3805-4f59-a1e6-05b4053d86c5"
+  category = "code"
+  displayOrder = 2
+  fieldCode = "gomorpheus.optiontype.operationalWorkflowId"
+  fieldContext = "taskOptions"
+  fieldLabel = "Operational Workflow ID"
+  fieldName = "operationalWorkflowId"
+  type = "hidden"
+}
