@@ -1,0 +1,11 @@
+resource "option-type" "ansibleGroup" {
+  code = "ansibleGroup"
+  name = "Group"
+  uuid = "438c9674-5bb7-4916-bd37-7516310fc2d2"
+  category = "ansible"
+  displayOrder = 3
+  fieldCode = "gomorpheus.optiontype.Group"
+  fieldContext = "taskOptions"
+  fieldLabel = "Group"
+  fieldName = "ansibleGroup"
+}
