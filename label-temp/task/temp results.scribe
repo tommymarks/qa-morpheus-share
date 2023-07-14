@@ -1,0 +1,16 @@
+resource "task" "temp results" {
+  name = "temp results"
+  uuid = "af36c2e1-cbe1-4745-9608-ad3863bc0caa"
+  dateCreated = "2023-06-13T23:54:08.000Z"
+  executeTarget = "resource"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:59:53.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "d2887573-6433-4e7f-9453-e3b52329411b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

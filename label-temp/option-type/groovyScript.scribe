@@ -1,0 +1,13 @@
+resource "option-type" "groovyScript" {
+  code = "groovyScript"
+  name = "Groovy"
+  uuid = "883706c7-97ff-453a-9d1a-2e0c8097629a"
+  category = "code"
+  fieldCode = "gomorpheus.optiontype.Script"
+  fieldContext = "taskOptions"
+  fieldLabel = "Script"
+  fieldName = "groovyScript"
+  format = "groovy"
+  required = true
+  type = "file-content"
+}

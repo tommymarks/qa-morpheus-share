@@ -1,0 +1,13 @@
+resource "option-type" "pythonScript" {
+  code = "pythonScript"
+  name = "Python"
+  uuid = "cc8605a0-2079-414d-a3cd-ff802ca882f3"
+  category = "code"
+  fieldCode = "gomorpheus.optiontype.Script"
+  fieldContext = "taskOptions"
+  fieldLabel = "Script"
+  fieldName = "pythonScript"
+  format = "python"
+  required = true
+  type = "file-content"
+}
