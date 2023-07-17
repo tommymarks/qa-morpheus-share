@@ -1,0 +1,22 @@
+resource "task" "nested" {
+  code = "nested"
+  name = "temp nested"
+  uuid = "4859b9e5-2d76-4e70-a3b8-5eddf0e432bc"
+  dateCreated = "2023-06-14T00:08:27.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:08:27.000Z"
+  options = [
+    {
+      optionType = { code = "operationalWorkflowId" }
+      task = { code = "nested" }
+      value = "6157"
+    },
+    {
+      optionType = { code = "operationalWorkflowName" }
+      task = { code = "nested" }
+      value = "Hello World Operational"
+    }
+  ]
+  taskType = { code = "nestedWorkflow" }
+}
