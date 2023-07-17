@@ -1,0 +1,10 @@
+resource "account-integration" "Labs vRO" {
+  name = "Labs vRO"
+  uuid = "e78aab7c-3ee4-4ca3-9247-6c92d5c303ca"
+  category = "cm-server"
+  authId = "cafe_cli-KjRt0gb8PA"
+  authType = "oauth"
+  integrationType = { code = "vro" }
+  serviceUrl = "https://vra7.prod.dc2.den.morpheusdata.com"
+  type = "vro"
+}
