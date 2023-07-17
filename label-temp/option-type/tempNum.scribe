@@ -1,0 +1,16 @@
+resource "option-type" "tempNum" {
+  code = "tempNum"
+  name = "temp number"
+  uuid = "290077b8-107e-4612-b3d5-f7a977a6c8be"
+  defaultValue = "45"
+  dependsOnCode = "temptext"
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp number"
+  fieldName = "tempNum"
+  helpBlock = "heres some help"
+  labels = [ "temp" ]
+  placeHolder = "a number"
+  requireOnCode = "tempcheck"
+  type = "number"
+  visibleOnCode = "tempnum"
+}
