@@ -1,0 +1,12 @@
+resource "option-type" "tempRadio" {
+  code = "tempRadio"
+  name = "temp radio"
+  uuid = "2c16f5d3-94d4-4e02-b7c4-73816545f9c6"
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp radio"
+  fieldName = "tempRadio"
+  labels = [ "temp" ]
+  optionList = { name = "temp manual" }
+  optionSource = "list"
+  type = "radio"
+}
