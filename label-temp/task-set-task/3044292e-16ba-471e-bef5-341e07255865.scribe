@@ -1,6 +1,0 @@
-resource "task-set-task" "3044292e-16ba-471e-bef5-341e07255865" {
-  uuid = "3044292e-16ba-471e-bef5-341e07255865"
-  task = { code = "http" }
-  taskOrder = 6
-  taskPhase = "provision"
-}

@@ -1,6 +1,0 @@
-resource "task-set-task" "5a383a6e-1693-4b58-baf9-46057c3ecb13" {
-  uuid = "5a383a6e-1693-4b58-baf9-46057c3ecb13"
-  task = { code = "ssh" }
-  taskOrder = 5
-  taskPhase = "provision"
-}

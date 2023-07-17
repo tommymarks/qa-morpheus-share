@@ -1,6 +1,0 @@
-resource "task-set-task" "9e1ce5ed-4cb9-49b4-9484-1c912184a238" {
-  uuid = "9e1ce5ed-4cb9-49b4-9484-1c912184a238"
-  task = { name = "Phase: Deploy" }
-  taskOrder = 13
-  taskPhase = "deploy"
-}
