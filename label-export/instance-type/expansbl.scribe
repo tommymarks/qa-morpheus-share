@@ -1,0 +1,15 @@
+resource "instance-type" "expansbl" {
+  code = "expansbl"
+  name = "Export Ansible"
+  uuid = "575eae1a-59ac-4b00-987b-1d1f1a354267"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "export test"
+  environmentPrefix = "nginx"
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+  labels = [ "export" ]
+  optionTypes = [ { code = "name" } ]
+  visibility = "public"
+}
