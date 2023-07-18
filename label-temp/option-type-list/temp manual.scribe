@@ -1,0 +1,8 @@
+resource "option-type-list" "temp manual" {
+  name = "temp manual"
+  uuid = "fbf546b6-903f-43e0-b6b6-3a3f9afcadde"
+  description = "colors"
+  initialDataset = "[{\"name\":\"Red\",\"value\":\"Red\"},{\"name\":\"Blue\",\"value\":\"Blue\"},{\"name\":\"Green\",\"value\":\"Green\"}]"
+  labels = [ "temp" ]
+  type = "manual"
+}
