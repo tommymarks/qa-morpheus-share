@@ -1,0 +1,8 @@
+resource "task-set" "temp ansible tower" {
+  name = "temp ansible tower"
+  uuid = "d3048d1f-6b61-45b9-a7e0-0500ec3272c3"
+  dateCreated = "2023-06-14T00:17:02.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:17:02.000Z"
+  taskSetTasks = [ { uuid = "359f0b52-70ba-46a6-9bd7-841a767ebd75" } ]
+}
