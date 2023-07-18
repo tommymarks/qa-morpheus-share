@@ -1,0 +1,111 @@
+resource "file-content" "ce126714-dec3-46c2-8305-89b1ed383d81" {
+  uuid = "ce126714-dec3-46c2-8305-89b1ed383d81"
+  content = <<EOF
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "dnsPrefix": {
+            "type": "string",
+            "metadata": {
+                "fieldLabel": "DNS Prefix",
+                "description": "DNS prefix to use with hosted Kubernetes API server FQDN."
+            }
+        },
+        "osDiskSizeGB": {
+            "type": "int",
+            "defaultValue": 0,
+            "metadata": {
+                "fieldLabel": "Node Disk Size",
+                "description": "Disk size (in GiB) to provision for each of the agent pool nodes. This value ranges from 0 to 1023. Specifying 0 will apply the default disk size for that agentVMSize."
+            },
+            "minValue": 0,
+            "maxValue": 1023
+        },
+        "nodeVMSize": {
+            "type": "string",
+            "defaultValue": "Standard_D2_v2",
+            "metadata": {
+                "fieldLabel": "Node Plan",
+                "description": "The size of the Virtual Machine."
+            }
+        },
+        "vnetSubnetID": {
+            "type": "string",
+            "metadata": {
+                "fieldLabel": "Node Subnet",
+                "morpheusType": "Subnet",
+                "description": "Resource ID of virtual network subnet used for nodes and/or pods IP assignment."
+            }
+        },
+        "serviceCidr": {
+            "type": "string",
+            "defaultValue": "10.1.0.0/16",
+            "metadata": {
+                "fieldLabel": "Service CIDR",
+                "description": "A CIDR notation IP range from which to assign service cluster IPs."
+            }
+        },
+        "dnsServiceIP": {
+            "type": "string",
+            "defaultValue": "10.1.0.10",
+            "metadata": {
+                "fieldLabel": "DNS Service IP",
+                "description": "Containers DNS server IP address."
+            }
+        },
+        "dockerBridgeCidr": {
+            "type": "string",
+            "defaultValue": "172.17.0.1/16",
+            "metadata": {
+                "fieldLabel": "Docker Bridge CIDR",
+                "description": "A CIDR notation IP for Docker bridge."
+            }
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2019-08-01",
+            "dependsOn": [],
+            "type": "Microsoft.ContainerService/managedClusters",
+            "location": "TO_BE_REPLACED",
+            "name": "TO_BE_REPLACED",
+            "properties": {
+                "kubernetesVersion": "1.17.11",
+                "enableRBAC": true,
+                "dnsPrefix": "[parameters('dnsPrefix')]",
+                "agentPoolProfiles": [
+                    {
+                        "name": "TO_BE_REPLACED",
+                        "osDiskSizeGB": "[parameters('osDiskSizeGB')]",
+                        "count": "TO_BE_REPLACED",
+                        "vmSize": "[parameters('nodeVMSize')]",
+                        "osType": "Linux",
+                        "storageProfile": "ManagedDisks",
+                        "vnetSubnetID": "[parameters('vnetSubnetID')]"
+                    }
+                ],
+                "servicePrincipalProfile": {
+                    "ClientId": "TO_BE_REPLACED",
+                    "Secret": "TO_BE_REPLACED"
+                },
+                "networkProfile": {
+                    "loadBalancerSku": "standard",
+                    "networkPlugin": "azure",
+                    "serviceCidr": "[parameters('serviceCidr')]",
+                    "dnsServiceIP": "[parameters('dnsServiceIP')]",
+                    "dockerBridgeCidr": "[parameters('dockerBridgeCidr')]"
+                },
+                "addonProfiles": {
+                    "httpApplicationRouting": {
+                        "enabled": true
+                    }
+                }
+            }
+        }
+    ]
+}
+EOF
+  dateCreated = "2023-06-14T00:40:41.000Z"
+  lastUpdated = "2023-06-14T00:40:41.000Z"
+}
