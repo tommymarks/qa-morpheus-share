@@ -1,7 +1,0 @@
-resource "account-integration" "Export Ansible" {
-  name = "Export Ansible"
-  uuid = "cf0d53a3-7b03-4fe9-ab08-1d29eec30a9b"
-  integrationType = { code = "ansible" }
-  serviceUrl = "git@github.com:bertramdev/morpheus-ansible.git"
-  type = "ansible"
-}
