@@ -1,0 +1,6 @@
+resource "file-content" "b45719d5-0ae5-46f4-b0d9-da8021ddb5cf" {
+  uuid = "b45719d5-0ae5-46f4-b0d9-da8021ddb5cf"
+  content = "echo \"results.vro: <%=results.vro.find{it.name == 'outputText'}?.value?.string?.value%>\""
+  dateCreated = "2023-06-14T00:16:24.000Z"
+  lastUpdated = "2023-06-14T00:16:24.000Z"
+}
