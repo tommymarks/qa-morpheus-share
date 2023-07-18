@@ -1,0 +1,41 @@
+resource "task" "temp ansible nginx" {
+  name = "temp ansible nginx"
+  uuid = "5062aefe-80f6-4ebf-a08d-d261c3118a09"
+  dateCreated = "2023-06-14T00:13:48.000Z"
+  executeTarget = "resource"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:13:48.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      task = { name = "temp ansible nginx" }
+      value = { name = "Export Ansible" }
+    },
+    {
+      optionType = { code = "ansibleOptions" }
+      task = { name = "temp ansible nginx" }
+      value = "-n options"
+    },
+    {
+      optionType = { code = "ansibleTags" }
+      task = { name = "temp ansible nginx" }
+      value = "hello"
+    },
+    {
+      optionType = { code = "ansibleGitRef" }
+      task = { name = "temp ansible nginx" }
+      value = "master"
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      task = { name = "temp ansible nginx" }
+      value = "nginx-1_9"
+    },
+    {
+      optionType = { code = "ansibleSkipTags" }
+      task = { name = "temp ansible nginx" }
+      value = "world"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
