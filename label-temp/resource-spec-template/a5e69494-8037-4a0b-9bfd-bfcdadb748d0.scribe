@@ -1,0 +1,11 @@
+resource "resource-spec-template" "a5e69494-8037-4a0b-9bfd-bfcdadb748d0" {
+  name = "temp arm git"
+  uuid = "a5e69494-8037-4a0b-9bfd-bfcdadb748d0"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-06-14T00:41:45.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:41:45.000Z"
+  template = { uuid = "735e73d3-1436-47a6-8d75-bfa771df0817" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
