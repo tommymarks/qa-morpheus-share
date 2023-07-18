@@ -1,9 +1,0 @@
-resource "task-set" "temp chef user" {
-  name = "temp chef user"
-  uuid = "0646b49d-b17c-4238-87cb-314e889bc2b4"
-  dateCreated = "2023-06-14T00:17:56.000Z"
-  labels = [ "temp" ]
-  lastUpdated = "2023-06-14T00:17:56.000Z"
-  taskSetTasks = [ { uuid = "c0e43bab-ac16-46bd-a5ca-45603ee6fb06" } ]
-  visibility = "public"
-}
