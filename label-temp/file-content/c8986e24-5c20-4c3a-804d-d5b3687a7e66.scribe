@@ -1,9 +1,0 @@
-resource "file-content" "c8986e24-5c20-4c3a-804d-d5b3687a7e66" {
-  uuid = "c8986e24-5c20-4c3a-804d-d5b3687a7e66"
-  content = <<EOF
-echo "$(date) - teardown" | tee -a /opt/morpheus/.local/task.txt
-echo whaddup
-EOF
-  dateCreated = "2021-02-19T04:16:51.000Z"
-  lastUpdated = "2023-06-06T23:23:42.000Z"
-}
