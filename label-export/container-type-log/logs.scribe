@@ -1,5 +1,0 @@
-resource "container-type-log" "logs" {
-  name = "logs"
-  containerPath = "/var/log/nginx"
-  hostPath = "/var/log/nginx"
-}
