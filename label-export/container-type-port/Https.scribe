@@ -1,0 +1,11 @@
+resource "container-type-port" "Https" {
+  name = "Https"
+  export = true
+  exportName = "HTTPS"
+  externalPort = 443
+  internalPort = 443
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "HTTPS"
+  visible = true
+}
