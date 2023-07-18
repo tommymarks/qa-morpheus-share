@@ -1,0 +1,19 @@
+resource "file-content" "d1546917-37db-4569-a919-13c05141239e" {
+  uuid = "d1546917-37db-4569-a919-13c05141239e"
+  content = <<EOF
+def rtn = [:]
+println("input spec: ${spec}")
+def instanceName = spec?.instance?.name
+if(instanceName) {
+	def specUpdate = [:]
+	specUpdate.instance = [:]
+	specUpdate.instance.name = (instanceName + '-config')
+	specUpdate.instance.hostName = (instanceName + '-config')
+	rtn.spec = specUpdate
+}
+println rtn.encodeAsJson().toString()
+return rtn.encodeAsJson().toString()
+EOF
+  dateCreated = "2020-11-09T18:12:25.000Z"
+  lastUpdated = "2020-11-09T18:49:40.000Z"
+}

@@ -1,0 +1,9 @@
+resource "file-content" "7ab1a0c4-6d43-41b7-ba1a-1b9c6d0b0fbc" {
+  uuid = "7ab1a0c4-6d43-41b7-ba1a-1b9c6d0b0fbc"
+  content = <<EOF
+echo "$(date) - shutdown" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOF
+  dateCreated = "2021-02-18T16:18:41.000Z"
+  lastUpdated = "2021-02-19T04:17:11.000Z"
+}
