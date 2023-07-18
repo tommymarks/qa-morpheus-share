@@ -1,0 +1,12 @@
+resource "option-type" "tempArea" {
+  code = "tempArea"
+  name = "temp textarea"
+  uuid = "439e57af-5c75-4b16-8bd6-66180ffe7419"
+  config = { rows = "3" }
+  description = "area"
+  fieldContext = "config.customOptions"
+  fieldLabel = "temp textarea"
+  fieldName = "tempArea"
+  labels = [ "temp" ]
+  type = "textarea"
+}
