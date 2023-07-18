@@ -1,0 +1,33 @@
+resource "task" "http" {
+  code = "http"
+  name = "temp http"
+  uuid = "d468470f-edc6-453e-8d43-3e9322ff63fe"
+  dateCreated = "2023-06-13T23:53:38.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:58:46.000Z"
+  options = [
+    {
+      optionType = { code = "webMethod" }
+      task = { code = "http" }
+      value = "GET"
+    },
+    {
+      optionType = { code = "webHeaders" }
+      task = { code = "http" }
+      value = "[]"
+    },
+    {
+      optionType = { code = "webUser" }
+      task = { code = "http" }
+      value = "guest"
+    },
+    {
+      optionType = { code = "webUrl" }
+      task = { code = "http" }
+      value = "https://jigsaw.w3.org/HTTP/Basic/"
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "httpTask" }
+}
