@@ -1,9 +1,0 @@
-resource "file-content" "97518093-0c07-46c5-9ce6-39ae12bd4b2c" {
-  uuid = "97518093-0c07-46c5-9ce6-39ae12bd4b2c"
-  content = <<EOF
-echo "$(date) - startup" | tee -a /var/tmp/phase_task.txt
-echo whaddup
-EOF
-  dateCreated = "2021-02-18T16:19:19.000Z"
-  lastUpdated = "2021-02-19T04:16:59.000Z"
-}

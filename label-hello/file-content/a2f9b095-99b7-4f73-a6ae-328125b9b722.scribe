@@ -1,9 +1,0 @@
-resource "file-content" "a2f9b095-99b7-4f73-a6ae-328125b9b722" {
-  uuid = "a2f9b095-99b7-4f73-a6ae-328125b9b722"
-  content = <<EOF
-email
-<%=spec%>
-EOF
-  dateCreated = "2020-11-04T23:00:07.000Z"
-  lastUpdated = "2020-11-04T23:09:43.000Z"
-}

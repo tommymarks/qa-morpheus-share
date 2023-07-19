@@ -1,9 +1,0 @@
-resource "file-content" "0af21b37-6986-4e81-947a-2019eeaf4107" {
-  uuid = "0af21b37-6986-4e81-947a-2019eeaf4107"
-  content = <<EOF
-echo "$(date) - post provision" | tee -a /var/tmp/phase_task.txt
-echo whaddup
-EOF
-  dateCreated = "2021-02-19T04:18:06.000Z"
-  lastUpdated = "2021-02-19T04:18:06.000Z"
-}

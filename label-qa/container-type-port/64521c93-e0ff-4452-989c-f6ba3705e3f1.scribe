@@ -1,9 +1,0 @@
-resource "container-type-port" "64521c93-e0ff-4452-989c-f6ba3705e3f1" {
-  name = "RDP"
-  uuid = "64521c93-e0ff-4452-989c-f6ba3705e3f1"
-  export = true
-  exportName = "RDP"
-  externalPort = 3389
-  internalPort = 3389
-  visible = true
-}

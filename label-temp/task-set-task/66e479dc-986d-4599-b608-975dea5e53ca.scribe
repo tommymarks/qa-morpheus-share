@@ -1,6 +1,0 @@
-resource "task-set-task" "66e479dc-986d-4599-b608-975dea5e53ca" {
-  uuid = "66e479dc-986d-4599-b608-975dea5e53ca"
-  task = { name = "temp results" }
-  taskOrder = 9
-  taskPhase = "provision"
-}
