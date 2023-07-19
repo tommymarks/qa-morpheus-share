@@ -1,0 +1,14 @@
+resource "instance-type-layout" "fa7f985b-d4fe-476d-bbe1-1b04a6ec8dfd" {
+  code = "fa7f985b-d4fe-476d-bbe1-1b04a6ec8dfd"
+  name = "ESXi NGINX"
+  uuid = "827cac1f-284e-4f51-95a9-82d5ca1f151d"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "esxi" }
+  workloads = [ { code = "d5872cde-3a7a-45df-9d11-0e9a7f89c021" } ]
+}
