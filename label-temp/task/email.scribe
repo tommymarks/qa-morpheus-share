@@ -7,8 +7,6 @@ resource "task" "email" {
   labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:04:56.000Z"
   options = [
-    { optionType = { code = "emailSubject" }, value = "Hello" },
-    { optionType = { code = "emailSkipTemplate" }, value = "on" },
     {
       optionType = { code = "emailAddress" }
       value = "tommymarks@gmail.com"
@@ -16,7 +14,9 @@ resource "task" "email" {
     {
       content = { uuid = "097146be-854f-40bd-9aaa-e62bd64a0565" }
       optionType = { code = "emailBody" }
-    }
+    },
+    { optionType = { code = "emailSkipTemplate" }, value = "on" },
+    { optionType = { code = "emailSubject" }, value = "Hello" }
   ]
   taskType = { code = "email" }
 }
