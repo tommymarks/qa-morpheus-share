@@ -1,0 +1,26 @@
+resource "container-type" "ec468592-a9e8-43ff-a4ab-6e6e48bfe426" {
+  code = "ec468592-a9e8-43ff-a4ab-6e6e48bfe426"
+  name = "Apache latest"
+  uuid = "cec3cae3-7232-4193-8999-e50992e9350b"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "lvmSnapshot"
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "b33237f6-e650-4ae3-b548-f888c881d0b9" } ]
+  containerMounts = [ { uuid = "03527f07-a5ee-4de5-a131-4a1e0dcaa636" } ]
+  containerPorts = [
+    { uuid = "bd7ec28b-12c7-42ed-8e2b-19d88039026f" },
+    { uuid = "cb43ebaa-45e7-467c-9b39-c45f21183cc9" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "docker"
+  mountData = "/var/www"
+  mountLogs = "/var/log/apache2"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "httpd"
+  shortName = "apache"
+  statTypeCode = "docker"
+}
