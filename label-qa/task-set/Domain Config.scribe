@@ -1,0 +1,9 @@
+resource "task-set" "Domain Config" {
+  name = "Domain Config"
+  uuid = "9db0504b-bac9-49f0-a254-cfc9c8206aac"
+  dateCreated = "2018-02-13T18:20:09.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-07-13T19:54:04.000Z"
+  taskSetTasks = [ { uuid = "a257e457-007b-4dd0-9d21-c7643e825fdb" } ]
+  visibility = "public"
+}

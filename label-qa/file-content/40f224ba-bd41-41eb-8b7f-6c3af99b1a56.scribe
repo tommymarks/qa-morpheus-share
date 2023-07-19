@@ -1,0 +1,6 @@
+resource "file-content" "40f224ba-bd41-41eb-8b7f-6c3af99b1a56" {
+  uuid = "40f224ba-bd41-41eb-8b7f-6c3af99b1a56"
+  content = "echo \"domain workflow test\" | tee -a /tmp/domain.txt"
+  dateCreated = "2023-07-13T19:47:30.000Z"
+  lastUpdated = "2023-07-13T19:47:30.000Z"
+}
