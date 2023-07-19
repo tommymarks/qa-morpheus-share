@@ -1,0 +1,17 @@
+resource "task" "Domain Config" {
+  name = "Domain Config"
+  uuid = "a9d19b4f-ede1-4a4c-a75c-242ebe6ce159"
+  executeTarget = "resource"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-07-13T19:53:50.000Z"
+  options = [
+    {
+      content = { uuid = "40f224ba-bd41-41eb-8b7f-6c3af99b1a56" }
+      optionType = { code = "script" }
+      value = "echo \"domain workflow test\" | tee -a /tmp/domain.txt"
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+  visibility = "public"
+}
