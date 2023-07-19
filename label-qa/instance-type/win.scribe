@@ -1,0 +1,11 @@
+resource "instance-type" "win" {
+  code = "win"
+  name = "WindowsOS"
+  uuid = "ecee8ccb-eadd-4832-887d-b2560914d630"
+  category = "os"
+  deploymentService = ""
+  description = "Microsoft Windows Operating System"
+  environmentPrefix = "WIN"
+  hasAutoScale = true
+  visibility = "public"
+}
