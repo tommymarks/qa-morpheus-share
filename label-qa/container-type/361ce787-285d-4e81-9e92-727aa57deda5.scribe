@@ -1,0 +1,42 @@
+resource "container-type" "361ce787-285d-4e81-9e92-727aa57deda5" {
+  code = "361ce787-285d-4e81-9e92-727aa57deda5"
+  name = "NGINX latest"
+  uuid = "877019fb-5335-49db-9e71-3843a3e22801"
+  category = "nginx"
+  actions = [ { code = "generic-remove-node" } ]
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "87674e93-9283-4c1b-a0be-bce1b5cda2bb" } ]
+  containerMounts = [
+    { code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" },
+    { uuid = "81d8abe7-dca6-4e30-8589-dba9a9ba7fda" }
+  ]
+  containerPorts = [
+    { uuid = "3e9de534-ef71-4871-98b7-6de954efedb9" },
+    { uuid = "d8b79be4-1805-4d7b-9924-d408cd198a25" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  hasSslCert = true
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html/"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  provisionType = { code = "opentelekom" }
+  repositoryImage = ""
+  scripts = [
+    { code = "c21331e1-6f98-44ad-83a2-b34614ebfa7c" },
+    { code = "7659fc2b-6ece-4737-b78e-65287632ba52" },
+    { code = "b8e8650a-2cc1-468d-8145-192789b5c8dc" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "kvm.image.morpheus.ubuntu.20.04.20230131" }
+}
