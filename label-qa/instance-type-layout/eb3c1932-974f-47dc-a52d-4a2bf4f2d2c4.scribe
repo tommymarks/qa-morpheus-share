@@ -1,0 +1,14 @@
+resource "instance-type-layout" "eb3c1932-974f-47dc-a52d-4a2bf4f2d2c4" {
+  code = "eb3c1932-974f-47dc-a52d-4a2bf4f2d2c4"
+  name = "Nginx Container"
+  uuid = "0ce49b0a-7031-44b6-bb8d-020597ed7d1f"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "b258917b-ccc5-44e7-8232-931a80412558" } ]
+}
