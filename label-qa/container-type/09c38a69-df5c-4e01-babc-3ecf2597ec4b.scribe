@@ -1,0 +1,34 @@
+resource "container-type" "09c38a69-df5c-4e01-babc-3ecf2597ec4b" {
+  code = "09c38a69-df5c-4e01-babc-3ecf2597ec4b"
+  name = "Apache latest"
+  uuid = "5636122d-1a7c-4e13-9c3b-977c1129e02b"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "c1fc0073-9a30-46de-95b5-a52b779fc353" } ]
+  containerMounts = [ { uuid = "a5eb165c-06e8-4196-8f55-efe1d4c30545" } ]
+  containerPorts = [
+    { uuid = "c12992c2-8152-46f5-a94a-65d695913066" },
+    { uuid = "74c0ce95-a067-425f-85d2-ff8128369f59" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  scripts = [
+    { code = "986bcd2b-2e2e-4cdb-9aac-b5e9eb91a15e" },
+    { code = "9f8b51c3-74ee-495d-81e2-47c39487da6d" },
+    { code = "e980c36b-cc5f-468a-a06b-9a9c846050c0" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "scvmm.image.morpheus.ubuntu.20.04.20230131.amd64" }
+}
