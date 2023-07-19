@@ -9,5 +9,6 @@ resource "instance-type" "tomcatweb" {
   hasAutoScale = true
   hasDeployment = true
   labels = [ "qa" ]
+  layouts = [ { code = "9449af4c-d136-4497-b557-135315235a52" } ]
   visibility = "public"
 }
