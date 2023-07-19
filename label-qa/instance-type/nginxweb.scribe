@@ -1,0 +1,14 @@
+resource "instance-type" "nginxweb" {
+  code = "nginxweb"
+  name = "Nginx"
+  uuid = "4c0a3442-2331-4e82-919d-48296de2ce1e"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "A high performance non-blocking based web server designed for high scalability. Provides fault-tolerant and load balancing features as well."
+  environmentPrefix = "NGINX"
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+  labels = [ "qa" ]
+  visibility = "public"
+}
