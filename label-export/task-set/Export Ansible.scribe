@@ -1,0 +1,9 @@
+resource "task-set" "Export Ansible" {
+  name = "Export Ansible"
+  uuid = "a9f6f1f2-5d73-4714-a95f-99cdac43dfd6"
+  dateCreated = "2023-07-19T13:55:07.000Z"
+  description = "export test"
+  labels = [ "export" ]
+  lastUpdated = "2023-07-19T13:55:07.000Z"
+  taskSetTasks = [ { uuid = "feb6768c-e8c7-42e8-8ac1-3ac1c07e549f" } ]
+}
