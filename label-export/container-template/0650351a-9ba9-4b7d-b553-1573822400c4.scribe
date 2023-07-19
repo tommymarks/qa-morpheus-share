@@ -1,0 +1,13 @@
+resource "container-template" "0650351a-9ba9-4b7d-b553-1573822400c4" {
+  code = "0650351a-9ba9-4b7d-b553-1573822400c4"
+  name = "QA Test VM"
+  uuid = "a09ede8a-21b8-4816-95f8-0b8385af7dcc"
+  dateCreated = "2023-04-06T17:01:40.000Z"
+  fileName = "test.txt"
+  filePath = "/etc/nginx"
+  labels = [ "export", "qa" ]
+  lastUpdated = "2023-06-06T03:49:21.000Z"
+  settingCategory = "nginx"
+  settingName = "testfile"
+  template = "#check out this file template for nginx"
+}
