@@ -1,0 +1,14 @@
+resource "instance-type-layout" "20aea043-e6da-48ee-b1ed-96e2ed0db8a0" {
+  code = "20aea043-e6da-48ee-b1ed-96e2ed0db8a0"
+  name = "IBM Cloud NGINX"
+  uuid = "74012023-7a52-4754-81ed-e8d391f001ec"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "bluemix" }
+  workloads = [ { code = "64f96ef5-b8be-450a-9b33-b78b8b8e74ad" } ]
+}
