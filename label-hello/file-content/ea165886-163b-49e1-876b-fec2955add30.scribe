@@ -1,0 +1,6 @@
+resource "file-content" "ea165886-163b-49e1-876b-fec2955add30" {
+  uuid = "ea165886-163b-49e1-876b-fec2955add30"
+  content = "exit 1"
+  dateCreated = "2021-02-01T18:34:18.000Z"
+  lastUpdated = "2021-02-01T18:34:18.000Z"
+}
