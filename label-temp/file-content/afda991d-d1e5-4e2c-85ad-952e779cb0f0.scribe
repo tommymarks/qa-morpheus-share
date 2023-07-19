@@ -1,0 +1,6 @@
+resource "file-content" "afda991d-d1e5-4e2c-85ad-952e779cb0f0" {
+  uuid = "afda991d-d1e5-4e2c-85ad-952e779cb0f0"
+  content = "echo \"single task\" | tee -a /var/tmp/task.txt"
+  dateCreated = "2023-06-13T23:52:31.000Z"
+  lastUpdated = "2023-06-13T23:52:31.000Z"
+}
