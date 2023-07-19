@@ -1,0 +1,14 @@
+resource "instance-type-layout" "7fcf3d15-a8bf-4bfb-8df2-0e87e8bba501" {
+  code = "7fcf3d15-a8bf-4bfb-8df2-0e87e8bba501"
+  name = "DigitalOcean NGINX"
+  uuid = "caaa6399-2c06-45f4-87f1-e32d3e4dad07"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "digitalocean" }
+  workloads = [ { code = "322616b0-e302-4082-b3f1-b48b2dd75620" } ]
+}
