@@ -1,0 +1,11 @@
+resource "resource-spec-template" "ecbe1cfd-3375-41f5-8805-e378368d6a93" {
+  name = "temp terraform"
+  uuid = "ecbe1cfd-3375-41f5-8805-e378368d6a93"
+  config = { terraform = { tfVersion = ">= 0.14.0" } }
+  dateCreated = "2023-06-14T00:44:06.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:44:06.000Z"
+  template = { uuid = "3cd069ad-027e-4b79-9628-a1658258d8c3" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
