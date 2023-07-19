@@ -1,0 +1,6 @@
+resource "task-set-task" "321761a3-4b5a-4a45-b187-350ecee14353" {
+  uuid = "321761a3-4b5a-4a45-b187-350ecee14353"
+  task = { name = "temp libTemplate2" }
+  taskOrder = 8
+  taskPhase = "provision"
+}

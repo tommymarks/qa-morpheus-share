@@ -1,0 +1,6 @@
+resource "task-set-task" "348f12a0-7327-48e4-b458-557ac43647bb" {
+  uuid = "348f12a0-7327-48e4-b458-557ac43647bb"
+  task = { code = "js" }
+  taskOrder = 3
+  taskPhase = "provision"
+}
