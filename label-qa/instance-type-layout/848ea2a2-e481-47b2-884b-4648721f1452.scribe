@@ -1,0 +1,14 @@
+resource "instance-type-layout" "848ea2a2-e481-47b2-884b-4648721f1452" {
+  code = "848ea2a2-e481-47b2-884b-4648721f1452"
+  name = "Huawei Apache"
+  uuid = "d6ffb5fa-2292-42b0-8eec-81269689137f"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "huawei" }
+  workloads = [ { code = "1ede37ba-baa1-4499-b4a7-71f6b027de06" } ]
+}
