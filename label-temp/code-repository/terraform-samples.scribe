@@ -1,0 +1,13 @@
+resource "code-repository" "terraform-samples" {
+  name = "terraform-samples"
+  uuid = "02c7588b-bcc2-4be3-92a3-8ea0ea5a119e"
+  dateCreated = "2018-11-05T21:37:39.000Z"
+  defaultBranch = "master"
+  displayName = "QA Terraform Samples"
+  externalId = "https://github.com/tommymarks/terraform-samples.git"
+  integration = { name = "QA Terraform Samples" }
+  lastUpdated = "2023-06-28T08:19:15.000Z"
+  orgId = "//github.com/tommymarks"
+  orgName = "//github.com/tommymarks"
+  serviceUrl = "https://github.com/tommymarks/terraform-samples.git"
+}
