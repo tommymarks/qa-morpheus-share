@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b3bbad19-ed43-4eb0-bc51-25e6d522898e" {
+  code = "b3bbad19-ed43-4eb0-bc51-25e6d522898e"
+  name = "SCVMM NGINX"
+  uuid = "2d15e6f3-f276-492d-95cc-45b6ae9c2aeb"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm in scvmm"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "scvmm" }
+  workloads = [ { code = "b4469b4a-c0b7-4fcc-b819-ec016510efb0" } ]
+}
