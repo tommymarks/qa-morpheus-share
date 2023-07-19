@@ -1,7 +1,0 @@
-resource "option-type-list" "Approved Colors" {
-  name = "Approved Colors"
-  uuid = "92b5229a-da5e-4bd7-9dda-f60346c37625"
-  initialDataset = "[{\"name\":\"Red\",\"value\":\"Red\"},{\"name\":\"Blue\",\"value\":\"Blue\"},{\"name\":\"Green\",\"value\":\"Green\"}]"
-  labels = [ "export" ]
-  type = "manual"
-}
