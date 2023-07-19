@@ -1,0 +1,27 @@
+resource "container-type" "3eba0fc8-c901-41a3-9f7d-9bc6a81ff05f" {
+  code = "3eba0fc8-c901-41a3-9f7d-9bc6a81ff05f"
+  name = "NGINX latest"
+  uuid = "abf0906b-1168-459a-a62e-e41c7bd02891"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "158c4f89-a4a5-497e-b67a-3d5609295871" } ]
+  containerMounts = [ { uuid = "882ee710-1173-4dbd-b79b-c20ccf72b44e" } ]
+  containerPorts = [
+    { uuid = "5236c9dc-1d55-43c8-9626-a0619c35833e" },
+    { uuid = "b3b7bb4d-6192-473e-a386-9d86f4f952ea" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/nginx"
+  provisionService = "nutanix-prism-provision-provider"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  repositoryImage = ""
+  scripts = [
+    { code = "c21331e1-6f98-44ad-83a2-b34614ebfa7c" },
+    { code = "7659fc2b-6ece-4737-b78e-65287632ba52" },
+    { code = "b8e8650a-2cc1-468d-8145-192789b5c8dc" }
+  ]
+  shortName = "nginx"
+}
