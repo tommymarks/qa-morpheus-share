@@ -5,11 +5,11 @@ resource "task" "Phase: Scale Down" {
   executeTarget = "local"
   lastUpdated = "2023-06-06T23:24:20.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "b4a88565-8fff-4b8a-9d1a-a7e7267a9604" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
