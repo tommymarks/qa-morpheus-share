@@ -1,19 +1,19 @@
 resource "task" "ssh" {
   code = "ssh"
-  name = "temp ssh2"
-  uuid = "111aca1a-7d01-49ad-a713-cb8997fec966"
-  dateCreated = "2023-06-11T08:28:12.000Z"
+  name = "temp ssh"
+  uuid = "acd25840-a5e8-4a37-b13d-b71cd5924d42"
+  dateCreated = "2023-06-13T23:53:29.000Z"
   executeTarget = "remote"
   labels = [ "temp" ]
-  lastUpdated = "2023-06-14T00:01:03.000Z"
+  lastUpdated = "2023-06-14T00:00:10.000Z"
   options = [
     { optionType = { code = "sshKey" }, value = { name = "QA Key" } },
     { optionType = { code = "port" }, value = "22" },
-    { optionType = { code = "host" }, value = "54.183.34.52" },
+    { optionType = { code = "host" }, value = "54.67.125.24" },
     { optionType = { code = "username" }, value = "cloudinit" },
     { optionType = { code = "shell.sudo" }, value = "on" },
     {
-      content = { uuid = "83f23c7e-2cad-45ae-be49-694f724b5343" }
+      content = { uuid = "8eb1b775-c803-40e7-9ed4-ae11a679ee93" }
       optionType = { code = "script" }
     }
   ]
