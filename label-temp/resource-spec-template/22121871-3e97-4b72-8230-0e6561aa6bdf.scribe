@@ -1,0 +1,11 @@
+resource "resource-spec-template" "22121871-3e97-4b72-8230-0e6561aa6bdf" {
+  name = "temp terraform git"
+  uuid = "22121871-3e97-4b72-8230-0e6561aa6bdf"
+  config = { terraform = { tfVersion = ">= 0.12" } }
+  dateCreated = "2023-06-14T00:43:41.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:43:41.000Z"
+  template = { uuid = "7fe60b6a-1c52-4a3c-a63f-c256a1625550" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
