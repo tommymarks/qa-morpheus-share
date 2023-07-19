@@ -1,0 +1,59 @@
+resource "container-template" "2290df12-5c60-4311-8c42-1be3a84f7649" {
+  code = "2290df12-5c60-4311-8c42-1be3a84f7649"
+  name = "Nginx Config Container"
+  uuid = "1696d2c1-9eaa-49e2-907c-0262171cd314"
+  dateCreated = "2023-02-24T02:12:59.000Z"
+  fileName = "default.conf"
+  filePath = "/config"
+  labels = [ "docker", "qa" ]
+  lastUpdated = "2023-02-24T02:13:41.000Z"
+  settingCategory = "nginx"
+  settingName = "siteConf"
+  template = <<EOF
+#
+# upstream upstreamServer {
+#   server x.x.x.x:x;
+# }
+#
+
+server {
+
+  listen 80 default;
+  <%=instance.sslEnabled ? '' : '#'%>listen 443 ssl;
+  server_name localhost <%=instance.assignedDomainName%>;
+  <%=instance.sslEnabled ? '' : '#'%>ssl_certificate /etc/nginx/certs/nginx.crt;
+  <%=instance.sslEnabled ? '' : '#'%>ssl_certificate_key /etc/nginx/certs/nginx.key;
+  root /var/www/html;
+ 
+  #gzip_static on;
+  
+  location / {
+    #auth_basic "Restricted";
+    #auth_basic_user_file /;
+    #proxy_set_header  X-Real-IP  $remote_addr;
+    #proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+    #proxy_set_header  X-Forwarded-Proto $http_x_forwarded_proto;
+    #proxy_set_header Host $host;
+    #proxy_set_header Authorization None;
+    #proxy_redirect off;
+    #proxy_buffering off;
+    #client_max_body_size 10m;
+    #proxy_send_timeout        84000;
+    #proxy_read_timeout        84000;
+    #proxy_pass http://upstreamServer;
+    #break;
+    root   /var/www/html;
+    index  index.html index.htm;
+  }
+
+  #error_page  404              /404.html;
+  # redirect server error pages to the static page /50x.html
+  #
+  error_page   500 502 503 504  /50x.html;
+  location = /50x.html {
+    root   /usr/share/nginx/html;
+  }
+
+}
+EOF
+}
