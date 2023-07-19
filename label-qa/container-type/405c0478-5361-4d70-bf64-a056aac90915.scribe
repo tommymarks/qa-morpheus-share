@@ -1,0 +1,26 @@
+resource "container-type" "405c0478-5361-4d70-bf64-a056aac90915" {
+  code = "405c0478-5361-4d70-bf64-a056aac90915"
+  name = "Docker Nginx"
+  uuid = "764f1bb9-11e8-481d-b79c-c94110c4aa20"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "lvmSnapshot"
+  containerLogs = [ { uuid = "d128394d-92b4-4672-a211-acde717674e5" } ]
+  containerMounts = [
+    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" },
+    { uuid = "f46e4c1c-e6e1-4688-b31b-c0933d72fedc" }
+  ]
+  containerPorts = [
+    { uuid = "2041e09a-959e-4735-96a1-786d4aa2bf30" },
+    { uuid = "c5943f1c-1005-4f02-b93a-834d9d9412b8" }
+  ]
+  containerVersion = "1.10"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "nginx"
+  shortName = "nginx"
+  statTypeCode = "docker"
+  templates = [ { code = "0650351a-9ba9-4b7d-b553-1573822400c4" } ]
+}
