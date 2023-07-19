@@ -1,0 +1,10 @@
+resource "account-key-pair" "QA Key" {
+  name = "QA Key"
+  uuid = "e30fcef5-b1f3-4c97-8244-a71e2c7e0178"
+  accountId = 1
+  dateCreated = "2017-03-20T16:28:54.000Z"
+  lastUpdated = "2023-05-15T15:52:06.000Z"
+  publicFingerprint = "e2:c0:26:cd:53:07:d6:e9:34:f7:f8:49:cc:68:d8:ca"
+  publicKey = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKGumo/TvYaTtKmIPrPG4zb62kiSxZrQhD20zSrM2BXyFYHRRVPzNCMiGTAT+p+fmMIUVvsAN7V+KueudN6NnYInP/7KaOGR8Va3Dlc9oHreXGPttxRYQrqqaH+yU6d41ozLoac0iHbE2+mSShlLA9CtWSRsxzQV1bMxez8cqbAQ+zrhdOLOrflGTCMVaO93nMnD94WleARyhsEAnaJEPbXOOWwRVdrpjzeCvEvajhWOvW4iuqgxKqVGmh/UoJ3jy3aRc0yCVrnyTomWasBtJhKYllgyOIvb7D/zAA1fFOiANe/tehRnJb317Ht3h2j7Bqa91E13zXbUoLFWD8MR4z tmarks@morpheusdata.com"
+  scope = "account"
+}
