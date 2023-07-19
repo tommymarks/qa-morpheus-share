@@ -1,0 +1,14 @@
+resource "instance-type-layout" "2166f2f3-6f9d-411d-8817-40b0bac540b9" {
+  code = "2166f2f3-6f9d-411d-8817-40b0bac540b9"
+  name = "Azure Apache"
+  uuid = "597d81a9-74ef-4ed0-af1c-a6bd36c5b75d"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "82767354-4f6c-40c4-b943-25d9de8e919f" } ]
+}
