@@ -9,5 +9,25 @@ resource "instance-type" "apacheweb" {
   hasAutoScale = true
   hasDeployment = true
   labels = [ "qa" ]
+  layouts = [
+    { code = "0e2713a7-4293-4182-946d-5df58ea63040" },
+    { code = "1c2c1c93-2ce8-4365-a9e7-ce4dcca87d97" },
+    { code = "2166f2f3-6f9d-411d-8817-40b0bac540b9" },
+    { code = "335a5e64-79bf-4447-9f81-af55a97584df" },
+    { code = "4509da95-a445-4ac9-b255-b5ef1878415d" },
+    { code = "549f275e-22d2-4369-b809-381b8ea86ea2" },
+    { code = "82760571-57ce-4b3b-bab3-83a35c2feec7" },
+    { code = "848ea2a2-e481-47b2-884b-4648721f1452" },
+    { code = "90e9826f-8422-4cba-a81b-de4152cd8453" },
+    { code = "9798ec33-278b-422b-9ec8-c057badfde81" },
+    { code = "b35c20d3-bae2-464b-b6e8-6fa3e78760f3" },
+    { code = "bd9c1fd1-a7d6-450c-8f3b-76954c7e669c" },
+    { code = "c246f0ae-b57c-4af4-bdfe-eb3235a63aee" },
+    { code = "d68327d6-7d55-4413-8ef0-f55a758462f5" },
+    { code = "df687435-d4f5-4e92-bc3a-28c1b23e70b1" },
+    { code = "f3528e4e-7547-455a-a122-f0ed104d2d55" },
+    { code = "f84bbe0a-45bf-4659-9d84-fcfc47e09826" },
+    { code = "fdad888d-c5b3-4b58-bd6e-b9bf6d3f3491" }
+  ]
   visibility = "public"
 }

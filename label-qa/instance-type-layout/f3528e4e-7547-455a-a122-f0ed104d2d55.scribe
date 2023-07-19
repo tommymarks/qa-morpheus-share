@@ -1,0 +1,11 @@
+resource "instance-type-layout" "f3528e4e-7547-455a-a122-f0ed104d2d55" {
+  code = "f3528e4e-7547-455a-a122-f0ed104d2d55"
+  name = "Nutanix Central Apache"
+  uuid = "d14481c6-f1f4-48dc-b9f4-e5e1147b9620"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  memoryRequirement = 0
+  provisionType = { code = "nutanix-prism-provision-provider" }
+}
