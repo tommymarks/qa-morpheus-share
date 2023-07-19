@@ -1,0 +1,9 @@
+resource "file-content" "7fe60b6a-1c52-4a3c-a63f-c256a1625550" {
+  uuid = "7fe60b6a-1c52-4a3c-a63f-c256a1625550"
+  contentPath = "./specs/terraform.tf"
+  contentRef = "auto"
+  dateCreated = "2023-06-14T00:43:41.000Z"
+  lastUpdated = "2023-06-14T00:43:41.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}
