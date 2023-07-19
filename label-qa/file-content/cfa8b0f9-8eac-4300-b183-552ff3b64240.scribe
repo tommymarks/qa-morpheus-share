@@ -1,0 +1,9 @@
+resource "file-content" "cfa8b0f9-8eac-4300-b183-552ff3b64240" {
+  uuid = "cfa8b0f9-8eac-4300-b183-552ff3b64240"
+  content = <<EOF
+echo "$(date) - deploy" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOF
+  dateCreated = "2021-02-19T04:16:46.000Z"
+  lastUpdated = "2021-02-19T04:16:46.000Z"
+}

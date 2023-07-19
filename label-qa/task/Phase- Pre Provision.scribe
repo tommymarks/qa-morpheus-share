@@ -1,0 +1,14 @@
+resource "task" "Phase: Pre Provision" {
+  name = "Phase: Pre Provision"
+  uuid = "4297d81d-1e50-4625-8cd4-4eb06f8720e3"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T04:17:43.000Z"
+  options = [
+    {
+      content = { uuid = "03b968e2-70f7-41d2-b75f-ece39ce62fda" }
+      optionType = { code = "script" }
+      value = "echo \"$(date) - pre provision\" | tee -a /tmp/phase_task.txt"
+    }
+  ]
+  taskType = { code = "script" }
+}
