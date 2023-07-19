@@ -1,0 +1,14 @@
+resource "container-script" "c21331e1-6f98-44ad-83a2-b34614ebfa7c" {
+  code = "c21331e1-6f98-44ad-83a2-b34614ebfa7c"
+  name = "Nginx Install"
+  uuid = "0dd9445e-166e-4081-b3d3-ab1a57b16be3"
+  dateCreated = "2023-02-23T06:25:10.000Z"
+  labels = [ "qa" ]
+  lastUpdated = "2023-02-24T07:33:08.000Z"
+  script = <<EOF
+sudo apt-get update
+sudo apt-get -y install nginx
+EOF
+  scriptPhase = "provision"
+  sudoUser = true
+}

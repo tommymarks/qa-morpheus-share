@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b680c271-e832-4564-b85b-e6f8983bbcc4" {
+  code = "b680c271-e832-4564-b85b-e6f8983bbcc4"
+  name = "Amazon NGINX"
+  uuid = "e46b07a0-b901-4996-a96b-fe94ea6aed60"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "a612aaba-9f60-4682-b44a-d1afd293d720" } ]
+}
