@@ -1,0 +1,23 @@
+resource "task" "python" {
+  code = "python"
+  name = "temp pythonUrl"
+  uuid = "a91e11ee-9265-4839-9730-bcd76b08ea61"
+  dateCreated = "2023-06-13T23:52:59.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:59:45.000Z"
+  options = [
+    { optionType = { code = "pythonArgs" }, value = "Hello World" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "mechanize"
+    },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "d4829c2c-1165-4203-837c-581c6f92172a" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "jythonTask" }
+}
