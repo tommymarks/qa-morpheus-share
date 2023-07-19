@@ -1,0 +1,5 @@
+resource "task-set-task" "c0e43bab-ac16-46bd-a5ca-45603ee6fb06" {
+  uuid = "c0e43bab-ac16-46bd-a5ca-45603ee6fb06"
+  task = { name = "temp chef user" }
+  taskPhase = "provision"
+}
