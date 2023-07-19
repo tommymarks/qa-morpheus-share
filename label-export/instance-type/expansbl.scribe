@@ -10,6 +10,7 @@ resource "instance-type" "expansbl" {
   hasDeployment = true
   hasSettings = true
   labels = [ "export" ]
+  layouts = [ { code = "adc95dd5-cc31-4758-8f72-087fe29bdc82" } ]
   optionTypes = [ { code = "name" } ]
   visibility = "public"
 }
