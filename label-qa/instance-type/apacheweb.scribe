@@ -1,0 +1,13 @@
+resource "instance-type" "apacheweb" {
+  code = "apacheweb"
+  name = "Apache"
+  uuid = "b10b5702-8134-4bf3-9e50-c5314968fe62"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "An open-source modern web server common on many websites today. A secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards."
+  environmentPrefix = "APACHE"
+  hasAutoScale = true
+  hasDeployment = true
+  labels = [ "qa" ]
+  visibility = "public"
+}
