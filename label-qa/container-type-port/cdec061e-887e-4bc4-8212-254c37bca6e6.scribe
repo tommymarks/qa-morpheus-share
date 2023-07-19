@@ -1,0 +1,12 @@
+resource "container-type-port" "cdec061e-887e-4bc4-8212-254c37bca6e6" {
+  name = "Https"
+  uuid = "cdec061e-887e-4bc4-8212-254c37bca6e6"
+  export = true
+  exportName = "HTTPS"
+  externalPort = 443
+  internalPort = 443
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "HTTPS"
+  visible = true
+}
