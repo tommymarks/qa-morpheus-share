@@ -1,0 +1,6 @@
+resource "file-content" "974305be-7f91-4953-85f8-7c98636cf74c" {
+  uuid = "974305be-7f91-4953-85f8-7c98636cf74c"
+  content = "echo \"$(date) - provision2\" | tee -a /var/tmp/phase_task.txt"
+  dateCreated = "2021-02-19T04:17:22.000Z"
+  lastUpdated = "2021-02-19T04:17:22.000Z"
+}
