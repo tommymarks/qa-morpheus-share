@@ -1,0 +1,15 @@
+resource "file-content" "f70c78bf-42be-4855-923c-c47150879cfd" {
+  uuid = "f70c78bf-42be-4855-923c-c47150879cfd"
+  content = <<EOF
+import mechanize
+from pprint import pprint
+import sys
+pprint(sys.argv)
+f = open('/opt/morpheus/.local/taskSsh.txt','a')
+f.write("python script\n")
+f.close()
+print("HELLO PYTHON")
+EOF
+  dateCreated = "2023-06-03T03:41:18.000Z"
+  lastUpdated = "2023-06-03T03:41:18.000Z"
+}
