@@ -1,0 +1,16 @@
+resource "container-type" "99bb9d82-d8d5-48f1-a714-07031bc57e57" {
+  code = "99bb9d82-d8d5-48f1-a714-07031bc57e57"
+  name = "Apache 2.4"
+  uuid = "e11ed50c-fafe-47db-9ac4-db33f7706c0d"
+  containerVersion = "2.4"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "amazon.ec2.image.morpheus.apache.2.4-v1.centos.7.3" }
+}
