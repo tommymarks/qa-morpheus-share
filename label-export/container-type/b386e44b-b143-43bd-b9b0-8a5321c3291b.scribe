@@ -5,8 +5,8 @@ resource "container-type" "b386e44b-b143-43bd-b9b0-8a5321c3291b" {
   category = "nginx"
   containerLogs = [ { uuid = "07dc992f-a2dc-42a1-8b53-0c8bd64a0ade" } ]
   containerMounts = [
-    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" },
-    { uuid = "c4548472-0a39-424e-8dc5-9d7c490beaa1" }
+    { uuid = "c4548472-0a39-424e-8dc5-9d7c490beaa1" },
+    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" }
   ]
   containerPorts = [
     { uuid = "f394a77a-ffa4-4537-96db-b0acdd9b8485" },
