@@ -1,0 +1,14 @@
+resource "container-type" "fdbb4e2a-c622-486b-97b4-ab02fb282366" {
+  code = "fdbb4e2a-c622-486b-97b4-ab02fb282366"
+  name = "Apache 2.4"
+  uuid = "be6a5f2e-68b0-4425-93e7-a9ac072b1cb2"
+  containerVersion = "2.4-morph.0.1"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "2.4-morph.0.1"
+  shortName = "apache"
+  statTypeCode = "docker"
+}
