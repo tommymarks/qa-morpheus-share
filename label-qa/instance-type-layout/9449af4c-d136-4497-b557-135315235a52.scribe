@@ -1,0 +1,14 @@
+resource "instance-type-layout" "9449af4c-d136-4497-b557-135315235a52" {
+  code = "9449af4c-d136-4497-b557-135315235a52"
+  name = "Tomcat 7 Container"
+  uuid = "f8e55fb0-4cc3-49c0-81d2-0f5de744a57a"
+  actions = [ { code = "9449af4c-d136-4497-b557-135315235a52" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "tomcatweb" }
+  instanceVersion = "7"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "a47d9b4c-6fc3-4693-88e6-7e150a2c3156" } ]
+}

@@ -1,0 +1,22 @@
+resource "container-script" "tomcat-deploy" {
+  code = "tomcat-deploy"
+  name = "tomcat deployment script"
+  uuid = "ae98bbb1-32ad-4990-a321-99280166bad0"
+  dateCreated = "2023-03-06T03:39:06.000Z"
+  labels = [ "qa" ]
+  lastUpdated = "2023-03-06T03:59:27.000Z"
+  script = <<EOF
+chmod 775 -R <%=container.hostMountPoint%>/config ; sudo chown -R root.morpheus-node <%=container.hostMountPoint%>/config
+echo -ne "-server -Xms<%=(int)(container.memory * 0.74d / 1024l / 1024l)%>m -Xmx<%=(int)(container.memory * 0.74d / 1024l / 1024l)%>m -XX:MaxPermSize=<%=(int)(container.memory * 0.16d / 1024l / 1024l)%>m <%=deployOptions.catalinaOpts ?: ''%>" > <%=container.hostMountPoint%>/config/startup.txt
+cd <%=container.hostMountPoint%>/data
+for file in *.war; do
+	mkdir -p staging
+	mv $file ./staging/ROOT.war
+	break 1;
+done
+EOF
+  scriptPhase = "deploy"
+  scriptVersion = "1.0"
+  sortOrder = 1
+  sudoUser = true
+}
