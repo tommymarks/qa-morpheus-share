@@ -1,0 +1,23 @@
+resource "option-type-list" "temp ldap" {
+  name = "temp ldap"
+  uuid = "3f7038c3-ed67-424f-b13e-f2e811d63f7b"
+  labels = [ "temp" ]
+  realTime = true
+  requestScript = "(&(objectClass=user)(cn=<%=phrase%>*))"
+  sourceUrl = "ldap://10.32.21.253:389/DC=test,DC=morpheusdata,DC=com"
+  translationScript = <<EOF
+for(var x=0;x < data.length ; x++) {
+    var row = data[x];
+    var a = {};
+      if(row.displayName != null) {
+      a['name'] = row.displayName;
+    } else {
+      a['name'] = row.sAMAccountName;
+    }
+
+    a['value'] = row.sAMAccountName;
+    results.push(a);
+}
+EOF
+  type = "ldap"
+}
