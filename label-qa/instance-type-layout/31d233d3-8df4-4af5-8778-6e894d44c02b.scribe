@@ -1,0 +1,13 @@
+resource "instance-type-layout" "31d233d3-8df4-4af5-8778-6e894d44c02b" {
+  code = "31d233d3-8df4-4af5-8778-6e894d44c02b"
+  name = "Docker Nginx"
+  uuid = "872b43fa-5802-4ad7-b9d4-9a58f9c3334d"
+  actions = [ { code = "generic-add-node" } ]
+  description = "nginx docker container"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "1.10"
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "405c0478-5361-4d70-bf64-a056aac90915" } ]
+}
