@@ -1,6 +1,0 @@
-resource "task-set-task" "8af5a4c0-f2c7-4d75-a867-ef736b38ddf9" {
-  uuid = "8af5a4c0-f2c7-4d75-a867-ef736b38ddf9"
-  task = { code = "python" }
-  taskOrder = 2
-  taskPhase = "provision"
-}

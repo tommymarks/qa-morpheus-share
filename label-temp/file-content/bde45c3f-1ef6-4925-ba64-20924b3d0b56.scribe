@@ -1,7 +1,0 @@
-resource "file-content" "bde45c3f-1ef6-4925-ba64-20924b3d0b56" {
-  uuid = "bde45c3f-1ef6-4925-ba64-20924b3d0b56"
-  contentPath = "https://raw.githubusercontent.com/tommymarks/terraform-samples/auto/scripts/hello.groovy"
-  dateCreated = "2023-06-13T23:52:40.000Z"
-  lastUpdated = "2023-06-13T23:52:40.000Z"
-  sourceType = "url"
-}

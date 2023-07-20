@@ -1,6 +1,0 @@
-resource "task-set-task" "919df08b-92c1-4f7c-81e8-dafda4c29a7b" {
-  uuid = "919df08b-92c1-4f7c-81e8-dafda4c29a7b"
-  task = { name = "Phase: Scale Down" }
-  taskOrder = 16
-  taskPhase = "scaleDown"
-}
