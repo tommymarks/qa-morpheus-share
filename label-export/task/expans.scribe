@@ -1,0 +1,18 @@
+resource "task" "expans" {
+  code = "expans"
+  name = "Export Ansible"
+  uuid = "2490ebf0-66e2-4e32-9103-31abb336289a"
+  dateCreated = "2023-07-19T13:55:06.000Z"
+  executeTarget = "resource"
+  labels = [ "export" ]
+  lastUpdated = "2023-07-19T14:13:48.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Export Ansible" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansiblePlaybook" }, value = "nginx-1_9" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
