@@ -1,20 +1,20 @@
 resource "task" "python" {
   code = "python"
-  name = "temp pythonUrl"
-  uuid = "a91e11ee-9265-4839-9730-bcd76b08ea61"
-  dateCreated = "2023-06-13T23:52:59.000Z"
+  name = "temp python2"
+  uuid = "ff71a14a-a683-4a0d-be04-b8e99975fd84"
+  dateCreated = "2023-06-03T03:41:18.000Z"
   executeTarget = "local"
   labels = [ "temp" ]
-  lastUpdated = "2023-06-13T23:59:45.000Z"
+  lastUpdated = "2023-06-13T23:59:34.000Z"
   options = [
-    { optionType = { code = "pythonArgs" }, value = "Hello World" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "mechanize"
     },
+    { optionType = { code = "pythonArgs" }, value = "Hello World" },
     { optionType = { code = "pythonBinary" }, value = "python3" },
     {
-      content = { uuid = "d4829c2c-1165-4203-837c-581c6f92172a" }
+      content = { uuid = "f70c78bf-42be-4855-923c-c47150879cfd" }
       optionType = { code = "pythonScript" }
     }
   ]
