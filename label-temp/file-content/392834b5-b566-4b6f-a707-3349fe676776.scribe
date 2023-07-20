@@ -1,0 +1,9 @@
+resource "file-content" "392834b5-b566-4b6f-a707-3349fe676776" {
+  uuid = "392834b5-b566-4b6f-a707-3349fe676776"
+  content = <<EOF
+echo "$(date) - stop service" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOF
+  dateCreated = "2021-02-19T04:16:55.000Z"
+  lastUpdated = "2021-02-19T04:16:55.000Z"
+}
