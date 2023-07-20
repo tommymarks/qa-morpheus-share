@@ -1,0 +1,6 @@
+resource "task-set-task" "e33f6cc7-e8bd-445e-8abb-e85c9d1115a9" {
+  uuid = "e33f6cc7-e8bd-445e-8abb-e85c9d1115a9"
+  task = { code = "libscript" }
+  taskOrder = 7
+  taskPhase = "provision"
+}

@@ -1,0 +1,6 @@
+resource "task-set-task" "b803d6bc-2d7b-425c-a45e-195c09b48bbd" {
+  uuid = "b803d6bc-2d7b-425c-a45e-195c09b48bbd"
+  task = { code = "ruby" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

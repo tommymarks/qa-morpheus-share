@@ -1,0 +1,17 @@
+resource "task" "groovy" {
+  code = "groovy"
+  name = "temp groovyUrl"
+  uuid = "c79cdf55-158a-4b59-b422-44ecf69023af"
+  dateCreated = "2023-06-13T23:52:40.000Z"
+  executeTarget = "local"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:58:31.000Z"
+  options = [
+    {
+      content = { uuid = "bde45c3f-1ef6-4925-ba64-20924b3d0b56" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "groovyTask" }
+}
