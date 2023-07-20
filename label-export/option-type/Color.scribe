@@ -1,0 +1,13 @@
+resource "option-type" "Color" {
+  code = "Color"
+  name = "Color"
+  uuid = "bec899b3-c5d0-4d40-9690-0033d0ff0760"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Color"
+  fieldName = "Color"
+  labels = [ "export" ]
+  optionList = { name = "Approved Colors" }
+  optionSource = "list"
+  type = "select"
+}
