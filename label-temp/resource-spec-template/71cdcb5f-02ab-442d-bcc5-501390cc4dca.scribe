@@ -1,0 +1,11 @@
+resource "resource-spec-template" "71cdcb5f-02ab-442d-bcc5-501390cc4dca" {
+  name = "temp arm local"
+  uuid = "71cdcb5f-02ab-442d-bcc5-501390cc4dca"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-06-14T00:41:18.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:41:18.000Z"
+  template = { uuid = "43a7e8c8-7785-4da0-824a-e31bf0f4c6a0" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
