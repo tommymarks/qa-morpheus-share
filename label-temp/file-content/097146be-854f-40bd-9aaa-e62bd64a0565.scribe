@@ -1,9 +1,0 @@
-resource "file-content" "097146be-854f-40bd-9aaa-e62bd64a0565" {
-  uuid = "097146be-854f-40bd-9aaa-e62bd64a0565"
-  content = <<EOF
-Hello
-World
-EOF
-  dateCreated = "2023-06-14T00:04:56.000Z"
-  lastUpdated = "2023-06-14T00:04:56.000Z"
-}

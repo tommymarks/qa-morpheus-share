@@ -1,9 +1,0 @@
-resource "file-content" "8eb1b775-c803-40e7-9ed4-ae11a679ee93" {
-  uuid = "8eb1b775-c803-40e7-9ed4-ae11a679ee93"
-  content = <<EOF
-echo "ssh script" | sudo tee -a /var/tmp/task.txt > /dev/null
-echo "a=b,flash=bang,ping=pong"
-EOF
-  dateCreated = "2023-06-13T23:53:29.000Z"
-  lastUpdated = "2023-06-13T23:53:29.000Z"
-}
