@@ -1,0 +1,10 @@
+resource "account-integration" "Github - TM" {
+  name = "Github - TM"
+  uuid = "0f85b0e9-cb21-4c75-ae05-aef609899ee0"
+  category = "cm-server"
+  config = { cacheEnabled = false, defaultBranch = "" }
+  integrationType = { code = "github" }
+  serviceFlag = true
+  serviceUrl = ""
+  type = "github"
+}
